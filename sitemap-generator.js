@@ -121,19 +121,5 @@ const routes = [
 
   await streamToPromise(sitemap);
 
-  // Write sitemap-index.xml
-  const indexPath = path.join(__dirname, "dist", "sitemap-index.xml");
-  const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${BASE}/sitemap.xml</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-  </sitemap>
-</sitemapindex>`;
-
-  const { writeFileSync } = await import("fs");
-  writeFileSync(indexPath, indexContent, "utf-8");
-
   console.log("✅ sitemap.xml generated at:", sitemapPath);
-  console.log("✅ sitemap-index.xml generated at:", indexPath);
 })();
