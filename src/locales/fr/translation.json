@@ -10,14 +10,14 @@
   },
   "hero": {
     "h1": "Agence Web & Marketing Digital à {{city}} — MouDev",
-    "subheading": "MouDev est votre agence marketing digital à {{city}} et au Maroc — création de sites web & sites internet, webdesign, SEO et Google Ads. Votre site, votre meilleur commercial. Obtenez votre devis gratuit.",
+    "subheading": "Création de sites web professionnels, référencement SEO et Google Ads à {{city}}. Votre site web, votre meilleur commercial. Obtenez votre devis gratuit dès aujourd'hui.",
     "cta": "Devis gratuit"
   },
   "home": {
     "h2": "Création de sites web & internet à {{city}} – Agence Marketing Digital au Maroc",
-    "p1": "Vous cherchez une agence marketing digital à {{city}} et au Maroc spécialisée dans la création de sites web et sites internet, le référencement naturel (SEO) et la gestion de campagnes Google Ads pour renforcer votre présence en ligne ? Demandez votre devis gratuit dès aujourd'hui.",
-    "p2": "MouDev est votre partenaire digital pour créer un site web professionnel à {{city}}, qu'il soit vitrine, e-commerce ou sur-mesure. Grâce à notre expertise en webdesign et en identité visuelle, nous assurons une stratégie digitale efficace pour générer du trafic qualifié et des conversions durables.",
-    "p3": "Grâce à notre maîtrise des Google Ads à {{city}}, nous maximisons votre visibilité Google et votre positionnement sur les moteurs de recherche. Notre équipe vous accompagne dans votre transformation digitale de A à Z : développement web, maintenance web et intégration de solutions personnalisées — pour les entreprises à {{city}} et partout au Maroc.",
+    "p1": "Vous cherchez une agence web à {{city}} spécialisée dans la création de sites web professionnels, le référencement naturel (SEO) et la gestion de campagnes Google Ads ? MouDev est l'agence marketing digital de référence à {{city}} pour renforcer votre présence en ligne et générer des clients qualifiés. Demandez votre devis gratuit dès aujourd'hui.",
+    "p2": "MouDev conçoit votre site web professionnel à {{city}} — site vitrine, site catalogue, boutique e-commerce ou portail sur-mesure. Notre équipe de développeurs et webdesigners à {{city}} livre des sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google dès la mise en ligne.",
+    "p3": "Notre expertise en Google Ads et SEO à {{city}} vous permet de devancer vos concurrents sur les moteurs de recherche. De la conception à la maintenance web, MouDev assure votre transformation digitale de A à Z et accompagne les TPE, PME et grandes entreprises à {{city}} dans leur croissance en ligne.",
     "cta": "Devis gratuit"
   },
   "packs": {
@@ -95,47 +95,47 @@
     }
   },
   "services": {
-    "h2": "Nos services",
+    "h2": "Nos services à {{city}}",
     "web": {
       "title": "Création de site web & Webdesign",
-      "desc": "Site vitrine, catalogue, e-commerce et portail. Du webdesign soigné à la maintenance web, nous gérons votre présence en ligne de A à Z."
+      "desc": "Site vitrine, catalogue, e-commerce et portail sur-mesure. Du webdesign soigné à la maintenance web, nous gérons votre présence en ligne de A à Z avec des technologies modernes et performantes."
     },
     "seo": {
-      "title": "Référencement naturel",
-      "desc": "Améliorez votre visibilité Google et générez un trafic organique durable grâce à une stratégie SEO adaptée à votre secteur."
+      "title": "Référencement naturel (SEO)",
+      "desc": "Optimisez votre visibilité sur Google et générez un trafic organique durable grâce à une stratégie SEO locale et nationale adaptée à votre secteur d'activité et à votre marché."
     },
     "ads": {
-      "title": "Google Ads",
-      "desc": "Confiez-nous vos campagnes Google Ads pour maximiser votre retour sur investissement grâce à une stratégie digitale précise et mesurable."
+      "title": "Google Ads & Publicité en ligne",
+      "desc": "Campagnes Google Ads ciblées pour maximiser votre retour sur investissement. Nous gérons vos budgets publicitaires avec précision pour attirer des prospects qualifiés et augmenter vos conversions."
     }
   },
   "process": {
-    "h2": "Notre process",
-    "subheading": "Une approche fiable et transparente pour concevoir votre site web avec rapidité et efficacité.",
+    "h2": "Notre processus de création",
+    "subheading": "Une méthodologie éprouvée et transparente pour concevoir votre site web avec efficacité, dans les délais et selon votre budget.",
     "steps": [
       {
         "title": "Analyse & Découverte",
-        "desc": "Nous commençons par comprendre vos besoins spécifiques, vos objectifs commerciaux et votre cible. Cette phase inclut une analyse approfondie de votre secteur et de vos concurrents."
+        "desc": "Nous commençons par comprendre vos objectifs commerciaux, votre cible et votre secteur. Cette phase inclut une analyse de vos concurrents et une étude de votre positionnement sur le marché."
       },
       {
         "title": "Conception & Design",
-        "desc": "Création de maquettes visuelles qui reflètent votre identité de marque et offrent une expérience utilisateur optimale. Vous validez chaque aspect avant la phase de développement."
+        "desc": "Création de maquettes visuelles sur-mesure qui reflètent votre identité de marque. Vous validez chaque aspect du design avant le lancement du développement."
       },
       {
         "title": "Développement",
-        "desc": "Nos développeurs transforment les maquettes en code, en intégrant toutes les fonctionnalités requises et en garantissant une compatibilité parfaite sur tous les appareils."
+        "desc": "Développement de votre site avec les technologies les plus performantes, intégrant toutes les fonctionnalités requises et garantissant une compatibilité parfaite sur tous les appareils."
       },
       {
-        "title": "Tests & Optimisation",
-        "desc": "Vérification rigoureuse de tous les aspects du site, de la performance à l'expérience utilisateur. Optimisation pour le référencement et la vitesse de chargement."
+        "title": "Tests & Optimisation SEO",
+        "desc": "Tests rigoureux de performance, de sécurité et d'expérience utilisateur. Optimisation technique pour le référencement Google et la vitesse de chargement."
       },
       {
         "title": "Lancement",
-        "desc": "Mise en ligne du site après validation finale. Nous configurons l'hébergement, les certificats de sécurité et assurons une transition en douceur pour votre nouveau site."
+        "desc": "Mise en ligne de votre site après validation finale. Configuration de l'hébergement, du certificat SSL et de tous les outils de suivi (Google Analytics, Search Console)."
       },
       {
         "title": "Support & Évolution",
-        "desc": "Nous restons à vos côtés après le lancement avec un support technique et des conseils pour l'évolution de votre site selon vos besoins et les tendances du marché."
+        "desc": "Accompagnement continu après le lancement : support technique, mises à jour, évolution du site selon vos besoins et les tendances du marché digital."
       }
     ]
   },
@@ -154,26 +154,26 @@
       {
         "tag": "Site Vitrine",
         "title": "Clinique Esthétique",
-        "desc": "Site vitrine moderne pour une clinique esthétique à {{city}}. Design élégant, prise de rendez-vous en ligne et présentation des soins.",
-        "alt": "Création site vitrine clinique esthétique {{city}} - MouDev"
+        "desc": "Site vitrine moderne pour une clinique esthétique à {{city}} : design élégant, prise de rendez-vous en ligne, présentation des soins et optimisation SEO locale.",
+        "alt": "Création site vitrine clinique esthétique {{city}} - MouDev agence web"
       },
       {
         "tag": "E-commerce",
         "title": "Boutique Mode",
-        "desc": "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et gestion des stocks pour une marque de mode.",
-        "alt": "Création site e-commerce boutique mode {{city}} - MouDev"
+        "desc": "Boutique en ligne complète pour une marque de mode : catalogue produits, panier, paiement sécurisé, gestion des stocks et interface d'administration intuitive.",
+        "alt": "Création site e-commerce boutique mode {{city}} - MouDev agence web"
       },
       {
         "tag": "Site Vitrine",
         "title": "Restaurant Gastronomique",
-        "desc": "Site vitrine pour un restaurant avec menu interactif, galerie photos, réservation en ligne et intégration Google Maps.",
-        "alt": "Création site vitrine restaurant {{city}} - MouDev"
+        "desc": "Site vitrine pour un restaurant à {{city}} : menu interactif, galerie photos, réservation en ligne, intégration Google Maps et fiche Google My Business optimisée.",
+        "alt": "Création site vitrine restaurant {{city}} - MouDev agence web"
       },
       {
         "tag": "Portail",
         "title": "Agence Immobilière",
-        "desc": "Portail immobilier avec recherche avancée de biens, fiches propriétés détaillées, formulaire de contact et espace agent.",
-        "alt": "Création portail agence immobilière {{city}} - MouDev"
+        "desc": "Portail immobilier avec recherche avancée de biens, fiches propriétés détaillées, formulaire de contact et espace agent dédié — idéal pour les agences à {{city}}.",
+        "alt": "Création portail agence immobilière {{city}} - MouDev agence web"
       }
     ]
   },
@@ -182,61 +182,61 @@
     "items": [
       {
         "q": "Combien coûte la création d'un site web à {{city}} ?",
-        "a": "Le tarif dépend du type et de la complexité du projet. Nos formules démarrent à partir d'un site vitrine simple jusqu'à des plateformes e-commerce complètes. Contactez-nous pour recevoir un devis personnalisé et gratuit selon vos besoins."
+        "a": "Le tarif dépend du type et de la complexité du projet. Nos formules démarrent à partir d'un site vitrine simple jusqu'à des plateformes e-commerce complètes. Contactez-nous pour recevoir un devis personnalisé et gratuit adapté à votre budget et vos objectifs."
       },
       {
         "q": "Combien de temps faut-il pour livrer un site web ?",
-        "a": "En général, un site vitrine est livré en 1 à 2 semaines, un site catalogue en 2 à 3 semaines, et un e-commerce en 3 à 5 semaines. Le délai dépend de la disponibilité des contenus (textes, images, logo) que vous nous fournissez."
+        "a": "Un site vitrine est livré en 1 à 2 semaines, un site catalogue en 2 à 3 semaines, et un e-commerce en 3 à 5 semaines. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous nous fournissez."
       },
       {
-        "q": "Mon site sera-t-il optimisé pour Google (SEO) ?",
-        "a": "Oui, tous nos sites sont livrés avec une optimisation SEO de base : balises title et meta description, structure des titres (H1/H2/H3), URLs propres, images optimisées et site responsive. Nous proposons également des prestations SEO avancées pour améliorer votre positionnement sur le long terme."
+        "q": "Mon site sera-t-il bien référencé sur Google à {{city}} ?",
+        "a": "Oui. Tous nos sites sont livrés avec une optimisation SEO technique complète : balises title et meta, structure H1/H2/H3, URLs propres, images optimisées, site rapide et responsive. Nous proposons également des prestations SEO avancées pour positionner votre site en première page de Google à {{city}}."
       },
       {
         "q": "Puis-je modifier le contenu de mon site moi-même après livraison ?",
         "a": "Absolument. Tous nos sites sont livrés avec une interface d'administration intuitive qui vous permet de modifier les textes, images, produits et pages sans aucune connaissance technique. Une formation de prise en main est incluse dans tous nos packs."
       },
       {
-        "q": "Proposez-vous un service de maintenance et de support ?",
-        "a": "Oui, nous assurons un support technique après la livraison. Vous pouvez nous contacter à tout moment via WhatsApp ou téléphone pour toute demande de modification ou problème technique. Des contrats de maintenance mensuelle sont également disponibles."
+        "q": "Proposez-vous un service de maintenance et de support après livraison ?",
+        "a": "Oui. Nous assurons un support technique réactif après la livraison via WhatsApp et téléphone. Des contrats de maintenance mensuelle sont disponibles pour les mises à jour, la sécurité et l'évolution de votre site."
       },
       {
-        "q": "Mon site sera-t-il adapté aux mobiles (responsive) ?",
-        "a": "Oui, tous nos sites sont 100% responsive. Ils s'adaptent automatiquement aux smartphones, tablettes et ordinateurs. C'est une exigence essentielle pour le SEO et l'expérience utilisateur, et c'est inclus dans toutes nos formules."
+        "q": "Mon site sera-t-il adapté aux mobiles et tablettes ?",
+        "a": "Oui, tous nos sites sont 100% responsive et s'adaptent automatiquement aux smartphones, tablettes et ordinateurs. Un site mobile-friendly est indispensable pour le SEO et l'expérience utilisateur — c'est inclus dans toutes nos formules."
       },
       {
-        "q": "Travaillez-vous avec des clients en dehors de {{city}} ?",
-        "a": "Oui, nous travaillons avec des clients dans tout le Maroc (Rabat, Marrakech, Fès, Tanger, Agadir...) et à l'international. Tout le suivi de projet se fait à distance via WhatsApp, email et appels vidéo."
+        "q": "Intervenez-vous uniquement à {{city}} ou dans tout le Maroc ?",
+        "a": "MouDev intervient dans tout le Maroc et à l'international. Nous collaborons avec des clients à Casablanca, Tanger, Marrakech, Rabat, Fès, Agadir et bien d'autres villes. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo."
       },
       {
-        "q": "Qu'est-ce qui est inclus dans l'hébergement ?",
-        "a": "L'hébergement inclus dans nos packs comprend : stockage SSD haute performance, certificat SSL (HTTPS), emails professionnels, sauvegardes régulières et nom de domaine pour la première année. C'est un hébergement fiable avec une disponibilité de 99,9%."
+        "q": "Qu'est-ce qui est inclus dans l'hébergement de votre pack ?",
+        "a": "L'hébergement inclus dans nos packs comprend : stockage SSD haute performance, certificat SSL (HTTPS), emails professionnels à votre nom de domaine, sauvegardes régulières et nom de domaine pour la première année. Disponibilité garantie à 99,9%."
       }
     ]
   },
   "temoignes": {
-    "h2": "Témoignages",
+    "h2": "Ce que disent nos clients",
     "items": [
       {
         "name": "Fatime Benjelloun",
-        "text": "C'est avec grand plaisir que nous tenons à vous mentionner notre grande satisfaction envers les services que vous offrez à notre compagnie depuis notre première rencontre."
+        "text": "C'est avec grand plaisir que nous tenons à exprimer notre entière satisfaction envers les services de MouDev. Une équipe professionnelle, réactive et à l'écoute depuis le premier jour."
       },
       {
         "name": "Amine Bennani",
-        "text": "L'agence a fait un excellent travail pour la réalisation de notre site vitrine. Efficace et disponible, une équipe très professionnelle."
+        "text": "MouDev a réalisé un travail excellent pour notre site vitrine. Livré dans les délais, optimisé pour le SEO et visuellement parfait. Je recommande vivement cette agence."
       },
       {
         "name": "Ahmed Ali",
-        "text": "Bravo et merci. Depuis un an, je cherchais vainement quelqu'un qui pourrait réaliser un site web selon mes vœux. J'ai enfin trouvé MouDev. Ils ont fait exactement ce que je souhaitais..."
+        "text": "Après plusieurs mauvaises expériences, j'ai enfin trouvé une agence web sérieuse. MouDev a créé exactement le site que je voulais, avec un vrai suivi et des conseils professionnels."
       },
       {
         "name": "Mohammed Ben Ali",
-        "text": "J'ai été ravi de travailler avec MouDev qui a su être de bons conseils, et à mon écoute pour la création de mon site. C'est une agence sérieuse et disponible, que je recommande vivement."
+        "text": "Excellent travail ! Notre boutique en ligne génère maintenant des ventes régulières grâce au site e-commerce réalisé par MouDev. L'équipe est disponible et le support est au top."
       }
     ]
   },
   "footer": {
-    "tagline": "Votre agence marketing digital à {{city}} et au Maroc. Création de sites web, SEO, Google Ads et webdesign sur mesure.",
+    "tagline": "Votre agence web & marketing digital à {{city}} et dans tout le Maroc. Création de sites web professionnels, SEO, Google Ads et webdesign sur-mesure.",
     "services": {
       "heading": "Nos services",
       "links": [

@@ -33,7 +33,7 @@ const CityPage = ({ city, lang }) => {
 
   useEffect(() => {
     i18n.changeLanguage(lang);
-    setCityData({ ...data, currentLang: lang });
+    setCityData({ ...data, currentLang: lang, currentCity: city });
   }, [city, lang, data, setCityData]);
 
   const jsonLd = {
@@ -105,6 +105,7 @@ const CityPage = ({ city, lang }) => {
             <p className="text sl-mb">{t("home.p1", { city: cityName })}</p>
             <p className="text sl-mb">{t("home.p2", { city: cityName })}</p>
             <p className="text sl-mb">{t("home.p3", { city: cityName })}</p>
+            <p className="text sl-mb city-context">{data.cityContext}</p>
             <Link
               className="link hero-link"
               to="tel:+212696964341"
@@ -164,7 +165,7 @@ const CityPage = ({ city, lang }) => {
 
       {/* Services */}
       <section id="services" className="home container">
-        <h2 className="secondary-heading center-text lg-mb">{t("services.h2")}</h2>
+        <h2 className="secondary-heading center-text lg-mb">{t("services.h2", { city: cityName })}</h2>
         <ul className="services__list">
           <li className="service__item">
             <span role="img"><VscCode className="service--icon" /></span>

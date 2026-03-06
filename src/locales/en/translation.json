@@ -10,14 +10,14 @@
   },
   "hero": {
     "h1": "Web Agency & Digital Marketing in {{city}} — MouDev",
-    "subheading": "MouDev is your digital marketing agency in {{city}} and across Morocco — website creation, webdesign, SEO and Google Ads. Your website, your best salesman. Get your free quote.",
+    "subheading": "Professional website creation, SEO and Google Ads in {{city}}. Your website, your best salesman. Get your free quote today.",
     "cta": "Free quote"
   },
   "home": {
     "h2": "Website Creation in {{city}} – Digital Marketing Agency in Morocco",
-    "p1": "Looking for a digital marketing agency in {{city}} and Morocco specializing in website creation, SEO and Google Ads management to strengthen your online presence? Request your free quote today.",
-    "p2": "MouDev is your digital partner for creating a professional website in {{city}}, whether it's a showcase, e-commerce or custom site. With our expertise in webdesign and visual identity, we ensure an effective digital strategy to generate qualified traffic and lasting conversions.",
-    "p3": "Through our mastery of Google Ads in {{city}}, we maximize your Google visibility and your positioning on search engines. Our team supports your digital transformation from A to Z: web development, web maintenance and integration of customized solutions — for businesses in {{city}} and across Morocco.",
+    "p1": "Looking for a web agency in {{city}} specializing in professional website creation, natural SEO and Google Ads campaign management? MouDev is the leading digital marketing agency in {{city}} to strengthen your online presence and generate qualified leads. Request your free quote today.",
+    "p2": "MouDev designs your professional website in {{city}} — showcase site, product catalogue, e-commerce store or custom portal. Our team of developers and webdesigners delivers fast, secure, 100% responsive websites optimized for Google ranking from day one.",
+    "p3": "Our expertise in Google Ads and SEO in {{city}} lets you outrank your competitors on search engines. From design to web maintenance, MouDev handles your full digital transformation and supports SMEs and large businesses in {{city}} in their online growth.",
     "cta": "Free quote"
   },
   "packs": {
@@ -95,47 +95,47 @@
     }
   },
   "services": {
-    "h2": "Our services",
+    "h2": "Our services in {{city}}",
     "web": {
       "title": "Website Creation & Webdesign",
-      "desc": "Showcase, catalogue, e-commerce and portal sites. From careful webdesign to web maintenance, we manage your online presence from A to Z."
+      "desc": "Showcase, catalogue, e-commerce and custom portal sites. From careful webdesign to web maintenance, we handle your full online presence with modern, high-performance technologies."
     },
     "seo": {
-      "title": "Search Engine Optimization",
-      "desc": "Improve your Google visibility and generate sustainable organic traffic with an SEO strategy tailored to your industry."
+      "title": "Search Engine Optimization (SEO)",
+      "desc": "Optimize your Google visibility and generate sustainable organic traffic with a local and national SEO strategy tailored to your industry and target market."
     },
     "ads": {
-      "title": "Google Ads",
-      "desc": "Entrust us with your Google Ads campaigns to maximize your return on investment through a precise and measurable digital strategy."
+      "title": "Google Ads & Online Advertising",
+      "desc": "Targeted Google Ads campaigns to maximize your return on investment. We manage your advertising budgets precisely to attract qualified prospects and increase your conversions."
     }
   },
   "process": {
-    "h2": "Our process",
-    "subheading": "A reliable and transparent approach to design your website with speed and efficiency.",
+    "h2": "Our creation process",
+    "subheading": "A proven and transparent methodology to design your website efficiently, on time and within your budget.",
     "steps": [
       {
         "title": "Analysis & Discovery",
-        "desc": "We start by understanding your specific needs, business objectives and target audience. This phase includes an in-depth analysis of your industry and competitors."
+        "desc": "We start by understanding your business objectives, target audience and market. This phase includes competitor analysis and positioning study."
       },
       {
         "title": "Design & Conception",
-        "desc": "Creation of visual mockups that reflect your brand identity and offer an optimal user experience. You validate every aspect before the development phase."
+        "desc": "Creation of custom visual mockups that reflect your brand identity. You validate every design aspect before development begins."
       },
       {
         "title": "Development",
-        "desc": "Our developers transform mockups into code, integrating all required features and ensuring perfect compatibility across all devices."
+        "desc": "Your site is built with the most performant technologies, integrating all required features and ensuring perfect compatibility on all devices."
       },
       {
-        "title": "Testing & Optimization",
-        "desc": "Rigorous verification of all aspects of the site, from performance to user experience. Optimization for SEO and page loading speed."
+        "title": "Testing & SEO Optimization",
+        "desc": "Rigorous performance, security and UX testing. Technical optimization for Google ranking and page loading speed."
       },
       {
         "title": "Launch",
-        "desc": "Going live after final validation. We configure hosting, security certificates and ensure a smooth transition for your new website."
+        "desc": "Going live after final validation. Hosting setup, SSL certificate and all tracking tools (Google Analytics, Search Console)."
       },
       {
         "title": "Support & Evolution",
-        "desc": "We remain at your side after launch with technical support and advice for the evolution of your site according to your needs and market trends."
+        "desc": "Ongoing support after launch: technical assistance, updates, and site evolution according to your needs and digital market trends."
       }
     ]
   },
@@ -154,26 +154,26 @@
       {
         "tag": "Showcase Site",
         "title": "Aesthetic Clinic",
-        "desc": "Modern showcase site for an aesthetic clinic in {{city}}. Elegant design, online appointment booking and treatment presentation.",
-        "alt": "Showcase website creation aesthetic clinic {{city}} - MouDev"
+        "desc": "Modern showcase site for an aesthetic clinic in {{city}}: elegant design, online appointment booking, treatment presentation and local SEO optimization.",
+        "alt": "Showcase website creation aesthetic clinic {{city}} - MouDev web agency"
       },
       {
         "tag": "E-commerce",
         "title": "Fashion Boutique",
-        "desc": "Complete online store with product catalogue, shopping cart, secure payment and inventory management for a fashion brand.",
-        "alt": "E-commerce website creation fashion boutique {{city}} - MouDev"
+        "desc": "Complete online store for a fashion brand: product catalogue, shopping cart, secure payment, inventory management and intuitive admin interface.",
+        "alt": "E-commerce website creation fashion boutique {{city}} - MouDev web agency"
       },
       {
         "tag": "Showcase Site",
         "title": "Gastronomic Restaurant",
-        "desc": "Showcase site for a restaurant with interactive menu, photo gallery, online booking and Google Maps integration.",
-        "alt": "Showcase website creation restaurant {{city}} - MouDev"
+        "desc": "Showcase site for a restaurant in {{city}}: interactive menu, photo gallery, online booking, Google Maps integration and optimized Google My Business profile.",
+        "alt": "Showcase website creation restaurant {{city}} - MouDev web agency"
       },
       {
         "tag": "Portal",
         "title": "Real Estate Agency",
-        "desc": "Real estate portal with advanced property search, detailed property listings, contact form and agent space.",
-        "alt": "Real estate portal creation {{city}} - MouDev"
+        "desc": "Real estate portal with advanced property search, detailed listings, contact form and dedicated agent space — ideal for agencies in {{city}}.",
+        "alt": "Real estate portal creation {{city}} - MouDev web agency"
       }
     ]
   },
@@ -182,61 +182,61 @@
     "items": [
       {
         "q": "How much does website creation cost in {{city}}?",
-        "a": "The price depends on the type and complexity of the project. Our packages start from a simple showcase site to complete e-commerce platforms. Contact us to receive a personalized and free quote according to your needs."
+        "a": "The price depends on the type and complexity of the project. Our packages range from a simple showcase site to complete e-commerce platforms. Contact us for a free, personalized quote tailored to your budget and goals."
       },
       {
         "q": "How long does it take to deliver a website?",
-        "a": "Generally, a showcase site is delivered in 1 to 2 weeks, a catalogue site in 2 to 3 weeks, and an e-commerce in 3 to 5 weeks. The deadline depends on the availability of content (texts, images, logo) that you provide us."
+        "a": "A showcase site is delivered in 1 to 2 weeks, a catalogue site in 2 to 3 weeks, and an e-commerce in 3 to 5 weeks. Timelines depend on the availability of content (texts, images, logo) you provide."
       },
       {
-        "q": "Will my site be optimized for Google (SEO)?",
-        "a": "Yes, all our sites are delivered with basic SEO optimization: title and meta description tags, heading structure (H1/H2/H3), clean URLs, optimized images and responsive site. We also offer advanced SEO services to improve your long-term ranking."
+        "q": "Will my site rank well on Google in {{city}}?",
+        "a": "Yes. All our sites are delivered with full technical SEO: title and meta tags, H1/H2/H3 structure, clean URLs, optimized images, fast and responsive site. We also offer advanced SEO services to rank your site on Google's first page in {{city}}."
       },
       {
-        "q": "Can I modify my site's content myself after delivery?",
-        "a": "Absolutely. All our sites are delivered with an intuitive administration interface that allows you to modify texts, images, products and pages without any technical knowledge. A hands-on training session is included in all our packages."
+        "q": "Can I update my site's content myself after delivery?",
+        "a": "Absolutely. All our sites come with an intuitive admin interface letting you update texts, images, products and pages without any technical knowledge. A training session is included in all packages."
       },
       {
-        "q": "Do you offer maintenance and support services?",
-        "a": "Yes, we provide technical support after delivery. You can contact us at any time via WhatsApp or phone for any modification request or technical issue. Monthly maintenance contracts are also available."
+        "q": "Do you offer maintenance and support after delivery?",
+        "a": "Yes. We provide responsive technical support via WhatsApp and phone after delivery. Monthly maintenance contracts are available for updates, security and site evolution."
       },
       {
-        "q": "Will my site be mobile-friendly (responsive)?",
-        "a": "Yes, all our sites are 100% responsive. They automatically adapt to smartphones, tablets and computers. This is an essential requirement for SEO and user experience, and it is included in all our packages."
+        "q": "Will my site work on mobile and tablet?",
+        "a": "Yes, all our sites are 100% responsive and automatically adapt to smartphones, tablets and computers. Mobile-friendliness is essential for SEO and user experience — it's included in all packages."
       },
       {
-        "q": "Do you work with clients outside {{city}}?",
-        "a": "Yes, we work with clients throughout Morocco (Rabat, Marrakech, Fes, Tanger, Agadir...) and internationally. All project management is done remotely via WhatsApp, email and video calls."
+        "q": "Do you only work in {{city}} or across Morocco?",
+        "a": "MouDev works across Morocco and internationally. We collaborate with clients in Casablanca, Tangier, Marrakech, Rabat, Fes, Agadir and many other cities. All project management is done remotely via WhatsApp, email and video calls."
       },
       {
         "q": "What is included in the hosting?",
-        "a": "The hosting included in our packages includes: high-performance SSD storage, SSL certificate (HTTPS), professional emails, regular backups and domain name for the first year. It is reliable hosting with 99.9% uptime."
+        "a": "Hosting included in our packages covers: high-performance SSD storage, SSL certificate (HTTPS), professional emails with your domain, regular backups and domain name for the first year. 99.9% uptime guaranteed."
       }
     ]
   },
   "temoignes": {
-    "h2": "Testimonials",
+    "h2": "What our clients say",
     "items": [
       {
         "name": "Fatime Benjelloun",
-        "text": "It is with great pleasure that we would like to mention our great satisfaction with the services you have been offering our company since our first meeting."
+        "text": "We are delighted to express our full satisfaction with MouDev's services. A professional, responsive and attentive team from day one."
       },
       {
         "name": "Amine Bennani",
-        "text": "The agency did an excellent job creating our showcase website. Efficient and available, a very professional team."
+        "text": "MouDev did an excellent job on our showcase website. Delivered on time, SEO-optimized and visually perfect. I highly recommend this agency."
       },
       {
         "name": "Ahmed Ali",
-        "text": "Bravo and thank you. For a year, I had been vainly looking for someone who could build a website according to my wishes. I finally found MouDev. They did exactly what I wanted..."
+        "text": "After several bad experiences, I finally found a serious web agency. MouDev built exactly the site I wanted, with real follow-up and professional advice."
       },
       {
         "name": "Mohammed Ben Ali",
-        "text": "I was delighted to work with MouDev who provided great advice and listened to my needs for my website creation. A serious and available agency that I highly recommend."
+        "text": "Excellent work! Our online store now generates regular sales thanks to the e-commerce site built by MouDev. The team is responsive and support is top-notch."
       }
     ]
   },
   "footer": {
-    "tagline": "Your digital marketing agency in {{city}} and Morocco. Website creation, SEO, Google Ads and custom webdesign.",
+    "tagline": "Your web agency & digital marketing partner in {{city}} and across Morocco. Professional website creation, SEO, Google Ads and custom webdesign.",
     "services": {
       "heading": "Our services",
       "links": [

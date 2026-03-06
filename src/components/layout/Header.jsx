@@ -1,14 +1,21 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { HiOutlinePhoneArrowUpRight, HiBars3, HiXMark } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
+import CitySwitcher from "./CitySwitcher";
 import useConversion from "../../hooks/useConversion";
+import { useCityContext } from "../../context/CityContext";
+import { cityConfig } from "../../data/cityConfig";
+
+const CITIES = ["casablanca", "tanger", "marrakech"];
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
   const { track, WA_URL } = useConversion();
+  const { cityData } = useCityContext();
 
   const navLinks = [
     { label: t("nav.services"), href: "#services" },
@@ -16,6 +23,18 @@ const Header = () => {
     { label: t("nav.realisations"), href: "#portfolio" },
     { label: t("nav.faq"), href: "#faq" },
   ];
+
+  const cityLinks = cityData
+    ? CITIES.map((city) => {
+        const { name, canonical } = cityConfig[city][cityData.currentLang];
+        return {
+          city,
+          name,
+          path: canonical.replace("https://www.moudevpro.com", "") || "/",
+          active: cityData.currentCity === city,
+        };
+      })
+    : [];
 
   return (
     <header className="header">
@@ -35,9 +54,26 @@ const Header = () => {
             </li>
           ))}
         </ul>
+
+        {cityLinks.length > 0 && (
+          <ul className="nav__list nav__cities">
+            {cityLinks.map(({ city, name, path, active }) => (
+              <li key={city} className="nav__item">
+                <Link
+                  to={path}
+                  className={`nav__link${active ? " nav__link--active" : ""}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
 
       <div className="header__actions">
+        <CitySwitcher />
         <LanguageSwitcher />
         <a
           href="#"

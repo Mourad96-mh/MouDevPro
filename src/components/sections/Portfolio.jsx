@@ -4,7 +4,14 @@ const imgs = ["web-dev.avif", "web-dev-1.avif", "setup.avif", "home-dev-1.avif"]
 
 const Portfolio = ({ cityName }) => {
   const { t } = useTranslation();
-  const projects = t("portfolio.projects", { returnObjects: true, city: cityName });
+
+  // returnObjects doesn't interpolate {{city}}, so we access each string individually
+  const projects = Array.from({ length: 4 }, (_, i) => ({
+    tag: t(`portfolio.projects.${i}.tag`),
+    title: t(`portfolio.projects.${i}.title`),
+    desc: t(`portfolio.projects.${i}.desc`, { city: cityName }),
+    alt: t(`portfolio.projects.${i}.alt`, { city: cityName }),
+  }));
 
   return (
     <section id="portfolio" className="portfolio container">
