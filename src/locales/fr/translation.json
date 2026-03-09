@@ -9,16 +9,16 @@
     "contactAria": "Contactez MouDev sur WhatsApp"
   },
   "hero": {
-    "h1": "Agence Web & Marketing Digital à {{city}} — MouDev",
-    "subheading": "Création de sites web professionnels, référencement SEO et Google Ads à {{city}}. Votre site web, votre meilleur commercial. Obtenez votre devis gratuit dès aujourd'hui.",
-    "cta": "Devis gratuit"
+    "h1": "Création Site Web {{city}} — Agence Web & Freelance",
+    "subheading": "Je crée votre site web professionnel à {{city}} avec l'expertise d'une agence et la réactivité d'un freelance. Site vitrine, application web sur mesure, landing page. Devis gratuit en 24h.",
+    "cta": "Devis gratuit en 24h"
   },
   "home": {
-    "h2": "Création de sites web & internet à {{city}} – Agence Marketing Digital au Maroc",
-    "p1": "Vous cherchez une agence web à {{city}} spécialisée dans la création de sites web professionnels, le référencement naturel (SEO) et la gestion de campagnes Google Ads ? MouDev est l'agence marketing digital de référence à {{city}} pour renforcer votre présence en ligne et générer des clients qualifiés. Demandez votre devis gratuit dès aujourd'hui.",
-    "p2": "MouDev conçoit votre site web professionnel à {{city}} — site vitrine, site catalogue, boutique e-commerce ou portail sur-mesure. Notre équipe de développeurs et webdesigners à {{city}} livre des sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google dès la mise en ligne.",
-    "p3": "Notre expertise en Google Ads et SEO à {{city}} vous permet de devancer vos concurrents sur les moteurs de recherche. De la conception à la maintenance web, MouDev assure votre transformation digitale de A à Z et accompagne les TPE, PME et grandes entreprises à {{city}} dans leur croissance en ligne.",
-    "cta": "Devis gratuit"
+    "h2": "Création de site web & de site internet à {{city}} — MouDev, Agence Web & Freelance",
+    "p1": "Vous cherchez une agence web à {{city}} spécialisée dans la création de site internet professionnel ? MouDev combine l'expertise d'une agence digitale et la flexibilité d'un freelance basé à {{city}}. Je conçois des sites vitrine, des applications web sur mesure et des landing pages qui convertissent. Devis gratuit en 24h.",
+    "p2": "MouDev crée votre site web professionnel à {{city}} — site vitrine dès 3990 DH, application web sur mesure ou landing page optimisée. Sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google. Livraison en 7 jours. Paiement après livraison.",
+    "p3": "Agence web et développeur freelance à {{city}}, je vous accompagne de A à Z : de la conception à la mise en ligne. Pas d'intermédiaire, contact direct, je m'occupe de tout. Contactez-moi pour recevoir votre devis gratuit.",
+    "cta": "Devis gratuit en 24h"
   },
   "packs": {
     "h2": "Nos formules pour créer votre site web",
@@ -98,24 +98,24 @@
     "h2": "Nos services à {{city}}",
     "web": {
       "title": "Création de site web & Webdesign",
-      "desc": "Site vitrine, catalogue, e-commerce et portail sur-mesure. Du webdesign soigné à la maintenance web, nous gérons votre présence en ligne de A à Z avec des technologies modernes et performantes."
+      "desc": "Site vitrine, landing page, application web sur mesure et portail e-commerce. Du webdesign soigné à la mise en ligne, je gère votre présence digitale de A à Z avec les mêmes standards qu'une grande agence web — à prix freelance."
     },
     "seo": {
       "title": "Référencement naturel (SEO)",
-      "desc": "Optimisez votre visibilité sur Google et générez un trafic organique durable grâce à une stratégie SEO locale et nationale adaptée à votre secteur d'activité et à votre marché."
+      "desc": "J'optimise votre visibilité sur Google et génère un trafic organique durable grâce à une stratégie SEO locale et nationale adaptée à votre secteur d'activité et à votre marché à {{city}}."
     },
     "ads": {
       "title": "Google Ads & Publicité en ligne",
-      "desc": "Campagnes Google Ads ciblées pour maximiser votre retour sur investissement. Nous gérons vos budgets publicitaires avec précision pour attirer des prospects qualifiés et augmenter vos conversions."
+      "desc": "Campagnes Google Ads ciblées pour maximiser votre retour sur investissement. Je gère vos budgets publicitaires avec la précision d'une agence pour attirer des prospects qualifiés et augmenter vos conversions."
     }
   },
   "process": {
     "h2": "Notre processus de création",
-    "subheading": "Une méthodologie éprouvée et transparente pour concevoir votre site web avec efficacité, dans les délais et selon votre budget.",
+    "subheading": "Une méthodologie d'agence, appliquée avec la réactivité d'un freelance — pour concevoir votre site web dans les délais et selon votre budget.",
     "steps": [
       {
         "title": "Analyse & Découverte",
-        "desc": "Nous commençons par comprendre vos objectifs commerciaux, votre cible et votre secteur. Cette phase inclut une analyse de vos concurrents et une étude de votre positionnement sur le marché."
+        "desc": "Je commence par comprendre vos objectifs commerciaux, votre cible et votre secteur. Cette phase inclut une analyse de vos concurrents et une étude de votre positionnement sur le marché."
       },
       {
         "title": "Conception & Design",
@@ -135,7 +135,7 @@
       },
       {
         "title": "Support & Évolution",
-        "desc": "Accompagnement continu après le lancement : support technique, mises à jour, évolution du site selon vos besoins et les tendances du marché digital."
+        "desc": "Je reste disponible après le lancement : support technique via WhatsApp, mises à jour et évolution du site selon vos besoins et les tendances du marché digital."
       }
     ]
   },
@@ -155,25 +155,25 @@
         "tag": "Site Vitrine",
         "title": "Clinique Esthétique",
         "desc": "Site vitrine moderne pour une clinique esthétique à {{city}} : design élégant, prise de rendez-vous en ligne, présentation des soins et optimisation SEO locale.",
-        "alt": "Création site vitrine clinique esthétique {{city}} - MouDev agence web"
+        "alt": "Création site vitrine clinique esthétique {{city}} - MouDev agence web freelance"
       },
       {
         "tag": "E-commerce",
         "title": "Boutique Mode",
         "desc": "Boutique en ligne complète pour une marque de mode : catalogue produits, panier, paiement sécurisé, gestion des stocks et interface d'administration intuitive.",
-        "alt": "Création site e-commerce boutique mode {{city}} - MouDev agence web"
+        "alt": "Création site e-commerce boutique mode {{city}} - MouDev agence web freelance"
       },
       {
         "tag": "Site Vitrine",
         "title": "Restaurant Gastronomique",
         "desc": "Site vitrine pour un restaurant à {{city}} : menu interactif, galerie photos, réservation en ligne, intégration Google Maps et fiche Google My Business optimisée.",
-        "alt": "Création site vitrine restaurant {{city}} - MouDev agence web"
+        "alt": "Création site vitrine restaurant {{city}} - MouDev agence web freelance"
       },
       {
         "tag": "Portail",
         "title": "Agence Immobilière",
         "desc": "Portail immobilier avec recherche avancée de biens, fiches propriétés détaillées, formulaire de contact et espace agent dédié — idéal pour les agences à {{city}}.",
-        "alt": "Création portail agence immobilière {{city}} - MouDev agence web"
+        "alt": "Création portail agence immobilière {{city}} - MouDev agence web freelance"
       }
     ]
   },
@@ -182,11 +182,11 @@
     "items": [
       {
         "q": "Combien coûte la création d'un site web à {{city}} ?",
-        "a": "Le tarif dépend du type et de la complexité du projet. Nos formules démarrent à partir d'un site vitrine simple jusqu'à des plateformes e-commerce complètes. Contactez-nous pour recevoir un devis personnalisé et gratuit adapté à votre budget et vos objectifs."
+        "a": "Le tarif dépend du type et de la complexité du projet. Nos formules démarrent à partir de 3990 DH pour un site vitrine professionnel. Contactez-nous pour recevoir un devis personnalisé et gratuit adapté à votre budget et vos objectifs."
       },
       {
         "q": "Combien de temps faut-il pour livrer un site web ?",
-        "a": "Un site vitrine est livré en 1 à 2 semaines, un site catalogue en 2 à 3 semaines, et un e-commerce en 3 à 5 semaines. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous nous fournissez."
+        "a": "Un site vitrine est livré en 7 jours, un site catalogue en 2 à 3 semaines, et un e-commerce en 3 à 5 semaines. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous nous fournissez."
       },
       {
         "q": "Mon site sera-t-il bien référencé sur Google à {{city}} ?",
@@ -219,32 +219,32 @@
     "items": [
       {
         "name": "Fatime Benjelloun",
-        "text": "C'est avec grand plaisir que nous tenons à exprimer notre entière satisfaction envers les services de MouDev. Une équipe professionnelle, réactive et à l'écoute depuis le premier jour."
+        "text": "C'est avec grand plaisir que je tiens à exprimer mon entière satisfaction envers les services de MouDev. Professionnel, réactif et à l'écoute depuis le premier jour."
       },
       {
         "name": "Amine Bennani",
-        "text": "MouDev a réalisé un travail excellent pour notre site vitrine. Livré dans les délais, optimisé pour le SEO et visuellement parfait. Je recommande vivement cette agence."
+        "text": "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement."
       },
       {
         "name": "Ahmed Ali",
-        "text": "Après plusieurs mauvaises expériences, j'ai enfin trouvé une agence web sérieuse. MouDev a créé exactement le site que je voulais, avec un vrai suivi et des conseils professionnels."
+        "text": "Après plusieurs mauvaises expériences avec des agences classiques, j'ai enfin trouvé un expert sérieux. MouDev a créé exactement le site que je voulais, avec un vrai suivi et des conseils professionnels."
       },
       {
         "name": "Mohammed Ben Ali",
-        "text": "Excellent travail ! Notre boutique en ligne génère maintenant des ventes régulières grâce au site e-commerce réalisé par MouDev. L'équipe est disponible et le support est au top."
+        "text": "Excellent travail ! Ma boutique en ligne génère maintenant des ventes régulières grâce au site e-commerce réalisé par MouDev. Disponible et le support est au top."
       }
     ]
   },
   "footer": {
-    "tagline": "Votre agence web & marketing digital à {{city}} et dans tout le Maroc. Création de sites web professionnels, SEO, Google Ads et webdesign sur-mesure.",
+    "tagline": "MouDev — agence web & freelance à {{city}}. Création de site internet professionnel, site vitrine dès 3990 DH, application web sur mesure et landing page. Basé à Casablanca, Maarif.",
     "services": {
       "heading": "Nos services",
       "links": [
         { "label": "Création de site web", "href": "#services" },
-        { "label": "Webdesign & Sites internet", "href": "#services" },
-        { "label": "Référencement naturel SEO", "href": "#services" },
-        { "label": "Google Ads & SEA", "href": "#services" },
-        { "label": "Maintenance web", "href": "#services" },
+        { "label": "Création de site internet", "href": "#services" },
+        { "label": "Site vitrine professionnel", "href": "#services" },
+        { "label": "Application web sur mesure", "href": "#services" },
+        { "label": "Landing page", "href": "#services" },
         { "label": "Nos formules & tarifs", "href": "#formules" }
       ]
     },
@@ -252,6 +252,6 @@
       "heading": "Contact",
       "hours": "Lun – Sam : 9h00 – 22h00"
     },
-    "copyright": "Tous droits réservés. Agence web & marketing digital à {{city}}, Maroc."
+    "copyright": "Tous droits réservés. Agence web & freelance à {{city}}, Maroc."
   }
 }

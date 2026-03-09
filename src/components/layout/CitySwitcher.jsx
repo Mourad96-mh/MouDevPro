@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useCityContext } from "../../context/CityContext";
 import { cityConfig } from "../../data/cityConfig";
 
-const CITIES = ["casablanca", "tanger", "marrakech"];
+const CITIES = ["casablanca", "rabat", "marrakech"];
 
 const CitySwitcher = () => {
   const { cityData } = useCityContext();

@@ -9,7 +9,7 @@ import useConversion from "../../hooks/useConversion";
 import { useCityContext } from "../../context/CityContext";
 import { cityConfig } from "../../data/cityConfig";
 
-const CITIES = ["casablanca", "tanger", "marrakech"];
+const CITIES = ["casablanca", "rabat", "marrakech"];
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
