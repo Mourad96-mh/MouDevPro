@@ -98,7 +98,7 @@
     "h2": "Nos services à {{city}}",
     "web": {
       "title": "Création de site web & Webdesign",
-      "desc": "Site vitrine, landing page, application web sur mesure et portail e-commerce. Du webdesign soigné à la mise en ligne, je gère votre présence digitale de A à Z avec les mêmes standards qu'une grande agence web — à prix freelance."
+      "desc": "Création de site internet professionnel à {{city}} — site vitrine, landing page, application web sur mesure et portail e-commerce. Du webdesign soigné à la mise en ligne, je gère votre présence digitale de A à Z avec les mêmes standards qu'une grande agence web — à prix freelance."
     },
     "seo": {
       "title": "Référencement naturel (SEO)",
@@ -206,11 +206,19 @@
       },
       {
         "q": "Intervenez-vous uniquement à {{city}} ou dans tout le Maroc ?",
-        "a": "MouDev intervient dans tout le Maroc et à l'international. Nous collaborons avec des clients à Casablanca, Tanger, Marrakech, Rabat, Fès, Agadir et bien d'autres villes. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo."
+        "a": "MouDev intervient dans tout le Maroc et à l'international. Nous collaborons avec des clients à Casablanca, Rabat, Marrakech, Fès, Agadir et bien d'autres villes. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo."
       },
       {
         "q": "Qu'est-ce qui est inclus dans l'hébergement de votre pack ?",
         "a": "L'hébergement inclus dans nos packs comprend : stockage SSD haute performance, certificat SSL (HTTPS), emails professionnels à votre nom de domaine, sauvegardes régulières et nom de domaine pour la première année. Disponibilité garantie à 99,9%."
+      },
+      {
+        "q": "Qu'est-ce qu'un site vitrine et combien coûte-t-il à {{city}} ?",
+        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 3990 DH, livré en 7 jours, responsive, optimisé SEO et hébergement inclus."
+      },
+      {
+        "q": "Quelle est la différence entre un freelance web et une agence web à {{city}} ?",
+        "a": "Une agence web dispose d'une équipe mais facture des frais de structure élevés. Un freelance web est plus accessible mais parfois limité en ressources. MouDev vous offre le meilleur des deux : l'expertise et la gamme de services d'une agence web à {{city}}, avec la réactivité et le prix compétitif d'un freelance. Contact direct, pas d'intermédiaire, paiement après livraison."
       }
     ]
   },

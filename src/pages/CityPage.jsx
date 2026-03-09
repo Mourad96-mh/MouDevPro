@@ -36,25 +36,47 @@ const CityPage = ({ city, lang }) => {
     setCityData({ ...data, currentLang: lang, currentCity: city });
   }, [city, lang, data, setCityData]);
 
+  const { name: cityName } = data;
+  const isRtl = lang === "ar";
+  const steps = t("process.steps", { returnObjects: true });
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     name: "MouDEV",
     url: data.canonical,
     description: data.metaDescription,
     telephone: "+212696964341",
+    image: "https://www.moudevpro.com/webdev-logo.png",
+    priceRange: "DH 3990 - DH 30000",
+    currenciesAccepted: "MAD",
+    paymentAccepted: "Cash, Virement bancaire",
     address: {
       "@type": "PostalAddress",
       streetAddress: data.address,
       addressLocality: data.name,
+      addressRegion: data.name,
       addressCountry: "MA",
+      postalCode: city === "casablanca" ? "20000" : city === "rabat" ? "10000" : city === "marrakech" ? "40000" : "",
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: data.geo.lat,
       longitude: data.geo.lng,
     },
-    areaServed: [{ "@type": "City", name: data.name }],
+    areaServed: [
+      { "@type": "City", name: "Casablanca" },
+      { "@type": "City", name: "Rabat" },
+      { "@type": "City", name: "Marrakech" },
+      { "@type": "Country", name: "Maroc" },
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "30",
+      bestRating: "5",
+      worstRating: "1",
+    },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -62,10 +84,11 @@ const CityPage = ({ city, lang }) => {
       closes: "22:00",
     },
     makesOffer: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.web.title"), description: t("services.web.desc") } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.seo.title"), description: t("services.seo.desc") } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.ads.title"), description: t("services.ads.desc") } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.web.title"), description: t("services.web.desc", { city: cityName }) } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.seo.title"), description: t("services.seo.desc", { city: cityName }) } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: t("services.ads.title"), description: t("services.ads.desc", { city: cityName }) } },
     ],
+    knowsLanguage: ["fr", "ar", "en"],
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+212696964341",
@@ -74,23 +97,58 @@ const CityPage = ({ city, lang }) => {
     },
   };
 
-  const { name: cityName } = data;
-  const isRtl = lang === "ar";
-  const steps = t("process.steps", { returnObjects: true });
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+      ...(city !== "casablanca" ? [{ "@type": "ListItem", position: 2, name: `Création Site Web ${cityName}`, item: data.canonical }] : []),
+    ],
+  };
+
+  const websiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "MouDEV",
+    url: "https://www.moudevpro.com/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.moudevpro.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   return (
     <>
       <Helmet htmlAttributes={{ lang, dir: isRtl ? "rtl" : "ltr" }}>
         <title>{data.metaTitle}</title>
         <meta name="description" content={data.metaDescription} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="MouDEV" />
+        <meta name="keywords" content={`création site web ${cityName}, agence web ${cityName}, développeur web freelance ${cityName}, site vitrine ${cityName}, création de site internet ${cityName}, application web sur mesure, landing page, référencement SEO ${cityName}, MouDEV`} />
         <link rel="canonical" href={data.canonical} />
         {Object.entries(data.hreflang).map(([hl, href]) => (
           <link key={hl} rel="alternate" hreflang={hl} href={href} />
         ))}
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="MouDEV" />
         <meta property="og:title" content={data.metaTitle} />
         <meta property="og:description" content={data.metaDescription} />
         <meta property="og:url" content={data.canonical} />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content={lang === "ar" ? "ar_MA" : lang === "en" ? "en_US" : "fr_MA"} />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={data.metaTitle} />
+        <meta name="twitter:description" content={data.metaDescription} />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        {/* JSON-LD */}
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteLd)}</script>
       </Helmet>
 
       <Hero cityName={cityName} />

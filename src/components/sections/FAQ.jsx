@@ -6,7 +6,8 @@ const FAQ = ({ cityName }) => {
   const { t } = useTranslation();
   const [openId, setOpenId] = useState(null);
 
-  const faqs = Array.from({ length: 8 }, (_, i) => ({
+  const faqItems = t("faq.items", { returnObjects: true });
+  const faqs = faqItems.map((item, i) => ({
     id: i + 1,
     question: t(`faq.items.${i}.q`, { city: cityName }),
     answer: t(`faq.items.${i}.a`, { city: cityName }),
