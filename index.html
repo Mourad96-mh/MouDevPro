@@ -50,35 +50,25 @@
 
     <script>
       function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") { window.location = url; }
+        var redirected = false;
+        var redirect = function () {
+          if (!redirected) {
+            redirected = true;
+            if (typeof url !== "undefined") { window.location = url; }
+          }
         };
         gtag("event", "conversion", {
           send_to: "AW-17548598231/XuDyCOb8kqMbENe36a9B",
           value: 100.0,
           currency: "MAD",
-          event_callback: callback,
+          event_callback: redirect,
         });
+        // Fallback: redirect after 1s if Google callback never fires
+        setTimeout(redirect, 1000);
         return false;
       }
     </script>
 
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
-        t = b.createElement(e); t.async = !0; t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-      fbq("init", "788065947556365");
-      fbq("track", "PageView");
-    </script>
   </head>
   <body>
     <noscript>

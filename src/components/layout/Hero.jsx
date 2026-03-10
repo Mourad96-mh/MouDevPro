@@ -15,7 +15,7 @@ const Hero = ({ cityName }) => {
         <p className="subheading sl-mb">{t("hero.subheading", { city: cityName })}</p>
         <Link
           className="link hero-link"
-          to="tel:+212696964341"
+          to={WA_URL}
           onClick={() => track(WA_URL)}
         >
           {t("hero.cta")}

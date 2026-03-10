@@ -808,6 +808,23 @@ li {
   }
 }
 
+/* RTL phones */
+@media (max-width: 37.5em) {
+  [dir="rtl"] .hero,
+  [dir="rtl"] .home__content {
+    flex-direction: column;
+  }
+
+  [dir="rtl"] .hero__content {
+    text-align: right;
+  }
+
+  [dir="rtl"] .nav__list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 /* Phones */
 @media (max-width: 37.5em) {
   html {
@@ -1292,10 +1309,43 @@ li {
 }
 
 @media (max-width: 56.25em) {
+  /* Fix: global row-reverse breaks column stacking on mobile */
+  [dir="rtl"] .hero,
+  [dir="rtl"] .home__content {
+    flex-direction: column;
+  }
+
+  /* Nav list: column on mobile, items aligned to the right for RTL */
   [dir="rtl"] .nav__list {
+    flex-direction: column;
     align-items: flex-end;
   }
 
+  [dir="rtl"] .nav__link {
+    text-align: right;
+  }
+
+  /* Header actions: keep row-reverse but prevent overflow */
+  [dir="rtl"] .header__actions {
+    flex-direction: row;
+  }
+
+  /* Hero content text: right-aligned on mobile RTL */
+  [dir="rtl"] .hero__content {
+    text-align: right;
+  }
+
+  /* Home text: right-aligned */
+  [dir="rtl"] .home__text {
+    text-align: right;
+  }
+
+  /* Mobile nav city links: right-aligned */
+  [dir="rtl"] .nav--open .nav__cities {
+    align-items: flex-end;
+  }
+
+  /* Lang switcher: bottom-right on mobile RTL */
   [dir="rtl"] .lang-switcher {
     left: auto;
     right: 1.6rem;

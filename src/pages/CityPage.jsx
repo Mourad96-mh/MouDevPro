@@ -166,7 +166,7 @@ const CityPage = ({ city, lang }) => {
             <p className="text sl-mb city-context">{data.cityContext}</p>
             <Link
               className="link hero-link"
-              to="tel:+212696964341"
+              to={WA_URL}
               onClick={() => track(WA_URL)}
             >
               {t("home.cta")}

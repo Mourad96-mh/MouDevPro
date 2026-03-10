@@ -8,9 +8,9 @@ const CallLinks = () => {
   return (
     <div className="cta">
       <a
-        href="#"
+        href={WA_URL}
         rel="noopener noreferrer"
-        title="Contact MouDev on WhatsApp"
+        title="Contact MouDev sur WhatsApp"
         className="link"
         onClick={() => track(WA_URL)}
       >
@@ -21,6 +21,7 @@ const CallLinks = () => {
         rel="noopener noreferrer"
         title="Appeler MouDev"
         className="link"
+        onClick={() => track(WA_URL)}
       >
         <HiMiniPhone className="cta-icon" />
       </a>
