@@ -1,0 +1,6 @@
+You requested that Google validate your fix for: Page indexing issues on your property, https://moudevpro.com/. The fix requested was for the following issue: 'Alternate page with proper canonical tag'.
+
+Some of your pages are still affected by this issue.
+
+Monitor validation progress and to learn how to fix remaining pages.
+

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { HiMiniPhone } from "react-icons/hi2";
 import useConversion from "../../hooks/useConversion";
 
 const Hero = ({ cityName }) => {
@@ -13,6 +14,11 @@ const Hero = ({ cityName }) => {
           {t("hero.h1", { city: cityName })}
         </h1>
         <p className="subheading sl-mb">{t("hero.subheading", { city: cityName })}</p>
+        <div className="hero__badges sl-mb">
+          <span className="hero__badge">✅ {t("hero.badge1")}</span>
+          <span className="hero__badge">✅ {t("hero.badge2")}</span>
+          <span className="hero__badge">✅ {t("hero.badge3", { city: cityName })}</span>
+        </div>
         <Link
           className="link hero-link"
           to={WA_URL}
@@ -20,6 +26,15 @@ const Hero = ({ cityName }) => {
         >
           {t("hero.cta")}
         </Link>
+        <a
+          href="tel:+212696964341"
+          className="hero__phone"
+          onClick={() => track(WA_URL)}
+          aria-label="Appeler MouDev"
+        >
+          <HiMiniPhone />
+          <span>{t("hero.phone")}</span>
+        </a>
       </div>
       <div className="hero__img">
         <img
