@@ -9,6 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // All routes with their hreflang alternates
 const routes = [
+  // ── Homepage (FR / EN / AR) ──────────────────────────────────────────────
   {
     url: "/",
     changefreq: "weekly",
@@ -42,10 +43,12 @@ const routes = [
       { lang: "x-default", url: `${BASE}/` },
     ],
   },
+
+  // ── City pages (old routes kept for Google Ads links) ────────────────────
   {
     url: "/agence-web-rabat/",
     changefreq: "weekly",
-    priority: 0.9,
+    priority: 0.8,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-rabat/` },
       { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
@@ -56,7 +59,7 @@ const routes = [
   {
     url: "/en/web-agency-rabat/",
     changefreq: "weekly",
-    priority: 0.7,
+    priority: 0.6,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-rabat/` },
       { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
@@ -67,7 +70,7 @@ const routes = [
   {
     url: "/ar/agence-web-rabat/",
     changefreq: "weekly",
-    priority: 0.7,
+    priority: 0.6,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-rabat/` },
       { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
@@ -78,7 +81,7 @@ const routes = [
   {
     url: "/agence-web-marrakech/",
     changefreq: "weekly",
-    priority: 0.9,
+    priority: 0.8,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
       { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
@@ -89,7 +92,7 @@ const routes = [
   {
     url: "/en/web-agency-marrakech/",
     changefreq: "weekly",
-    priority: 0.7,
+    priority: 0.6,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
       { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
@@ -100,7 +103,7 @@ const routes = [
   {
     url: "/ar/agence-web-marrakech/",
     changefreq: "weekly",
-    priority: 0.7,
+    priority: 0.6,
     links: [
       { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
       { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
@@ -108,6 +111,15 @@ const routes = [
       { lang: "x-default", url: `${BASE}/agence-web-marrakech/` },
     ],
   },
+
+  // ── New standalone pages ─────────────────────────────────────────────────
+  { url: "/casablanca/", changefreq: "weekly", priority: 1.0 },
+  { url: "/rabat/",      changefreq: "weekly", priority: 0.9 },
+  { url: "/marrakech/",  changefreq: "weekly", priority: 0.9 },
+  { url: "/tarifs/",     changefreq: "monthly", priority: 0.9 },
+  { url: "/ecommerce/",  changefreq: "monthly", priority: 0.8 },
+  { url: "/services/",   changefreq: "monthly", priority: 0.8 },
+  { url: "/contact/",    changefreq: "monthly", priority: 0.7 },
 ];
 
 (async () => {

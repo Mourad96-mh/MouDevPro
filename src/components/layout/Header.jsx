@@ -1,29 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { HiOutlinePhoneArrowUpRight, HiBars3, HiXMark } from "react-icons/hi2";
+import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
-import CitySwitcher from "./CitySwitcher";
-import useConversion from "../../hooks/useConversion";
 import { useCityContext } from "../../context/CityContext";
 import { cityConfig } from "../../data/cityConfig";
-
 const CITIES = ["casablanca", "rabat", "marrakech"];
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
-  const { track, WA_URL } = useConversion();
   const { cityData } = useCityContext();
-
-  const navLinks = [
-    { label: t("nav.services"), href: "#services" },
-    { label: t("nav.formules"), href: "#formules" },
-    { label: t("nav.realisations"), href: "#portfolio" },
-    { label: t("nav.faq"), href: "#faq" },
-  ];
-
   const cityLinks = cityData
     ? CITIES.map((city) => {
         const { name, canonical } = cityConfig[city][cityData.currentLang];
@@ -41,20 +29,6 @@ const Header = () => {
       <Logo />
 
       <nav className={`nav${menuOpen ? " nav--open" : ""}`}>
-        <ul className="nav__list">
-          {navLinks.map((link) => (
-            <li key={link.href} className="nav__item">
-              <a
-                href={link.href}
-                className="nav__link"
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
         {cityLinks.length > 0 && (
           <ul className="nav__list nav__cities">
             {cityLinks.map(({ city, name, path, active }) => (
@@ -73,20 +47,7 @@ const Header = () => {
       </nav>
 
       <div className="header__actions">
-        <CitySwitcher />
         <LanguageSwitcher />
-        <a
-          href="#"
-          onClick={() => track(WA_URL)}
-          rel="noopener noreferrer"
-          aria-label={t("nav.contactAria")}
-          className="link"
-        >
-          <span className="icon">
-            <HiOutlinePhoneArrowUpRight />
-          </span>
-          <span className="phone-num">+212 696 964 341</span>
-        </a>
         <button
           className="nav__toggle"
           onClick={() => setMenuOpen(!menuOpen)}

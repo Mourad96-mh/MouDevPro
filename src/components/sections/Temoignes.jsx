@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const IMAGES = ["customer-1.webp", "customer-2.webp", "customer-3.avif", "customer-4.webp"];
+const IMAGES = ["/customer-1.webp", "/customer-2.webp", "/customer-3.avif", "/customer-4.webp"];
 
 const Temoignes = () => {
   const { t } = useTranslation();

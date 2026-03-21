@@ -1,392 +1,411 @@
-# MouDEV Agency Website — CLAUDE.md
+# CLAUDE.md — moudevpro.com
 
-## Project Overview
-
-Multi-city, multi-language digital marketing agency website for **MouDEV** based in Casablanca, Morocco. The site targets 3 cities (Casablanca, Tanger, Marrakech) in 3 languages (French, English, Arabic). Primary goal: lead generation via WhatsApp with Google Ads and Facebook Pixel conversion tracking.
-
-> **Active optimization goal:** Align landing page content with running Google Ads campaign (`web-dev-casablanca`) to fix low quality scores, reduce CPC, and increase conversion rate.
+> Read this file entirely before making any changes to the codebase.
+> This file contains project context, competitor list, SEO strategy, and content rules.
 
 ---
 
-## Tech Stack
+## 1. Project overview
 
-- **Framework:** React 18 + Vite 6
-- **Routing:** React Router DOM 7
-- **i18n:** i18next + react-i18next
-- **Head management:** react-helmet-async
-- **Icons:** react-icons
-- **Deployment:** Vercel
-- **CSS:** Custom CSS with CSS variables — NO Tailwind, NO Bootstrap
-
-## Commands
-
-```bash
-npm run dev        # Start development server (Vite)
-npm run build      # Build for production + generate sitemap
-npm run lint       # Run ESLint
-npm run preview    # Preview production build locally
-```
-
-## Project Structure
-
-```
-src/
-├── main.jsx              # Entry point
-├── App.jsx               # Router + all 9 routes defined here
-├── index.css             # Global styles and CSS variables
-├── i18n.js               # i18next init (default lang: French)
-├── pages/
-│   └── CityPage.jsx      # Main dynamic page (city + language props)
-├── components/
-│   ├── layout/           # Header, Footer, Hero, Logo, CitySwitcher, LanguageSwitcher, CallLinks, AppLayout
-│   └── sections/         # Portfolio, Stats, FAQ, ClientLogos, Temoignes
-├── context/
-│   └── CityContext.jsx   # Global state: current city + language
-├── data/
-│   └── cityConfig.js     # Per-city metadata (addresses, geo, meta tags, hreflang)
-├── hooks/
-│   └── useConversion.js  # Conversion tracking (Facebook Pixel + Google Ads → WhatsApp)
-└── locales/
-    ├── fr/translation.json
-    ├── en/translation.json
-    └── ar/translation.json
-public/                   # Static assets (AVIF/WebP images, robots.txt, sitemap.xml)
-sitemap-generator.js      # Node script run after build to generate sitemap
-vercel.json               # SPA rewrites: all paths → index.html
-```
-
-## Routing
-
-9 routes (3 cities × 3 languages), all defined in `App.jsx`:
-
-| Path                    | City       | Language |
-| ----------------------- | ---------- | -------- |
-| `/`                     | Casablanca | French   |
-| `/en`                   | Casablanca | English  |
-| `/ar`                   | Casablanca | Arabic   |
-| `/agence-web-rabat`     | Rabat      | French   |
-| `/agence-web-marrakech` | Marrakech  | French   |
-| + EN/AR variants        | ...        | ...      |
-
-All routes render `<CityPage>` with `city` and `lang` props.
-
-## Styling Conventions
-
-- **No CSS framework.** All styles in `src/index.css` with CSS custom properties.
-- CSS variables defined on `:root`: color palette (scarlet red, gray scale, blue-violet accent), spacing scale, font size scale.
-- Font: **Rubik** (Google Fonts).
-- Utility classes: `.lg-mb`, `.md-mb`, `.sl-mb`, `.center-text`, `.heading--primary`, `.secondary-heading`, `.text`, `.img`
-- BEM-like naming for component-specific styles.
-- Responsive: mobile-first, hamburger nav on mobile.
-- Images: AVIF/WebP with lazy loading (`loading="lazy"`).
-
-## SEO Patterns
-
-Every page uses `react-helmet-async` for:
-
-- Dynamic `<title>`, `<meta description>`, Open Graph tags
-- Canonical URLs
-- Hreflang alternate links for all language variants
-- Schema.org JSON-LD: `ProfessionalService`, `LocalBusiness`, `FAQPage`
-
-City-specific metadata lives in `src/data/cityConfig.js`. When adding a new city or language, update that file and `App.jsx` routes.
-
-## Internationalization
-
-- `src/i18n.js` loads all 3 translation files; default fallback is French.
-- Translation keys use `{{city}}` interpolation for dynamic city names.
-- Language is set via URL prefix: `/en/...`, `/ar/...`, default is French (no prefix).
-- RTL layout is expected for Arabic — keep that in mind when editing CSS.
-
-## Conversion Tracking
-
-`src/hooks/useConversion.js` fires both:
-
-1. **Facebook Pixel** (`fbq('track', 'Lead')`)
-2. **Google Ads** (`gtag_report_conversion`)
-
-Then redirects to WhatsApp (`+212696964341`). Call this hook for any CTA button that should be tracked.
-
-> **Additional conversion events to track** (not yet implemented):
->
-> - Phone number click (tel: link)
-> - WhatsApp button click (floating button)
-> - Contact form submission
-> - All 3 should fire `gtag_report_conversion` + `fbq('track', 'Lead')`
-
-## Key Decisions & Constraints
-
-- **Do not add a CSS framework.** The project intentionally uses plain CSS variables.
-- **Do not modify `vercel.json` rewrites** — they are required for SPA routing.
-- **Build always runs `sitemap-generator.js`** after Vite — do not separate these.
-- All text content is in `locales/` JSON files — avoid hardcoded strings in components.
-- AVIF is the preferred image format; WebP as fallback. No JPEG/PNG for hero images.
-- Business phone for WhatsApp: `+212696964341` — do not change without confirming with user.
-
-## Adding Content
-
-- **New service package:** Edit `CityPage.jsx` packages section + add translations to all 3 locale files.
-- **New FAQ item:** Add to `FAQ.jsx` + all locale files. Keep Schema.org FAQPage JSON-LD in sync.
-- **New portfolio project:** Edit `Portfolio.jsx` + add image to `public/`.
-- **New city:** Add config in `cityConfig.js`, new routes in `App.jsx`, update `sitemap-generator.js`.
+**Site:** moudevpro.com  
+**Owner:** Freelance web developer based in Casablanca, Morocco  
+**Goal:** Convert visitors into leads via quote requests. Every change must either improve Google ranking for target keywords or increase the quote request rate.
 
 ---
 
-## 🎯 Google Ads Campaign Context
+## 2. Business positioning
 
-> Read this section before touching any content, copy, meta tags, or page structure.
+You are a **freelance web developer** — not an agency. This is the core competitive advantage.
 
-### Business Profile
+**Key differentiators:**
 
-- **Type:** Agence web & freelance — blend both. Use "je" for personal touch (speed, direct contact, pricing) and "agence" for range of services and professionalism. Core message: **"L'expertise d'une agence, la réactivité d'un freelance."**
-- **Location:** Quartier Maarif, Casablanca, Maroc
-- **Phone:** +212 696 964 341
-- **Services:** Site Vitrine · Application Web Sur Mesure · Landing Page
+- Client speaks directly with the developer — no account managers, no handoffs
+- Faster delivery than agencies: 2–3 weeks site vitrine, 4–6 weeks e-commerce
+- Lower price than agencies — no team overhead passed to the client
+- Same technical quality as agencies: React, WordPress, WooCommerce, custom builds
+- Serving Casablanca, Rabat, and Marrakech (remote delivery, no travel fees)
 
-### Active Campaign
-
-- **Campaign name:** `web-dev-casablanca`
-- **Ad group:** `developer casablanca`
-- **Cities targeted:** Casablanca (primary), Marrakech, Rabat
-- **Daily budget:** 80–100 MAD
-- **Bidding:** Maximize Clicks → Target CPA after 30 conversions
-- **Goal:** Lead generation (WhatsApp + form)
-
-### Ad Headlines (15 in rotation)
-
-```
-1.  Création Site Web Casablanca
-2.  Développeur Web Freelance
-3.  Application Web Sur Mesure
-4.  Landing Page Qui Convertit
-5.  Site Vitrine Dès 3990 DH
-6.  Devis Gratuit en 24h
-7.  Livraison en 7 Jours
-8.  Site Web Pro Pour PME
-9.  100% Satisfaction Garantie
-10. Site Responsive & Optimisé
-11. Startups & PME Bienvenues
-12. Votre Site Clé en Main
-13. Pas D'Intermédiaire
-14. MouDEV – Expert Web Maroc
-15. Appelez Maintenant
-```
-
-### Ad Descriptions (4 in rotation)
-
-```
-1. Site vitrine professionnel à Casablanca. Design moderne, livraison en 7 jours.
-2. Freelance web disponible — pas d'intermédiaire, devis gratuit en 24h.
-3. Développement web sur mesure pour startups & PME. Prix compétitif à Casablanca.
-4. Landing page ou app web sur mesure — contactez MouDEV et recevez votre devis.
-```
-
-### ⚠️ Low Quality Score Keywords — Fix These First
-
-Google has flagged these keywords — the Casablanca landing page (`/`) must match them:
-
-| Keyword                        | Status         | Required Fix                   |
-| ------------------------------ | -------------- | ------------------------------ |
-| `création site web casablanca` | 🔴 Low quality | Must appear in H1 on `/` route |
-| `création de site internet`    | 🔴 Low quality | Must appear in body copy       |
-
-**Low quality score = Google charges more per click AND shows ads less.** Fixing these is the highest-priority content task.
+**Tone:** Professional but personal. Always write in first person singular — "je crée", "je livre", "contactez-moi". Never use "nous" or "notre équipe" — that signals an agency.
 
 ---
 
-## 📄 Landing Page Requirements (Casablanca — `/` route)
+## 3. Competitors — analysis
 
-### Meta Tags — Update in `cityConfig.js`
+> Last updated: 2026-03-20. technopek.ma was unreachable — skip for now.
+
+### billiontech.ma
+
+- **Type:** Agency (positioned as "Agence")
+- **Title:** "Billiontech | Agence Développement Web & Marketing Casablanca"
+- **Services:** Web apps, mobile apps, MVP, digital marketing, startup support
+- **Cities:** Casablanca (Rivièra, Bd Ghandi) — single city focus
+- **Pricing:** Not displayed
+- **CTA:** No prominent CTA found on homepage
+- **Keywords used:** "Agence Développement Web", "Marketing Casablanca", "webapps", "applications mobiles", "MVP", "startup"
+- **Weakness:** Startup/MVP niche — not serving classic PME or vitrine clients. No pricing transparency. Agency overhead.
+- **How to beat:** Target the PME/vitrine segment they ignore. Show transparent pricing. Emphasise direct contact vs agency handoffs.
+
+### helloworld-agency.com
+
+- **Type:** Full-service agency ("L'agence des ambitieux")
+- **Title:** "Agence Marketing digital Marrakech & Casablanca | Agence communication"
+- **H1:** "Agence leader en marketing digital et influence"
+- **Services:** Website creation, mobile apps, SEO, lead gen, graphic design, brand strategy, photo/video, influencer marketing, social media, AI automation — very broad
+- **Cities:** Marrakech + Casablanca (primary), also Rabat, Tangier, Agadir, Fès, Dubai, London
+- **Pricing:** Not displayed
+- **CTA:** "Booster ma visibilité", "Demander un devis", "Contactez un expert"
+- **Keywords used:** "agence marketing digital", "création de sites web", "référencement SEO", "génération de leads", "stratégie digitale"
+- **Weakness:** Scattered across too many cities and services — feels impersonal. No pricing. Heavy agency positioning means high cost and slow turnaround.
+- **How to beat:** Emphasise speed (2–3 weeks vs their vague timelines), transparent pricing, and direct developer contact. They're trying to be everything — be the specialist.
+
+### mediazain.com
+
+- **Type:** Full-service communication agency
+- **Title:** "Accueil | Mediazain"
+- **H1:** "MEDIAZAIN" (brand name only — no keyword in H1)
+- **Services:** Brand strategy, digital campaigns, web/mobile dev, audiovisual production, graphic design, community management
+- **Cities:** Not specified — no local targeting visible
+- **Pricing:** Not displayed
+- **CTA:** "Nos services" — very weak, no urgency
+- **Keywords used:** Generic — communication, digital, web development. No city-level SEO.
+- **Weakness:** Zero local SEO targeting. Weak CTA. No pricing. H1 is just the brand name — terrible for QS and rankings.
+- **How to beat:** Dominate city-level keywords they're ignoring entirely. Strong local signals (Casablanca, Rabat, Marrakech) give a huge SEO advantage over them.
+
+### fes-marketing.net
+
+- **Type:** Agency ("agence de communication créative")
+- **Title:** "Fes Marketing Service Agence de Communication Digital à Fès"
+- **H1:** "une agence de communication créative"
+- **Services:** Digital marketing, web dev, SMS/email marketing, mobile apps, graphic design, SEO, hosting, events, print, IT security
+- **Cities:** Fès only
+- **Pricing:** SMS packages only (600–4500 DH) — no web pricing
+- **CTA:** "DÉMARRER", "DEMANDEZ UN DEVIS", "Demander Maintenant"
+- **Keywords used:** "agence communication", "marketing digital", "création sites", "développement", "Fès"
+- **Weakness:** Geographically locked to Fès. Extremely scattered services (SMS, print, IT security). Not competing in Casablanca/Rabat/Marrakech.
+- **How to beat:** Not a direct competitor. Mention availability in Casablanca/Rabat/Marrakech to capture clients they can't serve.
+
+---
+
+### Summary table
+
+| Competitor            | Type            | Cities                            | Price range    | Main weakness                              | How to beat them                                      |
+| --------------------- | --------------- | --------------------------------- | -------------- | ------------------------------------------ | ----------------------------------------------------- |
+| technopek.ma          | Unknown         | Unknown                           | Unknown        | Unknown (site unreachable)                 | —                                                     |
+| billiontech.ma        | Agency          | Casablanca only                   | Not displayed  | Startup/MVP niche, ignores PME vitrine     | Target PME with transparent pricing + direct contact  |
+| helloworld-agency.com | Full-service agency | Marrakech, Casa, Rabat, +intl  | Not displayed  | Too broad, impersonal, no pricing          | Be the specialist: fast, transparent, local           |
+| mediazain.com         | Communication agency | Not specified (no local SEO) | Not displayed  | No city targeting, weak CTA, brand H1     | Dominate city keywords they completely ignore         |
+| fes-marketing.net     | Agency          | Fès only                          | SMS only       | Locked to Fès, scattered services          | Not a direct rival — target their city gaps           |
+
+---
+
+## 4. Target audience
+
+**Persona 1 — Casablanca entrepreneur**
+
+- PME or startup owner, 25–45 years old
+- Searches: "création site web casablanca", "développeur web casablanca", "prix site web casablanca"
+- Wants: professional result, fast delivery, transparent pricing
+- Fear: paying a lot and getting a mediocre result
+
+**Persona 2 — Marrakech tourism operator**
+
+- Hotel, riad, or restaurant owner
+- Searches FR + EN: "site web riad marrakech", "hotel website marrakech", "site réservation marrakech"
+- Wants: multilingual site, online booking system, beautiful design
+- Fear: losing direct bookings to Booking.com commissions
+
+**Persona 3 — Rabat business / NGO / startup**
+
+- Government-adjacent orgs, startups, NGOs
+- Searches: "création site web rabat", "développeur web rabat"
+- Wants: clean institutional design, reliable developer, SEO visibility
+
+**Persona 4 — Price researcher (all cities)**
+
+- Comparing options before deciding
+- Searches: "prix site web maroc", "devis site web casablanca", "tarif développeur web maroc"
+- Needs: a dedicated pricing page with transparent tiers
+
+---
+
+## 5. SEO keyword strategy
+
+### 5.1 Primary keywords — must appear in page title, H1, and first paragraph
+
+| Keyword                         | Target page                |
+| ------------------------------- | -------------------------- |
+| création site web casablanca    | / (homepage) + /casablanca |
+| développeur web casablanca      | / (homepage) + /casablanca |
+| création site web maroc         | / (homepage)               |
+| freelance développeur web maroc | / (homepage)               |
+| prix site web maroc             | /tarifs                    |
+| devis site web maroc            | /tarifs + /contact         |
+| création site web rabat         | /rabat                     |
+| développeur web rabat           | /rabat                     |
+| création site web marrakech     | /marrakech                 |
+| site web hôtel marrakech        | /marrakech                 |
+| site web riad marrakech         | /marrakech                 |
+| hotel website marrakech         | /marrakech                 |
+| site e-commerce maroc           | /ecommerce                 |
+| boutique en ligne casablanca    | /ecommerce                 |
+| site vitrine maroc              | /services                  |
+| refonte site web maroc          | /services                  |
+
+### 5.2 Supporting keywords — use in body copy, alt text, meta descriptions
+
+```
+site web sur mesure maroc
+site web clé en main maroc
+création site vitrine maroc
+site vitrine casablanca / rabat / marrakech
+application web maroc
+site réservation riad maroc
+riad website design marrakech
+hotel website design morocco
+web developer casablanca / rabat / marrakech / morocco
+website design morocco / casablanca
+freelance web developer morocco
+ecommerce website morocco
+تصميم موقع الدار البيضاء
+تصميم موقع الرباط
+تصميم موقع مراكش
+متجر إلكتروني المغرب
+موقع فندق مراكش
+```
+
+### 5.3 Keyword rules for every page edit
+
+1. Every `<title>` must contain the city + service keyword for that page
+2. Every `<h1>` must contain the primary keyword naturally
+3. Meta description: 150–160 chars, primary keyword + CTA ("Devis gratuit")
+4. Image `alt` attributes: descriptive + keyword where natural
+5. Internal links: use keyword-rich anchor text, never "cliquez ici"
+6. URL slugs: `/casablanca`, `/rabat`, `/marrakech`, `/tarifs`, `/ecommerce`, `/services`, `/contact`
+
+### 5.4 Google Ads QS alignment rule
+
+**This is critical.** For every keyword running in Google Ads, the landing page must contain that keyword in:
+
+1. The `<title>` tag
+2. The `<h1>` tag
+3. The first 100 words of body copy
+
+Currently broken for: "création site web Casablanca" (QS 2). Fix the homepage/casablanca page title and H1 first.
+
+---
+
+## 6. Site structure
+
+```
+moudevpro.com/
+├── /                  Homepage — national, Casablanca primary
+├── /casablanca        City landing page
+├── /rabat             City landing page
+├── /marrakech         City landing page — tourism angle
+├── /services          All services overview
+├── /ecommerce         E-commerce dedicated page
+├── /tarifs            Pricing page — critical for price-intent searches
+└── /contact           Quote request form
+```
+
+### Homepage requirements
+
+- H1: "Création de site web professionnel à Casablanca — Développeur Freelance Maroc"
+- Intro paragraph: mention Casablanca, Rabat, Marrakech, freelance, devis gratuit
+- Services section: site vitrine, e-commerce, application web, refonte
+- Why freelance > agency section
+- Pricing teaser → link to /tarifs
+- Portfolio
+- Testimonials
+- CTA above the fold: "Demandez votre devis gratuit — Réponse en 24h"
+
+### City page requirements (Casablanca, Rabat, Marrakech)
+
+- Unique H1 mentioning the city
+- Unique intro paragraph — never duplicate homepage copy
+- Local context paragraph:
+  - Casablanca: economic capital, PME, e-commerce
+  - Rabat: startups, NGOs, institutional
+  - Marrakech: tourism, hotels, riads, restaurants
+- Anchor sections: `#services`, `#tarifs`, `#ecommerce`, `#contact`
+- City-specific CTA: "Devis gratuit — [Ville]"
+
+### Marrakech page special requirements
+
+- H1 must mention hôtels, riads, or restaurants
+- Tourism-specific section: booking system, réservation en ligne, multilingual
+- English section or bilingual content (hotel owners search in EN)
+- Target: "site web hôtel marrakech", "riad website marrakech", "hotel website design morocco"
+
+### Pricing page (/tarifs) requirements
+
+- Real standalone page, not a section
+- 3 tiers: site vitrine / e-commerce / application web sur mesure
+- Each tier: price range, what's included, delivery time
+- CTA on each tier: "Demander ce pack"
+- Captures all "prix" and "devis" keyword traffic
+
+---
+
+## 7. Technical SEO
+
+### Page title templates
+
+| Page        | Title                                                               |
+| ----------- | ------------------------------------------------------------------- |
+| Homepage    | Création Site Web Casablanca \| Développeur Web Freelance Maroc     |
+| /casablanca | Création Site Web à Casablanca \| Développeur Freelance Maroc       |
+| /rabat      | Création Site Web à Rabat \| Développeur Web Freelance Maroc        |
+| /marrakech  | Création Site Web Marrakech \| Hôtels, Riads, Restaurants           |
+| /tarifs     | Prix Création Site Web Maroc \| Tarifs Transparents & Devis Gratuit |
+| /ecommerce  | Site E-commerce Maroc \| Boutique en Ligne Professionnelle          |
+| /services   | Services Web Freelance \| Vitrine, E-commerce, Application          |
+| /contact    | Devis Gratuit Site Web Maroc \| Réponse en 24h                      |
+
+### Required meta tags on every page
 
 ```html
-<title>Création Site Web Casablanca | Freelance Web | MouDEV</title>
+<title>[Keyword — City] | Développeur Web Freelance Maroc</title>
 <meta
   name="description"
-  content="Création site web professionnel à Casablanca. Freelance développeur web — site vitrine, app sur mesure, landing page. Devis gratuit en 24h. Livraison en 7 jours."
+  content="[Service] à [Ville]. Développeur web freelance, livraison 2–3 semaines, devis gratuit 24h. Site professionnel, SEO inclus."
 />
+<meta property="og:title" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:url" content="https://www.moudevpro.com/[page]" />
+<link rel="canonical" href="https://www.moudevpro.com/[page]" />
 ```
 
-### H1 — CRITICAL (fixes quality score)
+### Structured data (add to homepage and all city pages)
 
-```
-Création Site Web Casablanca
-```
-
-Full suggestion: **"Création Site Web Casablanca — Freelance Web Professionnel"**
-
-> This exact phrase must be the H1 on the `/` route. Update the hero title key in `fr/translation.json`.
-
-### Keyword Density Requirements
-
-These phrases must appear naturally in the French translation of the Casablanca page:
-
-| Phrase                                 | Min occurrences | Where                             |
-| -------------------------------------- | --------------- | --------------------------------- |
-| `création site web Casablanca`         | 3x              | H1, services section, footer area |
-| `développeur web freelance Casablanca` | 2x              | Hero subtitle, about section      |
-| `site vitrine Casablanca`              | 2x              | Services card, body copy          |
-| `application web sur mesure`           | 1x              | Services card                     |
-| `landing page`                         | 1x              | Services card                     |
-| `devis gratuit`                        | 2x              | Hero CTA, contact section         |
-| `Casablanca`                           | 5x+             | Throughout                        |
-
-### Above-the-Fold Checklist (Hero component)
-
-Every visitor from Google Ads must see this without scrolling:
-
-- [ ] H1 containing `Création Site Web Casablanca`
-- [ ] Subtitle mentioning freelance + Casablanca
-- [ ] Primary CTA button: `"Devis Gratuit en 24h"` → fires `useConversion` hook
-- [ ] Phone number visible: `+212 696 964 341`
-- [ ] At least 2 trust badges: `✅ Livraison en 7 Jours` · `✅ Paiement après livraison` · `✅ Basé à Casablanca`
-
-### Page Structure (for `CityPage.jsx` Casablanca)
-
-```
-[HEADER]        Logo | Nav | Tel: +212 696 964 341
-
-[HERO]          H1: Création Site Web Casablanca
-                Subtitle: Freelance développeur web — Maarif, Casablanca
-                CTA: "Devis Gratuit en 24h" → useConversion()
-                Trust badges: Livraison 7J · Paiement après livraison · Basé Casablanca
-
-[SERVICES]      3 cards:
-                  • Site Vitrine — Dès 3990 DH
-                  • Application Web Sur Mesure
-                  • Landing Page
-
-[WHY MOUDEV]    Freelance vs Agence comparison
-                Speed · Price · Direct contact · Local presence
-
-[PORTFOLIO]     3–6 projects (Portfolio.jsx)
-
-[TESTIMONIALS]  2–3 client quotes with name + city (Temoignes.jsx)
-
-[CONTACT FORM]  Short: Nom + Téléphone + Type de projet + Submit
-                Button: "Recevoir Mon Devis Gratuit" → useConversion()
-                Reassurance: "Réponse sous 24h — Aucun engagement"
-                + WhatsApp floating button
-
-[FOOTER]        Quartier Maarif, Casablanca | Links | Legal
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MouDevPro — Développeur Web Freelance",
+  "description": "Création de site web professionnel à Casablanca, Rabat et Marrakech. Freelance spécialisé en site vitrine, e-commerce et application web.",
+  "url": "https://www.moudevpro.com",
+  "telephone": "[YOUR_PHONE]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Casablanca",
+    "addressCountry": "MA"
+  },
+  "areaServed": ["Casablanca", "Rabat", "Marrakech", "Maroc"],
+  "priceRange": "MAD",
+  "serviceType": [
+    "Création site web",
+    "Site e-commerce",
+    "Application web",
+    "Refonte site web"
+  ]
+}
 ```
 
-### Contact Form (not yet built — add to `CityPage.jsx`)
+### Performance requirements (Core Web Vitals)
 
-```jsx
-// Fields: name, phone/email, project type (dropdown), submit
-// On submit: fire useConversion() then show confirmation message
-// Project type options: Site Vitrine / Application Web / Landing Page / Autre
-// Reassurance text below button: "Réponse sous 24h — Aucun engagement"
+- LCP: < 2.5s
+- CLS: < 0.1
+- INP: < 200ms
+- Images: WebP format, explicit width/height, lazy load below fold
+- No render-blocking scripts above the fold
+- Fonts: preload critical font files
+
+---
+
+## 8. Content rules
+
+### Always
+
+- Write in French as primary language
+- Use first person singular: "je crée", "je livre", "contactez-moi"
+- Lead with outcome: "Votre site livré en 3 semaines" not "Notre processus de développement"
+- Mention "devis gratuit sous 24h" on every page
+- Add English content on /marrakech for tourism operators
+
+### Never
+
+- Use "nous" or "notre équipe" — you are a freelancer not an agency
+- Make unverifiable superlatives: "N°1 au Maroc", "meilleur développeur"
+- Copy competitor copy
+- Use generic filler: "solution innovante", "à la pointe de la technologie"
+- Bury the CTA — it must appear above the fold and after every major section
+
+### Key differentiator phrases (use naturally in copy)
+
+```
+"Vous parlez directement avec le développeur"
+"Pas d'intermédiaire, pas d'agence"
+"Qualité agence, prix freelance"
+"Livraison en 2 à 3 semaines"
+"Devis gratuit et transparent sous 24h"
+"React, WordPress, WooCommerce — selon vos besoins"
+"Disponible à Casablanca, Rabat et Marrakech"
 ```
 
 ---
 
-## ✍️ Tone & Voice
+## 9. CTA standards
 
-- **Language:** French primary · Arabic secondary · English for `/en` routes
-- **Person:** Mix "je" (direct contact, speed, pricing) with "nous/agence" (services, process, results). Never sound like a big cold agency — always personal and accessible.
-- **Tone:** Expert but approachable — trusted local professional with agency-level quality
+### CTA copy variants
 
-### ✅ Write like this:
+```
+Demandez votre devis gratuit        ← primary, above fold
+Obtenir un devis en 24h             ← secondary, mid-page
+Devis gratuit — Casablanca          ← city pages
+Devis gratuit — Rabat               ← city pages
+Devis gratuit — Marrakech           ← city pages
+Je veux ce pack →                   ← pricing page
+```
 
-> "Je crée votre site web professionnel à Casablanca avec l'expertise d'une agence et la réactivité d'un freelance. Devis gratuit en 24h."
+### CTA rules
 
-### ❌ Not like this:
-
-> "Notre équipe d'experts vous accompagne dans votre transformation digitale avec des solutions innovantes et sur mesure."
-
-### Key phrases to use repeatedly:
-
-- `livraison en 7 jours`
-- `pas d'intermédiaire`
-- `basé à Casablanca / Maarif`
-- `dès 3990 DH`
-- `devis gratuit en 24h`
-- `je m'occupe de tout`
-- `paiement après livraison`
+- Must be visible without scrolling on mobile
+- Link to contact form or WhatsApp
+- Use high-contrast colour vs background
+- Never use: "En savoir plus", "Cliquez ici", "Contactez-nous" (too weak)
 
 ---
 
-## ⚔️ Competitive Positioning
+## 10. What not to change without explicit instruction
 
-| Competitor                    | Their Weakness                   | MouDEV Counter                               |
-| ----------------------------- | -------------------------------- | -------------------------------------------- |
-| Rythme Media (rythmedia.com)  | Agency overhead, expensive       | "Contact direct — pas d'intermédiaire"       |
-| Monkey Lab (monkeylab.ma)     | Premium, targets big brands only | "Pour les PME et startups — prix accessible" |
-| Eleven Media (elevenmedia.ma) | 16 years old, dated feel         | "Technologies modernes, livraison rapide"    |
-| Guide Web (guide-web.ma)      | Races to bottom on price         | "Qualité professionnelle à prix compétitif"  |
-| site-vitrine.ma               | Based in Marrakech, not local    | "Basé à Casablanca — disponible en personne" |
-
-**Core differentiators to always surface in content:**
-
-1. 🚀 Livraison en 7 jours
-2. 💬 Contact direct — pas d'intermédiaire
-3. 📍 Basé à Casablanca (Maarif)
-4. 💰 Dès 3990 DH — prix transparent dès le départ
-5. ✅ Paiement après livraison
+- Do not modify URL slugs — they are linked from active Google Ads campaigns
+- Do not remove anchor sections (#tarifs, #ecommerce, #freelance) — Google Ads links to them
+- Do not add `noindex` to any page
+- Do not change `<title>` tags without checking the Google Ads keyword alignment in section 5.4
+- Do not change the Final URL in Google Ads without updating the page first
 
 ---
 
-## 🌍 City-Specific Notes
+## 11. Active Google Ads keywords (for QS alignment reference)
 
-### Casablanca (`/`) — PRIMARY
+These keywords are currently running. Their landing pages must match.
 
-- Most of the ad budget goes here
-- H1 must contain `Création Site Web Casablanca`
-- Quality score fix is urgent — prioritize this route above all others
-
-### Marrakech (`/agence-web-marrakech`)
-
-- H1: `Création Site Web Marrakech`
-- Competitor site-vitrine.ma is based here — differentiate with "freelance local" angle
-- Same structure as Casablanca
-
-### Rabat (`/agence-web-rabat`)
-
-- H1: `Création Site Web Rabat`
-- Capital city — administration, startups, PME audience
-- Same structure as Casablanca
-
----
-
-## 📊 Campaign Performance Targets
-
-| Metric                           | Current          | Target       |
-| -------------------------------- | ---------------- | ------------ |
-| Quality Score (main keywords)    | 🔴 Low (flagged) | 7/10 minimum |
-| CTR from ads                     | ~6.74%           | > 10%        |
-| Conversion rate (visitor → lead) | Unknown          | > 5%         |
-| Cost per conversion              | 9.81 MAD         | < 15 MAD     |
-| Avg. CPC                         | 4.95 MAD         | < 6 MAD      |
-
----
-
-## 🔧 Technical Performance Requirements
-
-Google Ads Quality Score is partly based on **landing page experience**:
-
-- **Mobile-first** — majority of Casablanca traffic is mobile
-- **Page speed** — target < 3s load time
-- **Core Web Vitals:** LCP < 2.5s · CLS < 0.1 · FID < 100ms
-- **SSL** — must stay HTTPS (already on Vercel ✅)
-- Images: AVIF/WebP only, lazy-loaded (already enforced ✅)
-
----
-
-## ✅ Content Change Checklist
-
-Before committing any content change to the Casablanca route, verify:
-
-- [ ] H1 contains exact phrase `création site web Casablanca`
-- [ ] Meta title updated in `cityConfig.js`
-- [ ] Meta description updated in `cityConfig.js`
-- [ ] "je" used throughout (not "nous")
-- [ ] `devis gratuit` CTA present and fires `useConversion` hook
-- [ ] Price `dès 3990 DH` mentioned at least once
-- [ ] `Casablanca` or `Maarif` mentioned 5+ times
-- [ ] All new strings added to `fr/translation.json` (and `ar/`, `en/` if applicable)
-- [ ] Schema.org JSON-LD updated if services/FAQ changed
-
----
-
-_Last updated: March 2026 — MouDEV Google Ads × Landing Page Optimization_
+```
+[création site web maroc]           → /
+[creation site web maroc]           → /
+[prix site web maroc]               → /tarifs
+[devis site web maroc]              → /tarifs
+[freelance developpeur web]         → /
+[site e-commerce maroc]             → /ecommerce
+[developer site web maroc]          → /
+"création site web casablanca"      → /casablanca
+"développeur web casablanca"        → /casablanca
+"prix site web casablanca"          → /casablanca or /tarifs
+"devis site web casablanca"         → /casablanca or /tarifs
+"création site web rabat"           → /rabat
+"développeur web rabat"             → /rabat
+"création site web marrakech"       → /marrakech
+"développeur web marrakech"         → /marrakech
+"site web hôtel marrakech"          → /marrakech
+"site web riad marrakech"           → /marrakech
+"hotel website marrakech"           → /marrakech
+"site e-commerce casablanca"        → /ecommerce or /casablanca
+"site e-commerce rabat"             → /ecommerce or /rabat
+"site e-commerce marrakech"         → /ecommerce or /marrakech
+"web developer casablanca"          → /casablanca
+"web developer rabat"               → /rabat
+"web developer morocco"             → /
+"website design morocco"            → /
+"website design casablanca"         → /casablanca
+```

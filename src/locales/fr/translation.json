@@ -9,19 +9,20 @@
     "contactAria": "Contactez MouDev sur WhatsApp"
   },
   "hero": {
-    "h1": "Création Site Web {{city}} — Agence Web & Freelance",
+    "h1": "Création de site web professionnel à {{city}} — Développeur Web Freelance Maroc",
     "subheading": "Je crée votre site web professionnel à {{city}} avec l'expertise d'une agence et la réactivité d'un freelance. Site vitrine, application web sur mesure, landing page. Devis gratuit en 24h.",
-    "cta": "Devis gratuit en 24h"
+    "cta": "Devis gratuit en 24h",
+    "phone": "+212 696 964 341"
   },
   "home": {
-    "h2": "Création de site web & de site internet à {{city}} — MouDev, Agence Web & Freelance",
-    "p1": "Vous cherchez une agence web à {{city}} spécialisée dans la création de site internet professionnel ? MouDev combine l'expertise d'une agence digitale et la flexibilité d'un freelance basé à {{city}}. Je conçois des sites vitrine, des applications web sur mesure et des landing pages qui convertissent. Devis gratuit en 24h.",
-    "p2": "MouDev crée votre site web professionnel à {{city}} — site vitrine dès 3990 DH, application web sur mesure ou landing page optimisée. Sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google. Livraison en 7 jours. Paiement après livraison.",
-    "p3": "Agence web et développeur freelance à {{city}}, je vous accompagne de A à Z : de la conception à la mise en ligne. Pas d'intermédiaire, contact direct, je m'occupe de tout. Contactez-moi pour recevoir votre devis gratuit.",
+    "h2": "Création de site web à {{city}} — MouDev, Développeur Web Freelance",
+    "p1": "Vous cherchez un développeur web freelance à {{city}} pour la création de votre site internet professionnel ? Je conçois des sites vitrine, des e-commerces et des applications web sur mesure qui génèrent des leads et des ventes. Vous parlez directement avec le développeur — pas d'intermédiaire, pas d'agence. Devis gratuit en 24h.",
+    "p2": "Je crée votre site web professionnel à {{city}} — site vitrine dès 2000 DH, e-commerce, application web sur mesure. Sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google. Livraison en 5 jours. Paiement après livraison.",
+    "p3": "Développeur web freelance à {{city}}, je vous accompagne de A à Z : de la conception à la mise en ligne. Qualité agence, prix freelance — je m'occupe de tout. Contactez-moi pour recevoir votre devis gratuit.",
     "cta": "Devis gratuit en 24h"
   },
   "packs": {
-    "h2": "Nos formules pour créer votre site web",
+    "h2": "Mes formules pour créer votre site web",
     "cta": "Choisir ce pack",
     "presence": {
       "title": "Pack Présence",
@@ -95,7 +96,7 @@
     }
   },
   "services": {
-    "h2": "Nos services à {{city}}",
+    "h2": "Mes services à {{city}}",
     "web": {
       "title": "Création de site web & Webdesign",
       "desc": "Création de site internet professionnel à {{city}} — site vitrine, landing page, application web sur mesure et portail e-commerce. Du webdesign soigné à la mise en ligne, je gère votre présence digitale de A à Z avec les mêmes standards qu'une grande agence web — à prix freelance."
@@ -110,8 +111,8 @@
     }
   },
   "process": {
-    "h2": "Notre processus de création",
-    "subheading": "Une méthodologie d'agence, appliquée avec la réactivité d'un freelance — pour concevoir votre site web dans les délais et selon votre budget.",
+    "h2": "Mon processus de création",
+    "subheading": "Une méthodologie rigoureuse appliquée avec la réactivité d'un freelance — pour concevoir votre site web dans les délais et selon votre budget.",
     "steps": [
       {
         "title": "Analyse & Découverte",
@@ -146,10 +147,10 @@
     "satisfaction": "Satisfaction client"
   },
   "clients": {
-    "label": "Ils nous ont fait confiance"
+    "label": "Ils m'ont fait confiance"
   },
   "portfolio": {
-    "h2": "Nos réalisations",
+    "h2": "Mes réalisations",
     "projects": [
       {
         "tag": "Site Vitrine",
@@ -182,15 +183,15 @@
     "items": [
       {
         "q": "Combien coûte la création d'un site web à {{city}} ?",
-        "a": "Le tarif dépend du type et de la complexité du projet. Nos formules démarrent à partir de 3990 DH pour un site vitrine professionnel. Contactez-nous pour recevoir un devis personnalisé et gratuit adapté à votre budget et vos objectifs."
+        "a": "Le tarif dépend du type et de la complexité du projet. Mes formules démarrent à partir de 2000 DH pour un site vitrine professionnel. Contactez-moi pour recevoir un devis personnalisé et gratuit adapté à votre budget et vos objectifs."
       },
       {
         "q": "Combien de temps faut-il pour livrer un site web ?",
-        "a": "Un site vitrine est livré en 7 jours, un site catalogue en 2 à 3 semaines, et un e-commerce en 3 à 5 semaines. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous nous fournissez."
+        "a": "Un site vitrine est livré en 5 jours, un e-commerce en 7 jours. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous me fournissez."
       },
       {
         "q": "Mon site sera-t-il bien référencé sur Google à {{city}} ?",
-        "a": "Oui. Tous nos sites sont livrés avec une optimisation SEO technique complète : balises title et meta, structure H1/H2/H3, URLs propres, images optimisées, site rapide et responsive. Nous proposons également des prestations SEO avancées pour positionner votre site en première page de Google à {{city}}."
+        "a": "Oui. Tous mes sites sont livrés avec une optimisation SEO technique complète : balises title et meta, structure H1/H2/H3, URLs propres, images optimisées, site rapide et responsive. Je propose également des prestations SEO avancées pour positionner votre site en première page de Google à {{city}}."
       },
       {
         "q": "Puis-je modifier le contenu de mon site moi-même après livraison ?",
@@ -198,15 +199,15 @@
       },
       {
         "q": "Proposez-vous un service de maintenance et de support après livraison ?",
-        "a": "Oui. Nous assurons un support technique réactif après la livraison via WhatsApp et téléphone. Des contrats de maintenance mensuelle sont disponibles pour les mises à jour, la sécurité et l'évolution de votre site."
+        "a": "Oui. J'assure un support technique réactif après la livraison via WhatsApp et téléphone. Des contrats de maintenance mensuelle sont disponibles pour les mises à jour, la sécurité et l'évolution de votre site."
       },
       {
         "q": "Mon site sera-t-il adapté aux mobiles et tablettes ?",
-        "a": "Oui, tous nos sites sont 100% responsive et s'adaptent automatiquement aux smartphones, tablettes et ordinateurs. Un site mobile-friendly est indispensable pour le SEO et l'expérience utilisateur — c'est inclus dans toutes nos formules."
+        "a": "Oui, tous mes sites sont 100% responsive et s'adaptent automatiquement aux smartphones, tablettes et ordinateurs. Un site mobile-friendly est indispensable pour le SEO et l'expérience utilisateur — c'est inclus dans toutes mes formules."
       },
       {
         "q": "Intervenez-vous uniquement à {{city}} ou dans tout le Maroc ?",
-        "a": "MouDev intervient dans tout le Maroc et à l'international. Nous collaborons avec des clients à Casablanca, Rabat, Marrakech, Fès, Agadir et bien d'autres villes. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo."
+        "a": "J'interviens dans tout le Maroc et à l'international. Je travaille avec des clients à Casablanca, Rabat, Marrakech, Fès, Agadir et bien d'autres villes. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo."
       },
       {
         "q": "Qu'est-ce qui est inclus dans l'hébergement de votre pack ?",
@@ -214,7 +215,7 @@
       },
       {
         "q": "Qu'est-ce qu'un site vitrine et combien coûte-t-il à {{city}} ?",
-        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 3990 DH, livré en 7 jours, responsive, optimisé SEO et hébergement inclus."
+        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 2000 DH, livré en 7 jours, responsive, optimisé SEO et hébergement inclus."
       },
       {
         "q": "Quelle est la différence entre un freelance web et une agence web à {{city}} ?",
@@ -223,7 +224,7 @@
     ]
   },
   "temoignes": {
-    "h2": "Ce que disent nos clients",
+    "h2": "Ce que disent mes clients",
     "items": [
       {
         "name": "Fatime Benjelloun",
@@ -244,22 +245,22 @@
     ]
   },
   "footer": {
-    "tagline": "MouDev — agence web & freelance à {{city}}. Création de site internet professionnel, site vitrine dès 3990 DH, application web sur mesure et landing page. Basé à Casablanca, Maarif.",
+    "tagline": "MouDev — développeur web freelance à {{city}}. Création de site internet professionnel, site vitrine dès 2000 DH, application web sur mesure et landing page. Basé à Casablanca, Maarif.",
     "services": {
-      "heading": "Nos services",
+      "heading": "Mes services",
       "links": [
         { "label": "Création de site web", "href": "#services" },
         { "label": "Création de site internet", "href": "#services" },
         { "label": "Site vitrine professionnel", "href": "#services" },
         { "label": "Application web sur mesure", "href": "#services" },
         { "label": "Landing page", "href": "#services" },
-        { "label": "Nos formules & tarifs", "href": "#formules" }
+        { "label": "Mes formules & tarifs", "href": "/tarifs" }
       ]
     },
     "contact": {
       "heading": "Contact",
       "hours": "Lun – Sam : 9h00 – 22h00"
     },
-    "copyright": "Tous droits réservés. Agence web & freelance à {{city}}, Maroc."
+    "copyright": "Tous droits réservés. Développeur web freelance à {{city}}, Maroc."
   }
 }

@@ -48,7 +48,7 @@ const CityPage = ({ city, lang }) => {
     description: data.metaDescription,
     telephone: "+212696964341",
     image: "https://www.moudevpro.com/webdev-logo.png",
-    priceRange: "DH 3990 - DH 30000",
+    priceRange: "DH 2000 - DH 30000",
     currenciesAccepted: "MAD",
     paymentAccepted: "Cash, Virement bancaire",
     address: {
@@ -174,7 +174,7 @@ const CityPage = ({ city, lang }) => {
           </div>
           <div className="home__img">
             <img
-              src="home-dev-1.avif"
+              src="/home-dev-1.avif"
               alt={`Création site web ${cityName} - MouDev`}
               className="img"
               title={`Création de site internet à ${cityName} avec SEO et Google Ads`}

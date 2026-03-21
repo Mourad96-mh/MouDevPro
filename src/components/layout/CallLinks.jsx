@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import useConversion from "../../hooks/useConversion";
 
 const CallLinks = () => {
-  const { track, WA_URL } = useConversion();
+  const { track, trackPhone, WA_URL } = useConversion();
 
   return (
     <div className="cta">
@@ -21,7 +21,7 @@ const CallLinks = () => {
         rel="noopener noreferrer"
         title="Appeler MouDev"
         className="link"
-        onClick={() => track(WA_URL)}
+        onClick={trackPhone}
       >
         <HiMiniPhone className="cta-icon" />
       </a>
