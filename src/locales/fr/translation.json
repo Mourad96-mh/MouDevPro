@@ -6,7 +6,9 @@
     "faq": "FAQ",
     "menuOpen": "Ouvrir le menu",
     "menuClose": "Fermer le menu",
-    "contactAria": "Contactez MouDev sur WhatsApp"
+    "contactAria": "Contactez MouDev sur WhatsApp",
+    "about": "À propos",
+    "contact": "Contact"
   },
   "hero": {
     "h1": "Création de site web professionnel à {{city}} — Développeur Web Freelance Maroc",

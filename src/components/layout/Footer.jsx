@@ -5,6 +5,7 @@ import {
   HiOutlineClock,
 } from "react-icons/hi2";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 
@@ -48,6 +49,12 @@ const Footer = ({ cityName, address }) => {
                 <a href={link.href} className="footer__link">{link.label}</a>
               </li>
             ))}
+            <li>
+              <Link to="/about" className="footer__link">{t("nav.about")}</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="footer__link">{t("nav.contact")}</Link>
+            </li>
           </ul>
         </div>
 

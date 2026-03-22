@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import useInView from "../../hooks/useInView";
 
 const PROJECTS = [
   {
@@ -43,6 +44,20 @@ const PROJECTS = [
     alt: "Earth-W — création application web sur mesure React, développeur web freelance Maroc",
     url: "https://earth-w.netlify.app/",
   },
+  {
+    tag: "Site Vitrine",
+    title: "Mourad Website",
+    desc: "Site vitrine personnel moderne développé avec React : présentation de services, portfolio et formulaire de contact. Design soigné et responsive.",
+    alt: "Mourad Website — création site vitrine personnel React, développeur web freelance Maroc",
+    url: "https://mourad-website.netlify.app/",
+  },
+  {
+    tag: "E-commerce",
+    title: "Ecommerce Mou",
+    desc: "Boutique en ligne complète développée sur mesure : catalogue produits, panier d'achat et interface de commande. Solution e-commerce professionnelle.",
+    alt: "Ecommerce Mou — création boutique en ligne e-commerce sur mesure, développeur web freelance Maroc",
+    url: "https://ecommerce-mou.netlify.app/",
+  },
 ];
 
 const screenshotUrl = (url) =>
@@ -50,13 +65,14 @@ const screenshotUrl = (url) =>
 
 const Portfolio = () => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView(0.1);
 
   return (
-    <section id="portfolio" className="portfolio container">
+    <section id="portfolio" className={`portfolio container${inView ? " portfolio--visible" : ""}`} ref={ref}>
       <h2 className="secondary-heading center-text lg-mb">{t("portfolio.h2")}</h2>
       <div className="portfolio__grid">
-        {PROJECTS.map((project) => (
-          <article key={project.url} className="portfolio__card">
+        {PROJECTS.map((project, i) => (
+          <article key={project.url} className="portfolio__card" style={{ "--card-delay": `${i * 0.08}s` }}>
             <div className="portfolio__card-img">
               <img
                 src={screenshotUrl(project.url)}
@@ -66,6 +82,16 @@ const Portfolio = () => {
                 width="600"
                 height="400"
               />
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="portfolio__overlay"
+                tabIndex={-1}
+                aria-hidden="true"
+              >
+                <span>Voir le projet →</span>
+              </a>
             </div>
             <div className="portfolio__card-body">
               <span className="portfolio__tag">{project.tag}</span>

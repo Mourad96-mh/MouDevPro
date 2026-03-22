@@ -27,8 +27,8 @@ const Hero = ({ cityName }) => {
           src="/hero-img.avif"
           loading="eager"
           fetchpriority="high"
-          alt={`Agence web MouDev à ${cityName} — création de sites web et marketing digital au Maroc`}
-          title={`Création site web ${cityName} : agence web MouDev`}
+          alt={`Développeur web freelance MouDev à ${cityName} — création de site web professionnel au Maroc`}
+          title={`Création site web ${cityName} — développeur web freelance MouDev`}
         />
       </div>
     </div>

@@ -27,7 +27,7 @@ const Temoignes = () => {
         <h2 className="secondary-heading lg-mb center-text">{t("temoignes.h2")}</h2>
         <div className="overview lg-mb">
           <div className="center-text sl-mb">
-            <img src={IMAGES[step]} alt={items[step].name} />
+            <img src={IMAGES[step]} alt={`${items[step].name} — avis client développeur web freelance MouDev Maroc`} />
           </div>
           <p className="temoigne__description sl-mb">{items[step].text}</p>
           <h3 className="tertiary-heading center-text">{items[step].name}</h3>

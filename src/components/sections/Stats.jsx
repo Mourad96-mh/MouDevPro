@@ -51,10 +51,10 @@ const Stats = () => {
   }, []);
 
   return (
-    <section className="stats" ref={ref}>
+    <section className={`stats${isVisible ? " stats--visible" : ""}`} ref={ref}>
       <div className="stats__container container">
         {stats.map((stat, i) => (
-          <div key={i} className="stat__item">
+          <div key={i} className="stat__item" style={{ "--stat-delay": `${i * 0.12}s` }}>
             <p className="stat__value">
               <CountUp target={stat.value} suffix={stat.suffix} isVisible={isVisible} />
             </p>

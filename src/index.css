@@ -1117,6 +1117,7 @@ li {
 }
 
 .portfolio__card-img {
+  position: relative;
   height: 20rem;
   overflow: hidden;
 }
@@ -2672,5 +2673,300 @@ details[open] .city-faq__question::after {
 @media (max-width: 37.5em) {
   .marrakech-en-card {
     padding: 2rem;
+  }
+}
+
+/* ===========================
+   ABOUT PAGE
+   =========================== */
+
+.about-hero {
+  background-color: var(--gray-600);
+  color: var(--gray-100);
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.about-hero__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-story {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding-block: 7.2rem;
+}
+
+.about-story__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.about-story__photo {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.about-stack {
+  background-color: var(--gray-300);
+  padding-block: 6.4rem;
+}
+
+.about-stack__inner {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.about-stack__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.about-stack__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.8rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 100px;
+  background-color: var(--gray-100);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  opacity: 0;
+  transform: translateY(1.2rem);
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.2s ease;
+  transition-delay: var(--item-delay, 0s);
+}
+
+.about-stack--visible .about-stack__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-stack__item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-stack__icon {
+  font-size: 1.6rem;
+}
+
+.about-values {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding-block: 7.2rem;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.about-value__card {
+  padding: 3.2rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 12px;
+  background-color: var(--gray-100);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--value-delay, 0s);
+}
+
+.about-values--visible .about-value__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-value__icon {
+  font-size: 3.2rem;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+/* Nav contact CTA link */
+.nav__link--cta {
+  background-color: var(--scarletRed-600);
+  color: var(--gray-100) !important;
+  border-radius: 6px;
+}
+
+.nav__link--cta:hover {
+  background-color: var(--scarletRed-500) !important;
+  color: var(--gray-100) !important;
+}
+
+@media (max-width: 56.25em) {
+  .about-story__grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .about-story__photo {
+    max-width: 28rem;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 1 / 1;
+  }
+
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .about-hero {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .about-stack__item {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .about-value__card {
+    padding: 2.4rem;
+  }
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+
+/* Shared keyframe */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(2.4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Hero load animation --- */
+.hero__content .heading--primary {
+  animation: fadeSlideUp 0.55s ease both;
+}
+
+.hero__content .subheading {
+  animation: fadeSlideUp 0.55s ease 0.12s both;
+}
+
+.hero__content .hero-link {
+  animation: fadeSlideUp 0.55s ease 0.24s both;
+}
+
+.hero__img {
+  animation: fadeSlideUp 0.6s ease 0.1s both;
+}
+
+/* --- Portfolio scroll reveal (staggered cards) --- */
+.portfolio__card {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+  transition-delay: var(--card-delay, 0s);
+}
+
+.portfolio--visible .portfolio__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keep hover lift working after reveal */
+.portfolio--visible .portfolio__card:hover {
+  transform: translateY(-4px);
+}
+
+/* --- Portfolio card overlay --- */
+.portfolio__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(228, 28, 62, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.portfolio__card:hover .portfolio__overlay {
+  opacity: 1;
+}
+
+.portfolio__overlay span {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* --- FAQ smooth slide --- */
+.faq__answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq__answer-wrapper.open {
+  max-height: 50rem;
+}
+
+/* --- Stats staggered entrance --- */
+.stat__item {
+  opacity: 0;
+  transform: translateY(1.6rem);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--stat-delay, 0s);
+}
+
+.stats--visible .stat__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Respect reduced-motion preference --- */
+@media (prefers-reduced-motion: reduce) {
+  .hero__content .heading--primary,
+  .hero__content .subheading,
+  .hero__content .hero-link,
+  .hero__img {
+    animation: none;
+  }
+
+  .portfolio__card,
+  .stat__item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .faq__answer-wrapper {
+    transition: none;
+  }
+
+  .about-stack__item,
+  .about-value__card {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

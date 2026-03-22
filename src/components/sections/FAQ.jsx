@@ -44,9 +44,9 @@ const FAQ = ({ cityName }) => {
                   <span>{faq.question}</span>
                   <span className={`faq__icon${openId === faq.id ? " open" : ""}`}>+</span>
                 </button>
-                {openId === faq.id && (
+                <div className={`faq__answer-wrapper${openId === faq.id ? " open" : ""}`} aria-hidden={openId !== faq.id}>
                   <p className="faq__answer">{faq.answer}</p>
-                )}
+                </div>
               </li>
             ))}
           </ul>

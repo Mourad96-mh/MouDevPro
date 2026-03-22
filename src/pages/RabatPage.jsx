@@ -76,8 +76,8 @@ const RabatPage = () => {
         <meta property="og:url" content="https://www.moudevpro.com/rabat" />
         <link rel="canonical" href="https://www.moudevpro.com/rabat" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/rabat" />
-        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/web-agency-rabat" />
-        <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar/agence-web-rabat" />
+        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/rabat" />
+        <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar/rabat" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/rabat" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
