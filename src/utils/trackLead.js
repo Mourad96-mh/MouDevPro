@@ -9,23 +9,24 @@
  */
 
 // ─── CONFIG — replace before going live ──────────────────────────────────────
-const ADS_CONVERSION_ID    = "AW-17548598231";
+const ADS_CONVERSION_ID = "AW-17548598231";
 const ADS_CONVERSION_LABEL = "XuDyCOb8kqMbENe36a9B";
-const APPS_SCRIPT_URL      = "https://script.google.com/macros/s/AKfycbyj6zLfhG_IFv5iIdb87h_ZDaYi2ivVJQ1rcAdiuymAe6e18J1bA-wPrbdj3B3slYgPoA/exec";
+const APPS_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyj6zLfhG_IFv5iIdb87h_ZDaYi2ivVJQ1rcAdiuymAe6e18J1bA-wPrbdj3B3slYgPoA/exec";
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Set to true while testing — shows a toast with the payload
-const DEBUG = false;
+const DEBUG = true;
 
 function getUTMs() {
   const p = new URLSearchParams(window.location.search);
   return {
-    utm_source:   p.get("utm_source")   || "",
-    utm_medium:   p.get("utm_medium")   || "",
+    utm_source: p.get("utm_source") || "",
+    utm_medium: p.get("utm_medium") || "",
     utm_campaign: p.get("utm_campaign") || "",
-    utm_content:  p.get("utm_content")  || "",
-    utm_term:     p.get("utm_term")     || "",
-    gclid:        p.get("gclid")        || "",
+    utm_content: p.get("utm_content") || "",
+    utm_term: p.get("utm_term") || "",
+    gclid: p.get("gclid") || "",
   };
 }
 
@@ -62,8 +63,8 @@ export function trackLead(context = {}, type = "whatsapp") {
   const payload = {
     timestamp: new Date().toISOString(),
     type,
-    source:  context.source  || "moudevpro-site",
-    city:    context.city    || "",
+    source: context.source || "moudevpro-site",
+    city: context.city || "",
     service: context.service || "",
     page_url: window.location.href,
     ...getUTMs(),
@@ -71,10 +72,10 @@ export function trackLead(context = {}, type = "whatsapp") {
 
   // 1. Post to Google Sheets (fire-and-forget, no-cors)
   fetch(APPS_SCRIPT_URL, {
-    method:  "POST",
-    mode:    "no-cors",
+    method: "POST",
+    mode: "no-cors",
     headers: { "Content-Type": "application/json" },
-    body:    JSON.stringify(payload),
+    body: JSON.stringify(payload),
   }).catch(() => {});
 
   // 2. Fire Google Ads conversion
@@ -87,7 +88,13 @@ export function trackLead(context = {}, type = "whatsapp") {
 
   // 3. Debug
   if (DEBUG) {
-    console.group("%c[trackLead]", "color:#22c55e;font-weight:bold", payload.type, "—", payload.source);
+    console.group(
+      "%c[trackLead]",
+      "color:#22c55e;font-weight:bold",
+      payload.type,
+      "—",
+      payload.source,
+    );
     console.table(payload);
     console.log("gtag fired:", gtagFired);
     console.groupEnd();
