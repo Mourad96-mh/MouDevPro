@@ -1,6 +1,5 @@
 import { createWriteStream } from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
-import { createGzip } from "zlib";
 import { fileURLToPath } from "url";
 import path from "path";
 
@@ -9,117 +8,128 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // All routes with their hreflang alternates
 const routes = [
-  // ── Homepage (FR / EN / AR) ──────────────────────────────────────────────
+  // ── Homepage (FR only — national landing page) ───────────────────────────
   {
     url: "/",
     changefreq: "weekly",
     priority: 1.0,
     links: [
       { lang: "fr", url: `${BASE}/` },
-      { lang: "en", url: `${BASE}/en/` },
-      { lang: "ar", url: `${BASE}/ar/` },
-      { lang: "x-default", url: `${BASE}/` },
-    ],
-  },
-  {
-    url: "/en/",
-    changefreq: "weekly",
-    priority: 0.8,
-    links: [
-      { lang: "fr", url: `${BASE}/` },
-      { lang: "en", url: `${BASE}/en/` },
-      { lang: "ar", url: `${BASE}/ar/` },
-      { lang: "x-default", url: `${BASE}/` },
-    ],
-  },
-  {
-    url: "/ar/",
-    changefreq: "weekly",
-    priority: 0.8,
-    links: [
-      { lang: "fr", url: `${BASE}/` },
-      { lang: "en", url: `${BASE}/en/` },
-      { lang: "ar", url: `${BASE}/ar/` },
       { lang: "x-default", url: `${BASE}/` },
     ],
   },
 
-  // ── City pages (old routes kept for Google Ads links) ────────────────────
+  // ── Casablanca (FR / EN / AR) ────────────────────────────────────────────
   {
-    url: "/agence-web-rabat/",
+    url: "/casablanca",
+    changefreq: "weekly",
+    priority: 1.0,
+    links: [
+      { lang: "fr", url: `${BASE}/casablanca` },
+      { lang: "en", url: `${BASE}/en` },
+      { lang: "ar", url: `${BASE}/ar` },
+      { lang: "x-default", url: `${BASE}/casablanca` },
+    ],
+  },
+  {
+    url: "/en",
     changefreq: "weekly",
     priority: 0.8,
     links: [
-      { lang: "fr", url: `${BASE}/agence-web-rabat/` },
-      { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-rabat/` },
-      { lang: "x-default", url: `${BASE}/agence-web-rabat/` },
+      { lang: "fr", url: `${BASE}/casablanca` },
+      { lang: "en", url: `${BASE}/en` },
+      { lang: "ar", url: `${BASE}/ar` },
+      { lang: "x-default", url: `${BASE}/casablanca` },
     ],
   },
   {
-    url: "/en/web-agency-rabat/",
-    changefreq: "weekly",
-    priority: 0.6,
-    links: [
-      { lang: "fr", url: `${BASE}/agence-web-rabat/` },
-      { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-rabat/` },
-      { lang: "x-default", url: `${BASE}/agence-web-rabat/` },
-    ],
-  },
-  {
-    url: "/ar/agence-web-rabat/",
-    changefreq: "weekly",
-    priority: 0.6,
-    links: [
-      { lang: "fr", url: `${BASE}/agence-web-rabat/` },
-      { lang: "en", url: `${BASE}/en/web-agency-rabat/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-rabat/` },
-      { lang: "x-default", url: `${BASE}/agence-web-rabat/` },
-    ],
-  },
-  {
-    url: "/agence-web-marrakech/",
+    url: "/ar",
     changefreq: "weekly",
     priority: 0.8,
     links: [
-      { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
-      { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-marrakech/` },
-      { lang: "x-default", url: `${BASE}/agence-web-marrakech/` },
-    ],
-  },
-  {
-    url: "/en/web-agency-marrakech/",
-    changefreq: "weekly",
-    priority: 0.6,
-    links: [
-      { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
-      { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-marrakech/` },
-      { lang: "x-default", url: `${BASE}/agence-web-marrakech/` },
-    ],
-  },
-  {
-    url: "/ar/agence-web-marrakech/",
-    changefreq: "weekly",
-    priority: 0.6,
-    links: [
-      { lang: "fr", url: `${BASE}/agence-web-marrakech/` },
-      { lang: "en", url: `${BASE}/en/web-agency-marrakech/` },
-      { lang: "ar", url: `${BASE}/ar/agence-web-marrakech/` },
-      { lang: "x-default", url: `${BASE}/agence-web-marrakech/` },
+      { lang: "fr", url: `${BASE}/casablanca` },
+      { lang: "en", url: `${BASE}/en` },
+      { lang: "ar", url: `${BASE}/ar` },
+      { lang: "x-default", url: `${BASE}/casablanca` },
     ],
   },
 
-  // ── New standalone pages ─────────────────────────────────────────────────
-  { url: "/casablanca/", changefreq: "weekly", priority: 1.0 },
-  { url: "/rabat/",      changefreq: "weekly", priority: 0.9 },
-  { url: "/marrakech/",  changefreq: "weekly", priority: 0.9 },
-  { url: "/tarifs/",     changefreq: "monthly", priority: 0.9 },
-  { url: "/ecommerce/",  changefreq: "monthly", priority: 0.8 },
-  { url: "/services/",   changefreq: "monthly", priority: 0.8 },
-  { url: "/contact/",    changefreq: "monthly", priority: 0.7 },
+  // ── Rabat (FR / EN / AR) ─────────────────────────────────────────────────
+  {
+    url: "/rabat",
+    changefreq: "weekly",
+    priority: 0.9,
+    links: [
+      { lang: "fr", url: `${BASE}/rabat` },
+      { lang: "en", url: `${BASE}/en/rabat` },
+      { lang: "ar", url: `${BASE}/ar/rabat` },
+      { lang: "x-default", url: `${BASE}/rabat` },
+    ],
+  },
+  {
+    url: "/en/rabat",
+    changefreq: "weekly",
+    priority: 0.7,
+    links: [
+      { lang: "fr", url: `${BASE}/rabat` },
+      { lang: "en", url: `${BASE}/en/rabat` },
+      { lang: "ar", url: `${BASE}/ar/rabat` },
+      { lang: "x-default", url: `${BASE}/rabat` },
+    ],
+  },
+  {
+    url: "/ar/rabat",
+    changefreq: "weekly",
+    priority: 0.7,
+    links: [
+      { lang: "fr", url: `${BASE}/rabat` },
+      { lang: "en", url: `${BASE}/en/rabat` },
+      { lang: "ar", url: `${BASE}/ar/rabat` },
+      { lang: "x-default", url: `${BASE}/rabat` },
+    ],
+  },
+
+  // ── Marrakech (FR / EN / AR) ─────────────────────────────────────────────
+  {
+    url: "/marrakech",
+    changefreq: "weekly",
+    priority: 0.9,
+    links: [
+      { lang: "fr", url: `${BASE}/marrakech` },
+      { lang: "en", url: `${BASE}/en/marrakech` },
+      { lang: "ar", url: `${BASE}/ar/marrakech` },
+      { lang: "x-default", url: `${BASE}/marrakech` },
+    ],
+  },
+  {
+    url: "/en/marrakech",
+    changefreq: "weekly",
+    priority: 0.7,
+    links: [
+      { lang: "fr", url: `${BASE}/marrakech` },
+      { lang: "en", url: `${BASE}/en/marrakech` },
+      { lang: "ar", url: `${BASE}/ar/marrakech` },
+      { lang: "x-default", url: `${BASE}/marrakech` },
+    ],
+  },
+  {
+    url: "/ar/marrakech",
+    changefreq: "weekly",
+    priority: 0.7,
+    links: [
+      { lang: "fr", url: `${BASE}/marrakech` },
+      { lang: "en", url: `${BASE}/en/marrakech` },
+      { lang: "ar", url: `${BASE}/ar/marrakech` },
+      { lang: "x-default", url: `${BASE}/marrakech` },
+    ],
+  },
+
+  // ── Standalone pages ─────────────────────────────────────────────────────
+  { url: "/tarifs", changefreq: "monthly", priority: 0.9 },
+  { url: "/ecommerce", changefreq: "monthly", priority: 0.8 },
+  { url: "/services", changefreq: "monthly", priority: 0.8 },
+  { url: "/contact", changefreq: "monthly", priority: 0.7 },
+  { url: "/about", changefreq: "monthly", priority: 0.5 },
 ];
 
 (async () => {

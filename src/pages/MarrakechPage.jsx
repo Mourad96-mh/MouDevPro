@@ -134,7 +134,9 @@ const MarrakechPage = () => {
         <meta property="og:url" content="https://www.moudevpro.com/marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/marrakech" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/marrakech" />
-        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/marrakech" />
+        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/marrakech" />
+        <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar/marrakech" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/marrakech" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
