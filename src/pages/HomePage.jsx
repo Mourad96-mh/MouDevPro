@@ -244,7 +244,7 @@ const HomePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Création de site web professionnel à Casablanca — Développeur Web Freelance Maroc
+            Création de site web professionnel — Développeur Web Freelance Maroc
           </h1>
           <p className="subheading sl-mb">
             Je crée votre site web professionnel au Maroc.
