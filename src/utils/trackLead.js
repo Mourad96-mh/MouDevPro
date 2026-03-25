@@ -12,11 +12,11 @@
 const ADS_CONVERSION_ID = "AW-17548598231";
 const ADS_CONVERSION_LABEL = "XuDyCOb8kqMbENe36a9B";
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbyj6zLfhG_IFv5iIdb87h_ZDaYi2ivVJQ1rcAdiuymAe6e18J1bA-wPrbdj3B3slYgPoA/exec";
+  "https://script.google.com/macros/s/AKfycbykUAEtMiX2Z5ThudR8hXLs2HGKNyJiOF1xT9wFzncIVMRIDgvIRYN9c6bDUZ0861qoxA/exec";
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Set to true while testing — shows a toast with the payload
-const DEBUG = true;
+const DEBUG = false;
 
 function getUTMs() {
   const p = new URLSearchParams(window.location.search);
@@ -74,7 +74,7 @@ export function trackLead(context = {}, type = "whatsapp") {
   fetch(APPS_SCRIPT_URL, {
     method: "POST",
     mode: "no-cors",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "text/plain" },
     body: JSON.stringify(payload),
   }).catch(() => {});
 

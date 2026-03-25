@@ -2970,3 +2970,49 @@ details[open] .city-faq__question::after {
     transition: none;
   }
 }
+
+/* ── GEO Facts Block ─────────────────────────────────────────── */
+.geo-facts {
+  padding: 6.4rem 0;
+}
+
+.geo-facts__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.geo-fact__card {
+  background: var(--gray-50, #f9fafb);
+  border: 1px solid var(--gray-200, #e5e7eb);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.geo-fact__stat {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--scarletRed-500, #e53e3e);
+  line-height: 1.2;
+}
+
+.geo-fact__label {
+  font-size: 1.5rem;
+  color: var(--gray-600, #4b5563);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .geo-facts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .geo-facts__grid {
+    grid-template-columns: 1fr;
+  }
+}

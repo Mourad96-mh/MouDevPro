@@ -222,6 +222,30 @@
       {
         "q": "Quelle est la différence entre un freelance web et une agence web à {{city}} ?",
         "a": "Une agence web dispose d'une équipe mais facture des frais de structure élevés. Un freelance web est plus accessible mais parfois limité en ressources. MouDev vous offre le meilleur des deux : l'expertise et la gamme de services d'une agence web à {{city}}, avec la réactivité et le prix compétitif d'un freelance. Contact direct, pas d'intermédiaire, paiement après livraison."
+      },
+      {
+        "q": "Comment créer un site e-commerce au Maroc ?",
+        "a": "Pour créer un site e-commerce au Maroc, il faut choisir une plateforme adaptée (WooCommerce, Shopify ou développement sur mesure), configurer un paiement local (CMI, PayZone, virement bancaire), et optimiser pour le SEO local. Chez MouDev, je livre un e-commerce complet à partir de 3 000 DH en 7 jours — catalogue produits, panier, paiement sécurisé, interface d'administration et formation incluse."
+      },
+      {
+        "q": "Quel CMS choisir pour mon site web au Maroc — WordPress ou React ?",
+        "a": "WordPress convient parfaitement aux sites vitrine, blogs et petits e-commerces : il est simple à administrer et économique. React ou Next.js s'impose pour les applications web complexes, les portails sur mesure et les sites à fort trafic nécessitant des performances maximales. Je recommande WordPress pour 80% des PME marocaines et React/Next.js pour les projets avec des fonctionnalités avancées."
+      },
+      {
+        "q": "Comment améliorer le référencement de mon site web à {{city}} ?",
+        "a": "Pour améliorer le SEO d'un site web à {{city}}, il faut : optimiser les balises title et H1 avec les mots-clés locaux, créer du contenu de qualité ciblant votre secteur, obtenir des backlinks depuis des sites marocains réputés, déclarer votre fiche Google Business Profile, et améliorer la vitesse de chargement. Tous mes sites sont livrés avec une base SEO technique solide — et je propose des prestations SEO avancées pour atteindre la première page de Google."
+      },
+      {
+        "q": "Peut-on créer un site web professionnel sans payer d'acompte au Maroc ?",
+        "a": "Oui. Chez MouDev, le paiement se fait uniquement après livraison et validation du site. Aucun acompte imposé — vous payez seulement quand vous êtes satisfait du résultat. C'est une garantie unique que très peu de prestataires web au Maroc proposent."
+      },
+      {
+        "q": "Quelles technologies utilisez-vous pour créer des sites web professionnels ?",
+        "a": "J'utilise React et Next.js pour les applications web performantes, WordPress et WooCommerce pour les sites vitrine et e-commerces faciles à administrer, Node.js pour les back-ends sur mesure, et MySQL ou MongoDB pour les bases de données. Chaque technologie est choisie en fonction des besoins réels du projet — jamais par défaut."
+      },
+      {
+        "q": "Proposez-vous des sites web multilingues français, arabe et anglais au Maroc ?",
+        "a": "Oui. Je crée des sites web multilingues français, arabe (avec gestion RTL) et anglais — indispensables pour les hôtels, riads et restaurants de Marrakech qui accueillent une clientèle internationale. Le référencement multilingue est également inclus pour cibler les visiteurs selon leur langue de recherche."
       }
     ]
   },

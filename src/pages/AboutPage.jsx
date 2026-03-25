@@ -47,6 +47,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Mourad — MouDevPro",
   jobTitle: "Développeur web freelance",
+  description: "Développeur web freelance basé à Casablanca, Maroc. Plus de 4 ans d'expérience, 45+ projets livrés pour des PME, startups, hôtels et associations au Maroc. Spécialisé en React, Next.js, WordPress, WooCommerce et SEO.",
   url: "https://www.moudevpro.com/about",
   telephone: "+212696964341",
   email: "contact@moudevpro.com",
@@ -56,12 +57,49 @@ const jsonLd = {
     addressLocality: "Casablanca",
     addressCountry: "MA",
   },
-  knowsAbout: ["React", "Next.js", "WordPress", "WooCommerce", "SEO", "Node.js"],
+  knowsAbout: [
+    "Création de site web",
+    "Développement web freelance",
+    "React",
+    "Next.js",
+    "WordPress",
+    "WooCommerce",
+    "SEO technique",
+    "Google Ads",
+    "Node.js",
+    "Site vitrine",
+    "Site e-commerce",
+    "Application web sur mesure",
+    "Référencement local Maroc",
+  ],
+  knowsLanguage: [
+    { "@type": "Language", name: "Français" },
+    { "@type": "Language", name: "Arabe" },
+    { "@type": "Language", name: "Anglais" },
+  ],
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "Développeur web freelance",
+    occupationLocation: { "@type": "City", name: "Casablanca" },
+    skills: "React, Next.js, WordPress, WooCommerce, Node.js, SEO, Google Ads",
+    estimatedSalary: {
+      "@type": "MonetaryAmountDistribution",
+      currency: "MAD",
+      percentile10: 2000,
+      percentile90: 30000,
+    },
+  },
   worksFor: {
     "@type": "Organization",
     name: "MouDevPro",
     url: "https://www.moudevpro.com",
   },
+  areaServed: [
+    { "@type": "City", name: "Casablanca" },
+    { "@type": "City", name: "Rabat" },
+    { "@type": "City", name: "Marrakech" },
+    { "@type": "Country", name: "Maroc" },
+  ],
 };
 
 const AboutPage = () => {
