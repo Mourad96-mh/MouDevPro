@@ -189,7 +189,7 @@
       },
       {
         "q": "Combien de temps faut-il pour livrer un site web ?",
-        "a": "Un site vitrine est livré en 5 jours, un e-commerce en 7 jours. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous me fournissez."
+        "a": "Tout site — vitrine ou e-commerce — est livré en 5 jours maximum. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous me fournissez."
       },
       {
         "q": "Mon site sera-t-il bien référencé sur Google à {{city}} ?",
@@ -197,7 +197,7 @@
       },
       {
         "q": "Puis-je modifier le contenu de mon site moi-même après livraison ?",
-        "a": "Absolument. Tous nos sites sont livrés avec une interface d'administration intuitive qui vous permet de modifier les textes, images, produits et pages sans aucune connaissance technique. Une formation de prise en main est incluse dans tous nos packs."
+        "a": "Absolument. Tous mes sites sont livrés avec une interface d'administration intuitive qui vous permet de modifier les textes, images, produits et pages sans aucune connaissance technique. Une formation de prise en main est incluse dans toutes mes formules."
       },
       {
         "q": "Proposez-vous un service de maintenance et de support après livraison ?",
@@ -213,11 +213,11 @@
       },
       {
         "q": "Qu'est-ce qui est inclus dans l'hébergement de votre pack ?",
-        "a": "L'hébergement inclus dans nos packs comprend : stockage SSD haute performance, certificat SSL (HTTPS), emails professionnels à votre nom de domaine, sauvegardes régulières et nom de domaine pour la première année. Disponibilité garantie à 99,9%."
+        "a": "L'hébergement inclus dans mes formules comprend : stockage SSD haute performance, certificat SSL (HTTPS), emails professionnels à votre nom de domaine, sauvegardes régulières et nom de domaine pour la première année. Disponibilité garantie à 99,9%."
       },
       {
         "q": "Qu'est-ce qu'un site vitrine et combien coûte-t-il à {{city}} ?",
-        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 2000 DH, livré en 7 jours, responsive, optimisé SEO et hébergement inclus."
+        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 2000 DH, livré en 5 jours maximum, responsive, optimisé SEO et hébergement inclus."
       },
       {
         "q": "Quelle est la différence entre un freelance web et une agence web à {{city}} ?",
@@ -225,7 +225,7 @@
       },
       {
         "q": "Comment créer un site e-commerce au Maroc ?",
-        "a": "Pour créer un site e-commerce au Maroc, il faut choisir une plateforme adaptée (WooCommerce, Shopify ou développement sur mesure), configurer un paiement local (CMI, PayZone, virement bancaire), et optimiser pour le SEO local. Chez MouDev, je livre un e-commerce complet à partir de 3 000 DH en 7 jours — catalogue produits, panier, paiement sécurisé, interface d'administration et formation incluse."
+        "a": "Pour créer un site e-commerce au Maroc, il faut choisir une plateforme adaptée (WooCommerce, Shopify ou développement sur mesure), configurer un paiement local (CMI, PayZone, virement bancaire), et optimiser pour le SEO local. Chez MouDev, je livre un e-commerce complet à partir de 3 000 DH en 5 jours maximum — catalogue produits, panier, paiement sécurisé, interface d'administration et formation incluse."
       },
       {
         "q": "Quel CMS choisir pour mon site web au Maroc — WordPress ou React ?",
@@ -258,7 +258,7 @@
       },
       {
         "name": "Amine Bennani",
-        "text": "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement."
+        "text": "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 5 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement."
       },
       {
         "name": "Ahmed Ali",

@@ -33,7 +33,7 @@ const VALUES = [
   {
     icon: "🚀",
     title: "Délais tenus",
-    desc: "Site vitrine livré en 5 jours, e-commerce en 7 jours. Je m'engage sur des délais réels et je les tiens — sans réunions inutiles.",
+    desc: "Site vitrine ou e-commerce — livraison en 5 jours maximum. Je m'engage sur des délais réels et je les tiens — sans réunions inutiles.",
   },
   {
     icon: "🔍",

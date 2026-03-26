@@ -6,6 +6,39 @@ import Footer from "../components/layout/Footer";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
 
+const FAQ_ITEMS = [
+  {
+    q: "Quels services de création de site web proposez-vous au Maroc ?",
+    a: "Je propose la création de sites vitrine professionnels, sites e-commerce, applications web sur mesure, refonte de sites existants et référencement SEO. Chaque projet est développé avec React, WordPress ou WooCommerce selon vos besoins — livraison en 5 jours maximum.",
+  },
+  {
+    q: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
+    a: "Un site vitrine présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans et professions libérales. Un site e-commerce permet de vendre en ligne avec un catalogue produits, un panier et un système de paiement sécurisé. Les deux sont livrés en 5 jours maximum.",
+  },
+  {
+    q: "Proposez-vous la refonte de sites web existants ?",
+    a: "Oui. Je refondes les sites lents, datés ou mal référencés : nouveau design responsive, optimisation Core Web Vitals, migration sécurisée sans perte de référencement. Devis gratuit après audit de votre site actuel.",
+  },
+  {
+    q: "Le SEO est-il inclus dans la création de site web ?",
+    a: "Oui. Tous mes sites sont livrés avec une optimisation SEO technique complète : balises title et meta, structure H1/H2/H3, URLs propres, images optimisées WebP, site rapide et 100% responsive. Je propose également des prestations SEO avancées pour cibler vos mots-clés locaux.",
+  },
+  {
+    q: "Intervenez-vous à Casablanca, Rabat et Marrakech ?",
+    a: "Oui. Je travaille avec des clients à Casablanca, Rabat, Marrakech et dans tout le Maroc. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo — livraison rapide sans contrainte géographique.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 const SERVICES = [
   {
     id: "vitrine",
@@ -21,7 +54,7 @@ const SERVICES = [
     id: "ecommerce",
     icon: "🛍️",
     title: "Site e-commerce & boutique en ligne",
-    desc: "Vendez en ligne 24h/24 — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, commandes et promotions. Formation admin 2h incluse. Livré en 7 jours.",
+    desc: "Vendez en ligne 24h/24 — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, commandes et promotions. Formation admin 2h incluse. Livré en 5 jours.",
     price: "dès 3 000 DH",
     link: "/ecommerce",
     linkLabel: "En savoir plus sur l'e-commerce",
@@ -41,7 +74,7 @@ const SERVICES = [
     id: "refonte",
     icon: "🔄",
     title: "Refonte de site web",
-    desc: "Votre site est lent, daté ou mal référencé ? Je refonds votre site existant : nouveau design, optimisation Core Web Vitals, migration sécurisée sans perte de référencement. Livraison en 2 à 4 semaines.",
+    desc: "Votre site est lent, daté ou mal référencé ? Je refonds votre site existant : nouveau design, optimisation Core Web Vitals, migration sécurisée sans perte de référencement. Livraison en 5 jours.",
     price: "dès 2 000 DH",
     link: "/contact",
     linkLabel: "Demander un diagnostic",
@@ -126,6 +159,7 @@ const ServicesPage = () => {
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/services" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/services" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -216,7 +250,7 @@ const ServicesPage = () => {
           <div className="tarifs-teaser-card tarifs-teaser-card--highlight">
             <h3 className="tertiary-heading">E-commerce</h3>
             <p className="tarifs-teaser-price">dès 3 000 DH</p>
-            <p>Livraison en 7 jours</p>
+            <p>Livraison en 5 jours</p>
           </div>
           <div className="tarifs-teaser-card">
             <h3 className="tertiary-heading">Sur Mesure</h3>
@@ -228,6 +262,19 @@ const ServicesPage = () => {
           <Link to="/tarifs" className="link link--outline">
             Voir les tarifs détaillés →
           </Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="home container">
+        <h2 className="secondary-heading center-text lg-mb">Questions fréquentes — Services Web</h2>
+        <div className="city-faq">
+          {FAQ_ITEMS.map((item, i) => (
+            <details key={i} className="city-faq__item">
+              <summary className="city-faq__question">{item.q}</summary>
+              <p className="city-faq__answer">{item.a}</p>
+            </details>
+          ))}
         </div>
       </section>
 

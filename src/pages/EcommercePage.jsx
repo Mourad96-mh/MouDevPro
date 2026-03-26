@@ -46,7 +46,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "En combien de temps ma boutique en ligne sera-t-elle livrée ?",
-    a: "Un site e-commerce standard est livré en 7 jours. Le délai dépend du nombre de produits, des intégrations requises et de la disponibilité de vos visuels. Je m'engage sur un délai précis dès le devis.",
+    a: "Un site e-commerce standard est livré en 5 jours maximum. Le délai dépend du nombre de produits, des intégrations requises et de la disponibilité de vos visuels. Je m'engage sur un délai précis dès le devis.",
   },
   {
     q: "Puis-je accepter des paiements en ligne depuis le Maroc ?",
@@ -233,7 +233,7 @@ const EcommercePage = () => {
           <div className="ecommerce-pricing-header">
             <h3 className="tertiary-heading">Site E-commerce Professionnel</h3>
             <p className="ecommerce-pricing-price">dès 3 000 DH</p>
-            <p className="ecommerce-pricing-delivery">Livraison en 7 jours</p>
+            <p className="ecommerce-pricing-delivery">Livraison en 5 jours</p>
           </div>
           <ul className="ecommerce-pricing-features">
             {[

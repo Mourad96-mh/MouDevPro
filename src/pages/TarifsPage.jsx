@@ -6,6 +6,39 @@ import TarifsSection from "../components/sections/TarifsSection";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
 
+const FAQ_ITEMS = [
+  {
+    q: "Quel est le prix d'un site web professionnel au Maroc ?",
+    a: "Les tarifs démarrent à 2 000 DH pour un site vitrine professionnel et à 3 000 DH pour un site e-commerce. Le prix final dépend du nombre de pages, des fonctionnalités requises et des intégrations souhaitées. Je fournis un devis gratuit et détaillé sous 24h.",
+  },
+  {
+    q: "Faut-il payer un acompte pour créer un site web ?",
+    a: "Non. Chez MouDev, le paiement se fait uniquement après livraison et validation du site. Vous payez seulement quand vous êtes satisfait du résultat — zéro acompte imposé.",
+  },
+  {
+    q: "Qu'est-ce qui est inclus dans le prix d'un site vitrine ?",
+    a: "Le prix d'un site vitrine chez MouDev inclut : design sur mesure, jusqu'à 10 pages, optimisation SEO technique, formulaire de contact, hébergement SSD, certificat SSL (HTTPS), nom de domaine pour 1 an, interface d'administration et formation de prise en main.",
+  },
+  {
+    q: "Pourquoi les tarifs d'un freelance sont moins chers qu'une agence ?",
+    a: "Un freelance n'a pas de bureau, d'équipe ni de frais de structure à répercuter sur ses clients. Vous bénéficiez du même niveau de qualité technique qu'une agence, à un prix compétitif — et vous parlez directement avec le développeur, sans intermédiaire.",
+  },
+  {
+    q: "Peut-on avoir un site e-commerce professionnel à moins de 5 000 DH au Maroc ?",
+    a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 5 jours maximum.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -60,6 +93,7 @@ const TarifsPage = () => {
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/tarifs" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/tarifs" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -116,6 +150,19 @@ const TarifsPage = () => {
               risque de votre côté.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="home container">
+        <h2 className="secondary-heading center-text lg-mb">Questions fréquentes — Prix &amp; Tarifs</h2>
+        <div className="city-faq">
+          {FAQ_ITEMS.map((item, i) => (
+            <details key={i} className="city-faq__item">
+              <summary className="city-faq__question">{item.q}</summary>
+              <p className="city-faq__answer">{item.a}</p>
+            </details>
+          ))}
         </div>
       </section>
 

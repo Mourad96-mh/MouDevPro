@@ -27,7 +27,7 @@ const PLANS = [
     id: "ecommerce",
     name: "Site E-commerce",
     price: "dès 3 000 DH",
-    delivery: "Livraison en 7 jours",
+    delivery: "Livraison en 5 jours",
     highlight: true,
     features: [
       "Tout ce qui est inclus dans Site Vitrine",

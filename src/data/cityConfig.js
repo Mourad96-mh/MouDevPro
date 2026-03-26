@@ -67,7 +67,7 @@ export const cityConfig = {
       canonical: `${BASE}/rabat`,
       metaTitle: "Création Site Web Rabat — Agence Web & Freelance | MouDEV",
       metaDescription:
-        "MouDEV, agence web & freelance à Rabat : création de site internet professionnel, site vitrine dès 2000 DH, application web sur mesure. Devis gratuit en 24h. Livraison en 7 jours.",
+        "MouDEV, agence web & freelance à Rabat : création de site internet professionnel, site vitrine dès 2000 DH, application web sur mesure. Devis gratuit en 24h. Livraison en 5 jours maximum.",
       cityContext:
         "À Rabat, capitale administrative du Maroc et ville en pleine transformation digitale, votre présence en ligne est un levier de croissance essentiel. MouDev accompagne les administrations, startups, PME et entreprises de Rabat dans la création de sites web professionnels, avec l'expertise d'une agence et la réactivité d'un freelance.",
       hreflang: {
@@ -85,7 +85,7 @@ export const cityConfig = {
       canonical: `${BASE}/en/rabat`,
       metaTitle: "Website Creation Rabat — Web Agency & Freelance | MouDEV",
       metaDescription:
-        "MouDEV, web agency & freelance in Rabat: professional website creation, site vitrine from 2000 DH, custom web app. Free quote in 24h. Delivery in 7 days.",
+        "MouDEV, web agency & freelance in Rabat: professional website creation, site vitrine from 2000 DH, custom web app. Free quote in 24h. Delivery in 5 days maximum.",
       cityContext:
         "In Rabat, Morocco's administrative capital and a city undergoing rapid digital transformation, your online presence is a key growth lever. MouDev supports startups, SMEs and businesses in Rabat with professional website creation — agency expertise at freelance prices.",
       hreflang: {

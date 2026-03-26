@@ -349,7 +349,7 @@ const MarrakechPage = () => {
                 {[
                   ["Contact", "Direct avec le développeur", "Commercial + chef de projet"],
                   ["Prix", "Dès 2 000 DH", "Dès 8 000 DH et plus"],
-                  ["Délai", "2 à 4 semaines", "1 à 3 mois"],
+                  ["Délai", "5 jours max", "1 à 3 mois"],
                   ["Paiement", "Après livraison", "Acompte imposé"],
                   ["Multilingue", "FR/EN/AR inclus sur devis", "Supplément facturé"],
                   ["SEO tourisme", "Optimisé FR + EN", "Rarement inclus"],

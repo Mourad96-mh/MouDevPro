@@ -89,7 +89,7 @@ const jsonLd = {
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Amine Bennani" },
       datePublished: "2025-11-20",
-      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
+      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 5 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
     },
     {
       "@type": "Review",
@@ -127,7 +127,7 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Création de site e-commerce",
-          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 7 jours.",
+          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 5 jours.",
           areaServed: ["Casablanca", "Rabat", "Marrakech", "Maroc"],
         },
         price: "3000",
@@ -373,7 +373,7 @@ const HomePage = () => {
             {
               icon: "🚀",
               title: "Livraison en 5 jours",
-              desc: "Un site vitrine livré en 5 jours, un e-commerce en 7 jours. Délais tenus, sans réunions inutiles.",
+              desc: "Site vitrine ou e-commerce — livraison en 5 jours maximum. Délais tenus, sans réunions inutiles.",
             },
             {
               icon: "✅",
