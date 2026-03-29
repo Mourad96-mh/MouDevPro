@@ -13,4 +13,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
 
 # Correct MIME type for sitemap
-AddType application/xml .xml
+<FilesMatch "sitemap\.xml$">
+  Header set Content-Type "application/xml; charset=utf-8"
+</FilesMatch>
