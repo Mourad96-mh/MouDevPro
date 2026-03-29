@@ -1,11 +1,16 @@
 Options -MultiViews
 RewriteEngine On
+RewriteBase /
 
-# Redirect non-www to www (301 permanent)
+# Redirect non-www to www
 RewriteCond %{HTTP_HOST} ^moudevpro\.com [NC]
 RewriteRule ^(.*)$ https://www.moudevpro.com/$1 [R=301,L]
 
 # SPA fallback
+RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /index.html [QSA,L]
+RewriteRule . /index.html [L]
+
+# Correct MIME type for sitemap
+AddType application/xml .xml
