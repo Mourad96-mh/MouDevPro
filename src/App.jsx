@@ -4,10 +4,15 @@ import HomePage from "./pages/HomePage";
 import CityPage from "./pages/CityPage";
 import TarifsPage from "./pages/TarifsPage";
 import CasablancaPage from "./pages/CasablancaPage";
+import RabatPage from "./pages/RabatPage";
+import MarrakechPage from "./pages/MarrakechPage";
 import EcommercePage from "./pages/EcommercePage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
 import { CityProvider } from "./context/CityContext";
 
 function App() {
@@ -20,8 +25,8 @@ function App() {
             <Route index element={<HomePage />} />
 
             {/* French city pages */}
-            <Route path="rabat" element={<CityPage city="rabat" lang="fr" />} />
-            <Route path="marrakech" element={<CityPage city="marrakech" lang="fr" />} />
+            <Route path="rabat" element={<RabatPage />} />
+            <Route path="marrakech" element={<MarrakechPage />} />
 
             {/* English */}
             <Route path="en" element={<CityPage city="casablanca" lang="en" />} />
@@ -40,6 +45,9 @@ function App() {
             <Route path="services" element={<ServicesPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="blog/:slug" element={<BlogPostPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

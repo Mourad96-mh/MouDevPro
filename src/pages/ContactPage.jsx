@@ -88,6 +88,13 @@ const ContactPage = () => {
           content="Devis gratuit et personnalisé en 24h pour votre site web au Maroc. Développeur web freelance basé à Casablanca."
         />
         <meta property="og:url" content="https://www.moudevpro.com/contact" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Devis Gratuit Site Web Maroc | Réponse en 24h | MouDEV" />
+        <meta name="twitter:description" content="Devis gratuit et personnalisé en 24h pour votre site web au Maroc. Développeur web freelance basé à Casablanca." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.moudevpro.com/contact" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/contact" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/contact" />

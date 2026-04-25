@@ -13,6 +13,15 @@ import { cityConfig } from "../data/cityConfig";
 import i18n from "../i18n";
 
 
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "Casablanca", item: "https://www.moudevpro.com/casablanca" },
+  ],
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
@@ -79,12 +88,21 @@ const CasablancaPage = () => {
           content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 5 jours."
         />
         <meta property="og:url" content="https://www.moudevpro.com/casablanca" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Création Site Web Casablanca | Développeur Web Freelance | MouDEV" />
+        <meta name="twitter:description" content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 5 jours." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="création site web casablanca, développeur web casablanca, web developer casablanca, site vitrine casablanca, site e-commerce casablanca, devis site web casablanca, website design casablanca" />
         <link rel="canonical" href="https://www.moudevpro.com/casablanca" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/casablanca" />
         <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en" />
         <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/casablanca" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -157,7 +175,7 @@ const CasablancaPage = () => {
               <span className="city-stat__label">Site vitrine dès</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">2–3 sem.</span>
+              <span className="city-stat__num">5 jours</span>
               <span className="city-stat__label">Délai de livraison</span>
             </div>
             <div className="city-stat">

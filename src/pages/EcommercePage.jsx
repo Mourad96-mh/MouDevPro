@@ -82,6 +82,15 @@ const jsonLd = {
   serviceType: ["Site e-commerce", "Boutique en ligne", "WooCommerce", "E-commerce Maroc"],
 };
 
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "E-commerce", item: "https://www.moudevpro.com/ecommerce" },
+  ],
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -119,11 +128,20 @@ const EcommercePage = () => {
           content="Boutique en ligne professionnelle au Maroc dès 3 000 DH. Paiement CMI, catalogue illimité, SEO inclus. Développeur freelance — devis gratuit en 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/ecommerce" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Site E-commerce Maroc | Boutique en Ligne | MouDEV" />
+        <meta name="twitter:description" content="Boutique en ligne professionnelle au Maroc dès 3 000 DH. Paiement CMI, catalogue illimité, SEO inclus. Devis gratuit en 24h." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="site e-commerce maroc, boutique en ligne casablanca, site e-commerce casablanca, création boutique en ligne maroc, woocommerce maroc, site e-commerce rabat, site e-commerce marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/ecommerce" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/ecommerce" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/ecommerce" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       {/* Hero */}

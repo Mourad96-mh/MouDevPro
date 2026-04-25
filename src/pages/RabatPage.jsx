@@ -6,12 +6,53 @@ import Footer from "../components/layout/Footer";
 import ServicesSection from "../components/sections/ServicesSection";
 import TarifsSection from "../components/sections/TarifsSection";
 import Portfolio from "../components/sections/Portfolio";
-import FAQ from "../components/sections/FAQ";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
 import { cityConfig } from "../data/cityConfig";
 import i18n from "../i18n";
 
+const FAQ_ITEMS = [
+  {
+    q: "Quel est le prix d'un site web professionnel à Rabat ?",
+    a: "La création d'un site web à Rabat démarre à 2 000 DH pour un site vitrine professionnel, et à 3 000 DH pour un site e-commerce. Le prix final dépend du nombre de pages et des fonctionnalités souhaitées. Je fournis un devis gratuit et détaillé sous 24h — sans engagement.",
+  },
+  {
+    q: "Combien de temps faut-il pour créer un site web à Rabat ?",
+    a: "Je livre un site vitrine ou un site e-commerce en 5 jours maximum. Pour les applications web sur mesure, le délai dépend de la complexité — je vous communique un planning précis dès le devis. Aucune réunion inutile, livraison rapide garantie.",
+  },
+  {
+    q: "Intervenez-vous à Rabat ou uniquement à Casablanca ?",
+    a: "J'interviens à Rabat, Casablanca et Marrakech. Tout le suivi se fait à distance via WhatsApp, email et appels vidéo — aucune contrainte géographique, aucun frais de déplacement. Que vous soyez à Hay Ryad, Agdal, Hassan ou au centre-ville de Rabat, je travaille avec vous directement.",
+  },
+  {
+    q: "Créez-vous des sites web pour associations et ONG à Rabat ?",
+    a: "Oui. Je crée des sites web institutionnels pour associations, ONG et organisations internationales basées à Rabat — design sobre et professionnel, multilingue FR/AR/EN, formulaires de contact, galerie de projets et pages de dons. Devis sur mesure selon votre structure et budget.",
+  },
+  {
+    q: "Le SEO est-il inclus dans la création de site web à Rabat ?",
+    a: "Oui, l'optimisation SEO technique est incluse dans chaque site livré : balises title et meta optimisées, structure H1/H2/H3, URLs propres, images WebP, site rapide et 100% responsive. Je propose également des prestations SEO locales pour positionner votre site sur les mots-clés 'création site web Rabat' et 'développeur web Rabat'.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
+
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "Rabat", item: "https://www.moudevpro.com/rabat" },
+  ],
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -74,12 +115,22 @@ const RabatPage = () => {
           content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 5 jours."
         />
         <meta property="og:url" content="https://www.moudevpro.com/rabat" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Création Site Web Rabat | Développeur Web Freelance | MouDEV" />
+        <meta name="twitter:description" content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 5 jours." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="création site web rabat, développeur web rabat, web developer rabat, site vitrine rabat, site e-commerce rabat, devis site web rabat, freelance web rabat" />
         <link rel="canonical" href="https://www.moudevpro.com/rabat" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/rabat" />
         <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/rabat" />
         <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar/rabat" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/rabat" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -218,7 +269,19 @@ const RabatPage = () => {
       <TarifsSection cityName="Rabat" />
 
       <Portfolio cityName="Rabat" />
-      <FAQ cityName="Rabat" />
+
+      {/* FAQ */}
+      <section id="faq" className="home container">
+        <h2 className="secondary-heading center-text lg-mb">Questions fréquentes — Création site web à Rabat</h2>
+        <div className="city-faq">
+          {FAQ_ITEMS.map((item, i) => (
+            <details key={i} className="city-faq__item">
+              <summary className="city-faq__question">{item.q}</summary>
+              <p className="city-faq__answer">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
 
       {/* Final CTA */}
       <section id="contact" className="tarifs-cta-section">

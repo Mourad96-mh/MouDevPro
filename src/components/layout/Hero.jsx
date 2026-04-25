@@ -27,6 +27,8 @@ const Hero = ({ cityName }) => {
           src="/hero-img.avif"
           loading="eager"
           fetchpriority="high"
+          width="600"
+          height="450"
           alt={`Développeur web freelance MouDev à ${cityName} — création de site web professionnel au Maroc`}
           title={`Création site web ${cityName} — développeur web freelance MouDev`}
         />

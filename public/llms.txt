@@ -1,0 +1,58 @@
+# MouDevPro — Développeur Web Freelance Maroc
+
+## À propos
+
+MouDevPro est un développeur web freelance basé à Casablanca (Quartier Maarif), Maroc. Fondé par Mourad, le service propose la création de sites web professionnels pour les PME, startups, hôtels, riads et associations au Maroc.
+
+Contrairement aux agences web, MouDevPro offre un contact direct avec le développeur — pas d'intermédiaire, pas de chef de projet. Qualité agence, prix freelance.
+
+## Services
+
+- **Création de site vitrine** : dès 2 000 MAD — jusqu'à 10 pages, design sur mesure, SEO inclus, hébergement inclus, livraison en 5 jours
+- **Création de site e-commerce** : dès 3 000 MAD — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, formation admin 2h, livraison en 5 jours
+- **Application web sur mesure** : React, Next.js, Node.js — selon cahier des charges
+- **Refonte de site web** : modernisation design, performance, SEO et mobile-first
+- **Site web hôtel / riad Marrakech** : dès 4 990 MAD — réservation en ligne, multilingue FR/EN/AR, SEO tourisme
+
+## Zones géographiques servies
+
+Casablanca, Rabat, Marrakech et tout le Maroc (livraison 100% à distance via WhatsApp).
+
+## Différenciateurs clés
+
+- Vous parlez directement avec le développeur
+- Paiement après livraison — zéro acompte imposé
+- Livraison en 5 jours pour un site vitrine ou e-commerce
+- SEO technique inclus dans chaque projet
+- Disponible 7j/7 sur WhatsApp
+
+## Tarifs
+
+| Service | Prix de départ |
+|---|---|
+| Site vitrine | 2 000 MAD |
+| Site e-commerce | 3 000 MAD |
+| Site hôtel / riad | 4 990 MAD |
+| Application sur mesure | Sur devis |
+
+## Contact
+
+- Site web : https://www.moudevpro.com
+- WhatsApp / Téléphone : +212 696 964 341
+- Email : contact@moudevpro.com
+- Adresse : Quartier Maarif, Casablanca 20000, Maroc
+
+## Technologies
+
+React, Next.js, WordPress, WooCommerce, Node.js, Vite, Tailwind CSS, SEO on-page, Google Ads.
+
+## Pages importantes
+
+- Accueil : https://www.moudevpro.com/
+- Casablanca : https://www.moudevpro.com/casablanca
+- Rabat : https://www.moudevpro.com/rabat
+- Marrakech (hôtels, riads) : https://www.moudevpro.com/marrakech
+- Tarifs : https://www.moudevpro.com/tarifs
+- Services : https://www.moudevpro.com/services
+- E-commerce : https://www.moudevpro.com/ecommerce
+- Contact / Devis : https://www.moudevpro.com/contact

@@ -26,11 +26,11 @@ export const cityConfig = {
       address: "Quartier Maarif, Casablanca, 20000",
       geo: { lat: 33.589886, lng: -7.603869 },
       canonical: `${BASE}/en`,
-      metaTitle: "Website Creation Casablanca – Digital Marketing Agency | MouDEV",
+      metaTitle: "Web Developer Morocco | Professional Website Creation | MouDEV",
       metaDescription:
-        "MouDEV, web agency in Casablanca: professional website creation, webdesign, SEO and Google Ads in Morocco. Free quote!",
+        "Freelance web developer in Morocco. Professional websites from 2,000 MAD — delivered in 5 days. Direct contact, no agency overhead. Free quote in 24h.",
       cityContext:
-        "In Casablanca, Morocco's economic capital and the Maghreb's leading business hub, online competition is fierce. We help businesses in the Maarif, Anfa and Ain Diab districts dominate their market with high-performing websites, powerful local SEO and profitable Google Ads campaigns.",
+        "In Casablanca, Morocco's economic capital, I create professional websites for businesses in Maarif, Anfa, Ain Diab and the Triangle d'Or — fast delivery, no agency overhead, direct contact with the developer.",
       hreflang: {
         fr: `${BASE}/casablanca`,
         en: `${BASE}/en`,
@@ -44,11 +44,11 @@ export const cityConfig = {
       address: "حي المعاريف، الدار البيضاء، 20000",
       geo: { lat: 33.589886, lng: -7.603869 },
       canonical: `${BASE}/ar`,
-      metaTitle: "إنشاء موقع ويب الدار البيضاء – وكالة التسويق الرقمي | MouDEV",
+      metaTitle: "إنشاء موقع إلكتروني بالدار البيضاء | مطور ويب فريلانسر بالمغرب | MouDEV",
       metaDescription:
-        "MouDEV، وكالة ويب في الدار البيضاء: إنشاء مواقع ويب احترافية وتصميم وSEO وإعلانات Google في المغرب. عرض سعر مجاني!",
+        "مطور ويب فريلانسر بالمغرب. مواقع إلكترونية احترافية من 2000 درهم — تسليم في 5 أيام. تواصل مباشر بدون وسيط. عرض سعر مجاني خلال 24 ساعة.",
       cityContext:
-        "في الدار البيضاء، العاصمة الاقتصادية للمغرب ومركز الأعمال الرائد في المغرب العربي، المنافسة الرقمية شرسة. نساعد الشركات في أحياء المعاريف وعين الذياب وأنفا على التفوق في أسواقها بمواقع ويب عالية الأداء وتحسين محركات البحث المحلي وحملات Google Ads مربحة.",
+        "في الدار البيضاء، العاصمة الاقتصادية للمغرب ومركز الأعمال الرائد في المغرب العربي، أساعد الشركات في أحياء المعاريف وعين الذياب وأنفا على تعزيز حضورها الرقمي بمواقع ويب احترافية وتحسين محركات البحث المحلي. تواصل مباشر مع المطور، بدون وسيط.",
       hreflang: {
         fr: `${BASE}/casablanca`,
         en: `${BASE}/en`,
@@ -65,9 +65,9 @@ export const cityConfig = {
       address: "Rabat, Maroc",
       geo: { lat: 33.9716, lng: -6.8498 },
       canonical: `${BASE}/rabat`,
-      metaTitle: "Création Site Web Rabat — Agence Web & Freelance | MouDEV",
+      metaTitle: "Création Site Web à Rabat | Développeur Web Freelance Maroc | MouDEV",
       metaDescription:
-        "MouDEV, agence web & freelance à Rabat : création de site internet professionnel, site vitrine dès 2000 DH, application web sur mesure. Devis gratuit en 24h. Livraison en 5 jours maximum.",
+        "Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG et PME de Rabat. Devis gratuit en 24h, livraison 5 jours.",
       cityContext:
         "À Rabat, capitale administrative du Maroc et ville en pleine transformation digitale, votre présence en ligne est un levier de croissance essentiel. MouDev accompagne les administrations, startups, PME et entreprises de Rabat dans la création de sites web professionnels, avec l'expertise d'une agence et la réactivité d'un freelance.",
       hreflang: {
@@ -83,9 +83,9 @@ export const cityConfig = {
       address: "Rabat, Morocco",
       geo: { lat: 33.9716, lng: -6.8498 },
       canonical: `${BASE}/en/rabat`,
-      metaTitle: "Website Creation Rabat — Web Agency & Freelance | MouDEV",
+      metaTitle: "Web Developer Rabat | Professional Website Creation Morocco | MouDEV",
       metaDescription:
-        "MouDEV, web agency & freelance in Rabat: professional website creation, site vitrine from 2000 DH, custom web app. Free quote in 24h. Delivery in 5 days maximum.",
+        "Freelance web developer for Rabat, Morocco. Professional websites from 2,000 MAD — startups, NGOs, SMEs. Free quote in 24h, 5-day delivery.",
       cityContext:
         "In Rabat, Morocco's administrative capital and a city undergoing rapid digital transformation, your online presence is a key growth lever. MouDev supports startups, SMEs and businesses in Rabat with professional website creation — agency expertise at freelance prices.",
       hreflang: {
@@ -101,9 +101,9 @@ export const cityConfig = {
       address: "الرباط، المغرب",
       geo: { lat: 33.9716, lng: -6.8498 },
       canonical: `${BASE}/ar/rabat`,
-      metaTitle: "إنشاء موقع ويب الرباط — وكالة ويب وفريلانس | MouDEV",
+      metaTitle: "إنشاء موقع إلكتروني بالرباط | مطور ويب فريلانسر بالمغرب | MouDEV",
       metaDescription:
-        "MouDEV، وكالة ويب وفريلانس في الرباط: إنشاء موقع إنترنت احترافي، موقع فيترين من 2000 درهم، تطبيق ويب مخصص. عرض سعر مجاني في 24 ساعة.",
+        "مطور ويب فريلانسر في الرباط بالمغرب. مواقع إلكترونية احترافية من 2000 درهم — تسليم في 5 أيام. للشركات الناشئة والجمعيات والمؤسسات. عرض مجاني خلال 24 ساعة.",
       cityContext:
         "في الرباط، العاصمة الإدارية للمغرب والمدينة في خضم التحول الرقمي، حضورك الرقمي هو رافعة نمو أساسية. MouDev يرافق الشركات الناشئة والمؤسسات الصغيرة والمتوسطة في الرباط في إنشاء مواقع ويب احترافية بخبرة وكالة وبمرونة فريلانس.",
       hreflang: {
@@ -122,9 +122,9 @@ export const cityConfig = {
       address: "Marrakech, Maroc",
       geo: { lat: 31.6295, lng: -7.9811 },
       canonical: `${BASE}/marrakech`,
-      metaTitle: "Création site web Marrakech – Agence Web & Marketing Digital | MouDEV",
+      metaTitle: "Création Site Web Marrakech | Hôtels, Riads & Restaurants | MouDEV",
       metaDescription:
-        "MouDEV, agence web à Marrakech : création de sites web professionnels pour hôtels, riads, restaurants et boutiques. SEO et Google Ads. Devis gratuit !",
+        "Développeur web freelance à Marrakech. Sites web pour hôtels, riads et restaurants — réservation en ligne, multilingue FR/EN/AR. Dès 2 000 DH, devis gratuit en 24h.",
       cityContext:
         "À Marrakech, capitale touristique et culturelle du Maroc visitée par des millions de voyageurs chaque année, votre site web est votre vitrine mondiale. Hôtels, riads, restaurants, boutiques artisanales et agences de voyage : MouDev crée des sites web qui séduisent une clientèle internationale, génèrent des réservations en ligne et boostent vos ventes.",
       hreflang: {

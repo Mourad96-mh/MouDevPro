@@ -130,6 +130,12 @@ const routes = [
   { url: "/services", changefreq: "monthly", priority: 0.8 },
   { url: "/contact", changefreq: "monthly", priority: 0.7 },
   { url: "/about", changefreq: "monthly", priority: 0.5 },
+
+  // ── Blog ─────────────────────────────────────────────────────────────────
+  { url: "/blog", changefreq: "weekly", priority: 0.8 },
+  { url: "/blog/prix-site-web-maroc-2026", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/choisir-developpeur-web-freelance-maroc", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/site-web-hotel-riad-marrakech", changefreq: "monthly", priority: 0.7 },
 ];
 
 (async () => {

@@ -62,6 +62,15 @@ const FAQ_ITEMS = [
   },
 ];
 
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "Marrakech", item: "https://www.moudevpro.com/marrakech" },
+  ],
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
@@ -132,6 +141,14 @@ const MarrakechPage = () => {
           content="Professional hotel and riad website design in Marrakech. Online booking, multilingual FR/EN/AR, tourism SEO. Free quote in 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/marrakech" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hotel Website Marrakech | Riad & Restaurant Web Design | MouDEV" />
+        <meta name="twitter:description" content="Professional hotel and riad website design in Marrakech. Online booking, multilingual FR/EN/AR, tourism SEO. Free quote in 24h." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="site web hôtel marrakech, riad website marrakech, hotel website design morocco, création site web marrakech, développeur web marrakech, site réservation riad maroc, web developer marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/marrakech" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/marrakech" />
         <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/marrakech" />
@@ -139,6 +156,7 @@ const MarrakechPage = () => {
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/marrakech" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       {/* Hero */}

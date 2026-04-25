@@ -115,17 +115,27 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>À propos — Mourad, Développeur Web Freelance Maroc | MouDEV</title>
+        <title>Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV</title>
         <meta
           name="description"
-          content="Développeur web freelance basé à Casablanca. 4+ ans d'expérience, 45+ projets livrés. React, Next.js, WordPress, SEO — devis gratuit en 24h."
+          content="Je m'appelle Mourad, développeur web freelance basé à Casablanca. 45+ projets livrés pour des PME, startups et hôtels au Maroc. Paiement après livraison, devis gratuit en 24h."
         />
-        <meta property="og:title" content="À propos — Mourad, Développeur Web Freelance Maroc | MouDEV" />
+        <meta property="og:title" content="Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV" />
         <meta
           property="og:description"
-          content="Développeur web freelance basé à Casablanca. 4+ ans d'expérience, 45+ projets livrés au Maroc."
+          content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison."
         />
         <meta property="og:url" content="https://www.moudevpro.com/about" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV" />
+        <meta name="twitter:description" content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="keywords" content="mourad développeur web, moudevpro, à propos moudev casablanca, web developer maroc mourad, mourad mhani développeur" />
+        <meta name="robots" content="index, follow" />
+        <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/about" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/about" />
         <link rel="canonical" href="https://www.moudevpro.com/about" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
@@ -134,11 +144,11 @@ const AboutPage = () => {
       <section className="about-hero">
         <div className="container about-hero__inner">
           <h1 className="heading--primary center-text">
-            À propos de MouDEV
+            Mourad — Développeur Web Freelance à Casablanca
           </h1>
           <p className="subheading center-text">
-            Développeur web freelance basé à Casablanca — je crée des sites web
-            professionnels qui génèrent des résultats concrets pour les entreprises marocaines.
+            Je crée des sites web professionnels pour les entreprises marocaines — contact direct
+            avec le développeur, paiement après livraison, devis gratuit en 24h.
           </p>
         </div>
       </section>
@@ -152,6 +162,8 @@ const AboutPage = () => {
               alt="Mourad — développeur web freelance Casablanca, création site web Maroc"
               className="about-story__photo"
               loading="lazy"
+              width="600"
+              height="450"
             />
           </div>
           <div className="about-story__text">

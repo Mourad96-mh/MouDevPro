@@ -29,6 +29,15 @@ const FAQ_ITEMS = [
   },
 ];
 
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "Tarifs", item: "https://www.moudevpro.com/tarifs" },
+  ],
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -70,7 +79,7 @@ const TarifsPage = () => {
     <>
       <Helmet>
         <title>
-          Prix Création Site Web Maroc | Tarifs Transparents &amp; Devis
+          Prix Création Site Web Maroc 2026 | Tarifs Transparents &amp; Devis
           Gratuit | MouDEV
         </title>
         <meta
@@ -79,7 +88,7 @@ const TarifsPage = () => {
         />
         <meta
           property="og:title"
-          content="Prix Création Site Web Maroc | Tarifs & Devis Gratuit | MouDEV"
+          content="Prix Création Site Web Maroc 2026 | Tarifs & Devis Gratuit | MouDEV"
         />
         <meta
           property="og:description"
@@ -89,11 +98,20 @@ const TarifsPage = () => {
           property="og:url"
           content="https://www.moudevpro.com/tarifs"
         />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Prix Création Site Web Maroc 2026 | Tarifs & Devis Gratuit | MouDEV" />
+        <meta name="twitter:description" content="Tarifs transparents pour la création de site web au Maroc. Site vitrine dès 2 000 DH. Devis gratuit en 24h." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="prix site web maroc, tarif site web maroc, devis site web maroc, prix site vitrine maroc, prix site e-commerce maroc, coût création site web maroc, tarif développeur web maroc" />
         <link rel="canonical" href="https://www.moudevpro.com/tarifs" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/tarifs" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/tarifs" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       {/* Hero */}

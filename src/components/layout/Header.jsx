@@ -29,21 +29,24 @@ const Header = () => {
       <Logo />
 
       <nav className={`nav${menuOpen ? " nav--open" : ""}`}>
-        {cityLinks.length > 0 && (
-          <ul className="nav__list nav__cities">
-            {cityLinks.map(({ city, name, path, active }) => (
-              <li key={city} className="nav__item">
-                <Link
-                  to={path}
-                  className={`nav__link${active ? " nav__link--active" : ""}`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul className="nav__list nav__cities">
+          {cityLinks.map(({ city, name, path, active }) => (
+            <li key={city} className="nav__item">
+              <Link
+                to={path}
+                className={`nav__link${active ? " nav__link--active" : ""}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
+          <li className="nav__item">
+            <Link to="/blog" className="nav__link" onClick={() => setMenuOpen(false)}>
+              Blog
+            </Link>
+          </li>
+        </ul>
       </nav>
 
       <div className="header__actions">

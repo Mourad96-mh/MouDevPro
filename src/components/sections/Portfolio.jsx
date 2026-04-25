@@ -58,6 +58,27 @@ const PROJECTS = [
     alt: "Ecommerce Mou — création boutique en ligne e-commerce sur mesure, développeur web freelance Maroc",
     url: "https://ecommerce-mou.netlify.app/",
   },
+  {
+    tag: "Santé & Dentaire",
+    title: "AT Dental",
+    desc: "Site vitrine pour une clinique dentaire au Maroc : présentation des soins, prise de rendez-vous en ligne et interface patient moderne et rassurante.",
+    alt: "AT Dental — création site web clinique dentaire Maroc, site vitrine cabinet dentiste professionnel",
+    url: "https://atdental.ma/",
+  },
+  {
+    tag: "Réseau & Artisanat",
+    title: "Réseau Artizano",
+    desc: "Plateforme de mise en relation entre artisans et particuliers : annuaires de professionnels, fiches métiers et système de devis en ligne.",
+    alt: "Réseau Artizano — création plateforme web artisans, site mise en relation professionnels et particuliers",
+    url: "https://reseauxartizano.com/",
+  },
+  {
+    tag: "Animaux & Lifestyle",
+    title: "Care My Dog",
+    desc: "Site dédié aux propriétaires de chiens : conseils bien-être, guides soins et ressources pour prendre soin de son animal au quotidien.",
+    alt: "Care My Dog — création site web animaux domestiques, blog soins chiens lifestyle pets",
+    url: "https://care-my-dog.com/",
+  },
 ];
 
 const screenshotUrl = (url) =>

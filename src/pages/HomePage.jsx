@@ -173,7 +173,7 @@ const websiteLd = {
 const webPageLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Création Site Web Casablanca | Développeur Web Freelance Maroc | MouDEV",
+  name: "Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV",
   url: "https://www.moudevpro.com/",
   dateModified: "2026-03-24",
   inLanguage: "fr-MA",
@@ -211,12 +211,13 @@ const HomePage = () => {
     <>
       <Helmet htmlAttributes={{ lang: "fr" }}>
         <title>
-          Création Site Web Casablanca | Développeur Web Freelance Maroc | MouDEV
+          Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV
         </title>
         <meta
           name="description"
-          content="Création site web professionnel à Casablanca par un développeur web freelance. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h — Maroc."
+          content="Développeur web freelance au Maroc — Casablanca, Rabat, Marrakech. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
         />
+        <meta name="keywords" content="développeur web freelance maroc, freelance creation site web maroc, création site web maroc, site web maroc, prix site web maroc, web developer morocco, website design morocco, freelance développeur web" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.moudevpro.com/" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/" />
@@ -227,11 +228,11 @@ const HomePage = () => {
         <meta property="og:site_name" content="MouDEV" />
         <meta
           property="og:title"
-          content="Création Site Web Casablanca | Développeur Web Freelance Maroc | MouDEV"
+          content="Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV"
         />
         <meta
           property="og:description"
-          content="Développeur web freelance au Maroc. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
+          content="Développeur web freelance au Maroc — Casablanca, Rabat, Marrakech. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
@@ -244,7 +245,7 @@ const HomePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Création de site web professionnel — Développeur Web Freelance Maroc
+            Développeur Web Freelance au Maroc — Création de Site Web Professionnel
           </h1>
           <p className="subheading sl-mb">
             Je crée votre site web professionnel au Maroc.
@@ -306,6 +307,8 @@ const HomePage = () => {
               alt="Création site web Maroc — développeur web freelance MouDev"
               className="img"
               loading="lazy"
+              width="600"
+              height="400"
             />
           </div>
         </div>

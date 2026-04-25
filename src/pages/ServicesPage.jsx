@@ -29,6 +29,15 @@ const FAQ_ITEMS = [
   },
 ];
 
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.moudevpro.com/" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.moudevpro.com/services" },
+  ],
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -155,11 +164,20 @@ const ServicesPage = () => {
           content="Site vitrine, e-commerce, application sur mesure, refonte, SEO. Développeur web freelance au Maroc — devis gratuit en 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/services" />
+        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Services Web Freelance Maroc | Vitrine, E-commerce, Application | MouDEV" />
+        <meta name="twitter:description" content="Site vitrine, e-commerce, application sur mesure, refonte, SEO. Développeur web freelance au Maroc — devis gratuit en 24h." />
+        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="site vitrine maroc, refonte site web maroc, application web maroc, création site web maroc, freelance développeur web, site vitrine casablanca, services web maroc" />
         <link rel="canonical" href="https://www.moudevpro.com/services" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/services" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/services" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       {/* Hero */}
