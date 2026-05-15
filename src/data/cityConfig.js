@@ -26,9 +26,9 @@ export const cityConfig = {
       address: "Quartier Maarif, Casablanca, 20000",
       geo: { lat: 33.589886, lng: -7.603869 },
       canonical: `${BASE}/en`,
-      metaTitle: "Web Developer Morocco | Professional Website Creation | MouDEV",
+      metaTitle: "Freelance Web Developer Morocco | Websites from 2,000 MAD | MouDEV",
       metaDescription:
-        "Freelance web developer in Morocco. Professional websites from 2,000 MAD — delivered in 5 days. Direct contact, no agency overhead. Free quote in 24h.",
+        "Freelance web developer in Morocco — websites from 2,000 MAD, delivered in 5 days. Hotels, riads, SMEs. Direct contact, no agency fees. Free quote in 24h.",
       cityContext:
         "In Casablanca, Morocco's economic capital, I create professional websites for businesses in Maarif, Anfa, Ain Diab and the Triangle d'Or — fast delivery, no agency overhead, direct contact with the developer.",
       hreflang: {
@@ -140,11 +140,15 @@ export const cityConfig = {
       address: "Marrakech, Morocco",
       geo: { lat: 31.6295, lng: -7.9811 },
       canonical: `${BASE}/en/marrakech`,
-      metaTitle: "Website Creation Marrakech – Web Agency & Digital Marketing | MouDEV",
+      metaTitle: "Riad & Hotel Website Design Marrakech | Freelance Web Developer Morocco | MouDEV",
       metaDescription:
-        "MouDEV, web agency in Marrakech: professional websites for hotels, riads, restaurants and boutiques. SEO and Google Ads. Free quote!",
+        "Freelance web developer for hotels & riads in Marrakech. Direct booking, multilingual FR/EN/AR, from 2,000 MAD. 5-day delivery, no agency fees. Free quote in 24h.",
       cityContext:
         "In Marrakech, Morocco's tourism and cultural capital visited by millions of travelers every year, your website is your global showcase. Hotels, riads, restaurants, craft boutiques and travel agencies: MouDev creates websites that attract an international clientele, generate online bookings and boost your sales.",
+      blogLink: {
+        to: "/blog/site-web-hotel-riad-marrakech",
+        label: "Hotel & riad website design in Marrakech — complete guide",
+      },
       hreflang: {
         fr: `${BASE}/marrakech`,
         en: `${BASE}/en/marrakech`,
@@ -158,9 +162,9 @@ export const cityConfig = {
       address: "مراكش، المغرب",
       geo: { lat: 31.6295, lng: -7.9811 },
       canonical: `${BASE}/ar/marrakech`,
-      metaTitle: "إنشاء موقع ويب مراكش – وكالة ويب وتسويق رقمي | MouDEV",
+      metaTitle: "تصميم موقع فندق ورياض بمراكش | مطور ويب فريلانسر بالمغرب | MouDEV",
       metaDescription:
-        "MouDEV، وكالة ويب في مراكش: مواقع ويب احترافية للفنادق والرياضات والمطاعم والمتاجر. SEO وإعلانات Google. عرض سعر مجاني!",
+        "مطور ويب فريلانسر للفنادق والرياض بمراكش. حجز مباشر، محتوى متعدد اللغات FR/EN/AR، من 2000 درهم. تسليم في 5 أيام. عرض مجاني خلال 24 ساعة.",
       cityContext:
         "في مراكش، العاصمة السياحية والثقافية للمغرب التي يزورها ملايين السياح سنوياً، موقعك الإلكتروني هو واجهتك العالمية. الفنادق والرياض والمطاعم والمتاجر التقليدية ووكالات السياحة: MouDev ينشئ مواقع ويب تستقطب عملاء دوليين وتولد حجوزات ومبيعات عبر الإنترنت.",
       hreflang: {

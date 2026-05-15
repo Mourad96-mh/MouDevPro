@@ -160,6 +160,13 @@ const CasablancaPage = () => {
               startups de Sidi Maârouf — toujours en contact direct, sans
               intermédiaire.
             </p>
+            <p className="text sl-mb">
+              Contrairement à une agence, vous parlez directement avec le{" "}
+              <strong>développeur freelance à Casablanca</strong> qui code votre
+              site. Pas de commercial, pas de chef de projet. Résultat : délai
+              deux à trois fois plus court, prix 40 à 60% moins élevé, et un
+              interlocuteur unique joignable sur WhatsApp 7j/7.
+            </p>
             <p className="text">
               Mes sites sont rapides, sécurisés et optimisés pour Google dès
               la livraison. Devis gratuit et personnalisé sous 24h.
@@ -184,6 +191,46 @@ const CasablancaPage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Neighborhoods */}
+      <section className="home container">
+        <h2 className="secondary-heading lg-mb">
+          Développeur web freelance à Casablanca — je travaille dans votre quartier
+        </h2>
+        <p className="text sl-mb">
+          Casablanca est une ville économiquement diversifiée. Les besoins en
+          création de site web varient selon le secteur et le quartier. Basé à{" "}
+          <strong>Maarif</strong>, je connais les exigences de chaque zone d'activité :
+        </p>
+        <ul className="city-neighborhoods">
+          {[
+            {
+              area: "Maarif / Triangle d'Or",
+              desc: "Cabinets médicaux, avocats, consultants, PME de services — site vitrine institutionnel sobre, formulaire de prise de rendez-vous, SEO local.",
+            },
+            {
+              area: "Anfa / Ain Diab",
+              desc: "Restaurants, hôtels, boutiques lifestyle — galerie photos HD, réservation en ligne, carte Google intégrée, design premium.",
+            },
+            {
+              area: "Sidi Maârouf / Casanearshore",
+              desc: "Startups tech, ESN, éditeurs SaaS — application web sur mesure, API, dashboard, stack React / Node.js.",
+            },
+            {
+              area: "Derb Omar / Marché central",
+              desc: "Commerce de gros, import-export — site e-commerce catalogue, formulaire de commande B2B, multi-devises.",
+            },
+            {
+              area: "Hay Hassani / Bernoussi",
+              desc: "PME industrielles, artisanat, services locaux — site vitrine simple, référencement local Casablanca, budget maîtrisé.",
+            },
+          ].map((n, i) => (
+            <li key={i} className="city-neighborhood-item">
+              <strong>{n.area} :</strong> {n.desc}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <ServicesSection cityName="Casablanca" />

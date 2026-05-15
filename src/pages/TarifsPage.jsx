@@ -79,20 +79,19 @@ const TarifsPage = () => {
     <>
       <Helmet>
         <title>
-          Prix Création Site Web Maroc 2026 | Tarifs Transparents &amp; Devis
-          Gratuit | MouDEV
+          Prix Site Web Maroc 2026 : dès 2 000 DH | Site Vitrine &amp; E-commerce | MouDEV
         </title>
         <meta
           name="description"
-          content="Tarifs clairs pour la création de site web au Maroc. Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH, application sur mesure. Développeur web freelance — devis gratuit en 24h."
+          content="Prix site web au Maroc 2026 : site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Développeur web freelance — livraison 5 jours, paiement après livraison. Devis gratuit en 24h."
         />
         <meta
           property="og:title"
-          content="Prix Création Site Web Maroc 2026 | Tarifs & Devis Gratuit | MouDEV"
+          content="Prix Site Web Maroc 2026 : dès 2 000 DH | MouDEV"
         />
         <meta
           property="og:description"
-          content="Tarifs transparents pour la création de site web au Maroc. Site vitrine dès 2 000 DH. Devis gratuit en 24h."
+          content="Prix site web au Maroc 2026 : site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Devis gratuit en 24h, livraison 5 jours."
         />
         <meta
           property="og:url"
@@ -101,8 +100,8 @@ const TarifsPage = () => {
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Prix Création Site Web Maroc 2026 | Tarifs & Devis Gratuit | MouDEV" />
-        <meta name="twitter:description" content="Tarifs transparents pour la création de site web au Maroc. Site vitrine dès 2 000 DH. Devis gratuit en 24h." />
+        <meta name="twitter:title" content="Prix Site Web Maroc 2026 : dès 2 000 DH | MouDEV" />
+        <meta name="twitter:description" content="Prix site web au Maroc 2026 : site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Devis gratuit en 24h, livraison 5 jours." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="prix site web maroc, tarif site web maroc, devis site web maroc, prix site vitrine maroc, prix site e-commerce maroc, coût création site web maroc, tarif développeur web maroc" />
@@ -118,17 +117,66 @@ const TarifsPage = () => {
       <section className="tarifs-hero">
         <div className="container tarifs-hero__inner">
           <h1 className="heading--primary center-text">
-            Prix Création Site Web Maroc
+            Prix Création Site Web Maroc — Mes Formules 2026
           </h1>
           <p className="subheading center-text">
-            Des tarifs transparents, sans surprise. Je vous livre votre site
-            professionnel en 5 jours — paiement après livraison.
+            Site vitrine dès <strong>2 000 DH</strong>, e-commerce dès{" "}
+            <strong>3 000 DH</strong>. Paiement après livraison — zéro acompte.
+            Livraison en 5 jours. Choisissez votre formule ci-dessous.
           </p>
-
         </div>
       </section>
 
       <TarifsSection />
+
+      {/* Inclus dans chaque formule */}
+      <section className="home container">
+        <h2 className="secondary-heading center-text lg-mb">
+          Ce qui est inclus dans chaque formule — sans frais cachés
+        </h2>
+        <div className="tarifs-includes-grid">
+          <div className="tarifs-includes-col">
+            <h3 className="tertiary-heading sl-mb">Toujours inclus</h3>
+            <ul className="tarifs-includes-list">
+              {[
+                "Nom de domaine .ma ou .com — 1 an offert",
+                "Hébergement SSD haute performance — 1 an offert",
+                "Certificat SSL (HTTPS) — sécurité Google obligatoire",
+                "Design responsive mobile, tablette, desktop",
+                "Optimisation SEO technique — balises, vitesse, images",
+                "Formulaire de contact + intégration WhatsApp",
+                "Formation à la prise en main (1h incluse)",
+                "Corrections post-livraison incluses (30 jours)",
+                "Paiement après livraison — zéro acompte imposé",
+              ].map((item, i) => (
+                <li key={i} className="tarifs-includes-item">
+                  <span className="tarifs-includes-check">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="tarifs-includes-col">
+            <h3 className="tertiary-heading sl-mb">Calendrier de livraison</h3>
+            <ol className="tarifs-timeline">
+              {[
+                { day: "Jour 1", label: "Brief & validation du devis", desc: "Échange WhatsApp de 30 min pour cadrer le projet, vos contenus et vos objectifs." },
+                { day: "Jours 2–3", label: "Design & intégration", desc: "Je crée la maquette et intègre vos contenus. Vous validez avant la mise en ligne." },
+                { day: "Jour 4", label: "Corrections & recette", desc: "Vous testez le site, je corrige. Itérations illimitées jusqu'à votre satisfaction." },
+                { day: "Jour 5", label: "Mise en ligne & paiement", desc: "Le site est publié sur votre domaine. Vous payez seulement à ce stade." },
+              ].map((step, i) => (
+                <li key={i} className="tarifs-timeline-item">
+                  <span className="tarifs-timeline-day">{step.day}</span>
+                  <div>
+                    <strong>{step.label}</strong>
+                    <p className="tarifs-timeline-desc">{step.desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
 
       {/* Reassurance */}
       <section className="tarifs-reassurance container">

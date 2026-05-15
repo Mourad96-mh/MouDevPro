@@ -282,8 +282,16 @@ const HomePage = () => {
               Vous cherchez un <strong>développeur web freelance au Maroc</strong> pour
               la création de votre site internet professionnel ? Je conçois des sites
               vitrine, des e-commerces et des applications web sur mesure qui génèrent
-              des leads et des ventes — à Casablanca, Rabat et Marrakech.
-              Vous parlez directement avec le développeur.{" "}
+              des leads et des ventes.{" "}
+              <Link to="/casablanca" className="inline-link">
+                Développeur web freelance à Casablanca
+              </Link>
+              {", "}
+              <Link to="/rabat" className="inline-link">Rabat</Link>
+              {" et "}
+              <Link to="/marrakech" className="inline-link">Marrakech</Link>
+              {" — "}
+              vous parlez directement avec le développeur.{" "}
               <strong>Devis gratuit en 24h.</strong>
             </p>
             <p className="text sl-mb">

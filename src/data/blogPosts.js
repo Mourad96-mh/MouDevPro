@@ -2,8 +2,8 @@ export const blogPosts = [
   {
     slug: "prix-site-web-maroc-2026",
     title: "Combien coûte un site web professionnel au Maroc en 2026 ?",
-    metaTitle: "Prix Site Web Maroc 2026 | Tarifs Freelance vs Agence | MouDEV",
-    metaDescription: "Combien coûte un site web au Maroc en 2026 ? Tarifs site vitrine, e-commerce, freelance vs agence. Chiffres clairs et devis gratuit en 24h.",
+    metaTitle: "Prix Site Web Maroc 2026 : dès 2 000 DH | Freelance vs Agence | MouDEV",
+    metaDescription: "Prix site web au Maroc en 2026 : site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Freelance vs agence — comparaison complète et devis gratuit en 24h.",
     datePublished: "2026-04-23",
     dateModified: "2026-04-23",
     author: "Mourad",
@@ -258,7 +258,7 @@ export const blogPosts = [
     slug: "site-web-hotel-riad-marrakech",
     title: "Site web hôtel et riad à Marrakech : guide complet 2026",
     metaTitle: "Site Web Hôtel Marrakech | Riad Website Design Morocco 2026 | MouDEV",
-    metaDescription: "Créer un site web pour votre hôtel ou riad à Marrakech. Réservation directe, multilingue FR/EN/AR, SEO tourisme. Réduisez vos commissions OTA. Devis gratuit 24h.",
+    metaDescription: "Votre riad perd 20 000 DH/an en commissions Booking.com. Un site professionnel avec réservation directe règle ça — dès 4 990 DH. Devis gratuit 24h.",
     datePublished: "2026-04-23",
     dateModified: "2026-04-23",
     author: "Mourad",
@@ -387,6 +387,386 @@ export const blogPosts = [
       {
         type: "cta",
         text: "Demander un devis gratuit en 24h →",
+        to: "/contact",
+      },
+    ],
+  },
+
+  {
+    slug: "freelance-creation-site-web-maroc",
+    title: "Freelance création site web Maroc : avantages, tarifs et comment ça marche",
+    metaTitle: "Freelance Création Site Web Maroc | Tarifs & Délais 2026 | MouDEV",
+    metaDescription: "Freelance création site web au Maroc : dès 2 000 DH, livraison 5 jours, paiement après livraison. Pourquoi un freelance est plus rapide et moins cher qu'une agence. Devis gratuit 24h.",
+    datePublished: "2026-05-15",
+    dateModified: "2026-05-15",
+    author: "Mourad",
+    image: "/web-dev.avif",
+    imageAlt: "Freelance création site web Maroc — développeur web freelance MouDev Casablanca",
+    excerpt: "Faire appel à un freelance pour la création de votre site web au Maroc, c'est choisir la rapidité, la transparence et un interlocuteur unique. Voici ce que ça change concrètement.",
+    readTime: "5 min",
+    keywords: ["freelance creation site web maroc", "développeur web freelance maroc", "freelance développeur web", "freelance web maroc"],
+    content: [
+      {
+        type: "p",
+        text: "La création de site web au Maroc est un marché en pleine expansion — et de plus en plus d'entrepreneurs, PME et commerçants font le choix d'un freelance plutôt qu'une agence. Pas par hasard : un freelance développeur web au Maroc offre contact direct, délais courts et tarifs sans overhead d'agence. Voici ce que ça veut dire concrètement pour votre projet.",
+      },
+      {
+        type: "h2",
+        text: "Qu'est-ce qu'un freelance création site web au Maroc ?",
+      },
+      {
+        type: "p",
+        text: "Un développeur web freelance au Maroc est un indépendant qui conçoit et développe des sites web pour ses clients — sans employer d'équipe, sans loyer de bureau, sans commercial. Il prend en charge l'ensemble du projet : design, développement, SEO, mise en ligne et formation. Vous avez un seul interlocuteur du brief à la livraison.",
+      },
+      {
+        type: "p",
+        text: "Ce modèle se distingue de l'agence web classique qui implique plusieurs interlocuteurs (commercial, chef de projet, designer, développeur) et répercute ces frais sur votre facture. Avec un freelance, vous payez le travail — pas la structure.",
+      },
+      {
+        type: "h2",
+        text: "Les 4 avantages concrets d'un freelance pour votre site web au Maroc",
+      },
+      {
+        type: "h3",
+        text: "1. Tarif compétitif — dès 2 000 DH",
+      },
+      {
+        type: "p",
+        text: "Un freelance création site web au Maroc facture entre 2 000 et 6 000 DH pour un site vitrine professionnel. Une agence web marocaine équivalente démarre à 8 000 DH et monte facilement à 20 000 DH. La différence ? Les frais de structure — loyer, salaires, commercial — que vous ne financez pas avec un freelance.",
+      },
+      {
+        type: "h3",
+        text: "2. Livraison rapide — 5 jours pour un site vitrine",
+      },
+      {
+        type: "p",
+        text: "Pas de réunions de cadrage en comité, pas de validation en cascade. Un freelance travaille directement avec vous — brief WhatsApp, design, intégration, mise en ligne. Un site vitrine standard est livré en 5 jours. Une agence prend en moyenne 4 à 12 semaines pour le même résultat.",
+      },
+      {
+        type: "h3",
+        text: "3. Contact direct avec le développeur",
+      },
+      {
+        type: "p",
+        text: "Avec un freelance, la personne qui répond à votre message est la même qui code votre site. Pas de commercial qui transmet au chef de projet qui transmet au développeur. Vous obtenez des réponses techniques précises, en quelques heures, sur WhatsApp — 7j/7.",
+      },
+      {
+        type: "h3",
+        text: "4. Paiement après livraison",
+      },
+      {
+        type: "p",
+        text: "Un bon freelance développeur web au Maroc accepte le paiement après livraison. Vous voyez le résultat avant de payer — zéro risque. Contrairement à beaucoup d'agences qui exigent 50% d'acompte avant de commencer le moindre travail.",
+      },
+      {
+        type: "h2",
+        text: "Tarifs freelance création site web Maroc 2026",
+      },
+      {
+        type: "table",
+        headers: ["Type de site", "Prix freelance", "Délai de livraison"],
+        rows: [
+          ["Site vitrine (jusqu'à 10 pages)", "2 000 – 4 000 DH", "5 jours"],
+          ["Site e-commerce (boutique en ligne)", "3 000 – 8 000 DH", "5 – 15 jours"],
+          ["Site hôtel / riad (réservation directe)", "4 990 DH", "2 – 4 semaines"],
+          ["Application web sur mesure", "Sur devis", "1 – 3 mois"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Ces tarifs incluent : nom de domaine, hébergement SSD, certificat SSL, design responsive, SEO technique et formation à la prise en main. Aucun frais caché, paiement après livraison.",
+      },
+      {
+        type: "h2",
+        text: "Comment se passe une collaboration avec un freelance web au Maroc ?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Étape 1 — Devis gratuit sous 24h : vous m'envoyez un message WhatsApp avec votre besoin. Je vous envoie un devis détaillé avec prix fixe et délai garanti.",
+          "Étape 2 — Brief et validation : échange de 30 min pour cadrer le projet — couleurs, contenus, fonctionnalités souhaitées.",
+          "Étape 3 — Design et développement : je crée le site en 2–3 jours. Vous validez la maquette avant l'intégration finale.",
+          "Étape 4 — Corrections et recette : vous testez le site sur tous vos appareils. Corrections illimitées jusqu'à satisfaction.",
+          "Étape 5 — Mise en ligne et paiement : le site est publié sur votre domaine. Vous payez seulement à cette étape.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Freelance web au Maroc : pour quel type de projet ?",
+      },
+      {
+        type: "p",
+        text: "La création de site web par un freelance au Maroc convient particulièrement aux PME, startups, commerçants, cabinets professionnels (médecins, avocats, consultants), restaurants, hôtels, riads et associations. Si votre projet nécessite une équipe marketing intégrée ou une infrastructure complexe multi-sites, une agence peut être plus adaptée. Pour 95% des projets au Maroc, un freelance qualifié est la meilleure option.",
+      },
+      {
+        type: "callout",
+        text: "MouDevPro — 4 ans d'expérience, 45+ sites livrés à des clients à Casablanca, Rabat et Marrakech. Développeur web freelance basé à Maarif, disponible sur WhatsApp 7j/7.",
+      },
+      {
+        type: "cta",
+        text: "Voir les tarifs détaillés →",
+        to: "/tarifs",
+      },
+      {
+        type: "cta",
+        text: "Demander un devis gratuit en 24h →",
+        to: "/contact",
+      },
+    ],
+  },
+
+  {
+    slug: "creation-site-web-casablanca",
+    title: "Création site web à Casablanca : guide complet 2026 (prix, délais, prestataires)",
+    metaTitle: "Création Site Web Casablanca 2026 : Prix & Prestataires | MouDEV",
+    metaDescription: "Création site web à Casablanca : dès 2 000 DH, livraison 5 jours. Freelance vs agence — comparaison complète. Développeur web freelance basé à Maarif. Devis gratuit 24h.",
+    datePublished: "2026-05-15",
+    dateModified: "2026-05-15",
+    author: "Mourad",
+    image: "/home-dev-1.avif",
+    imageAlt: "Création site web Casablanca — développeur web freelance MouDev Maarif",
+    excerpt: "Vous êtes à Casablanca et vous cherchez à créer un site web professionnel ? Prix réels, délais, différences entre freelance et agence — tout ce qu'il faut savoir pour bien choisir.",
+    readTime: "6 min",
+    keywords: ["création site web casablanca", "développeur web casablanca", "site web casablanca", "website design casablanca", "web developer casablanca"],
+    content: [
+      {
+        type: "p",
+        text: "Casablanca est la capitale économique du Maroc et la ville où la demande en création de site web est la plus forte. PME du Maarif, startups de Sidi Maârouf, boutiques d'Anfa, cabinets du Triangle d'Or — tous ont besoin d'une présence en ligne professionnelle pour capter des clients. Ce guide vous donne les chiffres réels, les pièges à éviter et les critères pour bien choisir votre prestataire à Casablanca.",
+      },
+      {
+        type: "h2",
+        text: "Pourquoi créer un site web professionnel à Casablanca est urgent",
+      },
+      {
+        type: "p",
+        text: "À Casablanca, vos concurrents sont en ligne. Chaque mois, plusieurs milliers de Casablancais recherchent des prestataires locaux sur Google — médecin, restaurant, avocat, boutique, agence. S'ils ne vous trouvent pas, ils trouvent quelqu'un d'autre. Un site web professionnel n'est plus une option pour les entreprises casablancaises — c'est un levier de survie commerciale.",
+      },
+      {
+        type: "h2",
+        text: "Prix création site web à Casablanca en 2026",
+      },
+      {
+        type: "p",
+        text: "Le prix d'un site web à Casablanca varie selon le type de prestataire choisi et la complexité du projet. Voici les fourchettes réelles observées sur le marché casablancais en 2026 :",
+      },
+      {
+        type: "table",
+        headers: ["Type de prestataire", "Site vitrine", "E-commerce", "Délai"],
+        rows: [
+          ["Freelance qualifié (Casablanca)", "2 000 – 4 000 DH", "3 000 – 8 000 DH", "5 – 15 jours"],
+          ["Agence web locale Casablanca", "8 000 – 20 000 DH", "15 000 – 40 000 DH", "1 – 3 mois"],
+          ["Agence internationale", "15 000 DH+", "30 000 DH+", "2 – 4 mois"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "Freelance ou agence web à Casablanca — que choisir ?",
+      },
+      {
+        type: "p",
+        text: "La majorité des entreprises casablancaises n'ont pas besoin d'une agence. Une PME, une boutique, un cabinet ou un restaurant a besoin d'un site professionnel, rapide à créer, bien référencé sur Google, et maintenu par quelqu'un de joignable. C'est exactement ce qu'un freelance développeur web à Casablanca apporte — sans les frais de structure d'une agence.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Freelance : contact direct avec le développeur, prix transparent, livraison en 5 jours, paiement après livraison",
+          "Agence : équipe plus large, gestion marketing intégrée, mais tarifs 4 à 10× plus élevés et délais 4 à 12× plus longs",
+          "Pour 95% des PME et commerces de Casablanca, un freelance qualifié suffit largement",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Les quartiers de Casablanca où je travaille le plus",
+      },
+      {
+        type: "p",
+        text: "Basé à Maarif, je connais les spécificités de chaque quartier d'affaires de Casablanca :",
+      },
+      {
+        type: "ul",
+        items: [
+          "Maarif / Triangle d'Or : cabinets médicaux, avocats, consultants, PME de services — site vitrine institutionnel, formulaire de prise de rendez-vous, SEO local",
+          "Anfa / Ain Diab : restaurants, hôtels, lifestyle — galerie photos HD, réservation en ligne, design premium",
+          "Sidi Maârouf / Casanearshore : startups tech, ESN, SaaS — application web sur mesure, React, Node.js",
+          "Derb Omar / Marché central : commerce, import-export — e-commerce catalogue, commande B2B, multi-devises",
+          "Hay Hassani / Bernoussi : PME industrielles, artisanat — site vitrine simple, SEO local, budget maîtrisé",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Ce qui est inclus dans la création de site web à Casablanca",
+      },
+      {
+        type: "ul",
+        items: [
+          "Design sur mesure adapté à votre secteur d'activité",
+          "Nom de domaine .ma ou .com — 1 an offert",
+          "Hébergement SSD haute performance — 1 an offert",
+          "Certificat SSL (HTTPS) — obligatoire pour Google et la confiance client",
+          "Site responsive mobile, tablette et desktop",
+          "Optimisation SEO technique — balises, vitesse, images, structured data",
+          "Formulaire de contact + intégration WhatsApp",
+          "Formation à la prise en main (1h incluse)",
+          "Corrections post-livraison (30 jours inclus)",
+          "Paiement après livraison — zéro acompte imposé",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Combien de temps pour créer un site web à Casablanca ?",
+      },
+      {
+        type: "p",
+        text: "Avec un freelance développeur web à Casablanca, les délais sont bien plus courts qu'avec une agence. Un site vitrine professionnel est livré en 5 jours. Un site e-commerce standard prend 5 à 15 jours. Une application web sur mesure nécessite 1 à 3 mois selon la complexité. Ces délais sont garantis dans le devis — pas de vague \"dans quelques semaines\".",
+      },
+      {
+        type: "callout",
+        text: "Je suis basé à Maarif, Casablanca. Vous pouvez me joindre sur WhatsApp 7j/7. Devis gratuit sous 24h, livraison garantie en 5 jours pour un site vitrine.",
+      },
+      {
+        type: "cta",
+        text: "Voir la page Casablanca →",
+        to: "/casablanca",
+      },
+      {
+        type: "cta",
+        text: "Demander un devis gratuit en 24h →",
+        to: "/contact",
+      },
+    ],
+  },
+
+  {
+    slug: "site-ecommerce-maroc-guide",
+    title: "Créer un site e-commerce au Maroc en 2026 : guide complet (prix, plateformes, paiement)",
+    metaTitle: "Site E-commerce Maroc 2026 : Prix, Plateformes & Paiement CMI | MouDEV",
+    metaDescription: "Créer un site e-commerce au Maroc : dès 3 000 DH, livraison 5 jours. WooCommerce vs Shopify, intégration CMI, paiement en ligne Maroc. Devis gratuit en 24h.",
+    datePublished: "2026-05-15",
+    dateModified: "2026-05-15",
+    author: "Mourad",
+    image: "/web-dev-1.avif",
+    imageAlt: "Site e-commerce Maroc — boutique en ligne professionnelle MouDev Casablanca",
+    excerpt: "Créer une boutique en ligne au Maroc en 2026 : prix réels, choix de la plateforme, intégration du paiement CMI, délais et pièges à éviter. Tout ce qu'il faut savoir avant de se lancer.",
+    readTime: "7 min",
+    keywords: ["site e-commerce maroc", "boutique en ligne maroc", "site e-commerce casablanca", "creation site e-commerce maroc", "paiement en ligne maroc cmi"],
+    content: [
+      {
+        type: "p",
+        text: "Le commerce en ligne au Maroc connaît une croissance de 30% par an. Des milliers de commerçants marocains créent leur boutique en ligne chaque mois — pour vendre à Casablanca, dans tout le Maroc ou à l'international. Ce guide vous donne les prix réels, les plateformes à choisir et ce qu'il faut absolument vérifier avant de vous lancer.",
+      },
+      {
+        type: "h2",
+        text: "Combien coûte un site e-commerce au Maroc en 2026 ?",
+      },
+      {
+        type: "p",
+        text: "Le prix d'un site e-commerce au Maroc varie selon la complexité de votre catalogue, les fonctionnalités requises et le type de prestataire choisi. Voici les fourchettes réelles pour 2026 :",
+      },
+      {
+        type: "table",
+        headers: ["Type de boutique", "Prix freelance", "Prix agence", "Délai"],
+        rows: [
+          ["Boutique simple (jusqu'à 50 produits)", "3 000 – 5 000 DH", "10 000 – 20 000 DH", "5 – 10 jours"],
+          ["Boutique complète (produits illimités)", "5 000 – 8 000 DH", "15 000 – 30 000 DH", "2 – 4 semaines"],
+          ["E-commerce sur mesure (ERP, API, B2B)", "Sur devis", "30 000 DH+", "1 – 3 mois"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "WooCommerce ou Shopify pour votre boutique en ligne au Maroc ?",
+      },
+      {
+        type: "p",
+        text: "C'est la question que me posent le plus souvent mes clients. La réponse dépend de votre situation :",
+      },
+      {
+        type: "h3",
+        text: "WooCommerce (WordPress) — recommandé pour le Maroc",
+      },
+      {
+        type: "p",
+        text: "WooCommerce est la plateforme que je recommande pour la majorité des boutiques en ligne marocaines. Pourquoi ? Propriété totale du site et des données, hébergement flexible en Maroc ou en France, intégration native avec CMI (Centre Monétique Interbancaire), coût mensuel quasi nul après livraison et SEO supérieur pour les recherches locales en français.",
+      },
+      {
+        type: "h3",
+        text: "Shopify — quand c'est pertinent",
+      },
+      {
+        type: "p",
+        text: "Shopify est pertinent si vous vendez principalement à l'international, si vous avez besoin d'une interface d'administration très simple ou si vous manquez de temps pour gérer un hébergement. Inconvénient : abonnement mensuel de 29 à 79 USD, frais de transaction, et l'intégration CMI est moins directe qu'avec WooCommerce.",
+      },
+      {
+        type: "h2",
+        text: "Le paiement en ligne au Maroc : CMI, PayPal et les autres",
+      },
+      {
+        type: "p",
+        text: "Le choix de la solution de paiement est souvent ce qui bloque les e-commerçants marocains. Voici ce qu'il faut savoir :",
+      },
+      {
+        type: "ul",
+        items: [
+          "CMI (Centre Monétique Interbancaire) : la solution incontournable pour accepter les cartes bancaires marocaines (CIH, Attijariwafa, BMCE, etc.). Nécessite un contrat avec votre banque et un compte professionnel. Je gère l'intégration technique.",
+          "PayPal : accepté pour les paiements internationaux (cartes Visa/Mastercard étrangères). Utile si vous vendez à l'international.",
+          "Virement bancaire / paiement à la livraison : options complémentaires souvent demandées par les clients marocains qui n'ont pas encore confiance dans le paiement en ligne.",
+          "Cash Plus / Wafacash : solutions de paiement via agences utilisées par les clients sans carte bancaire.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Conseil : proposez toujours au minimum CMI + paiement à la livraison sur votre boutique marocaine. Ces deux options combinées couvrent plus de 90% des acheteurs en ligne au Maroc.",
+      },
+      {
+        type: "h2",
+        text: "Ce qui est inclus dans mon pack e-commerce Maroc",
+      },
+      {
+        type: "ul",
+        items: [
+          "Boutique WooCommerce ou Shopify selon votre besoin",
+          "Catalogue produits illimité avec variantes (taille, couleur, etc.)",
+          "Intégration CMI pour le paiement par carte bancaire marocaine",
+          "Intégration PayPal pour les paiements internationaux",
+          "Paiement à la livraison (cash on delivery)",
+          "Gestion des stocks et des commandes",
+          "Interface d'administration en français",
+          "Design responsive mobile-first",
+          "Optimisation SEO e-commerce (catégories, fiches produits, schema.org)",
+          "Nom de domaine + hébergement SSD — 1 an offert",
+          "Formation à la prise en main de la boutique (2h incluses)",
+          "Paiement après livraison — zéro acompte imposé",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Les erreurs à éviter quand on crée un site e-commerce au Maroc",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ne pas avoir de solution CMI — vous perdez tous vos clients qui paient par carte marocaine",
+          "Choisir un hébergement trop lent — un site e-commerce qui charge en plus de 3 secondes perd 50% de ses visiteurs",
+          "Ignorer le SEO — sans référencement, personne ne trouve votre boutique sur Google",
+          "Ne pas avoir de politique de retour clairement affichée — obligatoire pour rassurer les acheteurs",
+          "Négliger le mobile — plus de 70% des achats en ligne au Maroc se font via smartphone",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Site e-commerce à Casablanca, Rabat ou Marrakech — livraison nationale",
+      },
+      {
+        type: "p",
+        text: "Je crée des boutiques en ligne pour des clients à Casablanca, Rabat, Marrakech et partout au Maroc — tout se passe à distance via WhatsApp. La livraison physique de vos produits est assurée par vos transporteurs habituels (Amana, Jumia Express, Chronopost Maroc) que j'intègre directement dans la boutique si besoin.",
+      },
+      {
+        type: "cta",
+        text: "Voir la page e-commerce →",
+        to: "/ecommerce",
+      },
+      {
+        type: "cta",
+        text: "Demander un devis e-commerce gratuit en 24h →",
         to: "/contact",
       },
     ],

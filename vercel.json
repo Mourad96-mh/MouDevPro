@@ -6,6 +6,26 @@
       "has": [{ "type": "host", "value": "moudevpro.com" }],
       "destination": "https://www.moudevpro.com/$1",
       "permanent": true
+    },
+    {
+      "source": "/agence-web-marrakech",
+      "destination": "/marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-marrakech/",
+      "destination": "/marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-tanger",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-tanger/",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]

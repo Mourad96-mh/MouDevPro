@@ -12,17 +12,16 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
   const { cityData } = useCityContext();
-  const cityLinks = cityData
-    ? CITIES.map((city) => {
-        const { name, canonical } = cityConfig[city][cityData.currentLang];
-        return {
-          city,
-          name,
-          path: canonical.replace("https://www.moudevpro.com", "") || "/",
-          active: cityData.currentCity === city,
-        };
-      })
-    : [];
+  const currentLang = cityData?.currentLang || "fr";
+  const cityLinks = CITIES.map((city) => {
+    const { name, canonical } = cityConfig[city][currentLang];
+    return {
+      city,
+      name,
+      path: canonical.replace("https://www.moudevpro.com", "") || "/",
+      active: cityData?.currentCity === city,
+    };
+  });
 
   return (
     <header className="header">

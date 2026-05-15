@@ -164,6 +164,11 @@ const CityPage = ({ city, lang }) => {
             <p className="text sl-mb">{t("home.p2", { city: cityName })}</p>
             <p className="text sl-mb">{t("home.p3", { city: cityName })}</p>
             <p className="text sl-mb city-context">{data.cityContext}</p>
+            {data.blogLink && (
+              <Link className="hero-link sl-mb" to={data.blogLink.to}>
+                {data.blogLink.label} →
+              </Link>
+            )}
             <Link
               className="link hero-link"
               to={WA_URL}

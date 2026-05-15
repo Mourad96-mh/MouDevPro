@@ -231,11 +231,17 @@ const MarrakechPage = () => {
               Vos clients trouvent votre établissement sur Google et réservent
               directement.
             </p>
-            <p className="text">
+            <p className="text sl-mb">
               <strong>Hotel website design Morocco:</strong> I build professional hotel
               and riad websites that rank on Google and drive direct bookings. Free
               quote within 24h.
             </p>
+            <Link
+              to="/blog/site-web-hotel-riad-marrakech"
+              className="hero-link"
+            >
+              Guide complet — site web hôtel &amp; riad à Marrakech →
+            </Link>
           </div>
           <div className="city-context-stats">
             <div className="city-stat">
