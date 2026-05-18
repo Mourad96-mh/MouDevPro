@@ -63,7 +63,7 @@ const PROJECTS = [
     title: "AT Dental",
     desc: "Site vitrine pour une clinique dentaire au Maroc : présentation des soins, prise de rendez-vous en ligne et interface patient moderne et rassurante.",
     alt: "AT Dental — création site web clinique dentaire Maroc, site vitrine cabinet dentiste professionnel",
-    url: "https://atdental.ma/",
+    url: "https://at-dental.com/",
   },
   {
     tag: "Réseau & Artisanat",
