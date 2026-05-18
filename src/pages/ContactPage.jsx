@@ -62,7 +62,15 @@ const ContactPage = () => {
     // Fire conversion events
     if (typeof window.fbq === "function") window.fbq("track", "Lead");
     if (typeof window.gtag === "function") {
-      window.gtag("event", "conversion", { send_to: "AW-CONVERSION_ID/LABEL" });
+      window.gtag("set", "user_data", {
+        email: form.email,
+        phone_number: form.telephone,
+      });
+      window.gtag("event", "conversion", {
+        send_to: "AW-18032730547/abRzCJSdzKUcELPD1pZD",
+        value: 100,
+        currency: "MAD",
+      });
     }
     // Simulate async (replace with real API call)
     setTimeout(() => {
