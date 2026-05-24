@@ -104,7 +104,7 @@ const RabatPage = () => {
         </title>
         <meta
           name="description"
-          content="Création site web à Rabat par un développeur web freelance. Site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Devis gratuit en 24h."
+          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -112,7 +112,7 @@ const RabatPage = () => {
         />
         <meta
           property="og:description"
-          content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 5 jours."
+          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/rabat" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
@@ -212,6 +212,47 @@ const RabatPage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Neighborhoods */}
+      <section className="home container">
+        <h2 className="secondary-heading lg-mb">
+          Développeur web freelance à Rabat — je travaille dans votre quartier
+        </h2>
+        <p className="text sl-mb">
+          Rabat est une ville aux profils très différents selon les quartiers. PME du
+          centre, startups de Technopolis, ONG de Souissi, administrations de Hassan —
+          chaque secteur a ses besoins spécifiques en <strong>création de site web à
+          Rabat</strong>. Je m'adapte à chaque contexte :
+        </p>
+        <ul className="city-neighborhoods">
+          {[
+            {
+              area: "Agdal",
+              desc: "Commerces, cabinets médicaux et bureaux — site vitrine professionnel, formulaire de contact, SEO local Rabat.",
+            },
+            {
+              area: "Hay Ryad",
+              desc: "PME résidentielles, boutiques et services — e-commerce catalogue, design soigné, mobile-first.",
+            },
+            {
+              area: "Hassan / Centre-ville",
+              desc: "Institutions, ONG, ministères — site institutionnel sobre et multilingue FR/AR/EN, accessibilité, design gouvernemental.",
+            },
+            {
+              area: "Technopolis / Smart City",
+              desc: "Startups, ESN, SaaS — application web sur mesure, stack React / Node.js, API, dashboard admin.",
+            },
+            {
+              area: "Souissi / Ambassades",
+              desc: "Organisations internationales, entreprises étrangères — site bilingue FR/EN, design premium, hébergement sécurisé.",
+            },
+          ].map((n, i) => (
+            <li key={i} className="city-neighborhood-item">
+              <strong>{n.area} :</strong> {n.desc}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <ServicesSection cityName="Rabat" />

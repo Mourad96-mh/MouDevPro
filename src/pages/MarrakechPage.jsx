@@ -130,7 +130,7 @@ const MarrakechPage = () => {
         </title>
         <meta
           name="description"
-          content="Site web hôtel Marrakech, riad et restaurant. Développeur web freelance — réservation en ligne, multilingue FR/EN/AR, SEO tourisme. Devis gratuit en 24h."
+          content="Développeur web freelance à Marrakech — site web hôtel, riad, restaurant. Réservation en ligne directe, multilingue FR/EN/AR, SEO tourisme. Livraison 5 jours. Devis gratuit 24h."
         />
         <meta
           property="og:title"

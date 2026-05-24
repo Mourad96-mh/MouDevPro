@@ -77,7 +77,7 @@ const CasablancaPage = () => {
         </title>
         <meta
           name="description"
-          content="Création site web à Casablanca par un développeur web freelance basé à Maarif. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
+          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -85,7 +85,7 @@ const CasablancaPage = () => {
         />
         <meta
           property="og:description"
-          content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 5 jours."
+          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/casablanca" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />

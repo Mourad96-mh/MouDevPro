@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import useInView from "../../hooks/useInView";
 
@@ -79,10 +80,75 @@ const PROJECTS = [
     alt: "Care My Dog — création site web animaux domestiques, blog soins chiens lifestyle pets",
     url: "https://care-my-dog.com/",
   },
+  {
+    tag: "E-commerce Bébé",
+    title: "Pour Bébés",
+    desc: "Boutique en ligne spécialisée dans les vêtements et accessoires pour bébés au Maroc : catalogue produits, fiches articles détaillées et expérience d'achat fluide.",
+    alt: "Pour Bébés — création boutique e-commerce vêtements accessoires bébé Maroc",
+    url: "https://pourbebes.ma/",
+    screenshot: "https://image.thum.io/get/width/600/crop/400/noanimate/https://pourbebes.ma/",
+  },
+  {
+    tag: "Fintech & Paiement",
+    title: "TPE Maroc",
+    desc: "Site vitrine pour une société de solutions de paiement électronique au Maroc : présentation des terminaux TPE, services aux commerçants et formulaire de demande.",
+    alt: "TPE Maroc — création site web fintech terminal paiement électronique Maroc, solutions commerçants",
+    url: "https://tpe-maroc.com/",
+  },
 ];
 
 const screenshotUrl = (url) =>
   `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
+
+const PortfolioCard = ({ project, index }) => {
+  const [imgFailed, setImgFailed] = useState(false);
+  const src = project.screenshot ?? screenshotUrl(project.url);
+
+  return (
+    <article className="portfolio__card" style={{ "--card-delay": `${index * 0.08}s` }}>
+      <div className="portfolio__card-img">
+        {imgFailed ? (
+          <div className="portfolio__img-fallback">
+            <span>{project.title}</span>
+          </div>
+        ) : (
+          <img
+            src={src}
+            alt={project.alt}
+            loading="lazy"
+            className="portfolio__img"
+            width="600"
+            height="400"
+            onError={() => setImgFailed(true)}
+          />
+        )}
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio__overlay"
+          tabIndex={-1}
+          aria-hidden="true"
+        >
+          <span>Voir le projet →</span>
+        </a>
+      </div>
+      <div className="portfolio__card-body">
+        <span className="portfolio__tag">{project.tag}</span>
+        <h3 className="portfolio__card-title">{project.title}</h3>
+        <p className="portfolio__card-desc">{project.desc}</p>
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio__explore-link"
+        >
+          Voir le projet →
+        </a>
+      </div>
+    </article>
+  );
+};
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -93,41 +159,7 @@ const Portfolio = () => {
       <h2 className="secondary-heading center-text lg-mb">{t("portfolio.h2")}</h2>
       <div className="portfolio__grid">
         {PROJECTS.map((project, i) => (
-          <article key={project.url} className="portfolio__card" style={{ "--card-delay": `${i * 0.08}s` }}>
-            <div className="portfolio__card-img">
-              <img
-                src={screenshotUrl(project.url)}
-                alt={project.alt}
-                loading="lazy"
-                className="portfolio__img"
-                width="600"
-                height="400"
-              />
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolio__overlay"
-                tabIndex={-1}
-                aria-hidden="true"
-              >
-                <span>Voir le projet →</span>
-              </a>
-            </div>
-            <div className="portfolio__card-body">
-              <span className="portfolio__tag">{project.tag}</span>
-              <h3 className="portfolio__card-title">{project.title}</h3>
-              <p className="portfolio__card-desc">{project.desc}</p>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolio__explore-link"
-              >
-                Voir le projet →
-              </a>
-            </div>
-          </article>
+          <PortfolioCard key={project.url} project={project} index={i} />
         ))}
       </div>
     </section>
