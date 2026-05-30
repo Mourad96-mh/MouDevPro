@@ -163,11 +163,6 @@ const websiteLd = {
   "@type": "WebSite",
   name: "MouDEV — Développeur Web Freelance Maroc",
   url: "https://www.moudevpro.com/",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.moudevpro.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
 };
 
 const webPageLd = {
