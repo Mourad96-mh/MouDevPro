@@ -26,9 +26,9 @@ export const cityConfig = {
       address: "Quartier Maarif, Casablanca, 20000",
       geo: { lat: 33.589886, lng: -7.603869 },
       canonical: `${BASE}/en`,
-      metaTitle: "Web Developer Morocco | Hotel, Riad & Business Websites | MouDEV",
+      metaTitle: "Freelance Web Developer Morocco | Hotel & Riad Websites | MouDEV",
       metaDescription:
-        "Freelance web developer in Morocco — hotel websites, riad design, e-commerce & SMEs. Multilingual FR/EN/AR, 5-day delivery, no agency fees. Free quote in 24h.",
+        "Freelance web developer in Morocco — fast multilingual websites for hotels, riads & businesses. Work direct with the developer, no agency fees. Free quote in 24h.",
       cityContext:
         "In Casablanca, Morocco's economic capital, I create professional websites for businesses in Maarif, Anfa, Ain Diab and the Triangle d'Or — fast delivery, no agency overhead, direct contact with the developer.",
       hreflang: {
@@ -140,9 +140,9 @@ export const cityConfig = {
       address: "Marrakech, Morocco",
       geo: { lat: 31.6295, lng: -7.9811 },
       canonical: `${BASE}/en/marrakech`,
-      metaTitle: "Riad & Hotel Website Design Marrakech | Freelance Web Developer Morocco | MouDEV",
+      metaTitle: "Riad & Hotel Website Design Marrakech | Direct Booking | MouDEV",
       metaDescription:
-        "Freelance web developer for hotels & riads in Marrakech. Direct booking, multilingual FR/EN/AR, from 2,000 MAD. 5-day delivery, no agency fees. Free quote in 24h.",
+        "Websites for hotels & riads in Marrakech — direct booking to cut Booking.com & Airbnb commissions. Multilingual FR/EN/AR, no agency fees. Free quote in 24h.",
       cityContext:
         "In Marrakech, Morocco's tourism and cultural capital visited by millions of travelers every year, your website is your global showcase. Hotels, riads, restaurants, craft boutiques and travel agencies: MouDev creates websites that attract an international clientele, generate online bookings and boost your sales.",
       blogLink: {

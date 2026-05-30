@@ -126,11 +126,11 @@ const MarrakechPage = () => {
     <>
       <Helmet>
         <title>
-          Création Site Web Marrakech | Hôtels, Riads, Restaurants | MouDEV
+          Création Site Web Marrakech : Hôtels, Riads & Restaurants | MouDEV
         </title>
         <meta
           name="description"
-          content="Développeur web freelance à Marrakech — site web hôtel, riad, restaurant. Réservation en ligne directe, multilingue FR/EN/AR, SEO tourisme. Livraison 5 jours. Devis gratuit 24h."
+          content="Sites web pour hôtels, riads & restaurants à Marrakech. Réservation directe, moins de commissions OTA, multilingue FR/EN/AR, SEO tourisme. Devis gratuit 24h."
         />
         <meta
           property="og:title"

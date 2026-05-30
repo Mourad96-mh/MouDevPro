@@ -79,19 +79,19 @@ const TarifsPage = () => {
     <>
       <Helmet>
         <title>
-          Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV
+          Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV
         </title>
         <meta
           name="description"
-          content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Développeur freelance. Devis gratuit 24h."
+          content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h."
         />
         <meta
           property="og:title"
-          content="Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV"
+          content="Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV"
         />
         <meta
           property="og:description"
-          content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h."
         />
         <meta
           property="og:url"
@@ -100,8 +100,8 @@ const TarifsPage = () => {
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV" />
-        <meta name="twitter:description" content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Devis gratuit 24h." />
+        <meta name="twitter:title" content="Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV" />
+        <meta name="twitter:description" content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="prix site web maroc, tarif site web maroc, devis site web maroc, prix site vitrine maroc, prix site e-commerce maroc, coût création site web maroc, tarif développeur web maroc" />
