@@ -19,7 +19,7 @@
   "home": {
     "h2": "Website Creation in {{city}} — MouDev, Freelance Web Developer Morocco",
     "p1": "Looking for a freelance web developer in {{city}} to build your professional website? I design showcase sites, e-commerce stores and custom web applications that generate leads and sales. You speak directly with the developer — no middleman, no agency. Free quote in 24h.",
-    "p2": "I build your professional website in {{city}} — showcase site from 2,000 MAD, e-commerce, custom web application. Fast, secure, 100% responsive and Google-optimised from day one. Delivery in 5 days. Payment after delivery.",
+    "p2": "I build your professional website in {{city}} — showcase site from 2,000 MAD, e-commerce, custom web application. Fast, secure, 100% responsive and Google-optimised from day one. Delivery in 7 to 10 days. Payment after delivery.",
     "p3": "Freelance web developer in {{city}}, I guide you from A to Z: from design to launch. Agency quality, freelance price — I handle everything. Contact me for your free quote.",
     "cta": "Free quote in 24h"
   },
@@ -189,7 +189,7 @@
       },
       {
         "q": "How long does it take to deliver a website?",
-        "a": "Any website — showcase or e-commerce — is delivered in 5 days maximum. Timelines depend on the availability of content (texts, images, logo) you provide."
+        "a": "Any website — showcase or e-commerce — is delivered in 7 to 10 days. Timelines depend on the availability of content (texts, images, logo) you provide."
       },
       {
         "q": "Will my site rank well on Google in {{city}}?",

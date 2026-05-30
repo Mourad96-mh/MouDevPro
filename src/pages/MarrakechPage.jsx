@@ -257,7 +257,7 @@ const MarrakechPage = () => {
               <span className="city-stat__label">FR / EN / AR</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">2–4 sem.</span>
+              <span className="city-stat__num">7-10 jours</span>
               <span className="city-stat__label">Délai de livraison</span>
             </div>
           </div>
@@ -373,7 +373,7 @@ const MarrakechPage = () => {
                 {[
                   ["Contact", "Direct avec le développeur", "Commercial + chef de projet"],
                   ["Prix", "Dès 2 000 DH", "Dès 8 000 DH et plus"],
-                  ["Délai", "5 jours max", "1 à 3 mois"],
+                  ["Délai", "7-10 jours", "1 à 3 mois"],
                   ["Paiement", "Après livraison", "Acompte imposé"],
                   ["Multilingue", "FR/EN/AR inclus sur devis", "Supplément facturé"],
                   ["SEO tourisme", "Optimisé FR + EN", "Rarement inclus"],

@@ -19,7 +19,7 @@
   "home": {
     "h2": "Création de site web à {{city}} — MouDev, Développeur Web Freelance",
     "p1": "Vous cherchez un développeur web freelance à {{city}} pour la création de votre site internet professionnel ? Je conçois des sites vitrine, des e-commerces et des applications web sur mesure qui génèrent des leads et des ventes. Vous parlez directement avec le développeur — pas d'intermédiaire, pas d'agence. Devis gratuit en 24h.",
-    "p2": "Je crée votre site web professionnel à {{city}} — site vitrine dès 2000 DH, e-commerce, application web sur mesure. Sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google. Livraison en 5 jours. Paiement après livraison.",
+    "p2": "Je crée votre site web professionnel à {{city}} — site vitrine dès 2000 DH, e-commerce, application web sur mesure. Sites rapides, sécurisés, 100% responsive et optimisés pour le référencement Google. Livraison en 7 à 10 jours. Paiement après livraison.",
     "p3": "Développeur web freelance à {{city}}, je vous accompagne de A à Z : de la conception à la mise en ligne. Qualité agence, prix freelance — je m'occupe de tout. Contactez-moi pour recevoir votre devis gratuit.",
     "cta": "Devis gratuit en 24h"
   },
@@ -189,7 +189,7 @@
       },
       {
         "q": "Combien de temps faut-il pour livrer un site web ?",
-        "a": "Tout site — vitrine ou e-commerce — est livré en 5 jours maximum. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous me fournissez."
+        "a": "Tout site — vitrine ou e-commerce — est livré en 7 à 10 jours. Les délais dépendent de la disponibilité des contenus (textes, images, logo) que vous me fournissez."
       },
       {
         "q": "Mon site sera-t-il bien référencé sur Google à {{city}} ?",
@@ -217,7 +217,7 @@
       },
       {
         "q": "Qu'est-ce qu'un site vitrine et combien coûte-t-il à {{city}} ?",
-        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 2000 DH, livré en 5 jours maximum, responsive, optimisé SEO et hébergement inclus."
+        "a": "Un site vitrine est un site web professionnel qui présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans, professions libérales et commerces à {{city}}. Chez MouDev, un site vitrine à {{city}} démarre à partir de 2000 DH, livré en 7 à 10 jours, responsive, optimisé SEO et hébergement inclus."
       },
       {
         "q": "Quelle est la différence entre un freelance web et une agence web à {{city}} ?",
@@ -225,7 +225,7 @@
       },
       {
         "q": "Comment créer un site e-commerce au Maroc ?",
-        "a": "Pour créer un site e-commerce au Maroc, il faut choisir une plateforme adaptée (WooCommerce, Shopify ou développement sur mesure), configurer un paiement local (CMI, PayZone, virement bancaire), et optimiser pour le SEO local. Chez MouDev, je livre un e-commerce complet à partir de 3 000 DH en 5 jours maximum — catalogue produits, panier, paiement sécurisé, interface d'administration et formation incluse."
+        "a": "Pour créer un site e-commerce au Maroc, il faut choisir une plateforme adaptée (WooCommerce, Shopify ou développement sur mesure), configurer un paiement local (CMI, PayZone, virement bancaire), et optimiser pour le SEO local. Chez MouDev, je livre un e-commerce complet à partir de 3 000 DH en 7 à 10 jours — catalogue produits, panier, paiement sécurisé, interface d'administration et formation incluse."
       },
       {
         "q": "Quel CMS choisir pour mon site web au Maroc — WordPress ou React ?",
@@ -258,7 +258,7 @@
       },
       {
         "name": "Amine Bennani",
-        "text": "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 5 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement."
+        "text": "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 à 10 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement."
       },
       {
         "name": "Ahmed Ali",

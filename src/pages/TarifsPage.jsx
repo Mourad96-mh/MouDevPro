@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Peut-on avoir un site e-commerce professionnel à moins de 5 000 DH au Maroc ?",
-    a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 5 jours maximum.",
+    a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 7 à 10 jours.",
   },
 ];
 
@@ -122,7 +122,7 @@ const TarifsPage = () => {
           <p className="subheading center-text">
             Site vitrine dès <strong>2 000 DH</strong>, e-commerce dès{" "}
             <strong>3 000 DH</strong>. Paiement après livraison — zéro acompte.
-            Livraison en 5 jours. Choisissez votre formule ci-dessous.
+            Livraison en 7 à 10 jours. Choisissez votre formule ci-dessous.
           </p>
         </div>
       </section>
@@ -161,9 +161,9 @@ const TarifsPage = () => {
             <ol className="tarifs-timeline">
               {[
                 { day: "Jour 1", label: "Brief & validation du devis", desc: "Échange WhatsApp de 30 min pour cadrer le projet, vos contenus et vos objectifs." },
-                { day: "Jours 2–3", label: "Design & intégration", desc: "Je crée la maquette et intègre vos contenus. Vous validez avant la mise en ligne." },
-                { day: "Jour 4", label: "Corrections & recette", desc: "Vous testez le site, je corrige. Itérations illimitées jusqu'à votre satisfaction." },
-                { day: "Jour 5", label: "Mise en ligne & paiement", desc: "Le site est publié sur votre domaine. Vous payez seulement à ce stade." },
+                { day: "Jours 2–5", label: "Design & intégration", desc: "Je crée la maquette et intègre vos contenus. Vous validez avant la mise en ligne." },
+                { day: "Jours 6–8", label: "Corrections & recette", desc: "Vous testez le site, je corrige. Itérations illimitées jusqu'à votre satisfaction." },
+                { day: "Jours 9–10", label: "Mise en ligne & paiement", desc: "Le site est publié sur votre domaine. Vous payez seulement à ce stade." },
               ].map((step, i) => (
                 <li key={i} className="tarifs-timeline-item">
                   <span className="tarifs-timeline-day">{step.day}</span>
@@ -204,7 +204,7 @@ const TarifsPage = () => {
             <span className="tarifs-reason__icon">🚀</span>
             <h3 className="tertiary-heading">Livraison rapide</h3>
             <p>
-              Un site vitrine en 5 jours. Pas de réunions inutiles, pas
+              Un site vitrine en 7 à 10 jours. Pas de réunions inutiles, pas
               de processus bureaucratique.
             </p>
           </div>

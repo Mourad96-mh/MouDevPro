@@ -268,7 +268,7 @@ moudevpro.com/
 <title>[Keyword — City] | Développeur Web Freelance Maroc</title>
 <meta
   name="description"
-  content="[Service] à [Ville]. Développeur web freelance, livraison 2–3 semaines, devis gratuit 24h. Site professionnel, SEO inclus."
+  content="[Service] à [Ville]. Développeur web freelance, livraison 7 à 10 jours, devis gratuit 24h. Site professionnel, SEO inclus."
 />
 <meta property="og:title" content="..." />
 <meta property="og:description" content="..." />
@@ -337,7 +337,7 @@ moudevpro.com/
 "Vous parlez directement avec le développeur"
 "Pas d'intermédiaire, pas d'agence"
 "Qualité agence, prix freelance"
-"Livraison en 2 à 3 semaines"
+"Livraison en 7 à 10 jours"
 "Devis gratuit et transparent sous 24h"
 "React, WordPress, WooCommerce — selon vos besoins"
 "Disponible à Casablanca, Rabat et Marrakech"

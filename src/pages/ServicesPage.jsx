@@ -9,11 +9,11 @@ import { useCityContext } from "../context/CityContext";
 const FAQ_ITEMS = [
   {
     q: "Quels services de création de site web proposez-vous au Maroc ?",
-    a: "Je propose la création de sites vitrine professionnels, sites e-commerce, applications web sur mesure, refonte de sites existants et référencement SEO. Chaque projet est développé avec React, WordPress ou WooCommerce selon vos besoins — livraison en 5 jours maximum.",
+    a: "Je propose la création de sites vitrine professionnels, sites e-commerce, applications web sur mesure, refonte de sites existants et référencement SEO. Chaque projet est développé avec React, WordPress ou WooCommerce selon vos besoins — livraison en 7 à 10 jours.",
   },
   {
     q: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
-    a: "Un site vitrine présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans et professions libérales. Un site e-commerce permet de vendre en ligne avec un catalogue produits, un panier et un système de paiement sécurisé. Les deux sont livrés en 5 jours maximum.",
+    a: "Un site vitrine présente votre activité, vos services et vos coordonnées — idéal pour les PME, artisans et professions libérales. Un site e-commerce permet de vendre en ligne avec un catalogue produits, un panier et un système de paiement sécurisé. Les deux sont livrés en 7 à 10 jours.",
   },
   {
     q: "Proposez-vous la refonte de sites web existants ?",
@@ -53,7 +53,7 @@ const SERVICES = [
     id: "vitrine",
     icon: "🖥️",
     title: "Création de site vitrine",
-    desc: "Votre présence professionnelle en ligne : design sur mesure, jusqu'à 10 pages, formulaire de contact, SEO technique inclus. Livré en 5 jours, responsive sur tous les appareils.",
+    desc: "Votre présence professionnelle en ligne : design sur mesure, jusqu'à 10 pages, formulaire de contact, SEO technique inclus. Livré en 7 à 10 jours, responsive sur tous les appareils.",
     price: "dès 2 000 DH",
     link: "/tarifs",
     linkLabel: "Voir les tarifs vitrine",
@@ -63,7 +63,7 @@ const SERVICES = [
     id: "ecommerce",
     icon: "🛍️",
     title: "Site e-commerce & boutique en ligne",
-    desc: "Vendez en ligne 24h/24 — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, commandes et promotions. Formation admin 2h incluse. Livré en 5 jours.",
+    desc: "Vendez en ligne 24h/24 — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, commandes et promotions. Formation admin 2h incluse. Livré en 7 à 10 jours.",
     price: "dès 3 000 DH",
     link: "/ecommerce",
     linkLabel: "En savoir plus sur l'e-commerce",
@@ -83,7 +83,7 @@ const SERVICES = [
     id: "refonte",
     icon: "🔄",
     title: "Refonte de site web",
-    desc: "Votre site est lent, daté ou mal référencé ? Je refonds votre site existant : nouveau design, optimisation Core Web Vitals, migration sécurisée sans perte de référencement. Livraison en 5 jours.",
+    desc: "Votre site est lent, daté ou mal référencé ? Je refonds votre site existant : nouveau design, optimisation Core Web Vitals, migration sécurisée sans perte de référencement. Livraison en 7 à 10 jours.",
     price: "dès 2 000 DH",
     link: "/contact",
     linkLabel: "Demander un diagnostic",
@@ -153,7 +153,7 @@ const ServicesPage = () => {
         </title>
         <meta
           name="description"
-          content="Site vitrine Maroc, e-commerce, refonte site web, application sur mesure et SEO. Développeur web freelance — dès 2 000 DH, livraison 5 jours, devis gratuit 24h."
+          content="Site vitrine Maroc, e-commerce, refonte site web, application sur mesure et SEO. Développeur web freelance — dès 2 000 DH, livraison 7 à 10 jours, devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -263,12 +263,12 @@ const ServicesPage = () => {
           <div className="tarifs-teaser-card">
             <h3 className="tertiary-heading">Site Vitrine</h3>
             <p className="tarifs-teaser-price">dès 2 000 DH</p>
-            <p>Livraison en 5 jours</p>
+            <p>Livraison en 7 à 10 jours</p>
           </div>
           <div className="tarifs-teaser-card tarifs-teaser-card--highlight">
             <h3 className="tertiary-heading">E-commerce</h3>
             <p className="tarifs-teaser-price">dès 3 000 DH</p>
-            <p>Livraison en 5 jours</p>
+            <p>Livraison en 7 à 10 jours</p>
           </div>
           <div className="tarifs-teaser-card">
             <h3 className="tertiary-heading">Sur Mesure</h3>

@@ -7,7 +7,7 @@ const PLANS = [
     id: "vitrine",
     name: "Site Vitrine",
     price: "dès 2 000 DH",
-    delivery: "Livraison en 5 jours",
+    delivery: "Livraison en 7 à 10 jours",
     highlight: false,
     features: [
       "Design sur mesure — identité de marque",
@@ -27,7 +27,7 @@ const PLANS = [
     id: "ecommerce",
     name: "Site E-commerce",
     price: "dès 3 000 DH",
-    delivery: "Livraison en 5 jours",
+    delivery: "Livraison en 7 à 10 jours",
     highlight: true,
     features: [
       "Tout ce qui est inclus dans Site Vitrine",

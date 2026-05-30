@@ -8,8 +8,8 @@ Contrairement aux agences web, MouDevPro offre un contact direct avec le dévelo
 
 ## Services
 
-- **Création de site vitrine** : dès 2 000 MAD — jusqu'à 10 pages, design sur mesure, SEO inclus, hébergement inclus, livraison en 5 jours
-- **Création de site e-commerce** : dès 3 000 MAD — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, formation admin 2h, livraison en 5 jours
+- **Création de site vitrine** : dès 2 000 MAD — jusqu'à 10 pages, design sur mesure, SEO inclus, hébergement inclus, livraison en 7 à 10 jours
+- **Création de site e-commerce** : dès 3 000 MAD — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, formation admin 2h, livraison en 7 à 10 jours
 - **Application web sur mesure** : React, Next.js, Node.js — selon cahier des charges
 - **Refonte de site web** : modernisation design, performance, SEO et mobile-first
 - **Site web hôtel / riad Marrakech** : dès 4 990 MAD — réservation en ligne, multilingue FR/EN/AR, SEO tourisme
@@ -22,7 +22,7 @@ Casablanca, Rabat, Marrakech et tout le Maroc (livraison 100% à distance via Wh
 
 - Vous parlez directement avec le développeur
 - Paiement après livraison — zéro acompte imposé
-- Livraison en 5 jours pour un site vitrine ou e-commerce
+- Livraison en 7 à 10 jours pour un site vitrine ou e-commerce
 - SEO technique inclus dans chaque projet
 - Disponible 7j/7 sur WhatsApp
 

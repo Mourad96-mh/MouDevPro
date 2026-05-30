@@ -8,7 +8,7 @@ const buildServices = (city) => [
     title: `Site Vitrine ${city}`,
     price: "dès 2 000 DH",
     highlight: false,
-    desc: `Site professionnel pour votre activité à ${city} — PME, cabinet, startup ou association. Design sur mesure, SEO local inclus, livré en 5 jours.`,
+    desc: `Site professionnel pour votre activité à ${city} — PME, cabinet, startup ou association. Design sur mesure, SEO local inclus, livré en 7 à 10 jours.`,
     features: [
       "Design sur mesure",
       "100% responsive",

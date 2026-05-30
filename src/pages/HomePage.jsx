@@ -89,7 +89,7 @@ const jsonLd = {
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Amine Bennani" },
       datePublished: "2025-11-20",
-      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 5 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
+      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 à 10 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
     },
     {
       "@type": "Review",
@@ -115,7 +115,7 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Création de site vitrine",
-          description: "Site web professionnel jusqu'à 5 pages, responsive, optimisé SEO, hébergement inclus. Livré en 5 jours.",
+          description: "Site web professionnel jusqu'à 5 pages, responsive, optimisé SEO, hébergement inclus. Livré en 7 à 10 jours.",
           areaServed: ["Casablanca", "Rabat", "Marrakech", "Maroc"],
         },
         price: "2000",
@@ -127,7 +127,7 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Création de site e-commerce",
-          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 5 jours.",
+          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 7 à 10 jours.",
           areaServed: ["Casablanca", "Rabat", "Marrakech", "Maroc"],
         },
         price: "3000",
@@ -302,7 +302,7 @@ const HomePage = () => {
             </p>
             <p className="text sl-mb">
               <strong>Qualité agence, prix freelance</strong> — site vitrine dès 2 000 DH,
-              e-commerce dès 3 000 DH. Livraison en 5 jours. Zéro intermédiaire,
+              e-commerce dès 3 000 DH. Livraison en 7 à 10 jours. Zéro intermédiaire,
               zéro acompte imposé.
             </p>
             <Link className="link hero-link" to={WA_URL} onClick={() => track(WA_URL)}>
@@ -337,7 +337,7 @@ const HomePage = () => {
             <p className="geo-fact__label">livrés à des PME, startups, hôtels, riads et associations à Casablanca, Rabat et Marrakech.</p>
           </article>
           <article className="geo-fact__card">
-            <strong className="geo-fact__stat">5 jours</strong>
+            <strong className="geo-fact__stat">7-10 jours</strong>
             <p className="geo-fact__label">délai de livraison pour un site vitrine professionnel complet — responsive, SEO inclus, hébergement inclus.</p>
           </article>
           <article className="geo-fact__card">
@@ -383,8 +383,8 @@ const HomePage = () => {
             },
             {
               icon: "🚀",
-              title: "Livraison en 5 jours",
-              desc: "Site vitrine ou e-commerce — livraison en 5 jours maximum. Délais tenus, sans réunions inutiles.",
+              title: "Livraison en 7 à 10 jours",
+              desc: "Site vitrine ou e-commerce — livraison en 7 à 10 jours. Délais tenus, sans réunions inutiles.",
             },
             {
               icon: "✅",
