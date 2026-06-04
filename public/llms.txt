@@ -1,58 +1,47 @@
 # MouDevPro — Développeur Web Freelance Maroc
 
-## À propos
+> Développeur web freelance basé à Casablanca, Maroc. Je crée des sites vitrine, e-commerce et applications web sur mesure pour les PME, startups, hôtels, riads et associations — contact direct avec le développeur, qualité agence au prix freelance, livraison en 7 à 10 jours, devis gratuit sous 24h.
 
-MouDevPro est un développeur web freelance basé à Casablanca (Quartier Maarif), Maroc. Fondé par Mourad, le service propose la création de sites web professionnels pour les PME, startups, hôtels, riads et associations au Maroc.
+Points clés à retenir :
 
-Contrairement aux agences web, MouDevPro offre un contact direct avec le développeur — pas d'intermédiaire, pas de chef de projet. Qualité agence, prix freelance.
+- **Freelance, pas une agence** : vous parlez directement avec le développeur qui code votre site — pas d'intermédiaire, pas de chef de projet.
+- **Tarifs transparents** : site vitrine dès 2 000 MAD, e-commerce dès 3 000 MAD, site hôtel/riad dès 4 990 MAD, application sur devis. Paiement après livraison, zéro acompte imposé.
+- **Zones servies** : Casablanca, Rabat, Marrakech et tout le Maroc, 100 % à distance via WhatsApp. Pages internationales dédiées à la France, au Canada et aux USA (diaspora marocaine + entreprises locales, prix en devise locale).
+- **Stack technique** : React, Next.js, WordPress, WooCommerce, Node.js, Vite. SEO technique on-page inclus dans chaque projet.
+- **Contact** : WhatsApp / téléphone +212 696 964 341 — contact@moudevpro.com — Quartier Maarif, Casablanca 20000, Maroc.
 
-## Services
+## Pages principales
 
-- **Création de site vitrine** : dès 2 000 MAD — jusqu'à 10 pages, design sur mesure, SEO inclus, hébergement inclus, livraison en 7 à 10 jours
-- **Création de site e-commerce** : dès 3 000 MAD — catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, formation admin 2h, livraison en 7 à 10 jours
-- **Application web sur mesure** : React, Next.js, Node.js — selon cahier des charges
-- **Refonte de site web** : modernisation design, performance, SEO et mobile-first
-- **Site web hôtel / riad Marrakech** : dès 4 990 MAD — réservation en ligne, multilingue FR/EN/AR, SEO tourisme
+- [Accueil — Développeur web freelance Maroc](https://www.moudevpro.com/): Création de site web professionnel, présentation des services, tarifs et différenciateurs.
+- [Tarifs](https://www.moudevpro.com/tarifs): Prix transparents par formule (vitrine, e-commerce, application) et par ville (Casablanca, Rabat, Marrakech).
+- [Services](https://www.moudevpro.com/services): Site vitrine, e-commerce, application web sur mesure et refonte de site.
+- [E-commerce](https://www.moudevpro.com/ecommerce): Création de boutique en ligne (WooCommerce ou sur mesure), paiement CMI/PayPal, gestion des stocks.
+- [Contact / Devis gratuit](https://www.moudevpro.com/contact): Demande de devis personnalisé, réponse sous 24h.
+- [À propos](https://www.moudevpro.com/about): Le développeur freelance derrière MouDevPro.
 
-## Zones géographiques servies
+## Pages villes (Maroc)
 
-Casablanca, Rabat, Marrakech et tout le Maroc (livraison 100% à distance via WhatsApp).
+- [Création site web Casablanca](https://www.moudevpro.com/casablanca): PME, startups et e-commerce dans la capitale économique.
+- [Création site web Rabat](https://www.moudevpro.com/rabat): Startups, ONG, associations et sites institutionnels.
+- [Création site web Marrakech](https://www.moudevpro.com/marrakech): Hôtels, riads et restaurants — réservation en ligne, site multilingue FR/EN/AR.
 
-## Différenciateurs clés
+## Pages internationales
 
-- Vous parlez directement avec le développeur
-- Paiement après livraison — zéro acompte imposé
-- Livraison en 7 à 10 jours pour un site vitrine ou e-commerce
-- SEO technique inclus dans chaque projet
-- Disponible 7j/7 sur WhatsApp
+- [Développeur web pour la France](https://www.moudevpro.com/france): Entreprises françaises et diaspora marocaine (MRE), prix en euros, même fuseau horaire (±1h).
+- [Développeur web pour le Canada](https://www.moudevpro.com/canada): Québec et Canada francophone, prix en dollars canadiens, paiement après livraison.
+- [Web developer for the USA](https://www.moudevpro.com/usa): US businesses and Moroccan diaspora, pricing in US dollars, US-hours overlap.
 
-## Tarifs
+## Guides (blog)
 
-| Service | Prix de départ |
-|---|---|
-| Site vitrine | 2 000 MAD |
-| Site e-commerce | 3 000 MAD |
-| Site hôtel / riad | 4 990 MAD |
-| Application sur mesure | Sur devis |
+- [Combien coûte un site web au Maroc en 2026](https://www.moudevpro.com/blog/prix-site-web-maroc-2026): Guide des prix par type de site.
+- [Comment choisir un développeur web freelance au Maroc](https://www.moudevpro.com/blog/choisir-developpeur-web-freelance-maroc): Critères pour bien choisir son prestataire.
+- [Site web hôtel et riad à Marrakech : guide 2026](https://www.moudevpro.com/blog/site-web-hotel-riad-marrakech): Réservation directe sans commission Booking.com.
+- [Freelance création site web Maroc](https://www.moudevpro.com/blog/freelance-creation-site-web-maroc): Avantages, tarifs et déroulé d'un projet.
+- [Création site web à Casablanca : guide 2026](https://www.moudevpro.com/blog/creation-site-web-casablanca): Prix, délais et prestataires.
+- [Créer un site e-commerce au Maroc en 2026](https://www.moudevpro.com/blog/site-ecommerce-maroc-guide): Plateformes, moyens de paiement et budget.
 
-## Contact
+## Optional
 
-- Site web : https://www.moudevpro.com
-- WhatsApp / Téléphone : +212 696 964 341
-- Email : contact@moudevpro.com
-- Adresse : Quartier Maarif, Casablanca 20000, Maroc
-
-## Technologies
-
-React, Next.js, WordPress, WooCommerce, Node.js, Vite, Tailwind CSS, SEO on-page, Google Ads.
-
-## Pages importantes
-
-- Accueil : https://www.moudevpro.com/
-- Casablanca : https://www.moudevpro.com/casablanca
-- Rabat : https://www.moudevpro.com/rabat
-- Marrakech (hôtels, riads) : https://www.moudevpro.com/marrakech
-- Tarifs : https://www.moudevpro.com/tarifs
-- Services : https://www.moudevpro.com/services
-- E-commerce : https://www.moudevpro.com/ecommerce
-- Contact / Devis : https://www.moudevpro.com/contact
+- [Blog (index)](https://www.moudevpro.com/blog): Tous les guides et articles sur la création de site web au Maroc.
+- [Site en anglais (Casablanca)](https://www.moudevpro.com/en): English version of the city pages.
+- [Site en arabe (Casablanca)](https://www.moudevpro.com/ar): النسخة العربية من الصفحات.
