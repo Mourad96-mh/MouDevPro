@@ -205,7 +205,10 @@ moudevpro.com/
 ├── /services          All services overview
 ├── /ecommerce         E-commerce dedicated page
 ├── /tarifs            Pricing page — critical for price-intent searches
-└── /contact           Quote request form
+├── /contact           Quote request form
+├── /france            International — FR, diaspora + businesses, € pricing
+├── /canada            International — FR, Québec/diaspora, $ CA pricing
+└── /usa               International — EN, diaspora + businesses, $ pricing
 ```
 
 ### Homepage requirements
@@ -409,3 +412,27 @@ These keywords are currently running. Their landing pages must match.
 "website design morocco"            → /
 "website design casablanca"         → /casablanca
 ```
+
+---
+
+## 12. International markets (organic SEO only)
+
+Added 2026-06-03. The Morocco-first positioning (sections 1–11) remains primary. On top of it, three international landing pages target the diaspora **and** local businesses in higher-rate markets — delivered remotely, priced in local currency.
+
+**Channel:** organic SEO only. Do **not** open Google Ads geo-targeting to these countries without a separate decision — the Ads negative-keyword list (`ads-data/negative-keywords.md`) intentionally blocks `france`, `usa`, `canada` geo for the Morocco campaigns. Organic and paid are kept separate on purpose.
+
+| Page      | Lang | Audience                                  | Currency | Angle                                              |
+| --------- | ---- | ----------------------------------------- | -------- | -------------------------------------------------- |
+| /france   | FR   | French businesses + Moroccan diaspora (MRE) | €        | Same timezone (±1h), 3–5× cheaper than FR agencies |
+| /canada   | FR   | Québec + Canada, francophone diaspora     | $ CA     | French-first, remote, paiement après livraison     |
+| /usa      | EN   | US businesses + Moroccan diaspora         | $        | US-hours overlap, fraction of US agency rates      |
+
+**Content rules for these pages:**
+
+- Lead with the **offshore value**: agency-quality stack (React, WordPress, WooCommerce) at a fraction of local rates, 100% remote, pay after delivery.
+- Always address **both** personas in the intro: local entrepreneur *and* diaspora ("Marocain résidant en France/au Canada/aux USA").
+- Show prices in the **local currency** (€ / $), never only MAD.
+- Reassure on the remote concerns: timezone overlap, payment method (virement/Wise/PayPal), language.
+- Keep the freelance differentiators from section 8 (direct contact, no agency, fast delivery).
+- These are **not** LocalBusiness entries — use `ProfessionalService` schema with `areaServed` = the country and provider address in Casablanca, MA. Never fake a local address abroad.
+- Config-driven: copy lives in `src/data/marketConfig.js`, rendered by `src/pages/MarketPage.jsx`. Add a market by extending the config + `App.jsx` route + `sitemap-generator.js`.

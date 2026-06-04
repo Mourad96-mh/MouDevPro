@@ -73,7 +73,7 @@ const CasablancaPage = () => {
     <>
       <Helmet>
         <title>
-          Création Site Web à Casablanca | Développeur Freelance Maroc | MouDEV
+          Création Site Web Casablanca | Développeur Web Freelance Maroc | MouDEV
         </title>
         <meta
           name="description"

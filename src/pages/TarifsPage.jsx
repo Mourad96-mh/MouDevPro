@@ -27,6 +27,10 @@ const FAQ_ITEMS = [
     q: "Peut-on avoir un site e-commerce professionnel à moins de 5 000 DH au Maroc ?",
     a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 7 à 10 jours.",
   },
+  {
+    q: "Le prix d'un site web est-il différent à Casablanca, Rabat ou Marrakech ?",
+    a: "Non, mes tarifs sont identiques à Casablanca, Rabat et Marrakech : site vitrine dès 2 000 DH et e-commerce dès 3 000 DH. Je travaille en remote dans tout le Maroc, sans frais de déplacement. Seul le besoin (hôtel, riad, restaurant, e-commerce, application) fait varier le devis — pas la ville.",
+  },
 ];
 
 const breadcrumbLd = {
@@ -128,6 +132,51 @@ const TarifsPage = () => {
       </section>
 
       <TarifsSection />
+
+      {/* Prix par ville */}
+      <section className="home container">
+        <h2 className="secondary-heading center-text lg-mb">
+          Prix création site web à Casablanca, Rabat et Marrakech
+        </h2>
+        <p className="text center-text sl-mb">
+          Mêmes tarifs transparents dans les trois villes — site vitrine dès
+          2 000 DH, e-commerce dès 3 000 DH. Travail en remote, sans frais de
+          déplacement. Choisissez votre ville pour un devis adapté à votre
+          activité&nbsp;:
+        </p>
+        <div className="tarifs-cities-grid">
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Casablanca</h3>
+            <p className="text">
+              PME, e-commerce et startups du Maarif, d'Anfa et du Triangle d'Or.
+              Site vitrine dès 2 000 DH, boutique en ligne dès 3 000 DH.
+            </p>
+            <Link className="tarifs-city-link" to="/casablanca">
+              Création site web à Casablanca →
+            </Link>
+          </div>
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Rabat</h3>
+            <p className="text">
+              Startups, ONG, administrations et PME. Site institutionnel ou
+              vitrine professionnel dès 2 000 DH, livraison en 7 à 10 jours.
+            </p>
+            <Link className="tarifs-city-link" to="/rabat">
+              Création site web à Rabat →
+            </Link>
+          </div>
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Marrakech</h3>
+            <p className="text">
+              Hôtels, riads et restaurants. Site multilingue FR/EN/AR avec
+              réservation en ligne directe, dès 2 000 DH.
+            </p>
+            <Link className="tarifs-city-link" to="/marrakech">
+              Création site web à Marrakech →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Inclus dans chaque formule */}
       <section className="home container">

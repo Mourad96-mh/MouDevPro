@@ -95,6 +95,13 @@ const PROJECTS = [
     alt: "TPE Maroc — création site web fintech terminal paiement électronique Maroc, solutions commerçants",
     url: "https://tpe-maroc.com/",
   },
+  {
+    tag: "Conseil & Business",
+    title: "Natis Développement",
+    desc: "Site vitrine pour un cabinet de conseil en développement international France–Maroc : présentation des services d'implantation, d'investissement et d'accompagnement opérationnel des entreprises à Casablanca.",
+    alt: "Natis Développement International — création site web cabinet conseil business France Maroc, implantation entreprise Casablanca",
+    url: "https://abdessamadchafiki.com/",
+  },
 ];
 
 const screenshotUrl = (url) =>

@@ -59,6 +59,21 @@ const Footer = ({ cityName, address }) => {
         </div>
 
         <div className="footer__col">
+          <h3 className="footer__heading">International</h3>
+          <ul className="footer__list">
+            <li>
+              <Link to="/france" className="footer__link">Développeur web pour la France</Link>
+            </li>
+            <li>
+              <Link to="/canada" className="footer__link">Développeur web pour le Canada</Link>
+            </li>
+            <li>
+              <Link to="/usa" className="footer__link">Web developer for the USA</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer__col">
           <h3 className="footer__heading">{t("footer.contact.heading")}</h3>
           <ul className="footer__contact-list">
             <li>

@@ -124,6 +124,11 @@ const routes = [
     ],
   },
 
+  // ── International market pages (organic SEO) ─────────────────────────────
+  { url: "/france", changefreq: "monthly", priority: 0.8 },
+  { url: "/canada", changefreq: "monthly", priority: 0.8 },
+  { url: "/usa", changefreq: "monthly", priority: 0.8 },
+
   // ── Standalone pages ─────────────────────────────────────────────────────
   { url: "/tarifs", changefreq: "monthly", priority: 0.9 },
   { url: "/ecommerce", changefreq: "monthly", priority: 0.8 },

@@ -6,6 +6,7 @@ import TarifsPage from "./pages/TarifsPage";
 import CasablancaPage from "./pages/CasablancaPage";
 import RabatPage from "./pages/RabatPage";
 import MarrakechPage from "./pages/MarrakechPage";
+import MarketPage from "./pages/MarketPage";
 import EcommercePage from "./pages/EcommercePage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
@@ -37,6 +38,11 @@ function App() {
             <Route path="ar" element={<CityPage city="casablanca" lang="ar" />} />
             <Route path="ar/rabat" element={<CityPage city="rabat" lang="ar" />} />
             <Route path="ar/marrakech" element={<CityPage city="marrakech" lang="ar" />} />
+
+            {/* International market pages (organic SEO — diaspora + local businesses) */}
+            <Route path="france" element={<MarketPage market="france" />} />
+            <Route path="canada" element={<MarketPage market="canada" />} />
+            <Route path="usa" element={<MarketPage market="usa" />} />
 
             {/* Standalone pages */}
             <Route path="tarifs" element={<TarifsPage />} />
