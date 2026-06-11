@@ -1,16 +1,17 @@
 /**
- * trackLead — fires on every WhatsApp / phone / form conversion
+ * trackLead — logs every WhatsApp / phone / form lead to Google Sheets.
  * 1. Reads UTM params + gclid from URL
  * 2. POSTs lead data to Google Sheets via Apps Script (fire-and-forget)
- * 3. Fires a Google Ads conversion event via gtag
+ *
+ * The Google Ads conversion is fired separately by gtag_report_conversion()
+ * (defined in index.html) so there is a single conversion path — do NOT add a
+ * gtag conversion here or clicks will be double-counted.
  *
  * @param {object} context  — { source, city, service }
  * @param {'whatsapp'|'phone'|'form'} type
  */
 
 // ─── CONFIG — replace before going live ──────────────────────────────────────
-const ADS_CONVERSION_ID = "AW-17548598231";
-const ADS_CONVERSION_LABEL = "XuDyCOb8kqMbENe36a9B";
 const APPS_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbykUAEtMiX2Z5ThudR8hXLs2HGKNyJiOF1xT9wFzncIVMRIDgvIRYN9c6bDUZ0861qoxA/exec";
 // ─────────────────────────────────────────────────────────────────────────────
@@ -30,7 +31,7 @@ function getUTMs() {
   };
 }
 
-function showDebugToast(payload, gtagFired) {
+function showDebugToast(payload) {
   const toast = document.createElement("div");
   toast.style.cssText = `
     position:fixed;bottom:80px;left:16px;z-index:99999;
@@ -48,10 +49,6 @@ function showDebugToast(payload, gtagFired) {
     <div><b>utm_source:</b> ${payload.utm_source || "—"}</div>
     <div><b>gclid:</b> ${payload.gclid || "—"}</div>
     <div style="margin-top:6px;padding-top:6px;border-top:1px solid #333">
-      <span style="color:${gtagFired ? "#86efac" : "#f87171"}">
-        ${gtagFired ? "✓ gtag fired" : "✗ gtag not available"}
-      </span>
-      &nbsp;|&nbsp;
       <span style="color:#86efac">✓ Sheet POST sent</span>
     </div>
   `;
@@ -78,15 +75,7 @@ export function trackLead(context = {}, type = "whatsapp") {
     body: JSON.stringify(payload),
   }).catch(() => {});
 
-  // 2. Fire Google Ads conversion
-  const gtagFired = typeof window.gtag === "function";
-  if (gtagFired) {
-    window.gtag("event", "conversion", {
-      send_to: `${ADS_CONVERSION_ID}/${ADS_CONVERSION_LABEL}`,
-    });
-  }
-
-  // 3. Debug
+  // 2. Debug
   if (DEBUG) {
     console.group(
       "%c[trackLead]",
@@ -96,8 +85,7 @@ export function trackLead(context = {}, type = "whatsapp") {
       payload.source,
     );
     console.table(payload);
-    console.log("gtag fired:", gtagFired);
     console.groupEnd();
-    showDebugToast(payload, gtagFired);
+    showDebugToast(payload);
   }
 }

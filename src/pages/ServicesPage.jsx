@@ -320,7 +320,7 @@ const ServicesPage = () => {
               href="tel:+212696964341"
               className="hero__phone"
               style={{ color: "var(--gray-100)" }}
-              onClick={trackPhone}
+              onClick={() => trackPhone()}
             >
               <HiMiniPhone />
               <span>+212 696 964 341</span>

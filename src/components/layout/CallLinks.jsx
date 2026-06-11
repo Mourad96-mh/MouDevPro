@@ -21,7 +21,7 @@ const CallLinks = () => {
         rel="noopener noreferrer"
         title="Appeler MouDev"
         className="link"
-        onClick={trackPhone}
+        onClick={() => trackPhone()}
       >
         <HiMiniPhone className="cta-icon" />
       </a>
