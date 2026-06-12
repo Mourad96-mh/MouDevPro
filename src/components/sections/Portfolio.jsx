@@ -9,6 +9,7 @@ const PROJECTS = [
     desc: "Plateforme immobilière pour acheter, vendre et investir au Maroc. Recherche avancée de biens, fiches propriétés détaillées et gestion locative à Casablanca et Marrakech.",
     alt: "Mecalus — plateforme immobilière Maroc, création site web pour agence immobilière Casablanca et Marrakech",
     url: "https://www.mecalus.org/",
+    image: "/portfolio/mecalus.png",
   },
   {
     tag: "Sécurité & Surveillance",
@@ -16,6 +17,7 @@ const PROJECTS = [
     desc: "Site professionnel pour une société spécialisée en systèmes de vidéosurveillance au Maroc et en Afrique : caméras IP, alarmes, équipements PoE et installation sur mesure.",
     alt: "Neutron Africa — création site web société vidéosurveillance et sécurité Maroc, caméras IP alarmes",
     url: "https://neutronafrica.ma/",
+    image: "/portfolio/neutron-africa.png",
   },
   {
     tag: "Santé",
@@ -23,6 +25,7 @@ const PROJECTS = [
     desc: "Site institutionnel pour une organisation de santé mobile : présentation des programmes médicaux, zones d'intervention et services de soins à domicile.",
     alt: "Mobile Healthcare — création site web institutionnel organisation santé mobile, services médicaux Maroc",
     url: "https://www.mobile-healthcare.org/",
+    image: "/portfolio/mobile-healthcare.png",
   },
   {
     tag: "Portfolio",
@@ -30,6 +33,7 @@ const PROJECTS = [
     desc: "Mon propre site vitrine freelance, trilingue (FR/EN/AR), optimisé SEO pour les mots-clés locaux au Maroc, avec tracking Google Ads et Facebook Pixel.",
     alt: "MouDevPro — site vitrine développeur web freelance Maroc, création site web Casablanca Rabat Marrakech",
     url: "https://www.moudevpro.com/",
+    image: "/portfolio/moudevpro.png",
   },
   {
     tag: "Services Médicaux",
@@ -37,6 +41,7 @@ const PROJECTS = [
     desc: "Site vitrine pour un service d'ambulance à Casablanca : prise de contact rapide, présentation des prestations médicales d'urgence et formulaire de devis en ligne.",
     alt: "Smahri Ambulance Casablanca — création site vitrine service ambulance urgences médicales Casablanca",
     url: "https://www.smahri-ambulance-casablanca.com/",
+    image: "/portfolio/smahri-ambulance.png",
   },
   {
     tag: "Application Web",
@@ -44,6 +49,7 @@ const PROJECTS = [
     desc: "Application web moderne développée avec React et déployée sur Netlify. Interface dynamique et expérience utilisateur fluide.",
     alt: "Earth-W — création application web sur mesure React, développeur web freelance Maroc",
     url: "https://earth-w.netlify.app/",
+    image: "/portfolio/earth-w.png",
   },
   {
     tag: "Site Vitrine",
@@ -51,6 +57,7 @@ const PROJECTS = [
     desc: "Site vitrine personnel moderne développé avec React : présentation de services, portfolio et formulaire de contact. Design soigné et responsive.",
     alt: "Mourad Website — création site vitrine personnel React, développeur web freelance Maroc",
     url: "https://mourad-website.netlify.app/",
+    image: "/portfolio/mourad-website.png",
   },
   {
     tag: "E-commerce",
@@ -58,6 +65,7 @@ const PROJECTS = [
     desc: "Boutique en ligne complète développée sur mesure : catalogue produits, panier d'achat et interface de commande. Solution e-commerce professionnelle.",
     alt: "Ecommerce Mou — création boutique en ligne e-commerce sur mesure, développeur web freelance Maroc",
     url: "https://ecommerce-mou.netlify.app/",
+    image: "/portfolio/ecommerce-mou.png",
   },
   {
     tag: "Santé & Dentaire",
@@ -65,6 +73,7 @@ const PROJECTS = [
     desc: "Site vitrine pour une clinique dentaire au Maroc : présentation des soins, prise de rendez-vous en ligne et interface patient moderne et rassurante.",
     alt: "AT Dental — création site web clinique dentaire Maroc, site vitrine cabinet dentiste professionnel",
     url: "https://at-dental.com/",
+    image: "/portfolio/at-dental.png",
   },
   {
     tag: "Réseau & Artisanat",
@@ -72,6 +81,7 @@ const PROJECTS = [
     desc: "Plateforme de mise en relation entre artisans et particuliers : annuaires de professionnels, fiches métiers et système de devis en ligne.",
     alt: "Réseau Artizano — création plateforme web artisans, site mise en relation professionnels et particuliers",
     url: "https://reseauxartizano.com/",
+    image: "/portfolio/reseau-artizano.png",
   },
   {
     tag: "Animaux & Lifestyle",
@@ -79,6 +89,7 @@ const PROJECTS = [
     desc: "Site dédié aux propriétaires de chiens : conseils bien-être, guides soins et ressources pour prendre soin de son animal au quotidien.",
     alt: "Care My Dog — création site web animaux domestiques, blog soins chiens lifestyle pets",
     url: "https://care-my-dog.com/",
+    image: "/portfolio/care-my-dog.png",
   },
   {
     tag: "E-commerce Bébé",
@@ -86,7 +97,7 @@ const PROJECTS = [
     desc: "Boutique en ligne spécialisée dans les vêtements et accessoires pour bébés au Maroc : catalogue produits, fiches articles détaillées et expérience d'achat fluide.",
     alt: "Pour Bébés — création boutique e-commerce vêtements accessoires bébé Maroc",
     url: "https://pourbebes.ma/",
-    screenshot: "https://image.thum.io/get/width/600/crop/400/noanimate/https://pourbebes.ma/",
+    image: "/portfolio/pour-bebes.png",
   },
   {
     tag: "Fintech & Paiement",
@@ -94,6 +105,7 @@ const PROJECTS = [
     desc: "Site vitrine pour une société de solutions de paiement électronique au Maroc : présentation des terminaux TPE, services aux commerçants et formulaire de demande.",
     alt: "TPE Maroc — création site web fintech terminal paiement électronique Maroc, solutions commerçants",
     url: "https://tpe-maroc.com/",
+    image: "/portfolio/tpe-maroc.png",
   },
   {
     tag: "Conseil & Business",
@@ -101,15 +113,12 @@ const PROJECTS = [
     desc: "Site vitrine pour un cabinet de conseil en développement international France–Maroc : présentation des services d'implantation, d'investissement et d'accompagnement opérationnel des entreprises à Casablanca.",
     alt: "Natis Développement International — création site web cabinet conseil business France Maroc, implantation entreprise Casablanca",
     url: "https://abdessamadchafiki.com/",
+    image: "/portfolio/natis-developpement.png",
   },
 ];
 
-const screenshotUrl = (url) =>
-  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
-
 const PortfolioCard = ({ project, index }) => {
   const [imgFailed, setImgFailed] = useState(false);
-  const src = project.screenshot ?? screenshotUrl(project.url);
 
   return (
     <article className="portfolio__card" style={{ "--card-delay": `${index * 0.08}s` }}>
@@ -120,7 +129,7 @@ const PortfolioCard = ({ project, index }) => {
           </div>
         ) : (
           <img
-            src={src}
+            src={project.image}
             alt={project.alt}
             loading="lazy"
             className="portfolio__img"
