@@ -62,10 +62,6 @@ const ContactPage = () => {
     // Fire conversion events
     if (typeof window.fbq === "function") window.fbq("track", "Lead");
     if (typeof window.gtag === "function") {
-      window.gtag("set", "user_data", {
-        email: form.email,
-        phone_number: form.telephone,
-      });
       window.gtag("event", "conversion", {
         send_to: "AW-18032730547/abRzCJSdzKUcELPD1pZD",
         value: 100,
