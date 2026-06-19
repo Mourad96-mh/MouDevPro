@@ -14,12 +14,14 @@ import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import ScrollToTop from "./components/layout/ScrollToTop";
 import { CityProvider } from "./context/CityContext";
 
 function App() {
   return (
     <CityProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<AppLayout />}>
             {/* Homepage — national */}

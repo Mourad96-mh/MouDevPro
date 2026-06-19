@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Services",
+    "ecommerce": "E-commerce",
     "formules": "Formules",
     "realisations": "Réalisations",
     "faq": "FAQ",
@@ -275,11 +276,10 @@
     "services": {
       "heading": "Mes services",
       "links": [
-        { "label": "Création de site web", "href": "#services" },
-        { "label": "Création de site internet", "href": "#services" },
-        { "label": "Site vitrine professionnel", "href": "#services" },
-        { "label": "Application web sur mesure", "href": "#services" },
-        { "label": "Landing page", "href": "#services" },
+        { "label": "Création de site vitrine", "href": "/services" },
+        { "label": "Site e-commerce & boutique en ligne", "href": "/ecommerce" },
+        { "label": "Application web sur mesure", "href": "/services" },
+        { "label": "Refonte de site web", "href": "/services" },
         { "label": "Mes formules & tarifs", "href": "/tarifs" }
       ]
     },

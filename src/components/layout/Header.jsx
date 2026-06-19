@@ -69,6 +69,24 @@ const Header = () => {
           ))}
           <li className="nav__item">
             <Link
+              to="/services"
+              className={`nav__link${pathname === "/services" ? " nav__link--active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.services")}
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link
+              to="/ecommerce"
+              className={`nav__link${pathname === "/ecommerce" ? " nav__link--active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.ecommerce")}
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link
               to="/blog"
               className={`nav__link${blogActive ? " nav__link--active" : ""}`}
               onClick={() => setMenuOpen(false)}

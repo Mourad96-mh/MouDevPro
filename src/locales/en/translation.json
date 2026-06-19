@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Services",
+    "ecommerce": "E-commerce",
     "formules": "Packages",
     "realisations": "Portfolio",
     "faq": "FAQ",
@@ -243,11 +244,10 @@
     "services": {
       "heading": "My services",
       "links": [
-        { "label": "Website creation", "href": "#services" },
-        { "label": "Webdesign & Internet sites", "href": "#services" },
-        { "label": "Natural SEO", "href": "#services" },
-        { "label": "Google Ads & SEA", "href": "#services" },
-        { "label": "Web maintenance", "href": "#services" },
+        { "label": "Showcase website", "href": "/services" },
+        { "label": "E-commerce & online store", "href": "/ecommerce" },
+        { "label": "Custom web application", "href": "/services" },
+        { "label": "Website redesign", "href": "/services" },
         { "label": "My packages & pricing", "href": "/tarifs" }
       ]
     },

@@ -7,7 +7,7 @@ import Portfolio from "../components/sections/Portfolio";
 import Temoignes from "../components/sections/Temoignes";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
-import { marketConfig } from "../data/marketConfig";
+import { marketConfig, marketRoutes } from "../data/marketConfig";
 import i18n from "../i18n";
 
 const LABELS = {
@@ -23,6 +23,7 @@ const LABELS = {
     ctaTitle: "Prêt à lancer votre site web ?",
     ctaSub: "Devis gratuit et personnalisé sous 24h — où que vous soyez.",
     ctaBtn: "Demandez votre devis gratuit",
+    otherMarketsLead: "Développeur web freelance également disponible pour",
     bridge: (
       <p className="text sl-mb">
         Je crée aussi des{" "}
@@ -74,6 +75,7 @@ const LABELS = {
     ctaTitle: "Ready to launch your website?",
     ctaSub: "Free, personalized quote within 24h — wherever you are.",
     ctaBtn: "Get your free quote",
+    otherMarketsLead: "Freelance web developer also available for",
     bridge: (
       <p className="text sl-mb">
         I also build{" "}
@@ -115,6 +117,7 @@ const LABELS = {
 const MarketPage = ({ market }) => {
   const data = marketConfig[market];
   const L = LABELS[data.lang];
+  const otherMarkets = marketRoutes.filter((m) => m !== market);
   const { track, WA_URL } = useConversion();
   const { setCityData } = useCityContext();
 
@@ -364,6 +367,25 @@ const MarketPage = ({ market }) => {
       </section>
 
       <Temoignes />
+
+      {/* Other international markets — cross-link cluster */}
+      <section className="home container">
+        <p className="text">
+          {L.otherMarketsLead}{" "}
+          {otherMarkets.map((m, i) => (
+            <span key={m}>
+              <Link to={`/${m}`} className="inline-link">
+                {marketConfig[m].linkLabel[data.lang]}
+              </Link>
+              {i < otherMarkets.length - 1
+                ? data.lang === "fr"
+                  ? " et "
+                  : " and "
+                : "."}
+            </span>
+          ))}
+        </p>
+      </section>
 
       {/* Final CTA */}
       <section id="contact" className="tarifs-cta-section">

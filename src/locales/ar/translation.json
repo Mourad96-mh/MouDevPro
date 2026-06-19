@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "الخدمات",
+    "ecommerce": "متجر إلكتروني",
     "formules": "الباقات",
     "realisations": "أعمالي",
     "faq": "الأسئلة الشائعة",
@@ -243,11 +244,10 @@
     "services": {
       "heading": "خدماتي",
       "links": [
-        { "label": "إنشاء الموقع الإلكتروني", "href": "#services" },
-        { "label": "تصميم الويب والمواقع الإلكترونية", "href": "#services" },
-        { "label": "تحسين محركات البحث الطبيعي", "href": "#services" },
-        { "label": "إعلانات Google وSEA", "href": "#services" },
-        { "label": "صيانة الويب", "href": "#services" },
+        { "label": "موقع تعريفي", "href": "/services" },
+        { "label": "متجر إلكتروني", "href": "/ecommerce" },
+        { "label": "تطبيق ويب حسب الطلب", "href": "/services" },
+        { "label": "إعادة تصميم موقع", "href": "/services" },
         { "label": "باقاتي وأسعاري", "href": "/tarifs" }
       ]
     },

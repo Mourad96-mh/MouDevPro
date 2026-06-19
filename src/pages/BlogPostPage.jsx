@@ -9,7 +9,21 @@ const ContentRenderer = ({ sections, track }) => {
   return sections.map((section, i) => {
     switch (section.type) {
       case "p":
-        return <p key={i} className="text blog-post__p">{section.text}</p>;
+        return (
+          <p key={i} className="text blog-post__p">
+            {section.parts
+              ? section.parts.map((part, j) =>
+                  typeof part === "string" ? (
+                    part
+                  ) : (
+                    <Link key={j} to={part.to}>
+                      {part.text}
+                    </Link>
+                  )
+                )
+              : section.text}
+          </p>
+        );
 
       case "h2":
         return <h2 key={i} className="secondary-heading blog-post__h2">{section.text}</h2>;

@@ -46,7 +46,11 @@ const Footer = ({ cityName, address }) => {
           <ul className="footer__list">
             {serviceLinks.map((link, i) => (
               <li key={i}>
-                <a href={link.href} className="footer__link">{link.label}</a>
+                {link.href.startsWith("/") ? (
+                  <Link to={link.href} className="footer__link">{link.label}</Link>
+                ) : (
+                  <a href={link.href} className="footer__link">{link.label}</a>
+                )}
               </li>
             ))}
             <li>

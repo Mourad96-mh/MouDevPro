@@ -206,7 +206,7 @@ const HomePage = () => {
     <>
       <Helmet htmlAttributes={{ lang: "fr" }}>
         <title>
-          Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV
+          Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV
         </title>
         <meta
           name="description"
@@ -223,7 +223,7 @@ const HomePage = () => {
         <meta property="og:site_name" content="MouDEV" />
         <meta
           property="og:title"
-          content="Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV"
+          content="Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV"
         />
         <meta
           property="og:description"
@@ -240,7 +240,7 @@ const HomePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Développeur Web Freelance au Maroc — Création de Site Web Professionnel
+            Création de Site Web Professionnel au Maroc — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
             Je crée votre site web professionnel au Maroc.
@@ -299,6 +299,13 @@ const HomePage = () => {
               <strong>Qualité agence, prix freelance</strong> — site vitrine dès 2 000 DH,
               e-commerce dès 3 000 DH. Livraison en 7 à 10 jours. Zéro intermédiaire,
               zéro acompte imposé.
+            </p>
+            <p className="text sl-mb">
+              Vous êtes à l'étranger ? Je crée aussi des sites web à distance pour la{" "}
+              <Link to="/france" className="inline-link">France</Link>, le{" "}
+              <Link to="/canada" className="inline-link">Canada</Link> et les{" "}
+              <Link to="/usa" className="inline-link">USA</Link> — diaspora marocaine et
+              entreprises locales.
             </p>
             <Link className="link hero-link" to={WA_URL} onClick={() => track(WA_URL)}>
               Obtenir un devis gratuit en 24h

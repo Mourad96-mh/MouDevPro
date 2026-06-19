@@ -167,8 +167,9 @@ const MarrakechPage = () => {
           </h1>
           {/* Bilingual subheading */}
           <p className="subheading sl-mb">
-            Je crée des sites web professionnels pour les hôtels, riads et restaurants
-            de Marrakech — réservation en ligne, multilingue FR/EN/AR, SEO tourisme.
+            <strong>Développeur web freelance à Marrakech</strong>, je réalise la{" "}
+            <strong>création de site web à Marrakech</strong> pour les hôtels, riads et
+            restaurants — réservation en ligne, multilingue FR/EN/AR, SEO tourisme.
             Réduisez vos commissions OTA, générez des réservations directes.
           </p>
           <p className="marrakech-en-subheading sl-mb">
@@ -230,6 +231,18 @@ const MarrakechPage = () => {
               intégrée, multilingue français/anglais/arabe et SEO tourisme optimisé.
               Vos clients trouvent votre établissement sur Google et réservent
               directement.
+            </p>
+            <p className="text sl-mb">
+              Pour les <strong>restaurants de Marrakech</strong>, l'enjeu n'est pas la
+              commission mais la visibilité : un site vitrine avec menu en ligne, photos,
+              réservation de table et fiche Google Business optimisée vous fait apparaître
+              quand un voyageur cherche « où manger à Marrakech ». Site restaurant livré en
+              7 à 10 jours, dès 2 000 DH.
+            </p>
+            <p className="text sl-mb">
+              Je crée aussi des sites web pour les commerces, artisans, agences de voyage et
+              PME de Marrakech — même qualité, même réactivité, contact direct avec le
+              développeur.
             </p>
             <p className="text sl-mb">
               <strong>Hotel website design Morocco:</strong> I build professional hotel
@@ -419,6 +432,19 @@ const MarrakechPage = () => {
             </details>
           ))}
         </div>
+      </section>
+
+      {/* Related links — other cities & guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Autres villes :</strong> je crée aussi des sites web à{" "}
+          <Link to="/casablanca">Casablanca</Link> et{" "}
+          <Link to="/rabat">Rabat</Link>. À lire aussi :{" "}
+          <Link to="/blog/site-web-hotel-riad-marrakech">
+            le guide du site web hôtel &amp; riad à Marrakech
+          </Link>
+          .
+        </p>
       </section>
 
       {/* Final CTA */}

@@ -8,6 +8,7 @@ export const marketConfig = {
     lang: "fr",
     dir: "ltr",
     country: "France",
+    linkLabel: { fr: "la France", en: "France" },
     locale: "fr_FR",
     hreflang: "fr-FR",
     slug: "france",
@@ -17,12 +18,12 @@ export const marketConfig = {
     price: { vitrine: "199 €", ecommerce: "299 €" },
     priceNumeric: { vitrine: "199", ecommerce: "299" },
     keywords:
-      "développeur web freelance France, création site web France, développeur web Maroc pour la France, freelance site internet France, création site vitrine France, site e-commerce France pas cher, développeur React WordPress France, devis site web France, créer site web MRE France",
+      "développeur web freelance France, création site web France, développeur web Maroc pour la France, freelance site internet France, création site vitrine France, site e-commerce France pas cher, développeur React WordPress France, devis site web France, créer site web MRE France, créer un site web pour entreprise, faire un site web France, comment créer un site web",
     metaTitle:
-      "Développeur Web Freelance pour la France | Sites sur Mesure à Distance | MouDEV",
+      "Développeur Web Freelance France — Site dès 199 € | MouDEV",
     metaDescription:
-      "Développeur web freelance pour la France — site vitrine dès 199 €, e-commerce dès 299 €. Contact direct, 100% à distance, livraison 7 à 10 jours. Devis gratuit 24h.",
-    h1: "Développeur Web Freelance pour la France — Sites sur Mesure à Distance",
+      "Site web pro pour la France dès 199 €, e-commerce dès 299 €. Développeur freelance, même fuseau horaire (±1h), paiement après livraison. Devis gratuit 24h.",
+    h1: "Créer un Site Web pour la France — Développeur Web Freelance à Distance",
     heroSub:
       "Je crée votre site web professionnel depuis le Maroc, pour vos clients en France. Contact direct avec le développeur, tarif optimisé, même fuseau horaire. Qualité agence, prix freelance.",
     intro: [
@@ -47,6 +48,7 @@ export const marketConfig = {
       ["Pourquoi vos tarifs sont-ils moins chers qu'une agence française ?", "Je n'ai ni bureau parisien, ni équipe, ni commerciaux à financer. Vous bénéficiez de la même stack technique (React, WordPress, WooCommerce) qu'une agence, sans les coûts de structure répercutés sur la facture."],
       ["Comment puis-je vous payer depuis la France ?", "Par virement bancaire international (IBAN), Wise ou PayPal. Et surtout : vous ne payez qu'après la livraison et la validation du site — zéro acompte imposé."],
       ["Parlez-vous français et comprenez-vous le marché français ?", "Oui. Je travaille en français au quotidien et je conçois des sites adaptés aux attentes des clients français et de la diaspora marocaine en France — mentions légales, RGPD, moyens de paiement locaux inclus."],
+      ["Comment créer un site web pour mon entreprise en France ?", "C'est simple : on échange 30 min sur votre besoin, je vous envoie un devis fixe sous 24h, puis je crée votre site web (vitrine ou e-commerce) en 7 à 10 jours. Tout se fait à distance depuis le Maroc, en français, sur le même fuseau horaire que la France (±1h). Vous validez la maquette puis le site, et vous ne payez qu'après la livraison."],
     ],
   },
 
@@ -54,6 +56,7 @@ export const marketConfig = {
     lang: "fr",
     dir: "ltr",
     country: "Canada",
+    linkLabel: { fr: "le Canada", en: "Canada" },
     locale: "fr_CA",
     hreflang: "fr-CA",
     slug: "canada",
@@ -63,12 +66,12 @@ export const marketConfig = {
     price: { vitrine: "290 $ CA", ecommerce: "430 $ CA" },
     priceNumeric: { vitrine: "290", ecommerce: "430" },
     keywords:
-      "développeur web freelance Canada, création site web Québec, développeur web Maroc pour le Canada, freelance site internet Québec, création site vitrine Canada, site e-commerce Canada, développeur React WordPress Québec, devis site web Canada, créer site web diaspora marocaine Canada",
+      "développeur web freelance Canada, création site web Québec, développeur web Maroc pour le Canada, freelance site internet Québec, création site vitrine Canada, site e-commerce Canada, développeur React WordPress Québec, devis site web Canada, créer site web diaspora marocaine Canada, créer un site web Québec, faire un site web Canada, comment créer un site web",
     metaTitle:
-      "Développeur Web Freelance pour le Canada | Sites sur Mesure à Distance | MouDEV",
+      "Développeur Web Freelance Canada — Site dès 290 $ CA | MouDEV",
     metaDescription:
-      "Développeur web freelance pour le Canada (Québec et tout le pays) — site vitrine dès 290 $ CA, e-commerce dès 430 $ CA. Contact direct, 100% à distance, livraison 7 à 10 jours. Devis gratuit 24h.",
-    h1: "Développeur Web Freelance pour le Canada — Sites sur Mesure à Distance",
+      "Site web pro pour le Canada dès 290 $ CA, e-commerce dès 430 $ CA. Développeur freelance en français, 100% à distance, paiement après livraison. Devis gratuit 24h.",
+    h1: "Créer un Site Web pour le Canada — Développeur Web Freelance à Distance",
     heroSub:
       "Je crée votre site web professionnel depuis le Maroc, pour vos clients au Québec et partout au Canada. Contact direct en français, tarif optimisé, paiement après livraison.",
     intro: [
@@ -93,6 +96,7 @@ export const marketConfig = {
       ["Pourquoi est-ce moins cher qu'une agence canadienne ?", "Pas de bureau ni d'équipe à financer : vous payez le travail, pas la structure. La stack technique reste la même qu'une agence (React, WordPress, WooCommerce)."],
       ["Comment se fait le paiement depuis le Canada ?", "Virement international, Wise ou PayPal — et toujours après la livraison et votre validation. Aucun acompte imposé."],
       ["Travaillez-vous en français et en anglais ?", "Oui. Je travaille principalement en français (idéal pour le Québec et la diaspora marocaine) et je peux livrer un site bilingue français / anglais selon votre clientèle."],
+      ["Comment créer un site web pour mon entreprise au Québec ou au Canada ?", "On échange sur votre besoin (visio ou WhatsApp aux heures canadiennes), je vous envoie un devis fixe sous 24h, puis je crée votre site web (vitrine ou e-commerce) en 7 à 10 jours — en français, 100% à distance. Vous validez avant la mise en ligne et vous payez uniquement après livraison."],
     ],
   },
 
@@ -100,6 +104,7 @@ export const marketConfig = {
     lang: "en",
     dir: "ltr",
     country: "USA",
+    linkLabel: { fr: "les USA", en: "the USA" },
     locale: "en_US",
     hreflang: "en-US",
     slug: "usa",
@@ -109,12 +114,12 @@ export const marketConfig = {
     price: { vitrine: "$219", ecommerce: "$329" },
     priceNumeric: { vitrine: "219", ecommerce: "329" },
     keywords:
-      "freelance web developer USA, website development for US business, offshore web developer Morocco, hire freelance web developer remote, custom website USA, ecommerce website USA, React WordPress developer USA, affordable web developer USA, Moroccan web developer diaspora USA",
+      "freelance web developer USA, website development for US business, offshore web developer Morocco, hire freelance web developer remote, custom website USA, ecommerce website USA, React WordPress developer USA, affordable web developer USA, Moroccan web developer diaspora USA, build a website for my business, create a website USA, hire a web developer remote",
     metaTitle:
-      "Freelance Web Developer for US Businesses | Custom Websites, Remote | MouDEV",
+      "Freelance Web Developer USA — Websites from $219 | MouDEV",
     metaDescription:
-      "Freelance web developer for the USA — business website from $219, e-commerce from $329. Work direct with the developer, 100% remote, 7–10 day delivery. Free quote in 24h.",
-    h1: "Freelance Web Developer for US Businesses — Custom Websites, Remote",
+      "Professional website for US businesses from $219, e-commerce from $329. Freelance developer, 100% remote, US-hours overlap, pay after delivery. Free quote in 24h.",
+    h1: "Build a Website for Your US Business — Freelance Web Developer, Remote",
     heroSub:
       "I build your professional website remotely from Morocco for your US clients. Work directly with the developer, transparent pricing, pay only after delivery. Agency quality, freelance price.",
     intro: [
@@ -139,6 +144,7 @@ export const marketConfig = {
       ["Why is this cheaper than a US web agency?", "No office, no team, no sales staff to pay for. You pay for the work, not the overhead — with the same stack a US agency uses (React, WordPress, WooCommerce)."],
       ["How do I pay you from the US?", "International bank transfer (IBAN), Wise or PayPal — and always after delivery and your approval. No upfront deposit required."],
       ["Do you speak English and understand the US market?", "Yes. I work in English and build sites that fit US expectations — local payment gateways, mobile-first design, SEO — for both US businesses and the Moroccan diaspora in the States."],
+      ["Can you build a website for my US business remotely?", "Yes — that's exactly what I do. We talk through your needs over a video call or WhatsApp during US hours, I send a fixed quote within 24h, then I build your website (business site or e-commerce) in 7 to 10 days, 100% remotely from Morocco. You approve the design and the finished site, and you only pay after delivery."],
     ],
   },
 };

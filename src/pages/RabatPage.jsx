@@ -29,6 +29,10 @@ const FAQ_ITEMS = [
     a: "Oui. Je crée des sites web institutionnels pour associations, ONG et organisations internationales basées à Rabat — design sobre et professionnel, multilingue FR/AR/EN, formulaires de contact, galerie de projets et pages de dons. Devis sur mesure selon votre structure et budget.",
   },
   {
+    q: "Créez-vous aussi des sites web à Témara et Salé ?",
+    a: "Oui. Je couvre toute l'agglomération Rabat-Salé-Témara avec le même service : création de site web vitrine ou e-commerce, livraison en 7 à 10 jours, contact direct avec le développeur et paiement après livraison. Que vous soyez à Témara, Harhoura, Salé ou Tabriquet, le suivi se fait à distance — aucun frais de déplacement. Devis gratuit et détaillé sous 24h.",
+  },
+  {
     q: "Le SEO est-il inclus dans la création de site web à Rabat ?",
     a: "Oui, l'optimisation SEO technique est incluse dans chaque site livré : balises title et meta optimisées, structure H1/H2/H3, URLs propres, images WebP, site rapide et 100% responsive. Je propose également des prestations SEO locales pour positionner votre site sur les mots-clés 'création site web Rabat' et 'développeur web Rabat'.",
   },
@@ -74,6 +78,8 @@ const jsonLd = {
   },
   areaServed: [
     { "@type": "City", name: "Rabat" },
+    { "@type": "City", name: "Salé" },
+    { "@type": "City", name: "Témara" },
     { "@type": "City", name: "Casablanca" },
     { "@type": "City", name: "Marrakech" },
   ],
@@ -140,7 +146,8 @@ const RabatPage = () => {
             Création Site Web à Rabat — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site web professionnel à Rabat — PME, startups, ONG,
+            La <strong>création de site web à Rabat</strong> est mon métier : je conçois
+            votre site professionnel pour Rabat, Salé et Témara — PME, startups, ONG et
             administrations. Vous parlez directement avec le développeur. Qualité agence,
             prix freelance. Devis gratuit en 24h.
           </p>
@@ -187,6 +194,13 @@ const RabatPage = () => {
               professionnels, des associations et des PME locales — toujours en contact
               direct, sans intermédiaire. Sites trilingues (FR/AR/EN) disponibles pour
               les organisations à vocation internationale.
+            </p>
+            <p className="text sl-mb">
+              J'accompagne aussi les commerces et professionnels de <strong>Salé</strong>{" "}
+              et de <strong>Témara</strong> : la création de site web à Témara et Salé suit
+              le même standard qu'à Rabat — livraison en 7 à 10 jours, contact direct,
+              paiement après livraison. L'agglomération Rabat-Salé-Témara est un seul
+              marché, je le couvre en entier, à distance et sans frais de déplacement.
             </p>
             <p className="text">
               Mes sites sont rapides, sécurisés et optimisés pour Google dès la
@@ -246,6 +260,14 @@ const RabatPage = () => {
             {
               area: "Souissi / Ambassades",
               desc: "Organisations internationales, entreprises étrangères — site bilingue FR/EN, design premium, hébergement sécurisé.",
+            },
+            {
+              area: "Salé / Tabriquet",
+              desc: "Commerces, artisans et PME — site vitrine professionnel, SEO local « création site web Salé », mobile-first.",
+            },
+            {
+              area: "Témara / Harhoura",
+              desc: "Cliniques, écoles privées et commerces de proximité — site vitrine ou e-commerce, design soigné, devis gratuit 24h.",
             },
           ].map((n, i) => (
             <li key={i} className="city-neighborhood-item">
@@ -322,6 +344,21 @@ const RabatPage = () => {
             </details>
           ))}
         </div>
+      </section>
+
+      {/* Related links — other cities & guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Autres villes :</strong> je crée aussi des sites web à{" "}
+          <Link to="/casablanca">Casablanca</Link> et{" "}
+          <Link to="/marrakech">Marrakech</Link>. À lire aussi :{" "}
+          <Link to="/blog/prix-site-web-maroc-2026">le prix d'un site web au Maroc</Link>{" "}
+          et{" "}
+          <Link to="/blog/choisir-developpeur-web-freelance-maroc">
+            comment choisir un développeur web freelance
+          </Link>
+          .
+        </p>
       </section>
 
       {/* Final CTA */}

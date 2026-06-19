@@ -121,12 +121,13 @@ const TarifsPage = () => {
       <section className="tarifs-hero">
         <div className="container tarifs-hero__inner">
           <h1 className="heading--primary center-text">
-            Prix Création Site Web Maroc — Mes Formules 2026
+            Prix Création Site Web Maroc 2026 — dès 2 000 DH, Devis Gratuit 24h
           </h1>
           <p className="subheading center-text">
             Site vitrine dès <strong>2 000 DH</strong>, e-commerce dès{" "}
             <strong>3 000 DH</strong>. Paiement après livraison — zéro acompte.
-            Livraison en 7 à 10 jours. Choisissez votre formule ci-dessous.
+            Livraison en 7 à 10 jours. <strong>Devis gratuit et transparent en
+            24h</strong> — choisissez votre formule ci-dessous.
           </p>
         </div>
       </section>
@@ -176,6 +177,13 @@ const TarifsPage = () => {
             </Link>
           </div>
         </div>
+        <p className="text center-text" style={{ marginTop: "2.4rem" }}>
+          À lire aussi :{" "}
+          <Link to="/blog/prix-site-web-maroc-2026">
+            combien coûte un site web au Maroc en 2026
+          </Link>{" "}
+          — guide complet des prix.
+        </p>
       </section>
 
       {/* Inclus dans chaque formule */}

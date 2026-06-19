@@ -112,6 +112,20 @@ export const blogPosts = [
         text: "Chez MouDevPro, je pratique une politique de tarification transparente. Le prix du devis est le prix final — aucun supplément caché en cours de projet. Et surtout : vous payez uniquement après livraison et validation de votre site. Zéro acompte imposé.",
       },
       {
+        type: "p",
+        parts: [
+          "Ces tarifs s'appliquent partout au Maroc et à distance. Que vous cherchiez la ",
+          { text: "création de site web à Rabat", to: "/rabat" },
+          " (Rabat, Salé, Témara), à ",
+          { text: "Casablanca", to: "/casablanca" },
+          " ou à ",
+          { text: "Marrakech", to: "/marrakech" },
+          ", consultez mes ",
+          { text: "tarifs détaillés et transparents", to: "/tarifs" },
+          " pour le détail de chaque pack.",
+        ],
+      },
+      {
         type: "cta",
         text: "Voir les tarifs détaillés →",
         to: "/tarifs",
@@ -240,6 +254,18 @@ export const blogPosts = [
       {
         type: "p",
         text: "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire.",
+      },
+      {
+        type: "p",
+        parts: [
+          "J'interviens dans tout le pays. Vous trouverez le détail par ville sur mes pages dédiées : ",
+          { text: "développeur web freelance à Rabat", to: "/rabat" },
+          " (Rabat, Salé, Témara), ",
+          { text: "création de site web à Casablanca", to: "/casablanca" },
+          " et ",
+          { text: "sites web pour hôtels et riads à Marrakech", to: "/marrakech" },
+          ".",
+        ],
       },
       {
         type: "cta",

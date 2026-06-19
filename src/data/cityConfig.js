@@ -69,7 +69,7 @@ export const cityConfig = {
       metaDescription:
         "Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h.",
       cityContext:
-        "À Rabat, capitale administrative du Maroc et ville en pleine transformation digitale, votre présence en ligne est un levier de croissance essentiel. MouDev accompagne les administrations, startups, PME et entreprises de Rabat dans la création de sites web professionnels, avec l'expertise d'une agence et la réactivité d'un freelance.",
+        "À Rabat, capitale administrative du Maroc et ville en pleine transformation digitale, votre présence en ligne est un levier de croissance essentiel. MouDev accompagne les administrations, startups, PME et entreprises de toute l'agglomération Rabat-Salé-Témara dans la création de sites web professionnels, avec l'expertise d'une agence et la réactivité d'un freelance.",
       hreflang: {
         fr: `${BASE}/rabat`,
         en: `${BASE}/en/rabat`,
