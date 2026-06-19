@@ -111,11 +111,6 @@ const CityPage = ({ city, lang }) => {
     "@type": "WebSite",
     name: "MouDEV",
     url: "https://www.moudevpro.com/",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://www.moudevpro.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
   };
 
   return (

@@ -18,7 +18,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Combien de temps faut-il pour créer un site web à Rabat ?",
-    a: "Je livre un site vitrine ou un site e-commerce en 5 jours maximum. Pour les applications web sur mesure, le délai dépend de la complexité — je vous communique un planning précis dès le devis. Aucune réunion inutile, livraison rapide garantie.",
+    a: "Je livre un site vitrine ou un site e-commerce en 7 à 10 jours. Pour les applications web sur mesure, le délai dépend de la complexité — je vous communique un planning précis dès le devis. Aucune réunion inutile, livraison rapide garantie.",
   },
   {
     q: "Intervenez-vous à Rabat ou uniquement à Casablanca ?",
@@ -27,6 +27,10 @@ const FAQ_ITEMS = [
   {
     q: "Créez-vous des sites web pour associations et ONG à Rabat ?",
     a: "Oui. Je crée des sites web institutionnels pour associations, ONG et organisations internationales basées à Rabat — design sobre et professionnel, multilingue FR/AR/EN, formulaires de contact, galerie de projets et pages de dons. Devis sur mesure selon votre structure et budget.",
+  },
+  {
+    q: "Créez-vous aussi des sites web à Témara et Salé ?",
+    a: "Oui. Je couvre toute l'agglomération Rabat-Salé-Témara avec le même service : création de site web vitrine ou e-commerce, livraison en 7 à 10 jours, contact direct avec le développeur et paiement après livraison. Que vous soyez à Témara, Harhoura, Salé ou Tabriquet, le suivi se fait à distance — aucun frais de déplacement. Devis gratuit et détaillé sous 24h.",
   },
   {
     q: "Le SEO est-il inclus dans la création de site web à Rabat ?",
@@ -74,6 +78,8 @@ const jsonLd = {
   },
   areaServed: [
     { "@type": "City", name: "Rabat" },
+    { "@type": "City", name: "Salé" },
+    { "@type": "City", name: "Témara" },
     { "@type": "City", name: "Casablanca" },
     { "@type": "City", name: "Marrakech" },
   ],
@@ -104,7 +110,7 @@ const RabatPage = () => {
         </title>
         <meta
           name="description"
-          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -112,14 +118,14 @@ const RabatPage = () => {
         />
         <meta
           property="og:description"
-          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/rabat" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Création Site Web Rabat | Développeur Web Freelance | MouDEV" />
-        <meta name="twitter:description" content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 5 jours." />
+        <meta name="twitter:description" content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 7 à 10 jours." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="création site web rabat, développeur web rabat, web developer rabat, site vitrine rabat, site e-commerce rabat, devis site web rabat, freelance web rabat" />
@@ -140,7 +146,8 @@ const RabatPage = () => {
             Création Site Web à Rabat — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site web professionnel à Rabat — PME, startups, ONG,
+            La <strong>création de site web à Rabat</strong> est mon métier : je conçois
+            votre site professionnel pour Rabat, Salé et Témara — PME, startups, ONG et
             administrations. Vous parlez directement avec le développeur. Qualité agence,
             prix freelance. Devis gratuit en 24h.
           </p>
@@ -188,6 +195,13 @@ const RabatPage = () => {
               direct, sans intermédiaire. Sites trilingues (FR/AR/EN) disponibles pour
               les organisations à vocation internationale.
             </p>
+            <p className="text sl-mb">
+              J'accompagne aussi les commerces et professionnels de <strong>Salé</strong>{" "}
+              et de <strong>Témara</strong> : la création de site web à Témara et Salé suit
+              le même standard qu'à Rabat — livraison en 7 à 10 jours, contact direct,
+              paiement après livraison. L'agglomération Rabat-Salé-Témara est un seul
+              marché, je le couvre en entier, à distance et sans frais de déplacement.
+            </p>
             <p className="text">
               Mes sites sont rapides, sécurisés et optimisés pour Google dès la
               livraison. <strong>Devis gratuit et personnalisé sous 24h.</strong>
@@ -199,7 +213,7 @@ const RabatPage = () => {
               <span className="city-stat__label">Site vitrine dès</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">2–3 sem.</span>
+              <span className="city-stat__num">7-10 jours</span>
               <span className="city-stat__label">Délai de livraison</span>
             </div>
             <div className="city-stat">
@@ -247,6 +261,14 @@ const RabatPage = () => {
               area: "Souissi / Ambassades",
               desc: "Organisations internationales, entreprises étrangères — site bilingue FR/EN, design premium, hébergement sécurisé.",
             },
+            {
+              area: "Salé / Tabriquet",
+              desc: "Commerces, artisans et PME — site vitrine professionnel, SEO local « création site web Salé », mobile-first.",
+            },
+            {
+              area: "Témara / Harhoura",
+              desc: "Cliniques, écoles privées et commerces de proximité — site vitrine ou e-commerce, design soigné, devis gratuit 24h.",
+            },
           ].map((n, i) => (
             <li key={i} className="city-neighborhood-item">
               <strong>{n.area} :</strong> {n.desc}
@@ -276,7 +298,7 @@ const RabatPage = () => {
                 {[
                   ["Contact", "Direct avec le développeur", "Commercial + chef de projet"],
                   ["Prix", "Dès 2 000 DH", "Dès 8 000 DH et plus"],
-                  ["Délai", "5 jours", "1 à 3 mois"],
+                  ["Délai", "7-10 jours", "1 à 3 mois"],
                   ["Paiement", "Après livraison", "Acompte imposé"],
                   ["Disponibilité", "WhatsApp 7j/7", "Horaires de bureau"],
                   ["Multilingue", "FR/AR/EN inclus sur devis", "Supplément facturé"],
@@ -324,6 +346,21 @@ const RabatPage = () => {
         </div>
       </section>
 
+      {/* Related links — other cities & guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Autres villes :</strong> je crée aussi des sites web à{" "}
+          <Link to="/casablanca">Casablanca</Link> et{" "}
+          <Link to="/marrakech">Marrakech</Link>. À lire aussi :{" "}
+          <Link to="/blog/prix-site-web-maroc-2026">le prix d'un site web au Maroc</Link>{" "}
+          et{" "}
+          <Link to="/blog/choisir-developpeur-web-freelance-maroc">
+            comment choisir un développeur web freelance
+          </Link>
+          .
+        </p>
+      </section>
+
       {/* Final CTA */}
       <section id="contact" className="tarifs-cta-section">
         <div className="container center-text">
@@ -349,7 +386,7 @@ const RabatPage = () => {
               href="tel:+212696964341"
               className="hero__phone"
               style={{ color: "var(--gray-100)" }}
-              onClick={trackPhone}
+              onClick={() => trackPhone()}
             >
               <HiMiniPhone />
               <span>+212 696 964 341</span>

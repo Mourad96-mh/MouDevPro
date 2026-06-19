@@ -25,7 +25,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "Peut-on avoir un site e-commerce professionnel à moins de 5 000 DH au Maroc ?",
-    a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 5 jours maximum.",
+    a: "Oui. Mon pack e-commerce démarre à 3 000 DH et inclut : boutique en ligne complète, catalogue produits illimité, paiement CMI/PayPal, gestion des stocks, interface admin et formation 2h. Livré en 7 à 10 jours.",
+  },
+  {
+    q: "Le prix d'un site web est-il différent à Casablanca, Rabat ou Marrakech ?",
+    a: "Non, mes tarifs sont identiques à Casablanca, Rabat et Marrakech : site vitrine dès 2 000 DH et e-commerce dès 3 000 DH. Je travaille en remote dans tout le Maroc, sans frais de déplacement. Seul le besoin (hôtel, riad, restaurant, e-commerce, application) fait varier le devis — pas la ville.",
   },
 ];
 
@@ -79,19 +83,19 @@ const TarifsPage = () => {
     <>
       <Helmet>
         <title>
-          Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV
+          Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV
         </title>
         <meta
           name="description"
-          content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Développeur freelance. Devis gratuit 24h."
+          content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h."
         />
         <meta
           property="og:title"
-          content="Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV"
+          content="Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV"
         />
         <meta
           property="og:description"
-          content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h."
         />
         <meta
           property="og:url"
@@ -100,8 +104,8 @@ const TarifsPage = () => {
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Prix Site Web Maroc 2026 | Freelance dès 2 000 DH | MouDEV" />
-        <meta name="twitter:description" content="Combien coûte un site web au Maroc ? Site vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Paiement après livraison, livraison 5 jours. Devis gratuit 24h." />
+        <meta name="twitter:title" content="Prix Site Web Maroc 2026 : dès 2 000 DH, Devis 24h | MouDEV" />
+        <meta name="twitter:description" content="Combien coûte un site web au Maroc ? Vitrine dès 2 000 DH, e-commerce dès 3 000 DH. Tarifs transparents, paiement après livraison. Devis gratuit en 24h." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="prix site web maroc, tarif site web maroc, devis site web maroc, prix site vitrine maroc, prix site e-commerce maroc, coût création site web maroc, tarif développeur web maroc" />
@@ -117,17 +121,70 @@ const TarifsPage = () => {
       <section className="tarifs-hero">
         <div className="container tarifs-hero__inner">
           <h1 className="heading--primary center-text">
-            Prix Création Site Web Maroc — Mes Formules 2026
+            Prix Création Site Web Maroc 2026 — dès 2 000 DH, Devis Gratuit 24h
           </h1>
           <p className="subheading center-text">
             Site vitrine dès <strong>2 000 DH</strong>, e-commerce dès{" "}
             <strong>3 000 DH</strong>. Paiement après livraison — zéro acompte.
-            Livraison en 5 jours. Choisissez votre formule ci-dessous.
+            Livraison en 7 à 10 jours. <strong>Devis gratuit et transparent en
+            24h</strong> — choisissez votre formule ci-dessous.
           </p>
         </div>
       </section>
 
       <TarifsSection />
+
+      {/* Prix par ville */}
+      <section className="home container">
+        <h2 className="secondary-heading center-text lg-mb">
+          Prix création site web à Casablanca, Rabat et Marrakech
+        </h2>
+        <p className="text center-text sl-mb">
+          Mêmes tarifs transparents dans les trois villes — site vitrine dès
+          2 000 DH, e-commerce dès 3 000 DH. Travail en remote, sans frais de
+          déplacement. Choisissez votre ville pour un devis adapté à votre
+          activité&nbsp;:
+        </p>
+        <div className="tarifs-cities-grid">
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Casablanca</h3>
+            <p className="text">
+              PME, e-commerce et startups du Maarif, d'Anfa et du Triangle d'Or.
+              Site vitrine dès 2 000 DH, boutique en ligne dès 3 000 DH.
+            </p>
+            <Link className="tarifs-city-link" to="/casablanca">
+              Création site web à Casablanca →
+            </Link>
+          </div>
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Rabat</h3>
+            <p className="text">
+              Startups, ONG, administrations et PME. Site institutionnel ou
+              vitrine professionnel dès 2 000 DH, livraison en 7 à 10 jours.
+            </p>
+            <Link className="tarifs-city-link" to="/rabat">
+              Création site web à Rabat →
+            </Link>
+          </div>
+          <div className="tarifs-city-card">
+            <h3 className="tertiary-heading sl-mb">Prix site web à Marrakech</h3>
+            <p className="text">
+              Hôtels, riads et restaurants. Site multilingue FR/EN/AR avec
+              réservation en ligne directe, dès 2 000 DH.
+            </p>
+            <Link className="tarifs-city-link" to="/marrakech">
+              Création site web à Marrakech →
+            </Link>
+          </div>
+        </div>
+        <p className="text center-text" style={{ marginTop: "2.4rem" }}>
+          À lire aussi :{" "}
+          <Link to="/blog/prix-site-web-maroc-2026">
+            combien coûte un site web au Maroc en 2026
+          </Link>{" "}
+          — guide complet des prix.
+        </p>
+      </section>
 
       {/* Inclus dans chaque formule */}
       <section className="home container">
@@ -161,9 +218,9 @@ const TarifsPage = () => {
             <ol className="tarifs-timeline">
               {[
                 { day: "Jour 1", label: "Brief & validation du devis", desc: "Échange WhatsApp de 30 min pour cadrer le projet, vos contenus et vos objectifs." },
-                { day: "Jours 2–3", label: "Design & intégration", desc: "Je crée la maquette et intègre vos contenus. Vous validez avant la mise en ligne." },
-                { day: "Jour 4", label: "Corrections & recette", desc: "Vous testez le site, je corrige. Itérations illimitées jusqu'à votre satisfaction." },
-                { day: "Jour 5", label: "Mise en ligne & paiement", desc: "Le site est publié sur votre domaine. Vous payez seulement à ce stade." },
+                { day: "Jours 2–5", label: "Design & intégration", desc: "Je crée la maquette et intègre vos contenus. Vous validez avant la mise en ligne." },
+                { day: "Jours 6–8", label: "Corrections & recette", desc: "Vous testez le site, je corrige. Itérations illimitées jusqu'à votre satisfaction." },
+                { day: "Jours 9–10", label: "Mise en ligne & paiement", desc: "Le site est publié sur votre domaine. Vous payez seulement à ce stade." },
               ].map((step, i) => (
                 <li key={i} className="tarifs-timeline-item">
                   <span className="tarifs-timeline-day">{step.day}</span>
@@ -204,7 +261,7 @@ const TarifsPage = () => {
             <span className="tarifs-reason__icon">🚀</span>
             <h3 className="tertiary-heading">Livraison rapide</h3>
             <p>
-              Un site vitrine en 5 jours. Pas de réunions inutiles, pas
+              Un site vitrine en 7 à 10 jours. Pas de réunions inutiles, pas
               de processus bureaucratique.
             </p>
           </div>

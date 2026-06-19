@@ -46,7 +46,11 @@ const Footer = ({ cityName, address }) => {
           <ul className="footer__list">
             {serviceLinks.map((link, i) => (
               <li key={i}>
-                <a href={link.href} className="footer__link">{link.label}</a>
+                {link.href.startsWith("/") ? (
+                  <Link to={link.href} className="footer__link">{link.label}</Link>
+                ) : (
+                  <a href={link.href} className="footer__link">{link.label}</a>
+                )}
               </li>
             ))}
             <li>
@@ -54,6 +58,21 @@ const Footer = ({ cityName, address }) => {
             </li>
             <li>
               <Link to="/contact" className="footer__link">{t("nav.contact")}</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer__col">
+          <h3 className="footer__heading">International</h3>
+          <ul className="footer__list">
+            <li>
+              <Link to="/france" className="footer__link">Développeur web pour la France</Link>
+            </li>
+            <li>
+              <Link to="/canada" className="footer__link">Développeur web pour le Canada</Link>
+            </li>
+            <li>
+              <Link to="/usa" className="footer__link">Web developer for the USA</Link>
             </li>
           </ul>
         </div>

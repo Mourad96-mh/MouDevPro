@@ -89,7 +89,7 @@ const jsonLd = {
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Amine Bennani" },
       datePublished: "2025-11-20",
-      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 5 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
+      reviewBody: "MouDev a réalisé un travail excellent pour mon site vitrine. Livré en 7 à 10 jours, optimisé pour le SEO et visuellement parfait. Je recommande vivement.",
     },
     {
       "@type": "Review",
@@ -115,7 +115,7 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Création de site vitrine",
-          description: "Site web professionnel jusqu'à 5 pages, responsive, optimisé SEO, hébergement inclus. Livré en 5 jours.",
+          description: "Site web professionnel jusqu'à 5 pages, responsive, optimisé SEO, hébergement inclus. Livré en 7 à 10 jours.",
           areaServed: ["Casablanca", "Rabat", "Marrakech", "Maroc"],
         },
         price: "2000",
@@ -127,7 +127,7 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Création de site e-commerce",
-          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 5 jours.",
+          description: "Boutique en ligne complète avec catalogue produits, panier, paiement sécurisé et interface d'administration. Livré en 7 à 10 jours.",
           areaServed: ["Casablanca", "Rabat", "Marrakech", "Maroc"],
         },
         price: "3000",
@@ -163,11 +163,6 @@ const websiteLd = {
   "@type": "WebSite",
   name: "MouDEV — Développeur Web Freelance Maroc",
   url: "https://www.moudevpro.com/",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.moudevpro.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
 };
 
 const webPageLd = {
@@ -211,7 +206,7 @@ const HomePage = () => {
     <>
       <Helmet htmlAttributes={{ lang: "fr" }}>
         <title>
-          Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV
+          Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV
         </title>
         <meta
           name="description"
@@ -228,7 +223,7 @@ const HomePage = () => {
         <meta property="og:site_name" content="MouDEV" />
         <meta
           property="og:title"
-          content="Développeur Web Freelance Maroc | Création Site Web Professionnel | MouDEV"
+          content="Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV"
         />
         <meta
           property="og:description"
@@ -245,7 +240,7 @@ const HomePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Développeur Web Freelance au Maroc — Création de Site Web Professionnel
+            Création de Site Web Professionnel au Maroc — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
             Je crée votre site web professionnel au Maroc.
@@ -302,8 +297,15 @@ const HomePage = () => {
             </p>
             <p className="text sl-mb">
               <strong>Qualité agence, prix freelance</strong> — site vitrine dès 2 000 DH,
-              e-commerce dès 3 000 DH. Livraison en 5 jours. Zéro intermédiaire,
+              e-commerce dès 3 000 DH. Livraison en 7 à 10 jours. Zéro intermédiaire,
               zéro acompte imposé.
+            </p>
+            <p className="text sl-mb">
+              Vous êtes à l'étranger ? Je crée aussi des sites web à distance pour la{" "}
+              <Link to="/france" className="inline-link">France</Link>, le{" "}
+              <Link to="/canada" className="inline-link">Canada</Link> et les{" "}
+              <Link to="/usa" className="inline-link">USA</Link> — diaspora marocaine et
+              entreprises locales.
             </p>
             <Link className="link hero-link" to={WA_URL} onClick={() => track(WA_URL)}>
               Obtenir un devis gratuit en 24h
@@ -337,7 +339,7 @@ const HomePage = () => {
             <p className="geo-fact__label">livrés à des PME, startups, hôtels, riads et associations à Casablanca, Rabat et Marrakech.</p>
           </article>
           <article className="geo-fact__card">
-            <strong className="geo-fact__stat">5 jours</strong>
+            <strong className="geo-fact__stat">7-10 jours</strong>
             <p className="geo-fact__label">délai de livraison pour un site vitrine professionnel complet — responsive, SEO inclus, hébergement inclus.</p>
           </article>
           <article className="geo-fact__card">
@@ -383,8 +385,8 @@ const HomePage = () => {
             },
             {
               icon: "🚀",
-              title: "Livraison en 5 jours",
-              desc: "Site vitrine ou e-commerce — livraison en 5 jours maximum. Délais tenus, sans réunions inutiles.",
+              title: "Livraison en 7 à 10 jours",
+              desc: "Site vitrine ou e-commerce — livraison en 7 à 10 jours. Délais tenus, sans réunions inutiles.",
             },
             {
               icon: "✅",
@@ -454,7 +456,7 @@ const HomePage = () => {
               href="tel:+212696964341"
               className="hero__phone"
               style={{ color: "var(--gray-100)" }}
-              onClick={trackPhone}
+              onClick={() => trackPhone()}
             >
               <HiMiniPhone />
               <span>+212 696 964 341</span>

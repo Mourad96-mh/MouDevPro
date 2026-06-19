@@ -126,11 +126,11 @@ const MarrakechPage = () => {
     <>
       <Helmet>
         <title>
-          Création Site Web Marrakech | Hôtels, Riads, Restaurants | MouDEV
+          Création Site Web Marrakech : Hôtels, Riads & Restaurants | MouDEV
         </title>
         <meta
           name="description"
-          content="Développeur web freelance à Marrakech — site web hôtel, riad, restaurant. Réservation en ligne directe, multilingue FR/EN/AR, SEO tourisme. Livraison 5 jours. Devis gratuit 24h."
+          content="Sites web pour hôtels, riads & restaurants à Marrakech. Réservation directe, moins de commissions OTA, multilingue FR/EN/AR, SEO tourisme. Devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -167,8 +167,9 @@ const MarrakechPage = () => {
           </h1>
           {/* Bilingual subheading */}
           <p className="subheading sl-mb">
-            Je crée des sites web professionnels pour les hôtels, riads et restaurants
-            de Marrakech — réservation en ligne, multilingue FR/EN/AR, SEO tourisme.
+            <strong>Développeur web freelance à Marrakech</strong>, je réalise la{" "}
+            <strong>création de site web à Marrakech</strong> pour les hôtels, riads et
+            restaurants — réservation en ligne, multilingue FR/EN/AR, SEO tourisme.
             Réduisez vos commissions OTA, générez des réservations directes.
           </p>
           <p className="marrakech-en-subheading sl-mb">
@@ -190,7 +191,7 @@ const MarrakechPage = () => {
             <a
               href="tel:+212696964341"
               className="hero__phone"
-              onClick={trackPhone}
+              onClick={() => trackPhone()}
               aria-label="Call MouDev — Hotel website Marrakech"
             >
               <HiMiniPhone />
@@ -232,6 +233,18 @@ const MarrakechPage = () => {
               directement.
             </p>
             <p className="text sl-mb">
+              Pour les <strong>restaurants de Marrakech</strong>, l'enjeu n'est pas la
+              commission mais la visibilité : un site vitrine avec menu en ligne, photos,
+              réservation de table et fiche Google Business optimisée vous fait apparaître
+              quand un voyageur cherche « où manger à Marrakech ». Site restaurant livré en
+              7 à 10 jours, dès 2 000 DH.
+            </p>
+            <p className="text sl-mb">
+              Je crée aussi des sites web pour les commerces, artisans, agences de voyage et
+              PME de Marrakech — même qualité, même réactivité, contact direct avec le
+              développeur.
+            </p>
+            <p className="text sl-mb">
               <strong>Hotel website design Morocco:</strong> I build professional hotel
               and riad websites that rank on Google and drive direct bookings. Free
               quote within 24h.
@@ -257,7 +270,7 @@ const MarrakechPage = () => {
               <span className="city-stat__label">FR / EN / AR</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">2–4 sem.</span>
+              <span className="city-stat__num">7-10 jours</span>
               <span className="city-stat__label">Délai de livraison</span>
             </div>
           </div>
@@ -373,7 +386,7 @@ const MarrakechPage = () => {
                 {[
                   ["Contact", "Direct avec le développeur", "Commercial + chef de projet"],
                   ["Prix", "Dès 2 000 DH", "Dès 8 000 DH et plus"],
-                  ["Délai", "5 jours max", "1 à 3 mois"],
+                  ["Délai", "7-10 jours", "1 à 3 mois"],
                   ["Paiement", "Après livraison", "Acompte imposé"],
                   ["Multilingue", "FR/EN/AR inclus sur devis", "Supplément facturé"],
                   ["SEO tourisme", "Optimisé FR + EN", "Rarement inclus"],
@@ -421,6 +434,19 @@ const MarrakechPage = () => {
         </div>
       </section>
 
+      {/* Related links — other cities & guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Autres villes :</strong> je crée aussi des sites web à{" "}
+          <Link to="/casablanca">Casablanca</Link> et{" "}
+          <Link to="/rabat">Rabat</Link>. À lire aussi :{" "}
+          <Link to="/blog/site-web-hotel-riad-marrakech">
+            le guide du site web hôtel &amp; riad à Marrakech
+          </Link>
+          .
+        </p>
+      </section>
+
       {/* Final CTA */}
       <section id="contact" className="tarifs-cta-section">
         <div className="container center-text">
@@ -446,7 +472,7 @@ const MarrakechPage = () => {
               href="tel:+212696964341"
               className="hero__phone"
               style={{ color: "var(--gray-100)" }}
-              onClick={trackPhone}
+              onClick={() => trackPhone()}
             >
               <HiMiniPhone />
               <span>+212 696 964 341</span>

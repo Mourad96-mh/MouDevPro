@@ -41,14 +41,14 @@ export const blogPosts = [
         type: "table",
         headers: ["Type de prestataire", "Prix site vitrine", "Délai"],
         rows: [
-          ["Freelance qualifié", "2 000 – 4 000 DH", "5 – 15 jours"],
+          ["Freelance qualifié", "2 000 – 4 000 DH", "7 – 15 jours"],
           ["Agence locale", "5 000 – 15 000 DH", "1 – 3 mois"],
           ["Agence internationale", "10 000 DH+", "2 – 4 mois"],
         ],
       },
       {
         type: "p",
-        text: "Chez MouDevPro, un site vitrine professionnel démarre à 2 000 DH — design sur mesure, jusqu'à 10 pages, SEO technique inclus, hébergement SSD et nom de domaine pour 1 an inclus, livraison en 5 jours maximum.",
+        text: "Chez MouDevPro, un site vitrine professionnel démarre à 2 000 DH — design sur mesure, jusqu'à 10 pages, SEO technique inclus, hébergement SSD et nom de domaine pour 1 an inclus, livraison en 7 à 10 jours.",
       },
       {
         type: "h2",
@@ -62,7 +62,7 @@ export const blogPosts = [
         type: "table",
         headers: ["Type de boutique", "Prix estimé", "Délai"],
         rows: [
-          ["Boutique standard (jusqu'à 50 produits)", "3 000 – 6 000 DH", "5 – 15 jours"],
+          ["Boutique standard (jusqu'à 50 produits)", "3 000 – 6 000 DH", "7 – 15 jours"],
           ["Boutique complète (produits illimités)", "5 000 – 12 000 DH", "2 – 4 semaines"],
           ["E-commerce sur mesure avec API / ERP", "12 000 DH+", "1 – 3 mois"],
         ],
@@ -110,6 +110,20 @@ export const blogPosts = [
       {
         type: "p",
         text: "Chez MouDevPro, je pratique une politique de tarification transparente. Le prix du devis est le prix final — aucun supplément caché en cours de projet. Et surtout : vous payez uniquement après livraison et validation de votre site. Zéro acompte imposé.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Ces tarifs s'appliquent partout au Maroc et à distance. Que vous cherchiez la ",
+          { text: "création de site web à Rabat", to: "/rabat" },
+          " (Rabat, Salé, Témara), à ",
+          { text: "Casablanca", to: "/casablanca" },
+          " ou à ",
+          { text: "Marrakech", to: "/marrakech" },
+          ", consultez mes ",
+          { text: "tarifs détaillés et transparents", to: "/tarifs" },
+          " pour le détail de chaque pack.",
+        ],
       },
       {
         type: "cta",
@@ -239,7 +253,19 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 5 jours, paiement après livraison, zéro intermédiaire.",
+        text: "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire.",
+      },
+      {
+        type: "p",
+        parts: [
+          "J'interviens dans tout le pays. Vous trouverez le détail par ville sur mes pages dédiées : ",
+          { text: "développeur web freelance à Rabat", to: "/rabat" },
+          " (Rabat, Salé, Témara), ",
+          { text: "création de site web à Casablanca", to: "/casablanca" },
+          " et ",
+          { text: "sites web pour hôtels et riads à Marrakech", to: "/marrakech" },
+          ".",
+        ],
       },
       {
         type: "cta",
@@ -371,7 +397,7 @@ export const blogPosts = [
         rows: [
           ["Site hôtel professionnel", "4 990 DH", "2 – 4 semaines"],
           ["Site riad avec réservation directe", "4 990 DH", "2 – 4 semaines"],
-          ["Site restaurant Marrakech", "2 000 DH", "5 jours"],
+          ["Site restaurant Marrakech", "2 000 DH", "7 – 10 jours"],
           ["Refonte site existant", "Sur devis", "1 – 3 semaines"],
         ],
       },
@@ -396,7 +422,7 @@ export const blogPosts = [
     slug: "freelance-creation-site-web-maroc",
     title: "Freelance création site web Maroc : avantages, tarifs et comment ça marche",
     metaTitle: "Freelance Création Site Web Maroc | Tarifs & Délais 2026 | MouDEV",
-    metaDescription: "Freelance création site web au Maroc : dès 2 000 DH, livraison 5 jours, paiement après livraison. Pourquoi un freelance est plus rapide et moins cher qu'une agence. Devis gratuit 24h.",
+    metaDescription: "Freelance création site web au Maroc : dès 2 000 DH, livraison 7 à 10 jours, paiement après livraison. Pourquoi un freelance est plus rapide et moins cher qu'une agence. Devis gratuit 24h.",
     datePublished: "2026-05-15",
     dateModified: "2026-05-15",
     author: "Mourad",
@@ -436,11 +462,11 @@ export const blogPosts = [
       },
       {
         type: "h3",
-        text: "2. Livraison rapide — 5 jours pour un site vitrine",
+        text: "2. Livraison rapide — 7 à 10 jours pour un site vitrine",
       },
       {
         type: "p",
-        text: "Pas de réunions de cadrage en comité, pas de validation en cascade. Un freelance travaille directement avec vous — brief WhatsApp, design, intégration, mise en ligne. Un site vitrine standard est livré en 5 jours. Une agence prend en moyenne 4 à 12 semaines pour le même résultat.",
+        text: "Pas de réunions de cadrage en comité, pas de validation en cascade. Un freelance travaille directement avec vous — brief WhatsApp, design, intégration, mise en ligne. Un site vitrine standard est livré en 7 à 10 jours. Une agence prend en moyenne 4 à 12 semaines pour le même résultat.",
       },
       {
         type: "h3",
@@ -466,8 +492,8 @@ export const blogPosts = [
         type: "table",
         headers: ["Type de site", "Prix freelance", "Délai de livraison"],
         rows: [
-          ["Site vitrine (jusqu'à 10 pages)", "2 000 – 4 000 DH", "5 jours"],
-          ["Site e-commerce (boutique en ligne)", "3 000 – 8 000 DH", "5 – 15 jours"],
+          ["Site vitrine (jusqu'à 10 pages)", "2 000 – 4 000 DH", "7 – 10 jours"],
+          ["Site e-commerce (boutique en ligne)", "3 000 – 8 000 DH", "7 – 15 jours"],
           ["Site hôtel / riad (réservation directe)", "4 990 DH", "2 – 4 semaines"],
           ["Application web sur mesure", "Sur devis", "1 – 3 mois"],
         ],
@@ -519,7 +545,7 @@ export const blogPosts = [
     slug: "creation-site-web-casablanca",
     title: "Création site web à Casablanca : guide complet 2026 (prix, délais, prestataires)",
     metaTitle: "Création Site Web Casablanca 2026 : Prix & Prestataires | MouDEV",
-    metaDescription: "Création site web à Casablanca : dès 2 000 DH, livraison 5 jours. Freelance vs agence — comparaison complète. Développeur web freelance basé à Maarif. Devis gratuit 24h.",
+    metaDescription: "Création site web à Casablanca : dès 2 000 DH, livraison 7 à 10 jours. Freelance vs agence — comparaison complète. Développeur web freelance basé à Maarif. Devis gratuit 24h.",
     datePublished: "2026-05-15",
     dateModified: "2026-05-15",
     author: "Mourad",
@@ -553,7 +579,7 @@ export const blogPosts = [
         type: "table",
         headers: ["Type de prestataire", "Site vitrine", "E-commerce", "Délai"],
         rows: [
-          ["Freelance qualifié (Casablanca)", "2 000 – 4 000 DH", "3 000 – 8 000 DH", "5 – 15 jours"],
+          ["Freelance qualifié (Casablanca)", "2 000 – 4 000 DH", "3 000 – 8 000 DH", "7 – 15 jours"],
           ["Agence web locale Casablanca", "8 000 – 20 000 DH", "15 000 – 40 000 DH", "1 – 3 mois"],
           ["Agence internationale", "15 000 DH+", "30 000 DH+", "2 – 4 mois"],
         ],
@@ -569,7 +595,7 @@ export const blogPosts = [
       {
         type: "ul",
         items: [
-          "Freelance : contact direct avec le développeur, prix transparent, livraison en 5 jours, paiement après livraison",
+          "Freelance : contact direct avec le développeur, prix transparent, livraison en 7 à 10 jours, paiement après livraison",
           "Agence : équipe plus large, gestion marketing intégrée, mais tarifs 4 à 10× plus élevés et délais 4 à 12× plus longs",
           "Pour 95% des PME et commerces de Casablanca, un freelance qualifié suffit largement",
         ],
@@ -617,11 +643,11 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Avec un freelance développeur web à Casablanca, les délais sont bien plus courts qu'avec une agence. Un site vitrine professionnel est livré en 5 jours. Un site e-commerce standard prend 5 à 15 jours. Une application web sur mesure nécessite 1 à 3 mois selon la complexité. Ces délais sont garantis dans le devis — pas de vague \"dans quelques semaines\".",
+        text: "Avec un freelance développeur web à Casablanca, les délais sont bien plus courts qu'avec une agence. Un site vitrine professionnel est livré en 7 à 10 jours. Un site e-commerce standard prend 7 à 15 jours. Une application web sur mesure nécessite 1 à 3 mois selon la complexité. Ces délais sont garantis dans le devis — pas de vague \"dans quelques semaines\".",
       },
       {
         type: "callout",
-        text: "Je suis basé à Maarif, Casablanca. Vous pouvez me joindre sur WhatsApp 7j/7. Devis gratuit sous 24h, livraison garantie en 5 jours pour un site vitrine.",
+        text: "Je suis basé à Maarif, Casablanca. Vous pouvez me joindre sur WhatsApp 7j/7. Devis gratuit sous 24h, livraison garantie en 7 à 10 jours pour un site vitrine.",
       },
       {
         type: "cta",
@@ -640,7 +666,7 @@ export const blogPosts = [
     slug: "site-ecommerce-maroc-guide",
     title: "Créer un site e-commerce au Maroc en 2026 : guide complet (prix, plateformes, paiement)",
     metaTitle: "Site E-commerce Maroc 2026 : Prix, Plateformes & Paiement CMI | MouDEV",
-    metaDescription: "Créer un site e-commerce au Maroc : dès 3 000 DH, livraison 5 jours. WooCommerce vs Shopify, intégration CMI, paiement en ligne Maroc. Devis gratuit en 24h.",
+    metaDescription: "Créer un site e-commerce au Maroc : dès 3 000 DH, livraison 7 à 10 jours. WooCommerce vs Shopify, intégration CMI, paiement en ligne Maroc. Devis gratuit en 24h.",
     datePublished: "2026-05-15",
     dateModified: "2026-05-15",
     author: "Mourad",
@@ -666,7 +692,7 @@ export const blogPosts = [
         type: "table",
         headers: ["Type de boutique", "Prix freelance", "Prix agence", "Délai"],
         rows: [
-          ["Boutique simple (jusqu'à 50 produits)", "3 000 – 5 000 DH", "10 000 – 20 000 DH", "5 – 10 jours"],
+          ["Boutique simple (jusqu'à 50 produits)", "3 000 – 5 000 DH", "10 000 – 20 000 DH", "7 – 10 jours"],
           ["Boutique complète (produits illimités)", "5 000 – 8 000 DH", "15 000 – 30 000 DH", "2 – 4 semaines"],
           ["E-commerce sur mesure (ERP, API, B2B)", "Sur devis", "30 000 DH+", "1 – 3 mois"],
         ],

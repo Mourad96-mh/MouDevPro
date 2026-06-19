@@ -124,6 +124,11 @@ const routes = [
     ],
   },
 
+  // ── International market pages (organic SEO) ─────────────────────────────
+  { url: "/france", changefreq: "monthly", priority: 0.8 },
+  { url: "/canada", changefreq: "monthly", priority: 0.8 },
+  { url: "/usa", changefreq: "monthly", priority: 0.8 },
+
   // ── Standalone pages ─────────────────────────────────────────────────────
   { url: "/tarifs", changefreq: "monthly", priority: 0.9 },
   { url: "/ecommerce", changefreq: "monthly", priority: 0.8 },
@@ -136,6 +141,9 @@ const routes = [
   { url: "/blog/prix-site-web-maroc-2026", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/choisir-developpeur-web-freelance-maroc", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/site-web-hotel-riad-marrakech", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/freelance-creation-site-web-maroc", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/creation-site-web-casablanca", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/site-ecommerce-maroc-guide", changefreq: "monthly", priority: 0.7 },
 ];
 
 (async () => {

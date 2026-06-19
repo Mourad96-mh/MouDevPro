@@ -61,7 +61,7 @@ const jsonLd = {
 
 
 const CasablancaPage = () => {
-  const { track, WA_URL } = useConversion();
+  const { track, trackPhone, WA_URL } = useConversion();
   const { setCityData } = useCityContext();
 
   useEffect(() => {
@@ -73,11 +73,11 @@ const CasablancaPage = () => {
     <>
       <Helmet>
         <title>
-          Création Site Web à Casablanca | Développeur Freelance Maroc | MouDEV
+          Création Site Web Casablanca | Développeur Web Freelance Maroc | MouDEV
         </title>
         <meta
           name="description"
-          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta
           property="og:title"
@@ -85,14 +85,14 @@ const CasablancaPage = () => {
         />
         <meta
           property="og:description"
-          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 5 jours. Devis gratuit 24h."
+          content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/casablanca" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Création Site Web Casablanca | Développeur Web Freelance | MouDEV" />
-        <meta name="twitter:description" content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 5 jours." />
+        <meta name="twitter:description" content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 7 à 10 jours." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="création site web casablanca, développeur web casablanca, web developer casablanca, site vitrine casablanca, site e-commerce casablanca, devis site web casablanca, website design casablanca" />
@@ -112,9 +112,11 @@ const CasablancaPage = () => {
             Création Site Web à Casablanca — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site web professionnel à Casablanca. Vous parlez
-            directement avec le développeur — pas d'agence, pas
-            d'intermédiaire. Qualité agence, prix freelance.
+            La <strong>création de site web à Casablanca</strong> est mon métier :
+            sites vitrine, boutiques e-commerce et applications sur mesure pour les
+            PME, startups et commerces de la ville — <strong>dès 2 000 DH</strong>.
+            Vous parlez directement avec le développeur, pas d'agence, pas
+            d'intermédiaire. <strong>Devis gratuit en 24h.</strong>
           </p>
 
           <div className="city-hero__actions">
@@ -147,11 +149,12 @@ const CasablancaPage = () => {
         <div className="city-context-grid">
           <div className="city-context-text">
             <p className="text sl-mb">
-              Casablanca est la capitale économique du Maroc et le premier hub
-              d'affaires du Maghreb. Chaque jour, des centaines de PME,
-              startups et indépendants y cherchent un <strong>développeur web
-              freelance à Casablanca</strong> pour créer ou refondre leur site
-              internet. Je suis basé à Maarif et je connais le marché local.
+              Casablanca est la capitale économique du Maroc et son premier marché
+              e-commerce. Chaque jour, des PME, startups, commerces et indépendants y
+              cherchent un <strong>développeur web freelance à Casablanca</strong> pour
+              créer leur site vitrine, leur{" "}
+              <Link to="/ecommerce">boutique en ligne à Casablanca</Link> ou refondre un
+              site existant. Je suis basé à Maarif et je connais le marché local.
             </p>
             <p className="text sl-mb">
               La <strong>création de site web à Casablanca</strong> est mon
@@ -182,7 +185,7 @@ const CasablancaPage = () => {
               <span className="city-stat__label">Site vitrine dès</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">5 jours</span>
+              <span className="city-stat__num">7-10 jours</span>
               <span className="city-stat__label">Délai de livraison</span>
             </div>
             <div className="city-stat">
@@ -254,7 +257,7 @@ const CasablancaPage = () => {
                 {[
                   ["Contact", "Direct avec le développeur", "Commercial + chef de projet"],
                   ["Prix", "Dès 2 000 DH", "Dès 8 000 DH et plus"],
-                  ["Délai", "5 jours", "1 à 3 mois"],
+                  ["Délai", "7-10 jours", "1 à 3 mois"],
                   ["Paiement", "Après livraison", "Acompte imposé"],
                   ["Disponibilité", "WhatsApp 7j/7", "Horaires de bureau"],
                   ["SEO inclus", "Oui, toujours", "En option payante"],
@@ -290,6 +293,20 @@ const CasablancaPage = () => {
       <Portfolio cityName="Casablanca" />
       <FAQ cityName="Casablanca" />
 
+      {/* Related links — other cities & guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Autres villes :</strong> je crée aussi des sites web à{" "}
+          <Link to="/rabat">Rabat</Link> et{" "}
+          <Link to="/marrakech">Marrakech</Link>. À lire aussi :{" "}
+          <Link to="/blog/creation-site-web-casablanca">
+            le guide de la création de site web à Casablanca
+          </Link>{" "}
+          et{" "}
+          <Link to="/blog/prix-site-web-maroc-2026">le prix d'un site web au Maroc</Link>.
+        </p>
+      </section>
+
       {/* Final CTA */}
       <section id="contact" className="tarifs-cta-section">
         <div className="container center-text">
@@ -315,6 +332,7 @@ const CasablancaPage = () => {
               href="tel:+212696964341"
               className="hero__phone"
               style={{ color: "var(--gray-100)" }}
+              onClick={() => trackPhone()}
             >
               <HiMiniPhone />
               <span>+212 696 964 341</span>

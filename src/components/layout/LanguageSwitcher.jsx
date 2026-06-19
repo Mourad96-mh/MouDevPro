@@ -6,7 +6,7 @@ const LANG_LABELS = { fr: "FR", en: "EN", ar: "ع" };
 const LanguageSwitcher = () => {
   const { cityData } = useCityContext();
 
-  if (!cityData) return null;
+  if (!cityData?.hreflang) return null;
 
   return (
     <div className="lang-switcher">

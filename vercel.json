@@ -1,5 +1,5 @@
 {
-  "trailingSlash": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/(.*)",
@@ -15,6 +15,16 @@
     {
       "source": "/agence-web-marrakech/",
       "destination": "/marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-rabat",
+      "destination": "/rabat",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-rabat/",
+      "destination": "/rabat",
       "permanent": true
     },
     {

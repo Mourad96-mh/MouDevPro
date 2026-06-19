@@ -180,6 +180,67 @@ li {
   gap: 0.2rem;
 }
 
+/* International dropdown */
+.nav__dropdown {
+  position: relative;
+}
+
+.nav__dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nav__dropdown-caret {
+  font-size: 1.6rem;
+  transition: transform 0.2s;
+}
+
+.nav__dropdown-caret.open {
+  transform: rotate(180deg);
+}
+
+.nav__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 0;
+  min-width: 16rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem;
+  background-color: var(--gray-600);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.nav__dropdown-menu.open {
+  display: block;
+}
+
+.nav__dropdown-item {
+  display: block;
+  padding: 0.9rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  white-space: nowrap;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.nav__dropdown-item:hover,
+.nav__dropdown-item.active {
+  color: var(--gray-100);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
 .nav__toggle {
   display: none;
   background: none;
@@ -733,6 +794,21 @@ li {
   .nav--open .nav__cities {
     display: flex;
     flex-direction: column;
+  }
+
+  /* Dropdown opens inline (not as a floating panel) inside the mobile menu */
+  .nav__dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav__dropdown-menu {
+    position: static;
+    min-width: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+    padding: 0 0 0 1.2rem;
   }
 
   .nav__link {
@@ -1667,6 +1743,34 @@ li {
   font-weight: 700;
 }
 
+/* Prix par ville */
+.tarifs-cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.tarifs-city-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 3.2rem;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-400);
+  border-radius: 1.2rem;
+}
+
+.tarifs-city-link {
+  margin-top: auto;
+  font-weight: 700;
+  color: var(--scarletRed-500);
+}
+
+.tarifs-city-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 37.5em) {
   .tarifs-hero {
     padding-top: 6rem;
@@ -1678,6 +1782,10 @@ li {
   }
 
   .tarifs-reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .tarifs-cities-grid {
     grid-template-columns: 1fr;
   }
 }
