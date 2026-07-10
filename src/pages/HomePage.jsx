@@ -274,7 +274,13 @@ const HomePage = () => {
         <div className="home__content">
           <div className="home__text">
             <p className="text sl-mb">
-              Vous cherchez un <strong>développeur web freelance au Maroc</strong> pour
+              Vous cherchez un{" "}
+              <strong>
+                <Link to="/developpeur-web-freelance-maroc" className="inline-link">
+                  développeur web freelance au Maroc
+                </Link>
+              </strong>{" "}
+              pour
               la création de votre site internet professionnel ? Je conçois des sites
               vitrine, des e-commerces et des applications web sur mesure qui génèrent
               des leads et des ventes.{" "}

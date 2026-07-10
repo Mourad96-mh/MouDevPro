@@ -130,6 +130,7 @@ const routes = [
   { url: "/usa", changefreq: "monthly", priority: 0.8 },
 
   // ── Standalone pages ─────────────────────────────────────────────────────
+  { url: "/developpeur-web-freelance-maroc", changefreq: "monthly", priority: 0.9 },
   { url: "/tarifs", changefreq: "monthly", priority: 0.9 },
   { url: "/ecommerce", changefreq: "monthly", priority: 0.8 },
   { url: "/services", changefreq: "monthly", priority: 0.8 },
@@ -144,6 +145,8 @@ const routes = [
   { url: "/blog/freelance-creation-site-web-maroc", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/creation-site-web-casablanca", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/site-ecommerce-maroc-guide", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/creer-site-web-soi-meme-ou-developpeur", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/prix-site-ecommerce-maroc", changefreq: "monthly", priority: 0.7 },
 ];
 
 (async () => {

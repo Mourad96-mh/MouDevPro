@@ -7,6 +7,7 @@ import CasablancaPage from "./pages/CasablancaPage";
 import RabatPage from "./pages/RabatPage";
 import MarrakechPage from "./pages/MarrakechPage";
 import MarketPage from "./pages/MarketPage";
+import FreelancePage from "./pages/FreelancePage";
 import EcommercePage from "./pages/EcommercePage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
@@ -47,6 +48,7 @@ function App() {
             <Route path="usa" element={<MarketPage market="usa" />} />
 
             {/* Standalone pages */}
+            <Route path="developpeur-web-freelance-maroc" element={<FreelancePage />} />
             <Route path="tarifs" element={<TarifsPage />} />
             <Route path="casablanca" element={<CasablancaPage />} />
             <Route path="ecommerce" element={<EcommercePage />} />

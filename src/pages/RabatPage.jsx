@@ -128,7 +128,7 @@ const RabatPage = () => {
         <meta name="twitter:description" content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 7 à 10 jours." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="création site web rabat, développeur web rabat, web developer rabat, site vitrine rabat, site e-commerce rabat, devis site web rabat, freelance web rabat" />
+        <meta name="keywords" content="création site web rabat, développeur web rabat, web developer rabat, site vitrine rabat, site e-commerce rabat, devis site web rabat, freelance web rabat, création site web temara, création site web salé" />
         <link rel="canonical" href="https://www.moudevpro.com/rabat" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/rabat" />
         <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en/rabat" />
@@ -275,6 +275,34 @@ const RabatPage = () => {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Témara & Salé */}
+      <section id="temara" className="home container">
+        <h2 className="secondary-heading lg-mb">
+          Création site web à Témara et Salé — même service, même prix
+        </h2>
+        <p className="text sl-mb">
+          Vous êtes à Témara, Harhoura, Skhirat ou Salé ? La{" "}
+          <strong>création de site web à Témara</strong> et dans toute
+          l'agglomération suit exactement le même standard qu'à Rabat : site
+          vitrine professionnel dès 2 000 DH, e-commerce dès 3 000 DH, livraison
+          en 7 à 10 jours et paiement après livraison. Tout le suivi se fait à
+          distance via WhatsApp — aucun déplacement à prévoir, aucun frais
+          supplémentaire.
+        </p>
+        <p className="text sl-mb">
+          Commerces de proximité, cliniques et cabinets, écoles privées,
+          artisans, auto-entrepreneurs : je crée des sites optimisés pour les
+          recherches locales — « création site web Témara », « site web Salé » —
+          pour que vos clients vous trouvent sur Google avant vos concurrents.
+          SEO local, fiche Google Business et intégration WhatsApp inclus.
+        </p>
+        <div className="city-hero__actions">
+          <Link className="link" to={WA_URL} onClick={() => track(WA_URL)}>
+            Devis gratuit — Témara & Salé
+          </Link>
+        </div>
       </section>
 
       <ServicesSection cityName="Rabat" />

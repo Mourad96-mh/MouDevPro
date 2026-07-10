@@ -529,6 +529,14 @@ export const blogPosts = [
         text: "MouDevPro — 4 ans d'expérience, 45+ sites livrés à des clients à Casablanca, Rabat et Marrakech. Développeur web freelance basé à Maarif, disponible sur WhatsApp 7j/7.",
       },
       {
+        type: "p",
+        parts: [
+          "Pour découvrir mon profil complet, mes technologies et ma façon de travailler, consultez ma page ",
+          { to: "/developpeur-web-freelance-maroc", text: "développeur web freelance au Maroc" },
+          ".",
+        ],
+      },
+      {
         type: "cta",
         text: "Voir les tarifs détaillés →",
         to: "/tarifs",
@@ -794,6 +802,258 @@ export const blogPosts = [
         type: "cta",
         text: "Demander un devis e-commerce gratuit en 24h →",
         to: "/contact",
+      },
+    ],
+  },
+
+  {
+    slug: "creer-site-web-soi-meme-ou-developpeur",
+    title: "Créer son site web soi-même ou faire appel à un développeur ? Le comparatif honnête",
+    metaTitle: "Créer un Site Web Soi-Même ou Développeur ? Comparatif 2026 | MouDEV",
+    metaDescription: "Créer un site web soi-même avec Wix ou Shopify, ou payer un développeur au Maroc ? Coûts réels, temps passé, résultat SEO — le comparatif honnête. Devis gratuit 24h.",
+    datePublished: "2026-07-10",
+    dateModified: "2026-07-10",
+    author: "Mourad",
+    image: "/setup.avif",
+    imageAlt: "Créer un site web soi-même ou avec un développeur freelance au Maroc — comparatif MouDev",
+    excerpt: "Wix, Shopify, WordPress.com — créer son site soi-même semble gratuit. Mais entre le temps passé, les abonnements à vie et le SEO limité, le calcul est rarement bon. Voici le comparatif honnête.",
+    readTime: "6 min",
+    keywords: ["créer un site web maroc", "comment créer un site web", "créer son site web soi-même", "website builder maroc", "wix ou développeur"],
+    content: [
+      {
+        type: "p",
+        text: "Vous voulez créer un site web pour votre activité au Maroc et vous hésitez : le faire vous-même avec Wix, Shopify ou WordPress.com, ou confier le projet à un développeur ? La bonne réponse dépend de votre projet — et contrairement à ce qu'on pourrait attendre d'un développeur, je ne vais pas vous dire que le DIY est toujours une mauvaise idée. Voici le comparatif honnête, chiffres réels à l'appui.",
+      },
+      {
+        type: "h2",
+        text: "Créer son site soi-même : ce que ça coûte vraiment",
+      },
+      {
+        type: "p",
+        text: "Les website builders comme Wix, Squarespace ou Shopify promettent un site « gratuit en quelques clics ». La réalité est différente. Le plan gratuit affiche leur publicité et un sous-domaine (monsite.wixsite.com) — inutilisable pour une entreprise. Pour un site professionnel avec votre nom de domaine, comptez un abonnement mensuel à vie :",
+      },
+      {
+        type: "table",
+        headers: ["Plateforme", "Abonnement pro", "Coût sur 3 ans"],
+        rows: [
+          ["Wix Business", "≈ 170 DH/mois", "≈ 6 100 DH"],
+          ["Squarespace", "≈ 250 DH/mois", "≈ 9 000 DH"],
+          ["Shopify (e-commerce)", "≈ 290 – 790 DH/mois", "≈ 10 500 – 28 400 DH"],
+          ["Développeur freelance (une fois)", "2 000 – 4 000 DH", "2 000 – 4 000 DH + hébergement ≈ 500 DH/an"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Sur 3 ans, un site vitrine créé par un freelance au Maroc coûte souvent moins cher qu'un abonnement Wix — et le site vous appartient entièrement, données comprises.",
+      },
+      {
+        type: "h2",
+        text: "Le coût caché du DIY : votre temps",
+      },
+      {
+        type: "p",
+        text: "Créer un site correct sur un builder prend rarement « quelques heures ». Entre le choix du template, la rédaction des textes, les images, les réglages mobile et les tentatives de référencement, comptez 30 à 60 heures pour un premier site présentable. Si votre heure de travail vaut ne serait-ce que 100 DH, le site « gratuit » vous a coûté 3 000 à 6 000 DH en temps — sans garantie de résultat professionnel.",
+      },
+      {
+        type: "h2",
+        text: "SEO : là où le DIY perd presque toujours",
+      },
+      {
+        type: "p",
+        text: "C'est le point décisif. Un site que personne ne trouve sur Google ne sert à rien. Les builders génèrent des pages lourdes et lentes, avec un contrôle SEO limité : balises approximatives, vitesse médiocre sur mobile, données structurées absentes. Pour des recherches concurrentielles comme « création site web casablanca » ou votre secteur + votre ville, un site optimisé par un professionnel — vitesse, balises, schema.org, SEO local — part avec plusieurs longueurs d'avance.",
+      },
+      {
+        type: "h2",
+        text: "Quand créer son site soi-même est une bonne idée",
+      },
+      {
+        type: "ul",
+        items: [
+          "Vous testez une idée et avez besoin d'une page temporaire pour valider le concept avant d'investir",
+          "Votre activité repose entièrement sur Instagram/TikTok et le site n'est qu'une carte de visite secondaire",
+          "Vous avez un budget de démarrage réellement nul — dans ce cas un plan gratuit vaut mieux que rien",
+          "Vous aimez la technique et acceptez d'y passer vos soirées pendant un mois",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Quand faire appel à un développeur est le bon calcul",
+      },
+      {
+        type: "ul",
+        items: [
+          "Votre site doit générer des clients : le SEO, la vitesse et la crédibilité du design font la différence",
+          "Vous vendez en ligne : intégration CMI, paiement à la livraison et transporteurs marocains — hors de portée des builders",
+          "Votre temps a de la valeur : 7 à 10 jours de délai contre 30 à 60 heures de votre travail",
+          "Vous voulez être propriétaire de votre site, sans abonnement à vie ni plateforme qui vous enferme",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Le comparatif en résumé",
+      },
+      {
+        type: "table",
+        headers: ["Critère", "Site fait soi-même (builder)", "Développeur freelance"],
+        rows: [
+          ["Coût réel sur 3 ans", "6 000 – 28 000 DH (abonnements)", "2 000 – 4 000 DH une fois"],
+          ["Temps à y consacrer", "30 – 60 heures", "≈ 2 heures (brief + validation)"],
+          ["Résultat SEO", "Limité, pages lentes", "Optimisé Google dès la livraison"],
+          ["Paiement en ligne Maroc (CMI)", "Difficile voire impossible", "Intégré et testé"],
+          ["Propriété du site", "Locataire de la plateforme", "Propriétaire à 100%"],
+          ["Design", "Template générique", "Sur mesure, à votre image"],
+        ],
+      },
+      {
+        type: "callout",
+        text: "Mon conseil honnête : si le site doit rapporter des clients, faites-le faire. Si c'est un test ou un hobby, faites-le vous-même — et revenez me voir quand l'activité décolle. Devis gratuit sous 24h, paiement après livraison : vous ne prenez aucun risque à comparer.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Pour vous faire une idée précise des budgets, consultez ",
+          { to: "/blog/prix-site-web-maroc-2026", text: "le prix réel d'un site web au Maroc en 2026" },
+          " et mes ",
+          { to: "/tarifs", text: "tarifs transparents de création de site web" },
+          ". Et si votre projet est une boutique en ligne, la page ",
+          { to: "/ecommerce", text: "création de site e-commerce au Maroc" },
+          " détaille tout ce qui est inclus.",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Comparer avec un devis gratuit en 24h →",
+        to: "/contact",
+      },
+      {
+        type: "cta",
+        text: "Voir les tarifs transparents →",
+        to: "/tarifs",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-site-ecommerce-maroc",
+    title: "Combien coûte un site e-commerce au Maroc en 2026 ? Prix détaillés",
+    metaTitle: "Prix Site E-commerce Maroc 2026 : dès 3 000 DH | Détail Complet | MouDEV",
+    metaDescription: "Prix d'un site e-commerce au Maroc en 2026 : dès 3 000 DH chez un freelance, 10 000 DH+ en agence. Coûts de création, frais CMI, hébergement — le détail complet. Devis gratuit 24h.",
+    datePublished: "2026-07-10",
+    dateModified: "2026-07-10",
+    author: "Mourad",
+    image: "/web-dev-1.avif",
+    imageAlt: "Prix site e-commerce Maroc 2026 — coût création boutique en ligne freelance MouDev",
+    excerpt: "Création, hébergement, frais CMI, maintenance : le vrai budget d'une boutique en ligne au Maroc en 2026, poste par poste — freelance, agence et plateformes SaaS comparés.",
+    readTime: "6 min",
+    keywords: ["prix site e-commerce maroc", "combien coûte un site e-commerce maroc", "prix boutique en ligne maroc", "coût site e-commerce maroc", "devis site e-commerce maroc"],
+    content: [
+      {
+        type: "p",
+        text: "Combien coûte un site e-commerce au Maroc ? Réponse courte : entre 3 000 DH chez un développeur freelance et plus de 30 000 DH en agence, plus quelques frais récurrents qu'on oublie souvent de vous annoncer. Dans cet article, je détaille le prix d'une boutique en ligne au Maroc en 2026 poste par poste — création, paiement en ligne, hébergement, maintenance — pour que vous puissiez budgétiser sans mauvaise surprise.",
+      },
+      {
+        type: "h2",
+        text: "Prix de création d'un site e-commerce au Maroc : les fourchettes 2026",
+      },
+      {
+        type: "table",
+        headers: ["Type de boutique", "Freelance", "Agence", "Délai"],
+        rows: [
+          ["Boutique simple (jusqu'à 50 produits)", "3 000 – 5 000 DH", "10 000 – 20 000 DH", "7 – 10 jours"],
+          ["Boutique complète (catalogue illimité)", "5 000 – 8 000 DH", "15 000 – 30 000 DH", "2 – 4 semaines"],
+          ["E-commerce sur mesure (B2B, ERP, API)", "Sur devis", "30 000 DH+", "1 – 3 mois"],
+        ],
+      },
+      {
+        type: "p",
+        text: "L'écart entre freelance et agence ne reflète pas un écart de qualité technique — les deux livrent du WooCommerce ou du sur-mesure. Il reflète les frais de structure de l'agence : commercial, chef de projet, bureaux. Avec un freelance, vous payez le développement, pas l'organigramme.",
+      },
+      {
+        type: "h2",
+        text: "Ce que le prix de création doit inclure (vérifiez avant de signer)",
+      },
+      {
+        type: "ul",
+        items: [
+          "Design responsive sur mesure — pas un template générique à peine retouché",
+          "Catalogue produits avec variantes (tailles, couleurs) et gestion des stocks",
+          "Paiement en ligne : intégration CMI + PayPal + paiement à la livraison",
+          "SEO e-commerce : fiches produits optimisées, schema.org, sitemap, vitesse",
+          "Nom de domaine et hébergement la première année",
+          "Certificat SSL (HTTPS) — indispensable pour encaisser en ligne",
+          "Formation à l'administration de la boutique (chez moi : 2h incluses)",
+          "Support après livraison — vérifiez la durée incluse",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Attention aux devis « à partir de 1 500 DH » qui excluent le paiement en ligne, l'hébergement ou le SSL. Une boutique qui ne peut pas encaisser n'est pas une boutique. Exigez un devis détaillé ligne par ligne.",
+      },
+      {
+        type: "h2",
+        text: "Les coûts récurrents d'une boutique en ligne au Maroc",
+      },
+      {
+        type: "p",
+        text: "Après la création, votre boutique a des frais de fonctionnement. Ils sont modestes si le site vous appartient — beaucoup plus lourds sur une plateforme à abonnement :",
+      },
+      {
+        type: "table",
+        headers: ["Poste", "Site propriétaire (WooCommerce)", "Plateforme SaaS (Shopify)"],
+        rows: [
+          ["Hébergement / abonnement", "≈ 500 – 1 000 DH/an", "3 500 – 9 500 DH/an"],
+          ["Nom de domaine", "≈ 100 – 150 DH/an", "≈ 100 – 150 DH/an"],
+          ["Commission plateforme", "0", "0,5 – 2% par vente (hors Shopify Payments)"],
+          ["Frais CMI (par transaction)", "Selon contrat bancaire", "Selon contrat bancaire"],
+          ["Maintenance optionnelle", "Sur devis, selon besoin", "Incluse dans l'abonnement"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Le contrat CMI (Centre Monétique Interbancaire) se négocie avec votre banque : des frais d'installation et une commission par transaction s'appliquent selon votre établissement et votre volume. Je vous guide dans les démarches — l'intégration technique est incluse dans mes packs.",
+      },
+      {
+        type: "h2",
+        text: "Exemple concret : budget total première année",
+      },
+      {
+        type: "p",
+        text: "Pour une boutique de prêt-à-porter avec 80 produits, créée par un freelance : création 4 500 DH (design, catalogue, CMI, paiement à la livraison, SEO, formation), hébergement et domaine offerts la première année. Total première année : 4 500 DH. La même boutique en agence : 15 000 à 20 000 DH. Sur Shopify en DIY : environ 4 000 DH d'abonnement par an, à vie, plus votre temps de création.",
+      },
+      {
+        type: "h2",
+        text: "Comment réduire le prix de votre site e-commerce sans sacrifier la qualité",
+      },
+      {
+        type: "ul",
+        items: [
+          "Commencez avec un catalogue réduit (20 à 50 best-sellers) et élargissez après les premières ventes",
+          "Préparez vos contenus à l'avance : photos produits, descriptions, logo — la collecte de contenu est ce qui allonge les projets",
+          "Choisissez WooCommerce plutôt qu'un abonnement SaaS si vous visez le marché marocain avec CMI",
+          "Travaillez avec un freelance en direct : mêmes technologies qu'en agence, sans les frais de structure",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Pour le détail des plateformes et du paiement en ligne, lisez mon ",
+          { to: "/blog/site-ecommerce-maroc-guide", text: "guide complet du site e-commerce au Maroc" },
+          ". Tout ce qui est inclus dans mes packs est détaillé sur la page ",
+          { to: "/ecommerce", text: "création de site e-commerce au Maroc" },
+          " et sur mes ",
+          { to: "/tarifs", text: "tarifs de création de site web" },
+          ".",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Obtenir mon devis e-commerce gratuit en 24h →",
+        to: "/contact",
+      },
+      {
+        type: "cta",
+        text: "Voir la page e-commerce →",
+        to: "/ecommerce",
       },
     ],
   },

@@ -37,6 +37,14 @@ New/expanded pages backed by data showing the intent exists and converts.
 | 1.4 | `/ecommerce` upgrade | "créer ma boutique", "créer un store", "comment creer un site e commerce" convert at 100% (low vol); page sits pos 18.7 | boutique en ligne maroc |
 | 1.5 | Blog: "Combien coûte un site e-commerce au Maroc" | Pairs with `/ecommerce` + the page-1 `site-ecommerce-maroc-guide`; price intent | prix site e-commerce maroc |
 
+> **Status 2026-07-10 — Wave 1 implemented** (branch `seo-updates-2026-05-30`):
+> 1.1 → new page `/developpeur-web-freelance-maroc` (FAQ + LocalBusiness/ProfessionalService schema; linked from Home intro, footer all 3 langs, and the `freelance-creation-site-web-maroc` post).
+> 1.2 → dedicated `#temara` section on `/rabat` (Wave 0 had already added paragraph/FAQ/quartier mentions).
+> 1.3 → `/blog/creer-site-web-soi-meme-ou-developpeur`.
+> 1.4 → `/ecommerce`: price in title/H1, 5-step "comment créer" section (`#creer-boutique`), city sections (`#villes`, covers roadmap S2), 2 new FAQ items, links to both e-comm posts.
+> 1.5 → `/blog/prix-site-ecommerce-maroc`.
+> Re-check GSC positions ~2–4 weeks after deploy before promoting Wave 2.
+
 ---
 
 ## Wave 2 — Depth & moat (4–8 weeks)

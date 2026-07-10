@@ -60,6 +60,14 @@ const FAQ_ITEMS = [
     q: "Quelle technologie utilisez-vous pour les sites e-commerce ?",
     a: "J'utilise principalement WooCommerce (sur WordPress) pour les boutiques classiques, et React + API sur mesure pour les projets plus complexes. Le choix dépend de votre catalogue, de vos besoins fonctionnels et de votre budget.",
   },
+  {
+    q: "Puis-je créer ma boutique en ligne moi-même avec Shopify ou Wix ?",
+    a: "C'est possible, mais rarement rentable : abonnement mensuel à vie (29–79 USD/mois sur Shopify), intégration CMI compliquée, SEO limité et des semaines de travail d'apprentissage. Une boutique professionnelle livrée clé en main dès 3 000 DH, sans abonnement, est presque toujours plus économique dès la première année. Je vous conseille gratuitement sur la meilleure option pour votre cas.",
+  },
+  {
+    q: "Créez-vous des sites e-commerce à Casablanca, Rabat et Marrakech ?",
+    a: "Oui — je crée des boutiques en ligne pour des clients à Casablanca, Rabat, Marrakech et partout au Maroc. Tout le projet se gère à distance via WhatsApp : brief, validation du design, formation et mise en ligne. Aucun déplacement, aucun frais supplémentaire, même prix dans toutes les villes.",
+  },
 ];
 
 const jsonLd = {
@@ -113,15 +121,15 @@ const EcommercePage = () => {
     <>
       <Helmet>
         <title>
-          Site E-commerce Maroc | Boutique en Ligne Professionnelle | MouDEV
+          Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne | MouDEV
         </title>
         <meta
           name="description"
-          content="Création site e-commerce au Maroc par un développeur freelance. Boutique en ligne professionnelle dès 3 000 DH — catalogue, paiement CMI, SEO inclus. Devis gratuit 24h."
+          content="Création site e-commerce au Maroc dès 3 000 DH par un développeur freelance. Boutique en ligne pro — paiement CMI, livraison 7 à 10 jours, SEO inclus. Devis gratuit 24h."
         />
         <meta
           property="og:title"
-          content="Site E-commerce Maroc | Boutique en Ligne | MouDEV"
+          content="Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne | MouDEV"
         />
         <meta
           property="og:description"
@@ -135,7 +143,7 @@ const EcommercePage = () => {
         <meta name="twitter:description" content="Boutique en ligne professionnelle au Maroc dès 3 000 DH. Paiement CMI, catalogue illimité, SEO inclus. Devis gratuit en 24h." />
         <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="site e-commerce maroc, boutique en ligne casablanca, site e-commerce casablanca, création boutique en ligne maroc, woocommerce maroc, site e-commerce rabat, site e-commerce marrakech" />
+        <meta name="keywords" content="site e-commerce maroc, boutique en ligne maroc, boutique en ligne casablanca, site e-commerce casablanca, création boutique en ligne maroc, comment créer une boutique en ligne maroc, prix site e-commerce maroc, woocommerce maroc, site e-commerce rabat, site e-commerce marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/ecommerce" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/ecommerce" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/ecommerce" />
@@ -148,12 +156,13 @@ const EcommercePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Site E-commerce Maroc — Boutique en Ligne Professionnelle
+            Site E-commerce Maroc — Boutique en Ligne dès 3 000 DH
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre boutique en ligne professionnelle au Maroc. Vendez 24h/24,
-            acceptez les paiements en ligne (CMI, PayPal), gérez vos stocks et
-            développez votre chiffre d'affaires digital.
+            Je crée votre site e-commerce professionnel au Maroc — boutique en
+            ligne livrée en 7 à 10 jours, dès 3 000 DH. Vendez 24h/24, acceptez
+            les paiements en ligne (CMI, PayPal), gérez vos stocks et développez
+            votre chiffre d'affaires digital. Devis gratuit en 24h.
           </p>
 
           <div className="city-hero__actions">
@@ -242,6 +251,52 @@ const EcommercePage = () => {
         </div>
       </section>
 
+      {/* How it works — captures "comment créer une boutique en ligne" intent */}
+      <section id="creer-boutique" className="home container">
+        <h2 className="secondary-heading lg-mb">
+          Comment créer votre boutique en ligne au Maroc — 5 étapes
+        </h2>
+        <p className="text sl-mb">
+          Vous vous demandez <strong>comment créer un site e-commerce au
+          Maroc</strong> ? Avec moi, vous n'avez rien de technique à gérer —
+          voici exactement comment se passe la création de votre boutique en
+          ligne, du premier message à la première vente :
+        </p>
+        <ul className="city-neighborhoods">
+          {[
+            {
+              area: "Étape 1 — Devis gratuit sous 24h",
+              desc: "Vous m'envoyez votre projet sur WhatsApp : type de produits, nombre approximatif d'articles, besoins de paiement. Je réponds avec un devis fixe et un délai garanti.",
+            },
+            {
+              area: "Étape 2 — Choix de la plateforme",
+              desc: "WooCommerce ou solution sur mesure selon votre catalogue et votre budget — je vous conseille la techno adaptée, pas la plus chère.",
+            },
+            {
+              area: "Étape 3 — Design & catalogue",
+              desc: "Je crée le design à votre image et j'intègre vos premiers produits avec photos, variantes et prix. Vous validez la maquette avant la suite.",
+            },
+            {
+              area: "Étape 4 — Paiement & livraison",
+              desc: "Intégration CMI, PayPal et paiement à la livraison, plus vos transporteurs (Amana, Chronopost). Tests complets de commande de bout en bout.",
+            },
+            {
+              area: "Étape 5 — Formation & mise en ligne",
+              desc: "2h de formation pour gérer produits, commandes et promos en autonomie. La boutique part en ligne — et vous payez après livraison.",
+            },
+          ].map((s, i) => (
+            <li key={i} className="city-neighborhood-item">
+              <strong>{s.area} :</strong> {s.desc}
+            </li>
+          ))}
+        </ul>
+        <div className="city-hero__actions">
+          <Link className="link" to={WA_URL} onClick={() => track(WA_URL)}>
+            Créer ma boutique en ligne — Devis 24h
+          </Link>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section id="tarifs" className="city-tarifs-teaser home container">
         <h2 className="secondary-heading center-text lg-mb">
@@ -292,6 +347,44 @@ const EcommercePage = () => {
         </div>
       </section>
 
+      {/* City sections — boutique en ligne Casablanca / Rabat / Marrakech */}
+      <section id="villes" className="home container">
+        <h2 className="secondary-heading lg-mb">
+          Site e-commerce à Casablanca, Rabat et Marrakech
+        </h2>
+        <p className="text sl-mb">
+          Je crée des boutiques en ligne pour des commerçants partout au Maroc —
+          tout le projet se gère à distance via WhatsApp, sans réunion ni
+          déplacement. Chaque ville a ses spécificités :
+        </p>
+        <ul className="city-neighborhoods">
+          {[
+            {
+              area: "Boutique en ligne à Casablanca",
+              desc: "Le premier marché e-commerce du Maroc : prêt-à-porter, cosmétique, électronique, B2B de Derb Omar. Intégration CMI et paiement à la livraison — les deux options qu'attendent les acheteurs casablancais.",
+            },
+            {
+              area: "Site e-commerce à Rabat",
+              desc: "Boutiques de Hay Ryad et Agdal, librairies, artisanat, services — catalogue soigné et SEO local pour capter l'agglomération Rabat-Salé-Témara.",
+            },
+            {
+              area: "Boutique en ligne à Marrakech",
+              desc: "Artisanat, décoration, huile d'argan, produits du terroir — boutiques bilingues FR/EN pour vendre aux touristes et à l'international, avec PayPal pour les paiements étrangers.",
+            },
+          ].map((c, i) => (
+            <li key={i} className="city-neighborhood-item">
+              <strong>{c.area} :</strong> {c.desc}
+            </li>
+          ))}
+        </ul>
+        <p className="text">
+          Découvrez aussi mes services complets de création de site web à{" "}
+          <Link to="/casablanca">Casablanca</Link>,{" "}
+          <Link to="/rabat">Rabat</Link> et{" "}
+          <Link to="/marrakech">Marrakech</Link>.
+        </p>
+      </section>
+
       {/* Site vitrine cross-sell */}
       <section className="ecommerce-crosssell home container">
         <div className="ecommerce-crosssell-inner">
@@ -324,6 +417,22 @@ const EcommercePage = () => {
             </details>
           ))}
         </div>
+      </section>
+
+      {/* Related guides */}
+      <section className="home container">
+        <p className="text">
+          <strong>Pour aller plus loin :</strong> consultez mon{" "}
+          <Link to="/blog/site-ecommerce-maroc-guide">
+            guide complet pour créer un site e-commerce au Maroc
+          </Link>{" "}
+          et le détail des{" "}
+          <Link to="/blog/prix-site-ecommerce-maroc">
+            prix d'un site e-commerce au Maroc en 2026
+          </Link>
+          , ou comparez toutes les formules sur la{" "}
+          <Link to="/tarifs">page tarifs</Link>.
+        </p>
       </section>
 
       {/* Final CTA */}
