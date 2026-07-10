@@ -15,7 +15,7 @@ const jsonLd = {
     "Demandez votre devis gratuit pour la création de site web au Maroc. Réponse en 24h.",
   url: "https://www.moudevpro.com/contact",
   telephone: "+212696964341",
-  email: "contact@moudevpro.com",
+  email: "creation-site@moudevpro.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Quartier Maarif",
@@ -121,10 +121,10 @@ const ContactPage = () => {
               <div>
                 <p className="contact-info__label">Email</p>
                 <a
-                  href="mailto:contact@moudevpro.com"
+                  href="mailto:creation-site@moudevpro.com"
                   className="contact-info__link"
                 >
-                  contact@moudevpro.com
+                  creation-site@moudevpro.com
                 </a>
               </div>
             </div>

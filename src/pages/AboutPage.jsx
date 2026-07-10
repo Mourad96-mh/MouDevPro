@@ -50,7 +50,7 @@ const jsonLd = {
   description: "Développeur web freelance basé à Casablanca, Maroc. Plus de 4 ans d'expérience, 45+ projets livrés pour des PME, startups, hôtels et associations au Maroc. Spécialisé en React, Next.js, WordPress, WooCommerce et SEO.",
   url: "https://www.moudevpro.com/about",
   telephone: "+212696964341",
-  email: "contact@moudevpro.com",
+  email: "creation-site@moudevpro.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Quartier Maarif",

@@ -8,7 +8,7 @@ Points clés à retenir :
 - **Tarifs transparents** : site vitrine dès 2 000 MAD, e-commerce dès 3 000 MAD, site hôtel/riad dès 4 990 MAD, application sur devis. Paiement après livraison, zéro acompte imposé.
 - **Zones servies** : Casablanca, Rabat, Marrakech et tout le Maroc, 100 % à distance via WhatsApp. Pages internationales dédiées à la France, au Canada et aux USA (diaspora marocaine + entreprises locales, prix en devise locale).
 - **Stack technique** : React, Next.js, WordPress, WooCommerce, Node.js, Vite. SEO technique on-page inclus dans chaque projet.
-- **Contact** : WhatsApp / téléphone +212 696 964 341 — contact@moudevpro.com — Quartier Maarif, Casablanca 20000, Maroc.
+- **Contact** : WhatsApp / téléphone +212 696 964 341 — creation-site@moudevpro.com — Quartier Maarif, Casablanca 20000, Maroc.
 
 ## Pages principales
 

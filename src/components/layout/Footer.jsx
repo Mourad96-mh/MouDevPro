@@ -89,8 +89,8 @@ const Footer = ({ cityName, address }) => {
             </li>
             <li>
               <HiOutlineEnvelope className="footer__contact-icon" />
-              <a href="mailto:contact@moudevpro.com" className="footer__link">
-                contact@moudevpro.com
+              <a href="mailto:creation-site@moudevpro.com" className="footer__link">
+                creation-site@moudevpro.com
               </a>
             </li>
             <li>
