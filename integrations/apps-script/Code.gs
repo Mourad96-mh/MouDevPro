@@ -40,22 +40,13 @@ var CONFIG = {
   // Anti-spam: ignore a form lead if the same phone was logged < 60s ago.
   DUPLICATE_WINDOW_MS: 60 * 1000,
 
-  // Notification on new leads. NOTIFY_ON:
-  //   "form" → devis-form submits only (recommended — quiet)
-  //   "all"  → also WhatsApp/phone taps (can be several per visitor)
-  //   ""     → notifications off
-  NOTIFY_ON: "form",
-
-  // WhatsApp notification via CallMeBot (free personal-notification API).
-  // Setup (2 min): https://www.callmebot.com/blog/free-api-whatsapp-messages/
-  // — add their activation number to your contacts, send them the message
-  // "I allow callmebot to send me messages", and paste the API key they
-  // reply with below. Leave APIKEY empty to disable.
-  WHATSAPP_PHONE: "+212696964341",
-  WHATSAPP_APIKEY: "",
-
-  // Optional email notification (leave empty to disable).
+  // Optional email notification on new leads (leave empty to disable).
+  // Not needed for WhatsApp: the devis form opens the visitor's own
+  // WhatsApp with their answers pre-filled, so the lead messages you
+  // directly — no bot, no API.
+  //   NOTIFY_ON: "form" → devis-form submits only · "all" → every lead · "" → off
   NOTIFY_EMAIL: "",
+  NOTIFY_ON: "form",
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -120,16 +111,6 @@ function doPost(e) {
   return out;
 }
 
-/**
- * Manual test — run this from the editor (function dropdown → testNotify →
- * Run). Forces the permission consent screen if it was never granted, and
- * throws visibly if sending fails (unlike the silent try/catch in doPost).
- */
-function testNotify() {
-  sendWhatsApp_("✅ Test notification MouDevPro — le canal WhatsApp fonctionne.");
-  Logger.log("WhatsApp test sent to " + CONFIG.WHATSAPP_PHONE);
-}
-
 function leadSummary_(data) {
   return "🔥 Nouveau lead " + (data.ref || "") +
     (data.city ? " (" + data.city + ")" : "") + "\n" +
@@ -143,37 +124,19 @@ function leadSummary_(data) {
     "gclid: " + (data.gclid ? "oui" : "non");
 }
 
-function sendWhatsApp_(text) {
-  if (!CONFIG.WHATSAPP_APIKEY) return;
-  var url = "https://api.callmebot.com/whatsapp.php" +
-    "?phone=" + encodeURIComponent(CONFIG.WHATSAPP_PHONE) +
-    "&apikey=" + encodeURIComponent(CONFIG.WHATSAPP_APIKEY) +
-    "&text=" + encodeURIComponent(text);
-  UrlFetchApp.fetch(url, { muteHttpExceptions: true });
-}
-
 function notifyNewLead_(data) {
-  if (!CONFIG.NOTIFY_ON) return;
+  if (!CONFIG.NOTIFY_EMAIL || !CONFIG.NOTIFY_ON) return;
   if (CONFIG.NOTIFY_ON === "form" && data.type !== "form") return;
 
   var summary = leadSummary_(data);
-
   try {
-    sendWhatsApp_(summary);
+    MailApp.sendEmail({
+      to: CONFIG.NOTIFY_EMAIL,
+      subject: summary.split("\n")[0],
+      body: summary,
+    });
   } catch (err) {
     // Never let a notification failure block the lead from being logged.
-  }
-
-  if (CONFIG.NOTIFY_EMAIL) {
-    try {
-      MailApp.sendEmail({
-        to: CONFIG.NOTIFY_EMAIL,
-        subject: summary.split("\n")[0],
-        body: summary,
-      });
-    } catch (err) {
-      // best-effort
-    }
   }
 }
 

@@ -35,25 +35,17 @@ it adds the qualification fields, the visitor **ref** (`MDP-XXXX`), lead
 5. The script writes to a tab named **`Leads`** and creates it with headers on
    first use. Your old rows stay untouched in the old tab.
 
-## Lead notifications (WhatsApp)
+## How leads reach your WhatsApp (no bot, no API)
 
-New form leads are pushed to your own WhatsApp via CallMeBot (free
-personal-notification API). One-time setup:
+After submitting the devis form, the visitor's own WhatsApp opens with all
+their answers pre-filled (nom, tél, ville, projet, budget, message + Réf) —
+they tap "Envoyer" and the lead arrives in your WhatsApp **from the lead
+themselves**, so you reply in the same thread. If they don't tap send, the
+lead is still fully logged in the Sheet — nothing is lost.
 
-1. Follow https://www.callmebot.com/blog/free-api-whatsapp-messages/ —
-   add their activation number to your contacts and send it the WhatsApp
-   message `I allow callmebot to send me messages`.
-2. The bot replies with your **API key**. Paste it into
-   `CONFIG.WHATSAPP_APIKEY` (phone is already set to +212696964341).
-3. Redeploy (Manage deployments → ✏️ → New version). The first run asks for
-   a new permission ("connect to an external service") — run `testNotify`
-   from the editor and approve it, then check WhatsApp for the test message.
-
-`NOTIFY_ON`: `"form"` (default) = devis-form submits only; `"all"` = also
-WhatsApp/phone taps; `""` = off. `NOTIFY_EMAIL` can optionally add an email
-copy (empty = disabled). A notification failure never blocks the lead from
-being logged. Note: lead data transits CallMeBot's servers — acceptable for
-lead notifications, but it is a third-party hobby service.
+Optional email copy: set `CONFIG.NOTIFY_EMAIL` to an address (empty = off).
+`NOTIFY_ON`: `"form"` = form submits only · `"all"` = every lead · `""` = off.
+A notification failure never blocks the lead from being logged.
 
 ## Status values
 

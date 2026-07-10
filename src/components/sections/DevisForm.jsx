@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { trackLead } from "../../utils/trackLead";
 import { fireFormConversion } from "../../utils/conversions";
 import { getVisitorRef } from "../../utils/attribution";
-import useConversion from "../../hooks/useConversion";
+import { buildWaLink } from "../../hooks/useConversion";
 
 const PROJECT_TYPES = [
   { value: "vitrine", label: "Site vitrine" },
@@ -29,7 +28,6 @@ const PHONE_RE = /^(?:0[5-7]\d{8}|(?:\+|00)212[5-7]\d{8})$/;
  * `source` tags where the form was submitted from (contact page, homepage…).
  */
 const DevisForm = ({ source = "devis-form" }) => {
-  const { track, WA_URL } = useConversion();
   const [form, setForm] = useState({
     nom: "",
     telephone: "",
@@ -43,6 +41,26 @@ const DevisForm = ({ source = "devis-form" }) => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [ref, setRef] = useState("");
+  const [waLink, setWaLink] = useState("");
+
+  // The visitor's own WhatsApp carries the lead to Mourad — no bot, no API.
+  // Everything they typed is pre-filled; they only tap "send".
+  const buildLeadMessage = (visitorRef) => {
+    const projet =
+      PROJECT_TYPES.find((t) => t.value === form.typeProjet)?.label || "—";
+    const budget = BUDGETS.find((b) => b.value === form.budget)?.label || "—";
+    return [
+      `Bonjour, je souhaite un devis (Réf: ${visitorRef})`,
+      `Nom: ${form.nom.trim()}`,
+      `Tél: ${form.telephone.replace(/[\s.-]/g, "")}`,
+      form.ville.trim() ? `Ville: ${form.ville.trim()}` : "",
+      `Projet: ${projet}`,
+      `Budget: ${budget}`,
+      form.message.trim() ? `Message: ${form.message.trim()}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+  };
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -73,7 +91,9 @@ const DevisForm = ({ source = "devis-form" }) => {
 
     // Honeypot filled → bot. Pretend success, log nothing, fire nothing.
     if (form.website) {
-      setRef(getVisitorRef());
+      const botRef = getVisitorRef();
+      setRef(botRef);
+      setWaLink(buildWaLink(`Bonjour, je souhaite un devis (Réf: ${botRef})`));
       setSubmitted(true);
       return;
     }
@@ -99,11 +119,18 @@ const DevisForm = ({ source = "devis-form" }) => {
     );
     fireFormConversion();
 
-    setRef(getVisitorRef());
-    setTimeout(() => {
-      setSubmitted(true);
-      setLoading(false);
-    }, 400);
+    const visitorRef = getVisitorRef();
+    const link = buildWaLink(buildLeadMessage(visitorRef));
+    setRef(visitorRef);
+    setWaLink(link);
+
+    // Open WhatsApp with the lead's details pre-filled — synchronously in
+    // the click gesture so popup blockers allow it. The success screen
+    // below keeps a button as fallback if the tab fails to open.
+    window.open(link, "_blank", "noopener");
+
+    setSubmitted(true);
+    setLoading(false);
   };
 
   if (submitted) {
@@ -112,22 +139,23 @@ const DevisForm = ({ source = "devis-form" }) => {
         <span className="contact-success__icon">✅</span>
         <h3 className="secondary-heading">Merci !</h3>
         <p className="text sl-mb">
-          Votre demande est bien envoyée — votre référence est{" "}
+          Votre demande est bien enregistrée — votre référence est{" "}
           <strong>{ref}</strong>. Je vous recontacte avec un devis
           personnalisé sous 24h.
         </p>
         <p className="text sl-mb">
-          Pour une réponse encore plus rapide, continuez directement sur
-          WhatsApp (votre référence est déjà pré-remplie) :
+          <strong>Dernière étape :</strong> WhatsApp s'est ouvert avec votre
+          demande pré-remplie — appuyez sur « Envoyer » pour me la
+          transmettre. Il ne s'est pas ouvert ?
         </p>
-        <Link
-          to={WA_URL}
+        <a
+          href={waLink}
+          target="_blank"
           rel="noopener noreferrer"
           className="link"
-          onClick={() => track(WA_URL, `${source}-continue-wa`)}
         >
-          Continuer sur WhatsApp
-        </Link>
+          Envoyer ma demande sur WhatsApp
+        </a>
       </div>
     );
   }

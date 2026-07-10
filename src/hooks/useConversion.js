@@ -15,6 +15,12 @@ const buildWaUrl = () => {
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
 };
 
+// wa.me link with a custom pre-filled message (used by the devis form to
+// send the visitor's answers to Mourad's WhatsApp — from the visitor's
+// own account, so no API is involved).
+export const buildWaLink = (message) =>
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+
 const useConversion = () => {
   const WA_URL = buildWaUrl();
 
