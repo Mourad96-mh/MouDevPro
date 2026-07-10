@@ -110,6 +110,22 @@ function doPost(e) {
   return out;
 }
 
+/**
+ * Manual test — run this from the editor (function dropdown → testMail → Run).
+ * Forces the mail-permission consent screen if it was never granted, and
+ * throws visibly if sending fails (unlike the silent try/catch in doPost).
+ */
+function testMail() {
+  MailApp.sendEmail({
+    to: CONFIG.NOTIFY_EMAIL,
+    subject: "Test notification MouDevPro",
+    body: "Si vous lisez ceci, MailApp fonctionne. Quota restant aujourd'hui : " +
+      MailApp.getRemainingDailyQuota(),
+  });
+  Logger.log("Sent to " + CONFIG.NOTIFY_EMAIL + " — remaining quota: " +
+    MailApp.getRemainingDailyQuota());
+}
+
 function notifyNewLead_(data) {
   if (!CONFIG.NOTIFY_EMAIL || !CONFIG.NOTIFY_ON) return;
   if (CONFIG.NOTIFY_ON === "form" && data.type !== "form") return;
