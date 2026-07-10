@@ -39,6 +39,13 @@ var CONFIG = {
 
   // Anti-spam: ignore a form lead if the same phone was logged < 60s ago.
   DUPLICATE_WINDOW_MS: 60 * 1000,
+
+  // Email notification on new leads. NOTIFY_ON:
+  //   "form" → devis-form submits only (recommended — quiet inbox)
+  //   "all"  → also WhatsApp/phone taps (can be several emails per visitor)
+  //   ""     → notifications off
+  NOTIFY_EMAIL: "creation-site@moudevpro.com",
+  NOTIFY_ON: "form",
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -99,7 +106,34 @@ function doPost(e) {
     }
   });
   sheet.appendRow(row);
+  notifyNewLead_(data);
   return out;
+}
+
+function notifyNewLead_(data) {
+  if (!CONFIG.NOTIFY_EMAIL || !CONFIG.NOTIFY_ON) return;
+  if (CONFIG.NOTIFY_ON === "form" && data.type !== "form") return;
+
+  var subject = "🔥 Nouveau lead " + (data.ref || "") +
+    " — " + (data.type || "") + (data.city ? " (" + data.city + ")" : "");
+  var body =
+    "Réf:      " + (data.ref || "—") + "\n" +
+    "Type:     " + (data.type || "—") + "\n" +
+    "Nom:      " + (data.name || "—") + "\n" +
+    "Tél:      " + (data.phone || "—") + "\n" +
+    "Ville:    " + (data.city || "—") + "\n" +
+    "Projet:   " + (data.projectType || "—") + "\n" +
+    "Budget:   " + (data.budget || "—") + "\n" +
+    "Message:  " + (data.message || "—") + "\n" +
+    "Page:     " + (data.page_url || "—") + "\n" +
+    "gclid:    " + (data.gclid || "—") + "\n" +
+    "Source:   " + (data.utm_source || "—") + " / " + (data.utm_campaign || "—");
+
+  try {
+    MailApp.sendEmail({ to: CONFIG.NOTIFY_EMAIL, subject: subject, body: body });
+  } catch (err) {
+    // Never let a mail failure block the lead from being logged.
+  }
 }
 
 function isRecentDuplicate_(sheet, phone) {

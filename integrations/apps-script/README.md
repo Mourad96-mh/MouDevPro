@@ -35,6 +35,20 @@ it adds the qualification fields, the visitor **ref** (`MDP-XXXX`), lead
 5. The script writes to a tab named **`Leads`** and creates it with headers on
    first use. Your old rows stay untouched in the old tab.
 
+## Email notifications
+
+`CONFIG.NOTIFY_EMAIL` + `CONFIG.NOTIFY_ON` control instant lead emails sent
+via MailApp (from your own Google account — no external service, ~100
+emails/day quota on free Gmail):
+
+- `NOTIFY_ON: "form"` (default) — one email per devis-form submit
+- `NOTIFY_ON: "all"` — also every WhatsApp/phone tap (noisier)
+- `NOTIFY_ON: ""` — off
+
+⚠️ The first deploy after adding MailApp triggers a new Google consent
+screen ("send email as you") — approve it, otherwise emails silently fail.
+A mail failure never blocks the lead from being logged.
+
 ## Status values
 
 | status | meaning | OCI value (MAD) |
