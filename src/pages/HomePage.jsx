@@ -10,6 +10,7 @@ import TarifsSection from "../components/sections/TarifsSection";
 import Portfolio from "../components/sections/Portfolio";
 import FAQ from "../components/sections/FAQ";
 import Temoignes from "../components/sections/Temoignes";
+import DevisForm from "../components/sections/DevisForm";
 import Footer from "../components/layout/Footer";
 
 import { useCityContext } from "../context/CityContext";
@@ -434,6 +435,21 @@ const HomePage = () => {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Devis form — primary conversion, anchored for /#devis */}
+      <section id="devis" className="home container">
+        <div className="devis-section__inner">
+          <h2 className="secondary-heading center-text sl-mb">
+            Demandez votre devis gratuit — Réponse en 24h
+          </h2>
+          <p className="text center-text lg-mb">
+            Décrivez votre projet en 30 secondes : je vous réponds
+            personnellement avec un devis fixe et un délai garanti.
+            Sans engagement, paiement après livraison.
+          </p>
+          <DevisForm source="home-devis" />
         </div>
       </section>
 

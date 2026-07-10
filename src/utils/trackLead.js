@@ -1,33 +1,56 @@
 /**
  * trackLead — logs every WhatsApp / phone / form lead to Google Sheets.
- * 1. Reads UTM params + gclid from URL
- * 2. POSTs lead data to Google Sheets via Apps Script (fire-and-forget)
+ * 1. Reads attribution (gclid/wbraid/gbraid + UTMs) from the mdp_attr cookie
+ *    (set by AttributionCapture on landing), falling back to the current URL
+ * 2. Attaches the visitor ref (MDP-XXXX) so WhatsApp conversations can be
+ *    matched back to their gclid for Offline Conversion Import
+ * 3. POSTs lead data to Google Sheets via Apps Script (fire-and-forget)
  *
- * The Google Ads conversion is fired separately by gtag_report_conversion()
- * (defined in index.html) so there is a single conversion path — do NOT add a
- * gtag conversion here or clicks will be double-counted.
+ * The Google Ads conversion is fired separately (gtag_report_conversion() for
+ * clicks, fireFormConversion() for the devis form) so there is a single
+ * conversion path per lead type — do NOT add a gtag conversion here or leads
+ * will be double-counted.
  *
- * @param {object} context  — { source, city, service }
+ * @param {object} context  — { source, city, service, name, phone,
+ *                              projectType, budget, message }
  * @param {'whatsapp'|'phone'|'form'} type
  */
+import { getAttribution, getVisitorRef } from "./attribution";
 
 // ─── CONFIG — replace before going live ──────────────────────────────────────
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbykUAEtMiX2Z5ThudR8hXLs2HGKNyJiOF1xT9wFzncIVMRIDgvIRYN9c6bDUZ0861qoxA/exec";
+  "https://script.google.com/macros/s/AKfycbwd0GZoSo6DQZt_IgVHqb-G-p-Zl9lMswa9hY4lLXEkfprL8T0MTaqURlV5Ddy8qPcg/exec";
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Set to true while testing — shows a toast with the payload
 const DEBUG = false;
 
+// Which city/market page the lead acted from, derived from the URL path.
+// Explicit context.city (e.g. the form's Ville field) always wins over this.
+function detectCityFromPath() {
+  const path = window.location.pathname;
+  for (const city of ["casablanca", "rabat", "marrakech", "france", "canada", "usa"]) {
+    if (path.includes(city)) return city;
+  }
+  // /en and /ar (without a city suffix) are the Casablanca EN/AR pages
+  if (/^\/(en|ar)\/?$/.test(path)) return "casablanca";
+  return "";
+}
+
 function getUTMs() {
+  // Stored attribution first (survives SPA navigation and return visits),
+  // current URL as fallback for direct hits before the cookie existed.
+  const attr = getAttribution();
   const p = new URLSearchParams(window.location.search);
   return {
-    utm_source: p.get("utm_source") || "",
+    utm_source: attr.utm_source || p.get("utm_source") || "",
     utm_medium: p.get("utm_medium") || "",
-    utm_campaign: p.get("utm_campaign") || "",
+    utm_campaign: attr.utm_campaign || p.get("utm_campaign") || "",
     utm_content: p.get("utm_content") || "",
     utm_term: p.get("utm_term") || "",
-    gclid: p.get("gclid") || "",
+    gclid: attr.gclid || p.get("gclid") || "",
+    wbraid: attr.wbraid || p.get("wbraid") || "",
+    gbraid: attr.gbraid || p.get("gbraid") || "",
   };
 }
 
@@ -60,9 +83,15 @@ export function trackLead(context = {}, type = "whatsapp") {
   const payload = {
     timestamp: new Date().toISOString(),
     type,
+    ref: getVisitorRef(),
     source: context.source || "moudevpro-site",
-    city: context.city || "",
+    city: context.city || detectCityFromPath(),
     service: context.service || "",
+    name: context.name || "",
+    phone: context.phone || "",
+    projectType: context.projectType || "",
+    budget: context.budget || "",
+    message: (context.message || "").slice(0, 1000),
     page_url: window.location.href,
     ...getUTMs(),
   };

@@ -1,19 +1,11 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { HiMiniPhone, HiEnvelope, HiChatBubbleLeftEllipsis } from "react-icons/hi2";
 import Footer from "../components/layout/Footer";
+import DevisForm from "../components/sections/DevisForm";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
-
-const PROJECT_TYPES = [
-  "Site vitrine",
-  "Site e-commerce",
-  "Application web sur mesure",
-  "Refonte de site existant",
-  "Landing page",
-  "Autre",
-];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -41,39 +33,6 @@ const ContactPage = () => {
   useEffect(() => {
     setCityData((prev) => prev ? { ...prev, currentCity: null } : null);
   }, [setCityData]);
-  const [form, setForm] = useState({
-    nom: "",
-    email: "",
-    telephone: "",
-    ville: "",
-    typeProjet: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    // Fire conversion events
-    if (typeof window.fbq === "function") window.fbq("track", "Lead");
-    if (typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-18032730547/abRzCJSdzKUcELPD1pZD",
-        value: 100,
-        currency: "MAD",
-      });
-    }
-    // Simulate async (replace with real API call)
-    setTimeout(() => {
-      setSubmitted(true);
-      setLoading(false);
-    }, 800);
-  };
 
   return (
     <>
@@ -124,141 +83,8 @@ const ContactPage = () => {
         <div className="contact-grid">
           {/* Form */}
           <div className="contact-form-wrapper">
-            {submitted ? (
-              <div className="contact-success">
-                <span className="contact-success__icon">✅</span>
-                <h2 className="secondary-heading">Message reçu !</h2>
-                <p className="text sl-mb">
-                  Merci pour votre demande. Je vous répondrai avec un devis
-                  personnalisé sous 24h.
-                </p>
-                <p className="text sl-mb">
-                  Pour une réponse encore plus rapide, contactez-moi
-                  directement sur WhatsApp.
-                </p>
-                <Link
-                  to={WA_URL}
-                  rel="noopener noreferrer"
-                  className="link"
-                  onClick={() => track(WA_URL)}
-                >
-                  Écrire sur WhatsApp
-                </Link>
-              </div>
-            ) : (
-              <form className="contact-form" onSubmit={handleSubmit} noValidate>
-                <h2 className="secondary-heading lg-mb">Votre projet</h2>
-
-                <div className="contact-form__row">
-                  <div className="contact-form__group">
-                    <label htmlFor="nom" className="contact-form__label">
-                      Nom complet *
-                    </label>
-                    <input
-                      type="text"
-                      id="nom"
-                      name="nom"
-                      required
-                      className="contact-form__input"
-                      placeholder="Mohammed Alami"
-                      value={form.nom}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="contact-form__group">
-                    <label htmlFor="email" className="contact-form__label">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="contact-form__input"
-                      placeholder="vous@exemple.com"
-                      value={form.email}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
-
-                <div className="contact-form__row">
-                  <div className="contact-form__group">
-                    <label htmlFor="telephone" className="contact-form__label">
-                      Téléphone / WhatsApp
-                    </label>
-                    <input
-                      type="tel"
-                      id="telephone"
-                      name="telephone"
-                      className="contact-form__input"
-                      placeholder="+212 6XX XXX XXX"
-                      value={form.telephone}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="contact-form__group">
-                    <label htmlFor="ville" className="contact-form__label">
-                      Ville
-                    </label>
-                    <input
-                      type="text"
-                      id="ville"
-                      name="ville"
-                      className="contact-form__input"
-                      placeholder="Casablanca, Rabat…"
-                      value={form.ville}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
-
-                <div className="contact-form__group">
-                  <label htmlFor="typeProjet" className="contact-form__label">
-                    Type de projet *
-                  </label>
-                  <select
-                    id="typeProjet"
-                    name="typeProjet"
-                    required
-                    className="contact-form__input contact-form__select"
-                    value={form.typeProjet}
-                    onChange={handleChange}
-                  >
-                    <option value="">Sélectionnez…</option>
-                    {PROJECT_TYPES.map((t) => (
-                      <option key={t} value={t}>
-                        {t}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="contact-form__group">
-                  <label htmlFor="message" className="contact-form__label">
-                    Décrivez votre projet *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={5}
-                    className="contact-form__input contact-form__textarea"
-                    placeholder="Parlez-moi de votre activité, vos objectifs, votre budget approximatif…"
-                    value={form.message}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="link contact-form__submit"
-                  disabled={loading}
-                >
-                  {loading ? "Envoi en cours…" : "Envoyer ma demande de devis"}
-                </button>
-              </form>
-            )}
+            <h2 className="secondary-heading lg-mb">Votre projet</h2>
+            <DevisForm source="contact-page" />
           </div>
 
           {/* Contact info */}

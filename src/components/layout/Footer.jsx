@@ -8,9 +8,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
+import useConversion from "../../hooks/useConversion";
 
 const Footer = ({ cityName, address }) => {
   const { t } = useTranslation();
+  const { track, WA_URL } = useConversion();
   const serviceLinks = t("footer.services.links", { returnObjects: true });
 
   return (
@@ -30,11 +32,12 @@ const Footer = ({ cityName, address }) => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://wa.me/+212696964341"
+              href={WA_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp MouDev"
               className="footer__social-link"
+              onClick={() => track(WA_URL, "footer-social")}
             >
               <FaWhatsapp />
             </a>

@@ -2353,6 +2353,27 @@ details[open] .city-faq__question::after {
   cursor: not-allowed;
 }
 
+.contact-form__error {
+  color: var(--scarletRed-500);
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+/* Honeypot — visually removed but present in the DOM for bots */
+.contact-form__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Homepage devis section */
+.devis-section__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .contact-success {
   text-align: center;
   padding: 4rem 2rem;
