@@ -87,7 +87,7 @@ function doPost(e) {
   try {
     data = JSON.parse(e.postData.contents);
   } catch (err) {
-    return out; // ignore malformed posts silently
+    return out; // ignore malformed posts (and manual editor runs) silently
   }
 
   var sheet = getSheet_();
@@ -165,7 +165,8 @@ function onEdit(e) {
 // ─── OCI export ──────────────────────────────────────────────────────────────
 
 function doGet(e) {
-  var params = e.parameter || {};
+  // e is undefined when run manually from the editor (e.g. to authorize scopes)
+  var params = (e && e.parameter) || {};
   if (params.action !== "oci") {
     return ContentService.createTextOutput("MouDevPro lead endpoint");
   }
