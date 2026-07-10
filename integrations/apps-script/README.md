@@ -35,19 +35,25 @@ it adds the qualification fields, the visitor **ref** (`MDP-XXXX`), lead
 5. The script writes to a tab named **`Leads`** and creates it with headers on
    first use. Your old rows stay untouched in the old tab.
 
-## Email notifications
+## Lead notifications (WhatsApp)
 
-`CONFIG.NOTIFY_EMAIL` + `CONFIG.NOTIFY_ON` control instant lead emails sent
-via MailApp (from your own Google account — no external service, ~100
-emails/day quota on free Gmail):
+New form leads are pushed to your own WhatsApp via CallMeBot (free
+personal-notification API). One-time setup:
 
-- `NOTIFY_ON: "form"` (default) — one email per devis-form submit
-- `NOTIFY_ON: "all"` — also every WhatsApp/phone tap (noisier)
-- `NOTIFY_ON: ""` — off
+1. Follow https://www.callmebot.com/blog/free-api-whatsapp-messages/ —
+   add their activation number to your contacts and send it the WhatsApp
+   message `I allow callmebot to send me messages`.
+2. The bot replies with your **API key**. Paste it into
+   `CONFIG.WHATSAPP_APIKEY` (phone is already set to +212696964341).
+3. Redeploy (Manage deployments → ✏️ → New version). The first run asks for
+   a new permission ("connect to an external service") — run `testNotify`
+   from the editor and approve it, then check WhatsApp for the test message.
 
-⚠️ The first deploy after adding MailApp triggers a new Google consent
-screen ("send email as you") — approve it, otherwise emails silently fail.
-A mail failure never blocks the lead from being logged.
+`NOTIFY_ON`: `"form"` (default) = devis-form submits only; `"all"` = also
+WhatsApp/phone taps; `""` = off. `NOTIFY_EMAIL` can optionally add an email
+copy (empty = disabled). A notification failure never blocks the lead from
+being logged. Note: lead data transits CallMeBot's servers — acceptable for
+lead notifications, but it is a third-party hobby service.
 
 ## Status values
 
