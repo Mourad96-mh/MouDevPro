@@ -2,17 +2,18 @@
  * Google Ads conversion configuration — single source of truth.
  *
  * The base gtag snippet lives in index.html and must not be touched.
- * LEGACY label = the existing shared click conversion (WhatsApp/phone) —
- * it stays in code and gets demoted to Secondary in the Google Ads UI.
+ * Two Google Ads actions, split by channel (both Primary):
+ *   "Contact"              → devis-form submits (FORM_CONVERSION_LABEL)
+ *   "Contact-from-moudev"  → WhatsApp/phone clicks (LEGACY_CLICK_LABEL)
  */
 
 export const AW_ID = "AW-18032730547";
 
-// TODO(Mourad): create the "Lead Formulaire Devis" conversion action in
-// Google Ads (Website → Submit lead form, value 200 MAD, count One,
-// 90-day click-through window), paste its label here, then redeploy.
-export const FORM_CONVERSION_LABEL = "";
+// "Contact" action in Google Ads (Submit lead form) — devis-form submits only.
+export const FORM_CONVERSION_LABEL = "Hlo6CP2wzc4cELPD1pZD";
 
+// "Contact-from-moudev" action — WhatsApp + phone clicks (fired via the
+// gtag_report_conversion snippet in index.html).
 const LEGACY_CLICK_LABEL = "abRzCJSdzKUcELPD1pZD";
 
 /**
