@@ -19,7 +19,7 @@ import { getAttribution, getVisitorRef } from "./attribution";
 
 // ─── CONFIG — replace before going live ──────────────────────────────────────
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx3rUAKfrlhA3OL_7TaKXnbyKZl_gusWAiWWVc1QUO20MiyReJ76kwvgA1f_Tb_pUO9/exec";
+  "https://script.google.com/macros/s/AKfycbyaitSzgm3jQQ5uuudqeIoxCO6Pq5IXYopMGqbgyGMx1Dbewvoy_276q4RaIaOGvlcC/exec";
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Set to true while testing — shows a toast with the payload

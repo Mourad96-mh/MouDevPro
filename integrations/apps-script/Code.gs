@@ -171,6 +171,28 @@ function onEdit(e) {
 function doGet(e) {
   // e is undefined when run manually from the editor (e.g. to authorize scopes)
   var params = (e && e.parameter) || {};
+
+  // Diagnostic: ?action=diag&token=... appends a marker row and reports
+  // which spreadsheet this deployment writes to (container id/name/url,
+  // tabs, row counts). Delete the marker row after use.
+  if (params.action === "diag") {
+    if (params.token !== CONFIG.ADMIN_TOKEN) {
+      return ContentService.createTextOutput("Forbidden");
+    }
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var diagSheet = getSheet_();
+    var before = diagSheet.getLastRow();
+    diagSheet.appendRow(["DIAG-" + new Date().toISOString(), "diag-marker"]);
+    return ContentService.createTextOutput(JSON.stringify({
+      containerId: ss.getId(),
+      containerName: ss.getName(),
+      containerUrl: ss.getUrl(),
+      tabs: ss.getSheets().map(function (s) { return s.getName(); }),
+      leadsRowsBefore: before,
+      leadsRowsAfter: diagSheet.getLastRow(),
+    }, null, 2)).setMimeType(ContentService.MimeType.JSON);
+  }
+
   if (params.action !== "oci") {
     return ContentService.createTextOutput("MouDevPro lead endpoint");
   }
