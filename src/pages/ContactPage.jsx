@@ -27,7 +27,7 @@ const jsonLd = {
 };
 
 const ContactPage = () => {
-  const { track, WA_URL } = useConversion();
+  const { track, trackPhone, WA_URL } = useConversion();
   const { setCityData } = useCityContext();
 
   useEffect(() => {
@@ -110,7 +110,11 @@ const ContactPage = () => {
               <HiMiniPhone className="contact-info__icon" />
               <div>
                 <p className="contact-info__label">Téléphone</p>
-                <a href="tel:+212696964341" className="contact-info__link">
+                <a
+                  href="tel:+212696964341"
+                  className="contact-info__link"
+                  onClick={() => trackPhone()}
+                >
                   +212 696 964 341
                 </a>
               </div>

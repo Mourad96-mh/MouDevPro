@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useConversion from "../hooks/useConversion";
 
 const NotFoundPage = () => {
-  const { WA_URL } = useConversion();
+  const { track, WA_URL } = useConversion();
 
   return (
     <>
@@ -18,7 +18,12 @@ const NotFoundPage = () => {
         </p>
         <div className="city-hero__actions" style={{ justifyContent: "center", flexWrap: "wrap", gap: "1.6rem" }}>
           <Link to="/" className="link">Retour à l'accueil</Link>
-          <Link to={WA_URL} className="link" style={{ background: "transparent", border: "2px solid currentColor" }}>
+          <Link
+            to={WA_URL}
+            className="link"
+            style={{ background: "transparent", border: "2px solid currentColor" }}
+            onClick={() => track(WA_URL)}
+          >
             Demander un devis
           </Link>
         </div>

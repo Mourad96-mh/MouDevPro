@@ -12,7 +12,7 @@ import useConversion from "../../hooks/useConversion";
 
 const Footer = ({ cityName, address }) => {
   const { t } = useTranslation();
-  const { track, WA_URL } = useConversion();
+  const { track, trackPhone, WA_URL } = useConversion();
   const serviceLinks = t("footer.services.links", { returnObjects: true });
 
   return (
@@ -85,7 +85,13 @@ const Footer = ({ cityName, address }) => {
           <ul className="footer__contact-list">
             <li>
               <HiOutlinePhone className="footer__contact-icon" />
-              <a href="tel:+212696964341" className="footer__link">+212 696 964 341</a>
+              <a
+                href="tel:+212696964341"
+                className="footer__link"
+                onClick={() => trackPhone("footer-phone")}
+              >
+                +212 696 964 341
+              </a>
             </li>
             <li>
               <HiOutlineEnvelope className="footer__contact-icon" />
