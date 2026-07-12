@@ -147,6 +147,8 @@ const routes = [
   { url: "/blog/site-ecommerce-maroc-guide", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/creer-site-web-soi-meme-ou-developpeur", changefreq: "monthly", priority: 0.7 },
   { url: "/blog/prix-site-ecommerce-maroc", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/statistiques-web-maroc-2026", changefreq: "monthly", priority: 0.7 },
+  { url: "/blog/web-statistics-morocco-2026", changefreq: "monthly", priority: 0.7 },
 ];
 
 (async () => {

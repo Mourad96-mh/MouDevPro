@@ -1,0 +1,14 @@
+date,target,workflow,status,live_url
+2026-07-12,Statistiques du web au Maroc 2026 (FR),1-stats-article,built-pending-upload,https://www.moudevpro.com/blog/statistiques-web-maroc-2026
+2026-07-12,Morocco Web Statistics 2026 (EN),1-stats-article,built-pending-upload,https://www.moudevpro.com/blog/web-statistics-morocco-2026
+2026-07-12,Prospect run (12 vetted prospects),2-prospect-finder,found,prospects-2026-07-12.csv
+2026-07-12,medias24.com (Tribune),2-prospect-finder,draft-ready,pending-send
+2026-07-12,challenge.ma (Tribune),2-prospect-finder,draft-ready,pending-send
+2026-07-12,lebrief.ma (Tribune),2-prospect-finder,draft-ready,pending-send
+2026-07-12,lavieeco.com,2-prospect-finder,draft-ready,pending-send
+2026-07-12,startupmedias.net (Tribune tech),2-prospect-finder,draft-ready,pending-send
+2026-07-12,Citation gap run (10 targets),3-citation-gap,found,citation-targets-2026-07-12.csv
+2026-07-12,Clutch profile,3-citation-gap,action-required,pending-register
+2026-07-12,Sortlist profile,3-citation-gap,action-required,pending-register
+2026-07-12,TechBehemoths profile,3-citation-gap,action-required,pending-register
+2026-07-12,GoodFirms profile,3-citation-gap,action-required,pending-register

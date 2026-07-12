@@ -1057,4 +1057,984 @@ export const blogPosts = [
       },
     ],
   },
+
+  {
+    slug: "statistiques-web-maroc-2026",
+    lang: "fr",
+    altLang: "en",
+    altSlug: "web-statistics-morocco-2026",
+    title: "Statistiques du web au Maroc : 45 chiffres clés en 2026",
+    metaTitle: "Statistiques Web Maroc 2026 : 45 Chiffres Clés | MouDEV",
+    metaDescription: "45 statistiques vérifiées sur le web au Maroc en 2026 : internautes, mobile, réseaux sociaux, e-commerce et publicité digitale. Sources officielles ANRT, HCP, CMI.",
+    datePublished: "2026-07-12",
+    dateModified: "2026-07-12",
+    author: "Mourad",
+    image: "/web-dev.avif",
+    imageAlt: "Statistiques du web au Maroc 2026 — internautes, mobile, e-commerce | MouDev",
+    excerpt: "Le web marocain en 2026 en 45 chiffres vérifiés : 35,5 millions d'internautes, 18 milliards de dirhams d'e-commerce, 5G lancée fin 2025. Toutes les sources officielles.",
+    readTime: "8 min",
+    keywords: ["statistiques web maroc 2026", "chiffres internet maroc", "statistiques e-commerce maroc", "internautes maroc 2026", "statistiques réseaux sociaux maroc"],
+    content: [
+      {
+        type: "p",
+        text: "Le Maroc est aujourd'hui l'un des marchés numériques les plus dynamiques d'Afrique. Entre le cap des 92 % de pénétration d'internet, le lancement de la 5G fin 2025 et un e-commerce qui dépasse les 18 milliards de dirhams, les chiffres parlent d'eux-mêmes. J'ai réuni ici 45 statistiques vérifiées — chacune avec sa source officielle — pour toute personne qui veut comprendre le web marocain en 2026 : entrepreneurs, e-commerçants, annonceurs et développeurs.",
+      },
+      {
+        type: "h2",
+        text: "L'essentiel en 5 chiffres",
+      },
+      {
+        type: "ul",
+        items: [
+          "35,5 millions d'internautes — soit 92,2 % de la population marocaine connectée fin 2025.",
+          "22,8 millions d'utilisateurs de réseaux sociaux — 59,1 % de la population.",
+          "57,1 millions de connexions mobiles — 148 % de la population (plusieurs cartes par personne).",
+          "18 milliards de dirhams de paiements e-commerce par carte en 2025, en hausse de 34 %.",
+          "6,8 millions d'acheteurs en ligne actifs — près d'un adulte marocain sur quatre.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Internautes et pénétration d'internet",
+      },
+      {
+        type: "p",
+        parts: [
+          "35,5 millions d'internautes : la population connectée au Maroc fin octobre 2025. Source : ",
+          { text: "DataReportal, Digital 2026 Morocco", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "92,2 % : le taux de pénétration d'internet dans la population marocaine. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "+749 000 internautes (+2,2 %) : la progression du nombre d'internautes en un an, entre octobre 2024 et octobre 2025. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "38,5 millions : la population totale du Maroc en octobre 2025, base de tous les taux de pénétration. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "91,2 % : la part des Marocains qui utilisent internet selon l'enquête TIC nationale, contre seulement 74,4 % en 2019. Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "93,7 % en ville contre 78,4 % à la campagne : la fracture numérique géographique persiste, même si le rural a fortement progressé (66,3 % en 2019). Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Note de méthodologie : DataReportal (35,5 M) mesure les identités connectées, l'ANRT/HCP (31,5 M) mesure les individus déclarés dans une enquête ménages. Les deux chiffres sont justes — ils ne comptent simplement pas la même chose.",
+      },
+      {
+        type: "p",
+        parts: [
+          "41,18 millions d'abonnements internet (fixe + mobile) enregistrés au 2e trimestre 2025, en croissance annuelle de 5,21 %. Source : ",
+          { text: "ANRT / Le Matin, 2025", href: "https://lematin.ma/economie/maroc-399-millions-dabonnements-internet-a-fin-mars-2025/285362" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Plus de 92 % des accès internet au Maroc se font via l'internet mobile, avec 37,02 millions de souscriptions. Source : ",
+          { text: "ANRT / Le Matin, 2025", href: "https://lematin.ma/economie/maroc-399-millions-dabonnements-internet-a-fin-mars-2025/285362" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Mobile et smartphones",
+      },
+      {
+        type: "p",
+        parts: [
+          "57,1 millions de connexions mobiles actives fin 2025, soit 148 % de la population. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "58,75 millions d'abonnés mobiles au 2e trimestre 2025 selon l'ANRT, avec un taux de pénétration de 159,53 %. Source : ",
+          { text: "ANRT / Aujourd'hui le Maroc, T2 2025", href: "https://aujourdhui.ma/societe/indicateurs-des-telecoms-au-2eme-trimestre-2025-le-parc-de-la-telephonie-mobile-a-atteint-587-millions-dabonnes" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "87,7 % des connexions mobiles sont en haut débit (3G, 4G ou 5G). Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "91,7 % : sur 10 personnes équipées d'un mobile, plus de 9 possèdent un smartphone. Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "32,5 millions de smartphones en circulation pour 30,7 millions d'utilisateurs actifs. Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "90,1 % des femmes possèdent un smartphone en 2025, contre 73,7 % en 2019 — l'un des rattrapages les plus rapides. Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "74 % des ménages disposent d'un ordinateur ou d'une tablette, contre 60,4 % en 2019 (84,4 % en ville, 49,1 % à la campagne). Source : ",
+          { text: "ANRT, Enquête TIC 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Pour un e-commerçant, ces chiffres imposent une évidence : votre boutique doit être pensée mobile d'abord. Si vous préparez un ",
+          { text: "site e-commerce au Maroc", to: "/ecommerce" },
+          ", le mobile n'est pas une option, c'est la norme.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Réseaux sociaux",
+      },
+      {
+        type: "p",
+        parts: [
+          "22,8 millions d'utilisateurs de réseaux sociaux en octobre 2025, soit 59,1 % de la population (+1,7 million en un an). Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "21,6 millions de spectateurs YouTube au Maroc — plus de la moitié de la population. Source : ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "16,7 millions d'utilisateurs TikTok, en croissance de 19 % en un an. Source : ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "15,1 millions d'utilisateurs Instagram, en hausse de 20 % sur l'année. Source : ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "7,6 millions d'utilisateurs Snapchat, en progression de 10 %, avec une majorité de femmes. Source : ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "6,9 millions de membres LinkedIn, après un gain de 1,2 million sur l'année. Source : ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "E-commerce et paiement en ligne",
+      },
+      {
+        type: "p",
+        parts: [
+          "18 milliards de dirhams de paiements e-commerce par carte en 2025, en hausse de 34 % sur un an. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "6,8 millions d'acheteurs en ligne actifs en 2025, contre 1,8 million en 2020 — une croissance de 278 % en cinq ans. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "24,9 % des Marocains ont acheté en ligne en 2024, contre 15,1 % en 2019 — soit +65 % et 3,7 millions de nouveaux acheteurs. Source : ",
+          { text: "ANRT / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "380 dirhams : le panier moyen d'une transaction e-commerce en 2025. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "73 % des transactions e-commerce sont réalisées depuis un smartphone. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "47 % par carte bancaire, 38 % en paiement à la livraison, 12 % par M-Wallet : la répartition des modes de paiement e-commerce en 2025. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "84,1 % des acheteurs déclarent encore utiliser le paiement comptant à la livraison selon l'enquête ANRT — la confiance dans le paiement en ligne reste un chantier. Source : ",
+          { text: "ANRT / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "76,3 % des acheteurs passent entre 2 et 5 commandes par an, tandis que les gros acheteurs (10+ commandes) sont passés de 2,5 % à 7,2 % en cinq ans. Source : ",
+          { text: "ANRT / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Jumia 28 %, Marjane 18 %, Glovo 12 % : les principales plateformes e-commerce par part de marché en 2025. Source : ",
+          { text: "Observatoire e-commerce CMI, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Le message est clair : un Marocain sur quatre achète déjà en ligne, et le panier grimpe. Pour comprendre ce qu'un projet coûte réellement, consultez les ",
+          { text: "prix et devis d'un site web au Maroc", to: "/tarifs" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Vitesse de connexion et 5G",
+      },
+      {
+        type: "p",
+        parts: [
+          "5G lancée en novembre 2025 au Maroc, propulsant le pays à la 39e place mondiale pour le mobile (bond de 22 places). Source : ",
+          { text: "Ookla / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "124,32 Mbps : la vitesse médiane de téléchargement mobile, meilleur score du continent africain. Source : ",
+          { text: "Ookla / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "60,31 Mbps : la vitesse médiane de téléchargement mobile mesurée par DataReportal fin 2025, en hausse de 47,5 % en un an. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "55,89 Mbps : la vitesse médiane de téléchargement sur connexion fixe fin 2025. Source : ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Avec des connexions plus rapides, les visiteurs deviennent aussi plus exigeants sur la vitesse d'affichage. Un site lent fait fuir — c'est pourquoi je soigne la performance sur chaque ",
+          { text: "création de site web professionnel", to: "/services" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Publicité digitale",
+      },
+      {
+        type: "p",
+        parts: [
+          "1,2 milliard de dollars : la taille du marché marocain de la publicité en ligne et des médias numériques. Source : ",
+          { text: "Ken Research, 2025", href: "https://www.openpr.com/news/4337561/ken-research-stated-morocco-s-online-advertising-and-digital" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "+30,7 % : le bond de la publicité digitale, porté par le changement des habitudes de consommation. Source : ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "64 % des dépenses publicitaires totales proviendront des canaux digitaux d'ici 2029. Source : ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Plus de 180 millions de dollars : les dépenses de publicité mobile attendues, en hausse de 20 % sur un an. Source : ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "452 millions de dirhams investis en publicité durant les 10 premiers jours du Ramadan 2025. Source : ",
+          { text: "Morocco World News, 2025", href: "https://www.moroccoworldnews.com/2025/03/184206/advertising-investments-during-ramadan-reach-mad-452-million-in-first-10-days/" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Ce qu'il faut retenir pour votre projet web en 2026",
+      },
+      {
+        type: "p",
+        text: "Le Maroc a franchi le cap de la maturité numérique : quasi tout le monde est connecté, le mobile domine tous les usages, et l'e-commerce n'est plus une niche. Pour une PME, un commerçant ou un porteur de projet, la question n'est plus « faut-il être en ligne ? » mais « à quelle vitesse et avec quelle qualité ? ». Un site rapide, pensé mobile d'abord et bien référencé n'est plus un luxe — c'est la condition d'entrée.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Vous parlez directement avec le développeur, sans intermédiaire ni agence. Besoin d'un chiffrage ? Demandez votre devis gratuit et transparent sous 24h — ou découvrez comment je travaille comme ",
+          { text: "développeur web freelance à Casablanca", to: "/casablanca" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Méthodologie et sources",
+      },
+      {
+        type: "p",
+        text: "Toutes les statistiques de cette page proviennent de sources primaires publiques, vérifiées une par une. Aucun chiffre n'est estimé ni inventé. Dernière mise à jour : juillet 2026.",
+      },
+      {
+        type: "p",
+        parts: [
+          "DataReportal — Digital 2026 Morocco : ",
+          { text: "datareportal.com", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ". ANRT — Enquête nationale sur l'usage des TIC 2024-2025 : ",
+          { text: "anrt.ma", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ". Observatoire e-commerce CMI 2020-2026 : ",
+          { text: "wafir.ma", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ". Enquête TIC ANRT (synthèse) : ",
+          { text: "le360", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ". Ookla / Speedtest Global Index et marché publicitaire : ",
+          { text: "Morocco World News", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ", ",
+          { text: "Statista", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Comment citer cette page — Vous pouvez reprendre ces chiffres librement. Merci de créditer la source avec un lien : Source : MouDevPro, « Statistiques du web au Maroc : 45 chiffres clés en 2026 », https://www.moudevpro.com/blog/statistiques-web-maroc-2026",
+      },
+      {
+        type: "h2",
+        text: "FAQ — Statistiques du web au Maroc 2026",
+      },
+      {
+        type: "h3",
+        text: "Combien y a-t-il d'internautes au Maroc en 2026 ?",
+      },
+      {
+        type: "p",
+        text: "Le Maroc compte 35,5 millions d'internautes fin 2025, soit un taux de pénétration de 92,2 % de la population (DataReportal). L'enquête ménages de l'ANRT retient 31,5 millions d'individus, la différence tenant à la méthode de mesure.",
+      },
+      {
+        type: "h3",
+        text: "Quelle est la part du mobile dans l'accès à internet au Maroc ?",
+      },
+      {
+        type: "p",
+        text: "Plus de 92 % des accès internet se font via le mobile, avec 57,1 millions de connexions mobiles actives et 87,7 % d'entre elles en haut débit (3G/4G/5G).",
+      },
+      {
+        type: "h3",
+        text: "Quel est le poids de l'e-commerce au Maroc ?",
+      },
+      {
+        type: "p",
+        text: "Les paiements e-commerce par carte ont atteint 18 milliards de dirhams en 2025 (+34 %), portés par 6,8 millions d'acheteurs en ligne. Près d'un Marocain sur quatre a déjà acheté en ligne, et 73 % des transactions se font depuis un smartphone.",
+      },
+      {
+        type: "h3",
+        text: "Le Maroc a-t-il la 5G ?",
+      },
+      {
+        type: "p",
+        text: "Oui. La 5G a été lancée en novembre 2025. Le Maroc affiche la meilleure vitesse mobile d'Afrique (124,32 Mbps médians) et se classe 39e au niveau mondial.",
+      },
+      {
+        type: "cta",
+        text: "Demander mon devis gratuit en 24h →",
+        to: "/contact",
+      },
+      {
+        type: "cta",
+        text: "Voir les tarifs détaillés →",
+        to: "/tarifs",
+      },
+    ],
+  },
+
+  {
+    slug: "web-statistics-morocco-2026",
+    lang: "en",
+    altLang: "fr",
+    altSlug: "statistiques-web-maroc-2026",
+    title: "Morocco Web Statistics 2026: 45 Key Figures",
+    metaTitle: "Morocco Web Statistics 2026: 45 Key Figures | MouDEV",
+    metaDescription: "45 verified statistics on Morocco's web in 2026: internet users, mobile, social media, e-commerce and digital ads. Sourced from ANRT, HCP, CMI, DataReportal.",
+    datePublished: "2026-07-12",
+    dateModified: "2026-07-12",
+    author: "Mourad",
+    image: "/web-dev.avif",
+    imageAlt: "Morocco web statistics 2026 — internet users, mobile, e-commerce | MouDev",
+    excerpt: "Morocco's web in 2026 in 45 verified figures: 35.5 million internet users, 18 billion dirhams in e-commerce, 5G launched late 2025. Every official source included.",
+    readTime: "8 min",
+    keywords: ["morocco web statistics 2026", "morocco internet users", "morocco e-commerce statistics", "morocco digital 2026", "morocco social media statistics"],
+    content: [
+      {
+        type: "p",
+        text: "Morocco is now one of Africa's most dynamic digital markets. With internet penetration past 92%, 5G launched in late 2025, and e-commerce card payments topping 18 billion dirhams, the numbers speak for themselves. I've gathered 45 verified statistics here — each with its official source — for anyone who wants to understand Morocco's web in 2026: entrepreneurs, online retailers, advertisers, and developers.",
+      },
+      {
+        type: "h2",
+        text: "The essentials in 5 figures",
+      },
+      {
+        type: "ul",
+        items: [
+          "35.5 million internet users — 92.2% of Morocco's population online at the end of 2025.",
+          "22.8 million social media users — 59.1% of the population.",
+          "57.1 million mobile connections — 148% of the population (multiple SIMs per person).",
+          "18 billion dirhams in e-commerce card payments in 2025, up 34%.",
+          "6.8 million active online shoppers — nearly one in four Moroccan adults.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Internet users and penetration",
+      },
+      {
+        type: "p",
+        parts: [
+          "35.5 million internet users: Morocco's connected population at the end of October 2025. Source: ",
+          { text: "DataReportal, Digital 2026 Morocco", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "92.2%: internet penetration across the Moroccan population. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "+749,000 users (+2.2%): the year-over-year rise in internet users between October 2024 and October 2025. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "38.5 million: Morocco's total population in October 2025, the base for every penetration rate. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "91.2%: the share of Moroccans using the internet per the national ICT survey, up from just 74.4% in 2019. Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "93.7% urban vs. 78.4% rural: the geographic digital divide persists, though rural areas have climbed sharply (66.3% in 2019). Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Methodology note: DataReportal (35.5M) measures connected identities; ANRT/HCP (31.5M) measures individuals declared in a household survey. Both figures are correct — they simply count different things.",
+      },
+      {
+        type: "p",
+        parts: [
+          "41.18 million internet subscriptions (fixed + mobile) recorded in Q2 2025, growing 5.21% year over year. Source: ",
+          { text: "ANRT / Le Matin, 2025", href: "https://lematin.ma/economie/maroc-399-millions-dabonnements-internet-a-fin-mars-2025/285362" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Over 92% of internet access in Morocco is via mobile, with 37.02 million subscriptions. Source: ",
+          { text: "ANRT / Le Matin, 2025", href: "https://lematin.ma/economie/maroc-399-millions-dabonnements-internet-a-fin-mars-2025/285362" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Mobile and smartphones",
+      },
+      {
+        type: "p",
+        parts: [
+          "57.1 million active mobile connections at the end of 2025 — 148% of the population. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "58.75 million mobile subscribers in Q2 2025 per ANRT, a penetration rate of 159.53%. Source: ",
+          { text: "ANRT / Aujourd'hui le Maroc, Q2 2025", href: "https://aujourdhui.ma/societe/indicateurs-des-telecoms-au-2eme-trimestre-2025-le-parc-de-la-telephonie-mobile-a-atteint-587-millions-dabonnes" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "87.7% of mobile connections are broadband (3G, 4G, or 5G). Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "91.7%: of every 10 people with a mobile phone, more than 9 own a smartphone. Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "32.5 million smartphones in circulation for 30.7 million active users. Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "90.1% of women own a smartphone in 2025, up from 73.7% in 2019 — one of the fastest catch-ups. Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "74% of households own a computer or tablet, up from 60.4% in 2019 (84.4% urban, 49.1% rural). Source: ",
+          { text: "ANRT, ICT Survey 2024-2025", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "For an online retailer, the takeaway is obvious: your store must be mobile-first. If you're planning an ",
+          { text: "e-commerce website in Morocco", to: "/ecommerce" },
+          ", mobile isn't optional — it's the default.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Social media",
+      },
+      {
+        type: "p",
+        parts: [
+          "22.8 million social media users in October 2025 — 59.1% of the population (+1.7 million in a year). Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "21.6 million YouTube viewers in Morocco — more than half the population. Source: ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "16.7 million TikTok users, up 19% in a single year. Source: ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "15.1 million Instagram users, up 20% over the year. Source: ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "7.6 million Snapchat users, up 10%, with a female majority. Source: ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "6.9 million LinkedIn members, after adding 1.2 million over the year. Source: ",
+          { text: "DataReportal / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/11/267078/morocco-2026-digital-report-92-of-the-population-now-online/" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "E-commerce and online payment",
+      },
+      {
+        type: "p",
+        parts: [
+          "18 billion dirhams in e-commerce card payments in 2025, up 34% year over year. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "6.8 million active online shoppers in 2025, up from 1.8 million in 2020 — 278% growth in five years. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "24.9% of Moroccans bought online in 2024, up from 15.1% in 2019 — +65% and 3.7 million new shoppers. Source: ",
+          { text: "ANRT ICT Survey / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "380 dirhams: the average e-commerce basket in 2025. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "73% of e-commerce transactions are made from a smartphone. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "47% by card, 38% cash on delivery, 12% M-Wallet: the split of e-commerce payment methods in 2025. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "84.1% of shoppers still say they use cash on delivery per the ANRT survey — trust in online payment remains a work in progress. Source: ",
+          { text: "ANRT ICT Survey / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "76.3% of buyers place 2 to 5 orders per year, while heavy buyers (10+ orders) rose from 2.5% to 7.2% in five years. Source: ",
+          { text: "ANRT ICT Survey / le360, 2025", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Jumia 28%, Marjane 18%, Glovo 12%: the leading e-commerce platforms by market share in 2025. Source: ",
+          { text: "CMI E-commerce Observatory, 2025", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "The message is clear: one in four Moroccans already shops online, and baskets are growing. To understand what a project actually costs, see the ",
+          { text: "pricing and quotes for a website in Morocco", to: "/tarifs" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Connection speed and 5G",
+      },
+      {
+        type: "p",
+        parts: [
+          "5G launched in November 2025 in Morocco, lifting the country to 39th worldwide for mobile (a 22-place jump). Source: ",
+          { text: "Ookla / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "124.32 Mbps: the median mobile download speed, the best on the African continent. Source: ",
+          { text: "Ookla / Morocco World News, 2026", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "60.31 Mbps: the median mobile download speed measured by DataReportal at end 2025, up 47.5% in a year. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "55.89 Mbps: the median fixed-connection download speed at end 2025. Source: ",
+          { text: "DataReportal, 2026", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Digital advertising",
+      },
+      {
+        type: "p",
+        parts: [
+          "USD 1.2 billion: the size of Morocco's online advertising and digital media market. Source: ",
+          { text: "Ken Research, 2025", href: "https://www.openpr.com/news/4337561/ken-research-stated-morocco-s-online-advertising-and-digital" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "+30.7%: the surge in digital advertising, driven by shifting consumer habits. Source: ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "64% of total ad spend will come from digital channels by 2029. Source: ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Over USD 180 million: expected mobile advertising spend, up 20% year over year. Source: ",
+          { text: "Statista, 2025", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "452 million dirhams invested in advertising during the first 10 days of Ramadan 2025. Source: ",
+          { text: "Morocco World News, 2025", href: "https://www.moroccoworldnews.com/2025/03/184206/advertising-investments-during-ramadan-reach-mad-452-million-in-first-10-days/" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What this means for your web project in 2026",
+      },
+      {
+        type: "p",
+        text: "Morocco has crossed into digital maturity: almost everyone is online, mobile dominates every use, and e-commerce is no longer a niche. For an SME, a retailer, or a founder, the question is no longer \"should we be online?\" but \"how fast and how well?\" A fast, mobile-first, well-ranked website is no longer a luxury — it's the price of entry.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You deal directly with the developer — no middlemen, no agency. Need a quote? Ask for a free, transparent estimate within 24h — or see how I work as a ",
+          { text: "freelance web developer in Casablanca", to: "/casablanca" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Methodology and sources",
+      },
+      {
+        type: "p",
+        text: "Every statistic on this page comes from a public primary source, verified one by one. No figure is estimated or invented. Last updated: July 2026.",
+      },
+      {
+        type: "p",
+        parts: [
+          "DataReportal — Digital 2026 Morocco: ",
+          { text: "datareportal.com", href: "https://datareportal.com/reports/digital-2026-morocco" },
+          ". ANRT — National ICT Usage Survey 2024-2025: ",
+          { text: "anrt.ma", href: "https://www.anrt.ma/sites/default/files/2025-10/Synth%C3%A8se-Brochure_Fr.pdf" },
+          ". CMI E-commerce Observatory 2020-2026: ",
+          { text: "wafir.ma", href: "https://wafir.ma/en/etudes/observatoire-ecommerce-maroc-2020-2026-bilan-6-ans-cmi-paiements" },
+          ". ANRT ICT Survey summary: ",
+          { text: "le360", href: "https://fr.le360.ma/economie/un-quart-des-marocains-achetent-desormais-en-ligne-en-hausse-de-65-en-cinq-ans_NJBP7FBCGJF4TCG4MKYEVOJMU4/" },
+          ". Ookla / Speedtest Global Index and ad market: ",
+          { text: "Morocco World News", href: "https://www.moroccoworldnews.com/2025/07/232518/morocco-ranks-96th-globally-in-fixed-internet-speed/" },
+          ", ",
+          { text: "Statista", href: "https://www.statista.com/outlook/amo/advertising/morocco" },
+          ".",
+        ],
+      },
+      {
+        type: "callout",
+        text: "How to cite this page — You're free to reuse these figures. Please credit the source with a link: Source: MouDevPro, \"Morocco Web Statistics 2026: 45 Key Figures,\" https://www.moudevpro.com/blog/web-statistics-morocco-2026",
+      },
+      {
+        type: "h2",
+        text: "FAQ — Morocco Web Statistics 2026",
+      },
+      {
+        type: "h3",
+        text: "How many internet users are there in Morocco in 2026?",
+      },
+      {
+        type: "p",
+        text: "Morocco has 35.5 million internet users at the end of 2025, a 92.2% penetration rate (DataReportal). The ANRT household survey reports 31.5 million individuals, the gap being down to measurement method.",
+      },
+      {
+        type: "h3",
+        text: "What is mobile's share of internet access in Morocco?",
+      },
+      {
+        type: "p",
+        text: "Over 92% of internet access is via mobile, with 57.1 million active mobile connections and 87.7% of them on broadband (3G/4G/5G).",
+      },
+      {
+        type: "h3",
+        text: "How big is e-commerce in Morocco?",
+      },
+      {
+        type: "p",
+        text: "E-commerce card payments reached 18 billion dirhams in 2025 (+34%), driven by 6.8 million online shoppers. Nearly one in four Moroccans has bought online, and 73% of transactions happen on a smartphone.",
+      },
+      {
+        type: "h3",
+        text: "Does Morocco have 5G?",
+      },
+      {
+        type: "p",
+        text: "Yes. 5G launched in November 2025. Morocco has the fastest mobile speed in Africa (124.32 Mbps median) and ranks 39th worldwide.",
+      },
+      {
+        type: "cta",
+        text: "Get my free quote within 24h →",
+        to: "/contact",
+      },
+      {
+        type: "cta",
+        text: "See detailed pricing →",
+        to: "/tarifs",
+      },
+    ],
+  },
 ];
