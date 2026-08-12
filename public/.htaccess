@@ -6,6 +6,11 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^moudevpro\.com [NC]
 RewriteRule ^(.*)$ https://www.moudevpro.com/$1 [R=301,L]
 
+# Legacy URLs - 301 to their current pages
+RewriteRule ^agence-web-marrakech/?$ /marrakech [R=301,L]
+RewriteRule ^agence-web-rabat/?$ /rabat [R=301,L]
+RewriteRule ^agence-web-tanger/?$ / [R=301,L]
+
 # SPA fallback
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
