@@ -1,0 +1,63 @@
+# GSC snapshot — 2026-08-13
+
+Pulled via the `gsc` MCP server on 2026-08-13. Property: `https://www.moudevpro.com/`
+(URL-prefix — `sc-domain:` does not exist for this site).
+
+**Window:** 2026-07-15 → 2026-08-11 (28 days). End date is 2 days back because Search Console
+data is incomplete for the most recent ~48h.
+
+## Files in this pull
+
+| File | Rows | Notes |
+| --- | --- | --- |
+| `gsc-queries-2026-08-13.csv` | 375 | All queries returned by the API |
+| `gsc-pages-2026-08-13.csv` | 33 | All pages with impressions |
+| `gsc-countries-2026-08-13.csv` | 37 | Filtered: impressions ≥ 10 **or** clicks > 0 |
+| `gsc-devices-2026-08-13.csv` | 3 | Complete |
+
+The undated files in this folder (`gsc-queries.csv`, `gsc-pages.csv`, `gsc-countries.csv`,
+`gsc-devices.csv`) are an **earlier** export and are the evidence behind `../data-insights.md`.
+They were deliberately left untouched — do not overwrite them or that analysis loses its source.
+
+## Read the totals carefully
+
+Property totals for the window: **31 clicks, 8,522 impressions.**
+
+The query CSV sums to only **4 clicks / 3,154 impressions**. This is not an error and not data
+loss — Google withholds queries that are too rare to anonymise, so the query dimension always
+undercounts. Use the device or country files for true totals; use the query file only for
+relative comparison between queries.
+
+## What stands out
+
+**1. `création site web casablanca` — ranking fine, nobody clicks.**
+Position 4.83, 248 impressions, 2 clicks = **0.81% CTR**. At position ~5 the expected range is
+5–8%. This is the primary money keyword in `../../CLAUDE.md` §5.1. The problem is the title/meta
+description on the landing page, not rankings.
+
+**2. USA is the #2 impression source and converts nothing.**
+2,829 impressions, **0 clicks**, average position 8.30. Almost all of it lands on the English
+stats article `/blog/web-statistics-morocco-2026/` (3,431 impressions, 2 clicks, position 6.06).
+That article is a link-bait asset from the backlinks skill, so low CTR is expected — it exists to
+earn citations, not leads. Worth knowing before anyone "fixes" its CTR. It also means `/usa`
+(112 impressions, 0 clicks) is not what's pulling US traffic.
+
+**3. Desktop dominates impressions, mobile converts better.**
+Desktop 7,258 impressions → 23 clicks (0.32%). Mobile 1,234 → 8 clicks (0.65%). Mobile CTR is
+2× desktop on 1/6 the volume — consistent with the international long-tail being desktop-heavy
+and the local Moroccan intent traffic being mobile.
+
+**4. `/france` is ranking at position 74.8** on 258 impressions — effectively invisible. `/canada`
+does better (155 impressions, 3 clicks, position 41.8) and `/usa` sits at 12.98. The international
+pages are not performing evenly.
+
+## Housekeeping found during this pull
+
+- A broken sitemap submission exists at `https://www.moudevpro.com/sitemapxml` (missing the dot),
+  submitted 2026-05-15, reporting 1 error. Remove it in the GSC UI — the MCP has no delete tool.
+  The real `sitemap.xml` is healthy: 30 URLs, 0 errors, last downloaded 2026-08-07.
+- The sitemap report says `indexed: 0`. That field is unreliable in the API — URL inspection on
+  `/` and `/blog/statistiques-web-maroc-2026` both returned "Submitted and indexed" (PASS).
+- Homepage inspection lists `https://www.moudevpro.com/agence-web-marrakech/` as a referring URL,
+  confirming Google still follows that legacy path. The `.htaccess` 301s added on 2026-08-13
+  handle it once `dist/` is uploaded.
