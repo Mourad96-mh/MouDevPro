@@ -18,19 +18,41 @@ export const marketConfig = {
     price: { vitrine: "199 €", ecommerce: "299 €" },
     priceNumeric: { vitrine: "199", ecommerce: "299" },
     keywords:
-      "développeur web freelance France, création site web France, développeur web Maroc pour la France, freelance site internet France, création site vitrine France, site e-commerce France pas cher, développeur React WordPress France, devis site web France, créer site web MRE France, créer un site web pour entreprise, faire un site web France, comment créer un site web",
-    metaTitle:
-      "Développeur Web Freelance France — Site dès 199 € | MouDEV",
+      "externaliser création site web, développeur web hors de France, développeur web à l'étranger, développeur web freelance pas cher France, faire faire son site web à l'étranger, développeur web freelance Paris, développeur web freelance Lyon, développeur web freelance Marseille, prix site web France freelance, budget création site internet, tarif développeur web France, créer site web MRE France, développeur web marocain France",
+    metaTitle: "Développeur Web Freelance pour la France — dès 199 €",
     metaDescription:
-      "Site web pro pour la France dès 199 €, e-commerce dès 299 €. Développeur freelance, même fuseau horaire (±1h), paiement après livraison. Devis gratuit 24h.",
-    h1: "Créer un Site Web pour la France — Développeur Web Freelance à Distance",
+      "Externalisez la création de votre site web : développeur freelance basé au Maroc, site dès 199 €, même fuseau horaire, paiement après livraison. Devis gratuit 24h.",
+    h1: "Externaliser la Création de Votre Site Web — Développeur Freelance pour la France",
     heroSub:
-      "Je crée votre site web professionnel depuis le Maroc, pour vos clients en France. Contact direct avec le développeur, tarif optimisé, même fuseau horaire. Qualité agence, prix freelance.",
+      "Je crée votre site web professionnel depuis le Maroc, pour vos clients en France. Même fuseau horaire, contact direct avec le développeur, et un budget 3 à 5 fois inférieur à une agence française. Devis gratuit sous 24h.",
     intro: [
-      "Que vous soyez un entrepreneur français ou un Marocain résidant en France (MRE), je crée votre site web sur mesure en travaillant directement avec vous — sans agence, sans intermédiaire, et sans les tarifs d'une agence parisienne.",
-      "Basé au Maroc, je suis sur le même fuseau horaire que la France (±1h) : on échange en direct sur WhatsApp ou en visio, aux heures qui vous arrangent. Vous parlez français avec le développeur qui code réellement votre site.",
-      "Résultat : la même qualité technique qu'une agence française (React, WordPress, WooCommerce), un délai de 7 à 10 jours, et un budget 3 à 5 fois inférieur. Vous ne payez qu'après livraison.",
+      "Faire créer son site web hors de France n'a plus rien à voir avec la sous-traitance low-cost d'il y a dix ans. Je suis développeur web freelance basé au Maroc, et je crée des sites sur mesure pour des entrepreneurs français et des Marocains résidant en France (MRE) — directement, sans agence et sans intermédiaire.",
+      "Externaliser, ici, veut simplement dire que vous ne payez pas les charges d'une agence parisienne. Même stack technique (React, WordPress, WooCommerce), même exigence de qualité, mais un devis 3 à 5 fois moins élevé — et vous ne réglez qu'après la livraison.",
+      "Le décalage horaire ne joue pas contre vous : le Maroc est à ±1h de la France. On échange en direct sur WhatsApp ou en visio, aux heures qui vous arrangent, en français, avec le développeur qui code réellement votre site. Livraison en 7 à 10 jours.",
     ],
+    offshore: {
+      title: "Pourquoi externaliser la création de votre site web ?",
+      lead: "Trois raisons reviennent chez mes clients français :",
+      bullets: [
+        ["Le budget", "Une agence parisienne facture un site vitrine 3 000 à 8 000 €. Le même site, livré avec la même stack, démarre chez moi à 199 €. Vous payez le travail, pas les bureaux ni les commerciaux."],
+        ["La lenteur", "Un projet d'agence prend 2 à 4 mois entre les allers-retours et les validations internes. Je livre un site vitrine en 7 à 10 jours parce qu'il n'y a personne entre vous et moi."],
+        ["L'interlocuteur", "En agence, vous parlez à un chef de projet qui transmet. Ici, vous parlez au développeur. Les réponses sont techniques, immédiates et sans déformation."],
+      ],
+      closing:
+        "Et les objections légitimes, traitées franchement : je facture en euros, vous payez par virement (IBAN), Wise ou PayPal, après livraison — zéro acompte. Le site vous appartient entièrement, code et accès compris.",
+    },
+    cities:
+      "Je travaille avec des clients partout en France : Paris, Lyon, Marseille, Bordeaux, Toulouse, Lille ou Nantes. Comme tout se fait à distance et en français, votre ville ne change rien au délai ni au tarif — pas de frais de déplacement, pas de rendez-vous à caler trois semaines à l'avance.",
+    budget: {
+      title: "Budget indicatif pour un site web en France",
+      headers: ["Type de site", "MouDevPro — Freelance", "Agence française"],
+      rows: [
+        ["Site vitrine (5–10 pages)", "dès 199 € — livré en 7 à 10 jours", "3 000 – 8 000 €"],
+        ["Site e-commerce", "dès 299 € — livré en 2 à 3 semaines", "8 000 – 20 000 €"],
+        ["Application web sur mesure", "sur devis — selon le cahier des charges", "15 000 € et +"],
+      ],
+      note: "Devis fixe sous 24h : le prix annoncé est le prix final, aucun supplément en cours de projet.",
+    },
     valueProps: [
       ["💬", "Contact direct, en français", "Vous parlez directement avec le développeur qui code votre site. Pas de commercial, pas de chef de projet — réponses claires et rapides."],
       ["💶", "Tarifs transparents en euros", "Site vitrine dès 199 €, e-commerce dès 299 €. 3 à 5 fois moins cher qu'une agence française, à qualité égale. Devis fixe avant de commencer."],
@@ -49,6 +71,9 @@ export const marketConfig = {
       ["Comment puis-je vous payer depuis la France ?", "Par virement bancaire international (IBAN), Wise ou PayPal. Et surtout : vous ne payez qu'après la livraison et la validation du site — zéro acompte imposé."],
       ["Parlez-vous français et comprenez-vous le marché français ?", "Oui. Je travaille en français au quotidien et je conçois des sites adaptés aux attentes des clients français et de la diaspora marocaine en France — mentions légales, RGPD, moyens de paiement locaux inclus."],
       ["Comment créer un site web pour mon entreprise en France ?", "C'est simple : on échange 30 min sur votre besoin, je vous envoie un devis fixe sous 24h, puis je crée votre site web (vitrine ou e-commerce) en 7 à 10 jours. Tout se fait à distance depuis le Maroc, en français, sur le même fuseau horaire que la France (±1h). Vous validez la maquette puis le site, et vous ne payez qu'après la livraison."],
+      ["Est-ce risqué de faire créer son site web à l'étranger ?", "Le risque habituel, c'est de payer d'avance et de ne pas être livré. Je fonctionne à l'inverse : vous validez la maquette, puis le site, et vous ne payez qu'après la mise en ligne. Le code et les accès vous appartiennent dès la livraison."],
+      ["Combien coûte un site web pour une entreprise française ?", "Un site vitrine professionnel démarre à 199 € et un e-commerce à 299 €, contre 3 000 à 8 000 € en agence française pour un résultat équivalent. Vous recevez un devis fixe sous 24h."],
+      ["Travaillez-vous avec des clients à Paris, Lyon ou Marseille ?", "Oui, partout en France. Tout se fait à distance : WhatsApp, e-mail et visio, aux heures françaises. Aucun frais de déplacement, aucun délai supplémentaire lié à votre ville."],
     ],
   },
 

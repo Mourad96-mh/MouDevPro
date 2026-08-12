@@ -141,7 +141,7 @@ const MarketPage = ({ market }) => {
   const serviceLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "MouDEV — Développeur Web Freelance",
+    name: "MouDevPro — Développeur Web Freelance",
     description: data.metaDescription,
     url: data.canonical,
     telephone: "+212696964341",
@@ -284,6 +284,58 @@ const MarketPage = ({ market }) => {
           {L.bridge}
         </div>
       </section>
+
+      {/* Offshore / externalisation angle — optional, per-market */}
+      {data.offshore && (
+        <section className="city-context-section home container">
+          <h2 className="secondary-heading lg-mb">{data.offshore.title}</h2>
+          <div className="city-context-text">
+            <p className="text sl-mb">{data.offshore.lead}</p>
+            {data.offshore.bullets.map(([label, text], i) => (
+              <p key={i} className="text sl-mb">
+                <strong>{label}.</strong> {text}
+              </p>
+            ))}
+            <p className="text sl-mb">{data.offshore.closing}</p>
+            {data.cities && <p className="text sl-mb">{data.cities}</p>}
+          </div>
+        </section>
+      )}
+
+      {/* Budget comparison — optional, per-market */}
+      {data.budget && (
+        <section className="home container">
+          <h2 className="secondary-heading center-text lg-mb">{data.budget.title}</h2>
+          <div className="compare-table-wrapper">
+            <table className="compare-table">
+              <thead>
+                <tr>
+                  <th>{data.budget.headers[0]}</th>
+                  <th className="compare-me">{data.budget.headers[1]}</th>
+                  <th>{data.budget.headers[2]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.budget.rows.map(([type, mine, agency], i) => (
+                  <tr key={i}>
+                    <td className="compare-critere">{type}</td>
+                    <td className="compare-me">
+                      <HiCheck className="compare-check" /> {mine}
+                    </td>
+                    <td>{agency}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text center-text sl-mb">{data.budget.note}</p>
+          <div className="center-text">
+            <Link className="link" to={WA_URL} onClick={() => track(WA_URL)}>
+              {L.quote}
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* GEO / AEO credibility facts — structured for AI citation */}
       <section className="geo-facts container" aria-label="MouDEV en résumé">
