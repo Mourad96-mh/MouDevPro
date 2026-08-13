@@ -1,4 +1,4 @@
-Options -MultiViews
+Options -MultiViews -Indexes
 RewriteEngine On
 RewriteBase /
 
@@ -10,6 +10,31 @@ RewriteRule ^(.*)$ https://www.moudevpro.com/$1 [R=301,L]
 RewriteRule ^agence-web-marrakech/?$ /marrakech [R=301,L]
 RewriteRule ^agence-web-rabat/?$ /rabat [R=301,L]
 RewriteRule ^agence-web-tanger/?$ / [R=301,L]
+
+# Canonical URL form: no trailing slash.
+#
+# The prerender writes dist/<route>/index.html, so every route is a real
+# directory on disk. Left alone, mod_dir 301s /rabat to /rabat/ - which
+# contradicts the canonical tags, sitemap, internal links and Ads final URLs,
+# all of which use the unslashed form. Google saw both variants and kept
+# switching which one it indexed. These two rules make the server agree with
+# what the site already declares.
+#
+# DirectorySlash Off stops mod_dir from adding the slash back, which would
+# otherwise ping-pong against the strip rule below. -Indexes above is required
+# with it: without mod_dir's redirect, a directory request that misses the
+# rewrite would fall through to a listing.
+DirectorySlash Off
+
+# 1. Strip the trailing slash. "^(.+)/$" cannot match the site root (the
+#    per-directory pattern is empty there), so "/" is left alone.
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 2. Serve the prerendered index for the unslashed form, internally. This runs
+#    in mod_rewrite's fixup, before mod_dir would ever see a directory request,
+#    so it holds even if the host ignores DirectorySlash.
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.+?)/?$ /$1/index.html [L]
 
 # SPA fallback
 RewriteRule ^index\.html$ - [L]
