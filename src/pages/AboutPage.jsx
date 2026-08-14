@@ -186,6 +186,17 @@ const AboutPage = () => {
               applications web sur mesure, landing pages. Chaque projet est construit pour
               être rapide, sécurisé, responsive et bien positionné sur Google.
             </p>
+            <p className="text sl-mb">
+              Le détail de mes prestations, technologies et tarifs est sur ma page{" "}
+              <Link to="/developpeur-web-freelance-maroc" className="inline-link">
+                développeur web freelance au Maroc
+              </Link>
+              , et si votre projet est à Casablanca, voyez la page{" "}
+              <Link to="/casablanca" className="inline-link">
+                création de site web à Casablanca
+              </Link>
+              .
+            </p>
             <p className="text">
               Disponible du lundi au samedi de 9h à 22h sur WhatsApp. Devis gratuit
               et personnalisé sous 24h. <strong>Paiement après livraison.</strong>

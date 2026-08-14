@@ -140,9 +140,9 @@ export const blogPosts = [
 
   {
     slug: "choisir-developpeur-web-freelance-maroc",
-    title: "Comment choisir un développeur web freelance au Maroc",
-    metaTitle: "Comment Choisir un Développeur Web Freelance au Maroc | MouDEV",
-    metaDescription: "5 critères essentiels pour choisir un développeur web freelance au Maroc. Portfolio, tarifs, délais, propriété du site — ce que vous devez vérifier avant de signer.",
+    title: "5 critères pour choisir son développeur web au Maroc",
+    metaTitle: "Choisir son Développeur Web au Maroc : 5 Critères | MouDEV",
+    metaDescription: "5 critères essentiels pour choisir son développeur web au Maroc. Portfolio, tarifs, délais, propriété du site — ce que vous devez vérifier avant de signer.",
     datePublished: "2026-04-23",
     dateModified: "2026-04-23",
     author: "Mourad",
@@ -150,7 +150,7 @@ export const blogPosts = [
     imageAlt: "Choisir développeur web freelance Maroc — critères et conseils MouDev",
     excerpt: "Le marché marocain compte des centaines de développeurs web freelance. Voici les 5 critères essentiels pour faire le bon choix et éviter les mauvaises surprises.",
     readTime: "5 min",
-    keywords: ["développeur web freelance maroc", "freelance creation site web maroc", "choisir développeur web maroc"],
+    keywords: ["choisir développeur web maroc", "critères développeur web maroc", "freelance ou agence web maroc"],
     content: [
       {
         type: "p",
@@ -253,7 +253,11 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire.",
+        parts: [
+          "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire. Vous trouverez mon profil complet, mes technologies et ma façon de travailler sur ma page ",
+          { text: "développeur web freelance au Maroc", to: "/developpeur-web-freelance-maroc" },
+          ".",
+        ],
       },
       {
         type: "p",
@@ -269,8 +273,8 @@ export const blogPosts = [
       },
       {
         type: "cta",
-        text: "En savoir plus sur MouDevPro →",
-        to: "/about",
+        text: "Voir ma page développeur web freelance au Maroc →",
+        to: "/developpeur-web-freelance-maroc",
       },
       {
         type: "cta",

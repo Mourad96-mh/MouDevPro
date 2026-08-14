@@ -383,7 +383,7 @@ const RabatPage = () => {
           <Link to="/blog/prix-site-web-maroc-2026">le prix d'un site web au Maroc</Link>{" "}
           et{" "}
           <Link to="/blog/choisir-developpeur-web-freelance-maroc">
-            comment choisir un développeur web freelance
+            les 5 critères à vérifier avant de signer
           </Link>
           .
         </p>

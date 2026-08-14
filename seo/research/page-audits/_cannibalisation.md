@@ -42,6 +42,53 @@ cluster.
    `création site web casablanca` at #1; asking it to also own the national freelance term splits
    its own focus.
 
+### Status — actioned 2026-08-14 (pending deploy)
+
+**1. Canonical target confirmed.** `/developpeur-web-freelance-maroc` keeps the keyword in its
+title, H1, meta and `keywords`. Unchanged — it was already correct.
+
+**2. Both blog posts now feed it.** `freelance-creation-site-web-maroc` already carried a
+keyword-rich link. `choisir-developpeur-web-freelance-maroc` had none, and its closing CTA pointed
+at `/about` — the page the audit flags as over-ranking. That CTA now points at the money page, plus
+a new inline link with the exact anchor. Its title/meta led with the money page's exact phrase
+("Comment Choisir un **Développeur Web Freelance au Maroc**"); retitled to lead with its own angle
+("5 critères pour choisir son développeur web au Maroc"), which breaks the exact-phrase collision
+while keeping the topic. Its `keywords` array no longer claims the money keyword. **Slug unchanged**
+(§10).
+
+**3. `/about` — the audit's recommendation was not followed, deliberately.** It said to remove the
+keyword from `/about` targeting. But `/about` ranks **13.83** on `développeur freelance casablanca`,
+better than `/casablanca` (24.40) *and* the money page (30.95). Stripping the title of the best
+ranker on that query to help a page 10 positions behind it is speculative, and its `Person` schema
+and `jobTitle` legitimately describe a freelance developer — that is what the page is.
+
+The real defect turned out to be different: **`/about` had zero internal outbound links.** It was
+absorbing authority and passing none. It now links to the money page and `/casablanca` with
+keyword-rich anchors, which routes the authority the audit noticed instead of destroying it.
+Revisit if `/about` still outranks both money pages in the next window.
+
+**4. Homepage — decided: it does not compete here.** `78a1653` retargeted the homepage onto
+`création site web casablanca` (its §5.4 QS fix), which already pulls it off the national freelance
+term. It keeps its single keyword-rich link into the money page. No further change.
+
+**`/services` left alone.** 1 impression at position 134 is noise, not competition, and its title
+targets its own terms (`site vitrine maroc`, services). Rewriting a title over one impression is
+not worth the risk. It gained an outbound keyword-rich link to the money page.
+
+**Anchor text was pointing the wrong way.** Both `/developpeur-web-freelance-maroc` and `/rabat`
+linked to the `choisir` post with the anchor *"comment choisir un développeur web freelance"* — the
+money page itself was telling Google that a blog post is the thing about `développeur web
+freelance`. Both anchors now read "les 5 critères à vérifier avant de signer": descriptive, so it
+still satisfies §5.3 rule 5, but it no longer hands the keyword to a supporting page.
+
+**Net link change into `/developpeur-web-freelance-maroc`:** 2 linking pages → 5 (homepage, both
+blog posts, `/about`, `/services`), 6 links in total — the `choisir` post carries both an inline
+anchor and the repointed CTA. One link that pointed *out* of the cluster (`/about`) now points
+back into it.
+
+Not deployed. Baseline to judge against: money page 45 impressions at 36.78, best-in-cluster 26.95,
+nothing on page 1.
+
 ---
 
 ## Cluster 2 — `création site web casablanca`

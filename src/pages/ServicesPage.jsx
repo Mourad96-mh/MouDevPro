@@ -281,6 +281,13 @@ const ServicesPage = () => {
             Voir les tarifs détaillés →
           </Link>
         </div>
+        <p className="text center-text" style={{ marginTop: "2.4rem" }}>
+          Tous ces services sont assurés par un{" "}
+          <Link to="/developpeur-web-freelance-maroc" className="inline-link">
+            développeur web freelance au Maroc
+          </Link>{" "}
+          — un seul interlocuteur, du premier échange à la mise en ligne.
+        </p>
       </section>
 
       {/* FAQ */}
