@@ -115,6 +115,38 @@ const PROJECTS = [
     url: "https://abdessamadchafiki.com/",
     image: "/portfolio/natis-developpement.png",
   },
+  {
+    tag: "Agriculture",
+    title: "Agropharma Tchad",
+    desc: "Site vitrine pour un fournisseur agricole au Tchad : catalogue de semences maraîchères, produits phytosanitaires, engrais et matériels agricoles, avec demande de devis en ligne.",
+    alt: "Agropharma Tchad — création site web fournisseur agricole, catalogue semences et intrants agricoles Tchad",
+    url: "https://agropharmatchad.com/",
+    image: "/portfolio/agropharma-tchad.png",
+  },
+  {
+    tag: "Nettoyage & Services",
+    title: "Sernecom",
+    desc: "Site vitrine pour une société de nettoyage professionnel et laverie à Rabat, Salé, Témara et Skhirat : fin de chantier, vitres, hygiène 4D, laverie au kilo avec collecte et livraison.",
+    alt: "Sernecom — création site web société nettoyage professionnel et laverie Rabat Salé Témara",
+    url: "https://sernecom.com/",
+    image: "/portfolio/sernecom.png",
+  },
+  {
+    tag: "Location de Voiture",
+    title: "Ihssane Car",
+    desc: "Site pour une agence de location de voiture à Témara, Rabat et aux aéroports : catalogue de véhicules, tarifs transparents et réservation par WhatsApp ou en ligne.",
+    alt: "Ihssane Car — création site web agence location voiture Témara Rabat, réservation en ligne",
+    url: "https://ihssanecar.com/",
+    image: "/portfolio/ihssane-car.png",
+  },
+  {
+    tag: "Parapharmacie",
+    title: "Para Lirana",
+    desc: "Parapharmacie en ligne au Maroc : catalogue soins visage, capillaire, solaire, bébé et compléments alimentaires, commande sur WhatsApp et livraison partout au Maroc.",
+    alt: "Para Lirana — création site e-commerce parapharmacie en ligne Maroc, boutique produits de soins",
+    url: "https://paralirana.com/",
+    image: "/portfolio/para-lirana.png",
+  },
 ];
 
 const PortfolioCard = ({ project, index }) => {
