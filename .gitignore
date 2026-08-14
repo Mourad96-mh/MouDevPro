@@ -34,3 +34,6 @@ desktop.ini
 # Python bytecode (ads/ plan generator)
 __pycache__/
 *.pyc
+
+# Transient raw payloads; the CSVs they produce in data/ are the record
+tools/inbox/*.json

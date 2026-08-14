@@ -9,7 +9,8 @@
     "prerender:browser": "puppeteer browsers install chrome",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cwv": "node seo/tools/crux-report.mjs"
+    "cwv": "node seo/tools/crux-report.mjs",
+    "pull": "node tools/pull.mjs"
   },
   "dependencies": {
     "i18next": "^25.8.14",
