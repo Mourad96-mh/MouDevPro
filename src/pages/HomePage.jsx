@@ -207,11 +207,11 @@ const HomePage = () => {
     <>
       <Helmet htmlAttributes={{ lang: "fr" }}>
         <title>
-          Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV
+          Création Site Web Casablanca dès 2 000 DH | Développeur Web Freelance Maroc
         </title>
         <meta
           name="description"
-          content="Développeur web freelance au Maroc — Casablanca, Rabat, Marrakech. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
+          content="Création de site web à Casablanca et au Maroc — développeur freelance, pas d'agence. Site vitrine dès 2 000 DH, livré en 7 à 10 jours. Devis gratuit 24h."
         />
         <meta name="keywords" content="développeur web freelance maroc, freelance creation site web maroc, création site web maroc, site web maroc, prix site web maroc, web developer morocco, website design morocco, freelance développeur web" />
         <meta name="robots" content="index, follow" />
@@ -224,11 +224,11 @@ const HomePage = () => {
         <meta property="og:site_name" content="MouDEV" />
         <meta
           property="og:title"
-          content="Création Site Web Maroc dès 2 000 DH | Développeur Web Freelance | MouDEV"
+          content="Création Site Web Casablanca dès 2 000 DH | Développeur Web Freelance Maroc"
         />
         <meta
           property="og:description"
-          content="Développeur web freelance au Maroc — Casablanca, Rabat, Marrakech. Site vitrine dès 2 000 DH, e-commerce, app sur mesure. Devis gratuit en 24h."
+          content="Création de site web à Casablanca et au Maroc — développeur freelance, pas d'agence. Site vitrine dès 2 000 DH, livré en 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/" />
         <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
@@ -241,12 +241,12 @@ const HomePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Création de Site Web Professionnel au Maroc — Développeur Web Freelance
+            Création de Site Web Professionnel à Casablanca — Développeur Web Freelance Maroc
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site web professionnel au Maroc.
-            Vous parlez directement avec le développeur — pas d'agence, pas
-            d'intermédiaire. Qualité agence, prix freelance.{" "}
+            Je crée votre site web professionnel à Casablanca et partout au Maroc —
+            Rabat, Marrakech. Vous parlez directement avec le développeur — pas
+            d'agence, pas d'intermédiaire. Qualité agence, prix freelance.{" "}
             <strong>Devis gratuit en 24h.</strong>
           </p>
           <div className="city-hero__actions">
