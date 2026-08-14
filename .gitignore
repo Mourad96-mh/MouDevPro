@@ -30,3 +30,7 @@ desktop.ini
 *.njsproj
 *.sln
 *.sw?
+
+# Python bytecode (ads/ plan generator)
+__pycache__/
+*.pyc
