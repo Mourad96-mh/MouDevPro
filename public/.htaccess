@@ -48,6 +48,18 @@ RewriteRule . /index.html [L]
 </FilesMatch>
 
 # ---------------------------------------------------------------------------
+# MIME types the host does not know
+#
+# This server has no mapping for .avif and serves it as text/plain. That is not
+# cosmetic: text/plain is in the compression list below, so every AVIF was being
+# gzip-recompressed (317 KB of already-compressed data per request), and
+# ExpiresByType image/avif never matched, so they were served with no cache
+# header at all. hero-img.avif is the mobile LCP element. Verified live on
+# 2026-08-14. .webp is already mapped correctly by the host.
+# ---------------------------------------------------------------------------
+AddType image/avif .avif
+
+# ---------------------------------------------------------------------------
 # Compression
 #
 # Text only. Images here are already AVIF/WebP and re-compressing them costs
