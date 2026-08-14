@@ -9,10 +9,25 @@ which is a working action list that predates this split (noted below).
 
 ```
 data/
-├── ads/     Google Ads   — campaigns, keywords, search terms, negatives
-├── gsc/     Search Console — queries, pages, countries, devices
-└── cwv/     Core Web Vitals — CrUX field data
+├── ads/      Google Ads     — campaigns, keywords, search terms, negatives
+├── gsc/      Search Console — queries, pages, countries, devices
+├── cwv/      Core Web Vitals — CrUX field data
+└── reports/  generated — what moved between the last two pulls
 ```
+
+## Refreshing
+
+```bash
+npm run pull    # ingest tools/inbox/*.json → dated CSVs, then diff and report
+npm run cwv     # CrUX, self-fetching
+```
+
+`reports/` is generated output, not evidence — safe to delete and regenerate.
+
+Fetching Search Console and Google Ads is **not** automated: both are reached through MCP servers
+that only the agent can call, and Google Ads also needs an approved developer token. The agent runs
+the queries and drops the payloads in `tools/inbox/`; everything after that is deterministic. See
+[`../tools/inbox/README.md`](../tools/inbox/README.md).
 
 ---
 
