@@ -8,7 +8,8 @@
     "build": "npm run prerender:browser && vite build && node prerender.js && node sitemap-generator.js",
     "prerender:browser": "puppeteer browsers install chrome",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cwv": "node seo/tools/crux-report.mjs"
   },
   "dependencies": {
     "i18next": "^25.8.14",
