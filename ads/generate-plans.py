@@ -168,7 +168,7 @@ def account_doc():
         "Anything off-voice is removed, or automatically created assets is switched off.",
     )
 
-    d.h1("Problem 2 — the conversion signal may be counting the wrong event")
+    d.h1("Problem 2 — devis-form leads are not being counted at all")
     d.p([
         "Bidding chases whatever the conversion action counts. Only one action is enabled, "
         "and both actions describing a real lead are removed:",
@@ -184,25 +184,70 @@ def account_doc():
         widths=[30, 22, 26, 22],
     )
     d.p([
-        "59 conversions on 307 clicks is a ", ("19.2% conversion rate", B),
-        " — very high for cold paid search on commercial terms. The enabled action is type ",
-        ("WEBPAGE", MONO), " in the ", ("CONTACT", MONO),
-        " category, which is consistent with firing when someone reaches the contact page "
-        "rather than when they submit the form. The API cannot tell which.",
+        ("Verified against the deployed site on 2026-08-14.", B),
+        " The site fires two different conversion labels from two different triggers:",
+    ])
+    d.table(
+        ["What the visitor does", "Label fired", "Google Ads action", "Status"],
+        [
+            ["Clicks WhatsApp or the phone number", ("abRz…1pZD", MONO),
+             "Contact-from-moudev", ("ENABLED", {"b": True, "color": GOOD})],
+            ["Submits the devis form", ("Hlo6…1pZD", MONO),
+             "Contact / Submit lead form", ("REMOVED", RB)],
+        ],
+        widths=[34, 18, 26, 22],
+    )
+    d.p([
+        "A removed conversion action records nothing. So for the whole of this window, ",
+        ("every devis-form lead counted zero", B),
+        ", and all 59 recorded conversions are WhatsApp or phone clicks. The split has been "
+        "live since 11 July — four days before the window opens — so it affects every figure "
+        "in these documents.",
+    ])
+    d.p([
+        "The fallback that was meant to prevent this is dead code. ",
+        ("src/utils/conversions.js", MONO), " reads ",
+        ("FORM_CONVERSION_LABEL || LEGACY_CLICK_LABEL", MONO),
+        ", but the first value is a non-empty constant, so the build folds it to the form "
+        "label alone — confirmed in the deployed bundle.",
+    ])
+    d.p([
+        ("Correction to an earlier version of this document. ", B),
+        "It suggested the enabled action might be firing on contact-page views, on the "
+        "grounds that a 19.2% conversion rate is high for cold paid search. That is ",
+        ("disproven", B), ": ", ("gtag_report_conversion", MONO),
+        " is only ever called from click handlers on WhatsApp and ", ("tel:", MONO),
+        " links. No page-view conversion exists anywhere in the site.",
+    ])
+    d.p([
+        ("Which way the numbers move. ", B),
+        "The error understates rather than overstates. Real lead volume is higher than 59 and "
+        "the true CPA is therefore ", ("lower", B), " than the 87.18 MAD reported — the "
+        "opposite of the earlier reading. It also means Smart Bidding has spent the whole "
+        "window optimising toward WhatsApp clicks while ignoring qualified form leads, which "
+        "is a plausible contributor to the 20 MAD CPC in the Casablanca campaign.",
     ])
     plan_step(
-        d, 5, "Answer: did roughly 59 quote requests actually arrive between 15 July and 11 August?",
-        "Your inbox / WhatsApp / the leads sheet.",
-        "If the real number is far lower, the action counts page views, the bidding has "
-        "trained on that for weeks, and it explains the 20 MAD CPC in the Casablanca campaign.",
-        "The count you can verify matches, or does not, what Ads reports.",
+        d, 5, "Re-enable (or recreate) the conversion action the devis form fires into.",
+        "Tools → Conversions → the Contact / Submit lead form action.",
+        "The site is already sending the event correctly; only the destination is switched "
+        "off. This is the cheapest fix in the account — no code change, no redeploy.",
+        "The action shows ENABLED and form submits start appearing within ~24h.",
     )
     plan_step(
         d, 6, "Restore the Lead Qualifié (OCI) conversion action.",
         "Tools → Conversions.",
         "It was built in July and is the only signal that teaches the algorithm which leads "
-        "are actually worth having, rather than which clicks reach a page.",
+        "are actually worth having, rather than which gestures were made.",
         "The action shows ENABLED and starts recording uploads again.",
+    )
+    plan_step(
+        d, 7, "Then leave bidding alone for 14 days before judging any CPA.",
+        "—",
+        "Restoring the form action will raise reported conversions and lower reported CPA on "
+        "its own. Any target set against today's numbers would be set against a measurement "
+        "error.",
+        "Reported conversions per week step up and then hold at a new level.",
     )
 
     d.h1("Problem 3 — the negative keyword list was never applied")
@@ -267,8 +312,9 @@ def account_doc():
         ("Turn off auto-apply for anything that changes bids or budgets.",
          "Google set a target CPA by itself on 6 August. A campaign that changes on its own "
          "cannot be diagnosed."),
-        ("Verify the conversion action (Problem 2).",
-         "Decides whether the signal driving all bidding is real."),
+        ("Re-enable the action the devis form fires into (Problem 2).",
+         "Form leads count zero today. One toggle in the interface, no code change, and it "
+         "corrects every conversion and CPA figure downstream."),
         ("Build and apply the shared negative list (Problem 3).",
          "Fastest payback — stops roughly a quarter of spend leaking."),
         ("Fix Marrakech's landing page, then re-enable it.",
@@ -341,11 +387,15 @@ def casablanca_doc():
         "Casablanca city terms.",
     ])
 
-    d.h2("2. Seven keywords are rated BELOW AVERAGE on landing page experience")
+    d.h2("2. Nine keywords are rated BELOW AVERAGE on landing page experience")
     d.p([
-        "Ad relevance is ", ("above average on 100% of spend", {"b": True, "color": GOOD}),
-        ". The ads are not the problem. Landing page experience is below average on 22% of "
-        "spend, and every one of those keywords wants a page other than ", ("/casablanca", MONO), ":",
+        "Thirteen keywords in this campaign carry a rating at all: ",
+        ("nine below average, four average, none above", B),
+        ". Ad relevance is ", ("above average on 8 of the 9", {"b": True, "color": GOOD}),
+        ", so the ads are not the problem — the destination is. The seven with any spend are "
+        "below; the other two (", ("web developer casablanca", MONO), ", ",
+        ("en charge de la création d'un site web", MONO),
+        ") have no traffic and are listed here only for completeness:",
     ])
     d.table(
         ["Keyword", "QS", "Landing page", "Should point at"],
@@ -361,9 +411,58 @@ def casablanca_doc():
         widths=[34, 8, 18, 40],
     )
     d.p([
-        "This is the root cause of the lost impression share. Because the loss is to rank "
-        "and not to budget, better Quality Score buys back visibility ",
+        "This is a root cause of the lost impression share. Because the loss is to rank and "
+        "not to budget, better Quality Score buys back visibility ",
         ("at the same spend", B), ".",
+    ])
+    d.p([
+        ("Keep the size of it in proportion, though. ", B),
+        "These nine account for ", ("344.77 MAD — 8% of campaign spend", B),
+        ", and four of them have essentially no traffic. Fixing all nine perfectly would "
+        "improve Quality Score on a rounding error. The money sits in the AVERAGE bucket, "
+        "and overwhelmingly in one keyword:",
+    ])
+    d.mono(
+        "creation site internet     QS 5   AVERAGE    2 683.28 MAD   63% of campaign\n"
+        "creation site e-commerce   QS 8   AVERAGE      530.29 MAD   12%\n"
+        "creation de site web       QS 8   AVERAGE      428.30 MAD   10%\n"
+        "web developer morocco      QS 7   AVERAGE       39.29 MAD    1%"
+    )
+    d.p([
+        "Lifting ", ("creation site internet", MONO),
+        " from AVERAGE to ABOVE AVERAGE is worth more than fixing all nine below-average "
+        "keywords combined.",
+    ])
+
+    d.h2("2b. What the landing pages actually said — audited 2026-08-14")
+    d.p([
+        "The live pages were checked against the keywords, not just assumed. Two defects "
+        "were found and ", ("both have been fixed in the codebase", B),
+        " — they ship on the next upload of ", ("dist/", MONO), ":",
+    ])
+    d.p([
+        ("Finding 1 — vocabulary mismatch on the biggest keyword. ", B),
+        "The homepage used ", ("\"site web\"", MONO), " 50 times and ",
+        ("\"site internet\"", MONO), " twice; ", ("/casablanca", MONO),
+        " used it once. The term carrying 63% of campaign spend was almost absent from the "
+        "page it lands on. Both pages now carry the exact phrase ",
+        ("\"création de site internet\"", MONO), " in the first paragraph, under the H1.",
+    ])
+    d.p([
+        ("Finding 2 — every page shipped two H1 tags. ", B),
+        "The ", ("<noscript>", MONO), " fallback in ", ("index.html", MONO),
+        " contained an H1 hardcoded to the homepage text. Because that block prerenders onto "
+        "every route, ", ("/tarifs", MONO), " and ", ("/contact", MONO),
+        " each led with a Casablanca site-creation heading that contradicted their own. It is "
+        "now a paragraph; all 30 routes carry exactly one H1.",
+    ])
+    d.p([
+        ("One caveat on the table above. ", B),
+        "The keyword export carries no ", ("final_url", MONO),
+        " column and the API was rate-limited at the time of the audit, so the "
+        "\"Should point at\" column is a recommendation derived from ", ("CLAUDE.md", MONO),
+        " §11 — not a reading of where those keywords currently point. Confirm the real "
+        "destinations in the keyword table before acting on the split.",
     ])
 
     d.h2("3. National keywords are trapped in a city-only campaign")
@@ -472,6 +571,48 @@ def casablanca_doc():
         "CPA moves toward the 30–60 MAD range the other campaigns achieve.",
     )
 
+    d.h1("On the 88 MAD target CPA")
+    d.p([
+        "A target CPA of 88 MAD is a reasonable ", ("destination", B), " and a bad ",
+        ("next step", B), ". The number itself is defensible: a vitrine starts at 2 000 DH, "
+        "so at a 20% lead-to-client rate an 88 MAD CPA buys a client for ~440 MAD, around 15% "
+        "of revenue. The problem is the distance and the measurement.",
+    ])
+    d.mono(
+        "achieved CPA (28d)     137.79 MAD\n"
+        "proposed target         88.00 MAD     36% below achieved\n"
+        "avg CPC                 20.24 MAD\n"
+        "implied conv. rate needed   23%        current: 14.7%"
+    )
+    d.p([
+        "At a 20.24 MAD click, an 88 MAD CPA needs a conversion every 4.35 clicks. Google "
+        "cannot invent that rate, so it does the only other thing available — it stops "
+        "entering auctions it does not predict will convert cheaply. On a campaign already "
+        "losing 33.7% of impression share to rank and spending only 38% of its budget, that "
+        "squeezes the constrained side. Expect lost volume, not lower cost.",
+    ])
+    d.p([
+        ("88 is also close to the blended account CPA of 87.18 MAD", B),
+        ", which is held down by Rabat (30.99) and Marrakech (31.84). Applying the account "
+        "average to the account's most expensive campaign is the wrong reference point — "
+        "this campaign has never been near it.",
+    ])
+    d.p([
+        ("And check who set it. ", B), "Change history shows ",
+        ("GOOGLE_ADS_RECOMMENDATIONS", MONO), " writing ",
+        ("maximizeConversions.targetCpaMicros", MONO),
+        " on this campaign on 2026-08-06. If auto-apply is still on, the target may be "
+        "Google's rather than yours.",
+    ])
+    d.p([
+        ("Order of operations. ", B),
+        "Restore the devis-form conversion action first (account plan, Problem 2). Reported "
+        "conversions will rise and reported CPA will fall on their own, possibly most of the "
+        "way to 88 without touching a bid. Only then step the target down — 137 → ~115 → "
+        "~95 → 88, two weeks apart. Moves larger than roughly 20% at once trigger the volume "
+        "collapse described above.",
+    ])
+
     d.h1("What to measure in four weeks")
     d.p([("Baseline to judge against — 28 days to 2026-08-11:", B)])
     d.mono(
@@ -480,6 +621,12 @@ def casablanca_doc():
         "conversions         31             weighted QS            5.84\n"
         "impression share 65.9%             lost to rank          33.7%"
     )
+    d.p([
+        ("Read this baseline with Problem 2 in mind. ", B),
+        "The 31 conversions are WhatsApp and phone clicks only — form submits counted zero "
+        "for the whole window. Once the form action is restored the conversion count is not "
+        "comparable to this baseline, so record the restoration date and compare from there.",
+    ])
     d.p([
         "Judge on ", ("CPA and landing page experience", B),
         ", not on impression share alone — share is expected to rise as a side effect of the "
@@ -556,12 +703,35 @@ def rabat_doc():
         "one conversion, so this is a judgement call rather than an obvious delete.",
     ])
 
-    d.h2("3. Landing page experience is below average on 6 of 11 scored keywords")
+    d.h2("3. Landing page experience is below average on 7 of 11 scored keywords")
     d.p([
-        "Including ", ("creation site internet", MONO),
-        ", which is 67% of this campaign's spend. Unlike in the Casablanca campaign it "
-        "performs well here — 476.41 MAD for 16.5 conversions, a CPA of 28.87 — but it is "
-        "still pointing generic national intent at a Rabat city page.",
+        ("This is the campaign where the landing page genuinely is the problem. ", B),
+        "Those seven carry ", ("677.02 MAD — 95% of campaign spend", B),
+        ", against 8% for the equivalent group in Casablanca. Where Casablanca's "
+        "below-average keywords were a rounding error, Rabat's are the campaign.",
+    ])
+    d.p([
+        "The bulk is ", ("creation site internet", MONO),
+        " at 67% of spend. Unlike in the Casablanca campaign it performs well here — "
+        "476.41 MAD for 16.5 conversions, a CPA of 28.87 — but it is still pointing generic "
+        "national intent at a Rabat city page. ", ("creation de site web", MONO),
+        " adds a further 23%, and the campaign's own core term ",
+        ("création site web rabat", MONO), " sits at QS 3.",
+    ])
+    d.p([
+        ("Audited and partly fixed on 2026-08-14. ", B), "The live ", ("/rabat", MONO),
+        " page used ", ("\"site web\"", MONO), " 49 times and ", ("\"site internet\"", MONO),
+        " once — the same vocabulary gap found on the homepage, but against a keyword worth "
+        "67% of this campaign rather than 63% of a larger one. The hero paragraph now carries ",
+        ("\"création de site internet\"", MONO), " under the H1. Ships on the next ",
+        ("dist/", MONO), " upload; allow ~2 weeks of impressions before the rating moves.",
+    ])
+    d.p([
+        ("Not fixed, deliberately: ", B), ("agence web rabat", MONO),
+        " (QS 3, below average, 16.97 MAD). Raising its Quality Score would mean writing "
+        "agency positioning onto the page, which ", ("CLAUDE.md", MONO),
+        " §8 forbids outright — you are a freelancer, not an agency. The right treatment is "
+        "to pause the keyword, not to serve it.",
     ])
 
     d.h1("Quality Score, keyword by keyword")
@@ -720,6 +890,37 @@ def marrakech_doc():
         "post and ", ("/marrakech", MONO),
         ", the tourism intent has two decent destinations — the campaign just is not using "
         "either of them.",
+    ])
+
+    d.h2("4. Landing page experience — audited and partly fixed on 2026-08-14")
+    d.p([
+        "Six of the twelve scored keywords read BELOW AVERAGE, but keep the scale in view: "
+        "they carry ", ("35.63 MAD — 22% of a paused 159 MAD campaign", B),
+        ". Four of the six have under 10 impressions, so their scores rest on almost no data. "
+        "This is the least urgent landing-page work in the account.",
+    ])
+    d.p([
+        "Two genuine gaps were found on the live page and closed: ",
+        ("creation site internet marrakech", MONO), " had no matching phrase anywhere (the "
+        "page used ", ("\"site web\"", MONO), " 22 times and ", ("\"site internet\"", MONO),
+        " once), and ", ("web developer morocco", MONO),
+        " had no English equivalent despite the page carrying an English section. The hero "
+        "now reads ", ("\"création de site internet\"", MONO),
+        " in French and opens the English line with ",
+        ("\"Freelance web developer in Morocco\"", MONO), ".",
+    ])
+    d.p([
+        ("Left alone on purpose. ", B), ("agence web marrakech", MONO),
+        " (QS 3, 26.02 MAD — the largest single below-average line here) would need agency "
+        "positioning on the page, which ", ("CLAUDE.md", MONO),
+        " §8 forbids. Pause it rather than serve it. ", ("devis site web maroc", MONO),
+        " wants ", ("/tarifs", MONO),
+        ", not a Marrakech page — that is a targeting fix, not a copy fix.",
+    ])
+    d.p([
+        ("The real Marrakech problem is still section 1. ", B),
+        "No amount of copy work on ", ("/marrakech", MONO),
+        " helps while the keywords resolve to the homepage.",
     ])
 
     d.h1("Quality Score, keyword by keyword")
