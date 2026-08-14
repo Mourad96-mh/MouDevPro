@@ -55,7 +55,7 @@ const BlogPage = () => {
       <section className="blog-list">
         <div className="container blog-list__inner">
           <div className="blog-grid">
-            {blogPosts.map((post) => (
+            {blogPosts.filter((post) => (post.lang || "fr") === "fr").map((post) => (
               <article key={post.slug} className="blog-card">
                 <div className="blog-card__img-wrap">
                   <img
