@@ -122,6 +122,16 @@ const Header = () => {
               ))}
             </ul>
           </li>
+
+          <li className="nav__item">
+            <Link
+              to="/contact"
+              className={`nav__link nav__link--cta${pathname === "/contact" ? " nav__link--active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.contact")}
+            </Link>
+          </li>
         </ul>
       </nav>
 
