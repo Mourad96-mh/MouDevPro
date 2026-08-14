@@ -46,3 +46,66 @@ RewriteRule . /index.html [L]
 <FilesMatch "sitemap\.xml$">
   Header set Content-Type "application/xml; charset=utf-8"
 </FilesMatch>
+
+# ---------------------------------------------------------------------------
+# Compression
+#
+# Text only. Images here are already AVIF/WebP and re-compressing them costs
+# CPU for nothing. Every block below is IfModule-guarded: if the host lacks the
+# module the directives are skipped rather than 500ing the whole site, which
+# matters because these rules have not been run against a live Apache.
+# ---------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE application/rss+xml image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff2 font/woff application/font-woff
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Cache headers
+#
+# Three tiers, set by how the file is named rather than by type:
+#
+#   /assets/*  Vite writes a content hash into the filename (index-D5w8ol8c.css),
+#              so a changed file is a new URL. Safe to cache for a year and mark
+#              immutable - the browser then skips even the revalidation request.
+#
+#   images     NOT hashed - hero-img.avif keeps its name across deploys. A year
+#              would pin a stale image in visitors' browsers with no way to bust
+#              it short of renaming the file. 30 days bounds the staleness.
+#
+#   HTML       Never cached hard. Deploys here are a manual upload, and the
+#              prerendered HTML carries the titles, meta and JSON-LD - an SEO
+#              fix must take effect on the next request, not in a month.
+#              no-cache still permits a 304, so this is cheap.
+# ---------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/avif                "access plus 30 days"
+  ExpiresByType image/webp                "access plus 30 days"
+  ExpiresByType image/png                 "access plus 30 days"
+  ExpiresByType image/jpeg                "access plus 30 days"
+  ExpiresByType image/svg+xml             "access plus 30 days"
+  ExpiresByType image/x-icon              "access plus 30 days"
+  ExpiresByType font/woff2                "access plus 1 year"
+  ExpiresByType font/woff                 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Hashed build output - filename changes when content changes.
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Prerendered HTML - always revalidate.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # sitemap.xml and robots.txt change when pages do; keep them short.
+  <FilesMatch "^(sitemap\.xml|robots\.txt|llms\.txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
