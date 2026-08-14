@@ -70,6 +70,48 @@ Two specific mismatches stand out:
 5. Re-measure 4 weeks after the snippet change. Baseline: 135 impressions, 0 clicks, position 6.98.
    **Judge on clicks and CTR — position is already fine and should not be the metric here.**
 
+## Status — actioned 2026-08-14 (pending deploy)
+
+**Action 1 (live SERP check) was not done** — it needs a browser on a Moroccan/neutral SERP and is
+still open. Everything below was done without it, so the snippet rewrite rests on the audit's
+inference rather than on observed competitor snippets.
+
+**Action 2 — title and meta rewritten.**
+
+| | Before | After |
+| --- | --- | --- |
+| Title | `Site Web Hôtel Marrakech \| Riad Website Design Morocco 2026 \| MouDEV` (68) | `Site Web Hôtel & Riad Marrakech — Réservation dès 4 990 DH` (58) |
+| Meta | 147 chars, opened on `Votre riad perd 20 000 DH/an…` | 148 chars, opens on the service + city |
+
+Three defects in the old pair:
+
+- **The old title was 68 characters, so the English half never rendered.** SERPs truncate around
+  60; `Riad Website Design Morocco 2026 | MouDEV` was cut. English searchers were not being served
+  an English snippet — they were being served a truncated French one. The brand suffix and the year
+  were spending characters that returned nothing.
+- **The old meta description never contained "Marrakech" or "hôtel".** For
+  `site vitrine riad marrakech` and `création site pour riad ou hôtel marrakech` there was nothing
+  in the description for Google to bold. The new one leads with both.
+- The price signal (`dès 4 990 DH`) was in the description only. It is now in the title too, per
+  `style-guide.md` §1 — this matters for `site vitrine riad prix maroc` (13.40).
+
+**Action 3 (English counterpart) not done — it is the real fix for the English queries and needs a
+decision.** `web design riad marrakech english` (25 impr, 2.12), `morocco riad website builder`
+(17, 6.24) and `riad website design morocco` (11, 3.27) are 53 impressions of English intent being
+served a French article. The FR queries on this page total ~56 impressions, so the split is close to
+even — which is why the title was kept French-led rather than bilingual. A bilingual title cannot
+serve both halves inside 60 characters; only a separate EN post can. That is the same play already
+running for the statistics article, and root `CLAUDE.md` §6/§8 call for EN content for Marrakech
+tourism operators.
+
+**Action 4 — internal link added.** The post now carries an inline keyword-rich link to
+`/marrakech` (anchor: *création de site web à Marrakech*) in the pricing paragraph, where
+commercial intent peaks. The closing CTA was reworded from *"Voir la page dédiée aux hôtels de
+Marrakech"* to *"Création de site web pour hôtel et riad à Marrakech"* — §5.3 rule 5.
+
+Baseline to judge against in ~4 weeks: **135 impressions, 0 clicks, position 6.98.** Judge on
+clicks and CTR, not position.
+
 ## Why this is the priority
 
 Every other recommendation in this audit is about improving a ranking. This page already has the

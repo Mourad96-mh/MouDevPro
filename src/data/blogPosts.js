@@ -287,8 +287,8 @@ export const blogPosts = [
   {
     slug: "site-web-hotel-riad-marrakech",
     title: "Site web hôtel et riad à Marrakech : guide complet 2026",
-    metaTitle: "Site Web Hôtel Marrakech | Riad Website Design Morocco 2026 | MouDEV",
-    metaDescription: "Votre riad perd 20 000 DH/an en commissions Booking.com. Un site professionnel avec réservation directe règle ça — dès 4 990 DH. Devis gratuit 24h.",
+    metaTitle: "Site Web Hôtel & Riad Marrakech — Réservation dès 4 990 DH",
+    metaDescription: "Site web pour hôtel ou riad à Marrakech : réservation directe, zéro commission Booking.com, site multilingue FR/EN. Dès 4 990 DH. Devis gratuit 24h.",
     datePublished: "2026-04-23",
     dateModified: "2026-04-23",
     author: "Mourad",
@@ -407,11 +407,15 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Ces tarifs incluent le design sur mesure, la galerie photos HD, le système de réservation directe, le contenu multilingue FR/EN et le SEO tourisme optimisé. Paiement après livraison — aucun acompte imposé.",
+        parts: [
+          "Ces tarifs incluent le design sur mesure, la galerie photos HD, le système de réservation directe, le contenu multilingue FR/EN et le SEO tourisme optimisé. Paiement après livraison — aucun acompte imposé. Le détail des prestations et des exemples de réalisations sont sur ma page ",
+          { text: "création de site web à Marrakech", to: "/marrakech" },
+          ".",
+        ],
       },
       {
         type: "cta",
-        text: "Voir la page dédiée aux hôtels de Marrakech →",
+        text: "Création de site web pour hôtel et riad à Marrakech →",
         to: "/marrakech",
       },
       {
