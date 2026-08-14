@@ -245,7 +245,8 @@ const HomePage = () => {
           </h1>
           <p className="subheading sl-mb">
             Je crée votre site web professionnel à Casablanca et partout au Maroc —
-            Rabat, Marrakech. Vous parlez directement avec le développeur — pas
+            Rabat, Marrakech. Création de site internet vitrine, e-commerce ou
+            application sur mesure. Vous parlez directement avec le développeur — pas
             d'agence, pas d'intermédiaire. Qualité agence, prix freelance.{" "}
             <strong>Devis gratuit en 24h.</strong>
           </p>
@@ -256,6 +257,12 @@ const HomePage = () => {
           </div>
         </div>
         <div className="hero__img">
+          {/* Shared hero — also used by /ecommerce, /france, /canada, /usa and the
+              en/ar city pages, so keep it service-neutral. A solo developer on
+              purpose: the previous photo showed a team, which reads as an agency
+              and contradicts the freelance positioning (CLAUDE.md §2).
+              Photo Olha Ruskykh via Pexels (free commercial use, no attribution
+              required). 1200x900, rendered at 600x450. */}
           <img
             src="/hero-img.avif"
             loading="eager"

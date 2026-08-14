@@ -146,10 +146,11 @@ const RabatPage = () => {
             Création Site Web à Rabat — Développeur Web Freelance
           </h1>
           <p className="subheading sl-mb">
-            La <strong>création de site web à Rabat</strong> est mon métier : je conçois
-            votre site professionnel pour Rabat, Salé et Témara — PME, startups, ONG et
-            administrations. Vous parlez directement avec le développeur. Qualité agence,
-            prix freelance. Devis gratuit en 24h.
+            La <strong>création de site web à Rabat</strong> est mon métier : création
+            de site internet vitrine, boutique e-commerce ou application sur mesure pour
+            Rabat, Salé et Témara — PME, startups, ONG et administrations. Vous parlez
+            directement avec le développeur. Qualité agence, prix freelance. Devis
+            gratuit en 24h.
           </p>
 
           <div className="city-hero__actions">
@@ -163,11 +164,13 @@ const RabatPage = () => {
           </div>
         </div>
         <div className="hero__img">
+          {/* Tour Hassan, Rabat — photo Sarah Hall via Pexels (free commercial
+              use, no attribution required). 1200x900 source, rendered at 600x450. */}
           <img
-            src="/web-dev.avif"
+            src="/rabat-hero.avif"
             loading="eager"
             fetchpriority="high"
-            alt="Développeur web freelance Rabat — création site web professionnel MouDev"
+            alt="Tour Hassan à Rabat — création de site web à Rabat par un développeur web freelance"
             width="600"
             height="450"
           />

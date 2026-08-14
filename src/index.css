@@ -328,7 +328,10 @@ li {
 
 .hero__img img {
   max-width: 100%;
-  /* height: 100%; */
+  /* Lets the file's real proportions win once it loads. The width/height
+     attributes still reserve the box beforehand, so CLS stays protected —
+     without this the height attribute stretches any non-4:3 source. */
+  height: auto;
   border-radius: 11px;
 }
 .home {

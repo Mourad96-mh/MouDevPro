@@ -113,8 +113,9 @@ const CasablancaPage = () => {
           </h1>
           <p className="subheading sl-mb">
             La <strong>création de site web à Casablanca</strong> est mon métier :
-            sites vitrine, boutiques e-commerce et applications sur mesure pour les
-            PME, startups et commerces de la ville — <strong>dès 2 000 DH</strong>.
+            création de site internet vitrine, boutiques e-commerce et applications
+            sur mesure pour les PME, startups et commerces de la ville —{" "}
+            <strong>dès 2 000 DH</strong>.
             Vous parlez directement avec le développeur, pas d'agence, pas
             d'intermédiaire. <strong>Devis gratuit en 24h.</strong>
           </p>
@@ -130,11 +131,13 @@ const CasablancaPage = () => {
           </div>
         </div>
         <div className="hero__img">
+          {/* Mosquée Hassan II, Casablanca — photo Samir Bakkah via Pexels (free
+              commercial use, no attribution required). 1200x900, rendered at 600x450. */}
           <img
-            src="/hero-img.avif"
+            src="/casablanca-hero.avif"
             loading="eager"
             fetchpriority="high"
-            alt="Développeur web freelance Casablanca — création site web professionnel MouDev"
+            alt="Mosquée Hassan II à Casablanca — création de site web à Casablanca par un développeur web freelance"
             width="600"
             height="450"
           />

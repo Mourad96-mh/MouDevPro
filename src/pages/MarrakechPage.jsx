@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HiCheck, HiXMark, HiMiniPhone } from "react-icons/hi2";
 import Footer from "../components/layout/Footer";
 import TarifsSection from "../components/sections/TarifsSection";
+import Portfolio from "../components/sections/Portfolio";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
 import { cityConfig } from "../data/cityConfig";
@@ -168,15 +169,16 @@ const MarrakechPage = () => {
           {/* Bilingual subheading */}
           <p className="subheading sl-mb">
             <strong>Développeur web freelance à Marrakech</strong>, je réalise la{" "}
-            <strong>création de site web à Marrakech</strong> pour les hôtels, riads et
-            restaurants — réservation en ligne, multilingue FR/EN/AR, SEO tourisme.
-            Réduisez vos commissions OTA, générez des réservations directes.
+            <strong>création de site web à Marrakech</strong> — création de site
+            internet, réservation en ligne, multilingue FR/EN/AR, SEO tourisme — pour
+            les hôtels, riads et restaurants. Réduisez vos commissions OTA, générez des
+            réservations directes.
           </p>
           <p className="marrakech-en-subheading sl-mb">
             <em>
-              Professional hotel website design in Marrakech — online booking system,
-              multilingual FR/EN/AR, tourism SEO. Reduce OTA commissions, drive direct
-              bookings.
+              Freelance web developer in Morocco — professional hotel website design in
+              Marrakech, online booking system, multilingual FR/EN/AR, tourism SEO.
+              Reduce OTA commissions, drive direct bookings.
             </em>
           </p>
 
@@ -200,11 +202,13 @@ const MarrakechPage = () => {
           </div>
         </div>
         <div className="hero__img">
+          {/* Riad courtyard, Marrakech — photo Moussa Idrissi via Pexels (free
+              commercial use, no attribution required). 1200x900, rendered at 600x450. */}
           <img
-            src="/web-dev-1.avif"
+            src="/marrakech-hero.avif"
             loading="eager"
             fetchpriority="high"
-            alt="Hotel website design Marrakech — riad website Morocco MouDev"
+            alt="Cour intérieure d'un riad à Marrakech — création de site web pour hôtels, riads et restaurants"
             width="600"
             height="450"
           />
@@ -418,6 +422,8 @@ const MarrakechPage = () => {
       </section>
 
       <TarifsSection cityName="Marrakech" />
+
+      <Portfolio cityName="Marrakech" />
 
       {/* FAQ */}
       <section id="faq" className="home container">
