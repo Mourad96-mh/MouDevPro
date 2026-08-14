@@ -24,18 +24,25 @@ The loop is: plan here → draft → publish → implement in the React app at `
 ```
 seo/
 ├── CLAUDE.md                      ← this file
-├── research/
+├── research/                      ← analysis only, never raw exports
 │   ├── data-insights.md           ← Ads + GSC analysis
 │   ├── topical-map.md             ← action plan + page briefs
 │   ├── competitors.md             ← organic rivals + positioning rules
-│   └── data/                      ← raw CSV exports (Ads search terms, GSC queries/pages/etc.)
-└── content/
-    ├── context/
-    │   ├── brand-voice.md
-    │   └── style-guide.md
-    ├── drafts/                    ← work in progress
-    └── published/                 ← reviewed, ready to implement
+│   ├── page-audits/               ← one GSC report per page
+│   └── session-report-*.md        ← what changed in a working session
+├── content/
+│   ├── context/
+│   │   ├── brand-voice.md
+│   │   └── style-guide.md
+│   ├── drafts/                    ← work in progress
+│   └── published/                 ← reviewed, ready to implement
+└── tools/
+    └── crux-report.mjs            ← `npm run cwv`, writes to ../../data/cwv/
 ```
+
+**Raw exports live outside this folder**, at the repo root in `../data/` — `data/gsc/`,
+`data/ads/`, `data/cwv/`, one folder per source. See `../data/README.md` for the naming
+convention. `seo/` holds interpretation; `data/` holds evidence. Do not put CSVs back in here.
 
 ## The production loop
 

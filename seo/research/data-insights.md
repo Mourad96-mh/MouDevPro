@@ -2,7 +2,8 @@
 
 > Generated 2026-06-19 from real data: Google Ads search-term reports (3 ad groups) + Google
 > Search Console "Performance on Search" export (last ~90 days, to 2026-06-19).
-> Raw files live in `seo/research/data/`. This is the evidence base for `topical-map.md`.
+> Raw files live in `../../data/` (`data/gsc/*-2026-06-19.csv` for the GSC side, `data/ads/` for
+> the search-term exports). This is the evidence base for `topical-map.md`.
 
 ---
 
@@ -59,7 +60,7 @@ Plus a long tail of e-commerce / "boutique en ligne" intent converting at 100% o
 
 `agence création site web ... casablanca` (5 clicks, 45 MAD), `ecommerce website` (5 clicks),
 `comment créer un site web` (7 clicks across groups), `creating landing pages`, `pen io website`.
-Several are already in `ads-data/negative-keywords.md` territory — review there, not here.
+Several are already in `data/ads/negative-keywords.md` territory — review there, not here.
 
 ---
 

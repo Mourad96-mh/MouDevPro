@@ -2,7 +2,7 @@
 
 > Status: **implemented** in `src/data/marketConfig.js` (key `france`) and rendered by
 > `src/pages/MarketPage.jsx`. Not yet deployed — needs `dist/` uploaded to the LiteSpeed host.
-> Written 2026-08-13 from the GSC pull in `research/data/gsc-snapshot-2026-08-13.md`.
+> Written 2026-08-13 from the GSC pull in `data/gsc/snapshot-2026-08-13.md`.
 >
 > **Baseline to measure against:** `/france` averaged position 74.8 on 258 impressions and
 > 0 clicks over 2026-07-15 → 2026-08-11. Re-check ~4 weeks after deploy, judging on clicks.

@@ -153,7 +153,7 @@ Group posts into 3 pillars, each internally linked and pointing to a money page.
 
 ## 4. 6-month execution plan
 
-> **Re-sequenced 2026-06-03 from Google Ads Search Terms data** (296 clicks, 52 conversions, ~46 MAD CPA, all-time). Three evidence-based changes: (1) e-commerce moved Month 3 → Month 2 (best-converting theme); (2) verticals V2/V5/V6 confirmed by real conversions; (3) city + price intent under-converts in Ads, so organic carries it from Month 1. See `ads-data/negative-keywords.md` for the budget-leak fix.
+> **Re-sequenced 2026-06-03 from Google Ads Search Terms data** (296 clicks, 52 conversions, ~46 MAD CPA, all-time). Three evidence-based changes: (1) e-commerce moved Month 3 → Month 2 (best-converting theme); (2) verticals V2/V5/V6 confirmed by real conversions; (3) city + price intent under-converts in Ads, so organic carries it from Month 1. See `data/ads/negative-keywords.md` for the budget-leak fix.
 
 ### Month 1 — Quick wins + pricing moat
 

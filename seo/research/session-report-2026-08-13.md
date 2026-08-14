@@ -3,8 +3,8 @@
 > Scope: repo cleanup, Search Console connection, `/france` diagnosis and rewrite.
 > Property: `https://www.moudevpro.com/` (URL-prefix — `sc-domain:` does not exist for this site).
 > Data window: **2026-07-15 → 2026-08-11** (28 days, ending 2 days back because GSC is incomplete
-> for the most recent ~48h). Raw exports: `data/gsc-*-2026-08-13.csv`, notes in
-> `data/gsc-snapshot-2026-08-13.md`.
+> for the most recent ~48h). Raw exports: `data/gsc/*-2026-08-13.csv`, notes in
+> `data/gsc/snapshot-2026-08-13.md`.
 
 ---
 
@@ -146,8 +146,10 @@ Copy and rationale: `../content/published/france.md`.
 
 ### `4009cff` — GSC data
 
-Four CSVs plus `data/gsc-snapshot-2026-08-13.md`. The undated CSVs in `data/` are an earlier export
-and the evidence behind `data-insights.md`; they were deliberately **not** overwritten.
+Four CSVs plus `data/gsc/snapshot-2026-08-13.md`. The earlier export is the evidence behind
+`data-insights.md`; it was deliberately **not** overwritten. *(Those files were undated at the time;
+the 2026-08-14 reorganisation renamed them to `data/gsc/*-2026-06-19.csv`, the export date
+`data-insights.md` records.)*
 
 Verified throughout: `eslint .` exit 0, `npm run build` exit 0, 30/30 routes prerendered.
 

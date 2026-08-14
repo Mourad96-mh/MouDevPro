@@ -419,7 +419,7 @@ These keywords are currently running. Their landing pages must match.
 
 Added 2026-06-03. The Morocco-first positioning (sections 1–11) remains primary. On top of it, three international landing pages target the diaspora **and** local businesses in higher-rate markets — delivered remotely, priced in local currency.
 
-**Channel:** organic SEO only. Do **not** open Google Ads geo-targeting to these countries without a separate decision — the Ads negative-keyword list (`ads-data/negative-keywords.md`) intentionally blocks `france`, `usa`, `canada` geo for the Morocco campaigns. Organic and paid are kept separate on purpose.
+**Channel:** organic SEO only. Do **not** open Google Ads geo-targeting to these countries without a separate decision — the Ads negative-keyword list (`data/ads/negative-keywords.md`) intentionally blocks `france`, `usa`, `canada` geo for the Morocco campaigns. Organic and paid are kept separate on purpose.
 
 | Page      | Lang | Audience                                  | Currency | Angle                                              |
 | --------- | ---- | ----------------------------------------- | -------- | -------------------------------------------------- |

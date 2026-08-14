@@ -220,9 +220,9 @@ const md = [
   "",
 ].join("\n");
 
-const outDir = join(repoRoot, "seo", "research", "data");
+const outDir = join(repoRoot, "data", "cwv");
 mkdirSync(outDir, { recursive: true });
 const outPath = join(outDir, `crux-${today}.md`);
 writeFileSync(outPath, md, "utf-8");
 
-console.log(`\n✅ Report written to seo/research/data/crux-${today}.md`);
+console.log(`\n✅ Report written to data/cwv/crux-${today}.md`);
