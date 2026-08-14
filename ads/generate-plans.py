@@ -58,7 +58,9 @@ def account_doc():
 
     d.p([
         "Three problems sit above the individual campaigns. They affect all of them, and two "
-        "of them make campaign-level tuning meaningless until they are resolved. ",
+        "of them make campaign-level tuning meaningless until they are resolved — one because "
+        "the bid model is never allowed to settle, the other because the number it optimises "
+        "toward may not mean what it appears to. ",
         ("Do this document first.", B),
     ])
 
@@ -81,8 +83,8 @@ def account_doc():
 
     d.h1("Problem 1 — the campaigns are restarted by hand twice a day")
     d.p([
-        "Change history for the last 27 days holds ", ("53 campaign status changes", B),
-        ", 55 of them made from the Google Ads mobile app, in a daily cycle at roughly "
+        "Change history for the last 27 days holds ", ("52 campaign status changes", B),
+        ", 55 events in total from the Google Ads mobile app, in a daily cycle at roughly "
         "00:30 and 08:40:",
     ])
     d.mono(
@@ -127,6 +129,45 @@ def account_doc():
         "CPC and CPA stop swinging week to week.",
     )
 
+    d.h2("And Google is changing the account by itself")
+    d.p([
+        "The same change history carries a row that was not made by you at all. Read the "
+        "client column:",
+    ])
+    d.mono(
+        "2026-08-06 21:37:25   Creation-site-web   CAMPAIGN   UPDATE\n"
+        "    GOOGLE_ADS_RECOMMENDATIONS    maximizeConversions.targetCpaMicros"
+    )
+    d.p([
+        ("Auto-apply recommendations is switched on", B),
+        ", and Google set a target CPA on your worst-performing campaign during the week its "
+        "cost per click tripled. Separately, ", ("86 of the 150 change events", B),
+        " are ", ("ASSET / CREATE", MONO), " from ", ("INTERNAL_TOOL", MONO),
+        " — automatically created ad assets, also written by Google rather than by you.",
+    ])
+    d.p([
+        "Neither is necessarily harmful. But both mean the account changes without anyone "
+        "deciding to change it, which makes any before-and-after measurement unreliable — "
+        "and auto-generated ad copy can drift into the agency register your content rules "
+        "specifically forbid.",
+    ])
+    plan_step(
+        d, 3, "Review auto-apply recommendations and turn off the bidding-related ones.",
+        "Recommendations → the three-dot menu → Auto-apply settings.",
+        "A target CPA applied automatically to a campaign you are trying to diagnose makes "
+        "the diagnosis impossible. Keep whichever suggestions you want to review by hand; "
+        "switch off anything that changes bids, budgets or targeting on its own.",
+        "Change history shows no further GOOGLE_ADS_RECOMMENDATIONS rows.",
+    )
+    plan_step(
+        d, 4, "Read what the auto-created assets actually say.",
+        "Campaign → Assets → check the automatically created headlines and descriptions.",
+        "Ad strength is GOOD across all three campaigns, so nothing is broken. But 86 assets "
+        "were written without review, and your content rules forbid 'nous', agency framing "
+        "and unverifiable superlatives.",
+        "Anything off-voice is removed, or automatically created assets is switched off.",
+    )
+
     d.h1("Problem 2 — the conversion signal may be counting the wrong event")
     d.p([
         "Bidding chases whatever the conversion action counts. Only one action is enabled, "
@@ -150,14 +191,14 @@ def account_doc():
         "rather than when they submit the form. The API cannot tell which.",
     ])
     plan_step(
-        d, 3, "Answer: did roughly 59 quote requests actually arrive between 15 July and 11 August?",
+        d, 5, "Answer: did roughly 59 quote requests actually arrive between 15 July and 11 August?",
         "Your inbox / WhatsApp / the leads sheet.",
         "If the real number is far lower, the action counts page views, the bidding has "
         "trained on that for weeks, and it explains the 20 MAD CPC in the Casablanca campaign.",
         "The count you can verify matches, or does not, what Ads reports.",
     )
     plan_step(
-        d, 4, "Restore the Lead Qualifié (OCI) conversion action.",
+        d, 6, "Restore the Lead Qualifié (OCI) conversion action.",
         "Tools → Conversions.",
         "It was built in July and is the only signal that teaches the algorithm which leads "
         "are actually worth having, rather than which clicks reach a page.",
@@ -198,21 +239,21 @@ def account_doc():
         " are not applied anywhere, so that safeguard does not exist.",
     ])
     plan_step(
-        d, 5, "Create one shared negative list and apply it to all three campaigns.",
+        d, 7, "Create one shared negative list and apply it to all three campaigns.",
         "Tools → Shared library → Negative keyword lists → then apply to each campaign.",
         "The repo file already assumes a shared list exists. Campaign-level negatives have "
         "to be maintained three times and drift apart — which is exactly what happened.",
         "Each campaign's negative list shows the shared list attached.",
     )
     plan_step(
-        d, 6, "Add the 18 missing terms, plus what this pull surfaced.",
+        d, 8, "Add the 18 missing terms, plus what this pull surfaced.",
         "The new shared list.",
         "New waste found in this window: gratis, liveweave, opencart, godaddy, google sites, "
         "yolasite. Keep the exceptions the repo file flags — the 'comment créer…' terms do convert.",
         "Re-run the search-terms report in 2 weeks; the DIY bucket should shrink sharply.",
     )
     plan_step(
-        d, 7, "Delete the positive keywords 'gratuite' and 'créer une landing page gratuite'.",
+        d, 9, "Delete the positive keywords 'gratuite' and 'créer une landing page gratuite'.",
         "Creation-site-web → Keywords.",
         "You sell sites from 2 000 MAD. Bidding on 'free' buys the one visitor guaranteed "
         "not to buy.",
@@ -223,6 +264,9 @@ def account_doc():
     for i, (what, why) in enumerate([
         ("Stop the twice-daily pausing (Problem 1).",
          "Nothing about bidding can be measured until delivery is continuous."),
+        ("Turn off auto-apply for anything that changes bids or budgets.",
+         "Google set a target CPA by itself on 6 August. A campaign that changes on its own "
+         "cannot be diagnosed."),
         ("Verify the conversion action (Problem 2).",
          "Decides whether the signal driving all bidding is real."),
         ("Build and apply the shared negative list (Problem 3).",
