@@ -4,6 +4,38 @@ import useInView from "../../hooks/useInView";
 
 const PROJECTS = [
   {
+    tag: "Agritech & Export",
+    title: "Moreco",
+    desc: "Site multilingue (FR/EN/ES/NL) pour une société d'innovation agronomique : catalogue de produits à base de silicium biodisponible, ressources R&D, actualités et demande de devis en ligne.",
+    alt: "Moreco — création site web multilingue société agronomique Maroc, catalogue produits et demande de devis",
+    url: "https://moreco.ma/fr/",
+    image: "/portfolio/moreco.png",
+  },
+  {
+    tag: "E-commerce Décoration",
+    title: "Maison Déco",
+    desc: "Boutique en ligne de mobilier d'art et tableaux faits main au Maroc : consoles, tables basses et tableaux en série limitée, commandes sur mesure et paiement à la livraison.",
+    alt: "Maison Déco — création boutique e-commerce mobilier d'art et décoration Maroc, paiement à la livraison",
+    url: "https://maisondeco.ma/",
+    image: "/portfolio/maison-deco.png",
+  },
+  {
+    tag: "E-commerce Art",
+    title: "Nuance Art",
+    desc: "Boutique en ligne d'art traditionnel encadré à Casablanca : calligraphie arabe, zellige et enluminures, navigation par thème et format, ventes flash et livraison offerte partout au Maroc.",
+    alt: "Nuance Art — création site e-commerce tableaux calligraphie et zellige encadrés Casablanca",
+    url: "https://nuanceart.ma/",
+    image: "/portfolio/nuance-art.png",
+  },
+  {
+    tag: "E-commerce Pâtisserie",
+    title: "Sweettools",
+    desc: "Boutique en ligne de matériel de pâtisserie et cake design au Maroc : catalogue par catégories, kits prêts à l'emploi, conseils et paiement à la livraison avec envoi en 24 à 48 h.",
+    alt: "Sweettools — création boutique en ligne matériel pâtisserie et cake design Maroc",
+    url: "https://www.sweettols.com/",
+    image: "/portfolio/sweet-tools.png",
+  },
+  {
     tag: "Immobilier",
     title: "Mecalus",
     desc: "Plateforme immobilière pour acheter, vendre et investir au Maroc. Recherche avancée de biens, fiches propriétés détaillées et gestion locative à Casablanca et Marrakech.",
