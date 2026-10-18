@@ -231,7 +231,7 @@ const HomePage = () => {
           content="Création de site web à Casablanca et au Maroc — développeur freelance, pas d'agence. Site vitrine dès 2 000 DH, livré en 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteLd)}</script>
         <script type="application/ld+json">{JSON.stringify(webPageLd)}</script>

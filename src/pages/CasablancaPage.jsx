@@ -88,12 +88,12 @@ const CasablancaPage = () => {
           content="Développeur web freelance à Casablanca — site vitrine dès 2 000 DH, e-commerce, application sur mesure. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/casablanca" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Création Site Web Casablanca | Développeur Web Freelance | MouDEV" />
         <meta name="twitter:description" content="Développeur web freelance à Casablanca. Site vitrine dès 2 000 DH. Devis gratuit en 24h, livraison 7 à 10 jours." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="création site web casablanca, développeur web casablanca, web developer casablanca, site vitrine casablanca, site e-commerce casablanca, devis site web casablanca, website design casablanca" />
         <link rel="canonical" href="https://www.moudevpro.com/casablanca" />

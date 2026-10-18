@@ -121,12 +121,12 @@ const RabatPage = () => {
           content="Développeur web freelance pour Rabat — site vitrine dès 2 000 DH, e-commerce, site institutionnel. Startups, ONG, PME. Paiement après livraison, livraison 7 à 10 jours. Devis gratuit 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/rabat" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Création Site Web Rabat | Développeur Web Freelance | MouDEV" />
         <meta name="twitter:description" content="Développeur web freelance pour Rabat. Site vitrine dès 2 000 DH, e-commerce, institutionnel. Devis gratuit en 24h, livraison 7 à 10 jours." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="création site web rabat, développeur web rabat, web developer rabat, site vitrine rabat, site e-commerce rabat, devis site web rabat, freelance web rabat, création site web temara, création site web salé" />
         <link rel="canonical" href="https://www.moudevpro.com/rabat" />

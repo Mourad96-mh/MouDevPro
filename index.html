@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/webdev-logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Rubik is self-hosted (src/fonts.css) — the Google Fonts stylesheet was
+         render-blocking ~760 ms on mobile. Only the upright face is preloaded:
+         italics are rare and below the fold. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/rubik-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
     <meta name="geo.region" content="MA-01" />
     <meta name="geo.placename" content="Casablanca, Maroc" />
     <meta name="geo.position" content="33.589886;-7.603869" />
@@ -19,7 +22,9 @@
       name="google-site-verification"
       content="GSLrbqHnjWZMKUIlPpQERLlx4TvXZdxOKerDn43HJqo"
     />
-    <link rel="preload" as="image" href="/hero-img.avif" type="image/avif" />
+    <!-- No hero preload here: this file is the shell of every route, so a global
+         preload made city pages fetch the homepage hero ahead of their own. Each
+         page's hero <img> carries fetchpriority="high" instead. -->
     <title>
       Création Site Web Casablanca | Développeur Web Freelance Maroc
     </title>
@@ -28,17 +33,11 @@
          route's HTML at prerender time. Only global constants live here, to avoid duplicate /
          conflicting tags (e.g. two canonicals) in the prerendered output. The <title> below is
          a fallback only — react-helmet replaces it on every route. -->
-    <meta property="og:locale" content="fr_MA" />
-    <meta
-      property="og:image"
-      content="https://www.moudevpro.com/webdev-logo.png"
-    />
-    <meta property="og:image:width" content="360" />
-    <meta property="og:image:height" content="360" />
-    <meta
-      property="og:image:alt"
-      content="MouDevPro — Développeur Web Freelance Casablanca Maroc"
-    />
+    <!-- og:image, og:image:alt and og:locale are set per page, with defaults in
+         AppLayout (Helmet dedupes them; tags here would be duplicated instead).
+         Every share image is a 1200×630 JPG, so the size is a global constant. -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta
@@ -58,14 +57,25 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "AW-18032730547");
+      // Production only: `npm run dev` / `vite preview` would otherwise send
+      // page_views (and Ads conversions) from localhost into GA4 and Ads.
+      if (location.hostname === "www.moudevpro.com") {
+        gtag("config", "AW-18032730547");
+        gtag("config", "G-P7F2509ZQF");
+      }
     </script>
 
     <!-- Event snippet for Contact-from-moudev conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
+        // Navigate once: on the hit's callback, or after 1 s if it never comes
+        // (gtag.js blocked by an ad blocker, or no tag configured on localhost)
+        // — otherwise the WhatsApp button silently does nothing.
+        var done = false;
         var callback = function () {
+          if (done) return;
+          done = true;
           if (typeof url != "undefined") {
             window.location = url;
           }
@@ -74,42 +84,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           send_to: "AW-18032730547/abRzCJSdzKUcELPD1pZD",
           event_callback: callback,
         });
+        setTimeout(callback, 1000);
         return false;
       }
     </script>
   </head>
   <body>
-    <noscript>
-      <div
-        style="
-          font-family: sans-serif;
-          padding: 3rem;
-          text-align: center;
-          max-width: 800px;
-          margin: 0 auto;
-        "
-      >
-        <!-- Deliberately a paragraph, not a heading: this block prerenders onto
-             every page, so a heading here would give /tarifs, /contact and the
-             city pages a second, contradictory top-level heading ahead of their
-             real one. -->
-        <p style="font-size: 1.8rem; font-weight: 700; line-height: 1.25">
-          Création de site web professionnel à Casablanca — Développeur Web
-          Freelance Maroc
-        </p>
-        <p>
-          Développeur web freelance à Casablanca. Création de sites vitrine,
-          e-commerce et applications web sur mesure. Livraison en 7 à 10
-          jours. Devis gratuit en 24h.
-        </p>
-        <p>
-          Contactez-moi pour votre devis gratuit :
-          <a href="tel:+212696964341">+212 696 964 341</a> |
-          <a href="mailto:creation-site@moudevpro.com">creation-site@moudevpro.com</a>
-        </p>
-        <p>Quartier Maarif, Casablanca, Maroc</p>
-      </div>
-    </noscript>
+    <!-- No noscript fallback: every route is prerendered with its full content,
+         and a shared fallback put homepage (Casablanca) copy at the top of every
+         page's HTML, including /marrakech and /usa. -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

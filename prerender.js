@@ -42,7 +42,10 @@ const staticRoutes = [
   "/blog",
 ];
 const blogRoutes = blogPosts.map((p) => `/blog/${p.slug}`);
-const routes = [...staticRoutes, ...blogRoutes];
+// Any unmatched path renders NotFoundPage; it is written to dist/404.html,
+// which .htaccess serves (with a 404 status) for unknown URLs.
+const NOT_FOUND_ROUTE = "/__404__";
+const routes = [...staticRoutes, ...blogRoutes, NOT_FOUND_ROUTE];
 
 const server = await preview({ logLevel: "silent" });
 const base = server.resolvedUrls.local[0].replace(/\/$/, "");
@@ -98,11 +101,14 @@ for (const route of routes) {
       .catch(() => {});
 
     const html = await page.content();
-    const outDir = route === "/" ? distDir : join(distDir, route);
-    await mkdir(outDir, { recursive: true });
-    await writeFile(join(outDir, "index.html"), html, "utf-8");
+    const outFile =
+      route === "/" ? join(distDir, "index.html")
+      : route === NOT_FOUND_ROUTE ? join(distDir, "404.html")
+      : join(distDir, route, "index.html");
+    await mkdir(dirname(outFile), { recursive: true });
+    await writeFile(outFile, html, "utf-8");
     ok += 1;
-    console.log(`  ✓ ${route}  →  dist${route === "/" ? "" : route}/index.html`);
+    console.log(`  ✓ ${route}  →  ${outFile.slice(__dirname.length + 1)}`);
   } catch (err) {
     console.error(`  ✗ ${route}  —  ${err.message}`);
   } finally {

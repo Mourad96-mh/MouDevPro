@@ -36,11 +36,14 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]
 RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
 RewriteRule ^(.+?)/?$ /$1/index.html [L]
 
-# SPA fallback
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+# Unknown URLs: a real 404, not an SPA fallback.
+#
+# Every route is prerendered (prerender.js fails the build if one is missing),
+# so there is nothing left for a "serve index.html for anything" rule to catch -
+# it only turned typos and dead links into 200 copies of the homepage (soft
+# 404s, with the homepage canonical). 404.html is the prerendered NotFoundPage
+# (noindex); the bundle boots on it and React Router renders the same page.
+ErrorDocument 404 /404.html
 
 # Correct MIME type for sitemap
 <FilesMatch "sitemap\.xml$">
@@ -58,6 +61,8 @@ RewriteRule . /index.html [L]
 # 2026-08-14. .webp is already mapped correctly by the host.
 # ---------------------------------------------------------------------------
 AddType image/avif .avif
+# Self-hosted Rubik (public/fonts/) - same host, same risk of an unknown type.
+AddType font/woff2 .woff2
 
 # ---------------------------------------------------------------------------
 # Compression

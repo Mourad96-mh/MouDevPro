@@ -136,12 +136,12 @@ const EcommercePage = () => {
           content="Boutique en ligne professionnelle au Maroc dès 3 000 DH. Paiement CMI, catalogue illimité, SEO inclus. Développeur freelance — devis gratuit en 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/ecommerce" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Site E-commerce Maroc | Boutique en Ligne | MouDEV" />
         <meta name="twitter:description" content="Boutique en ligne professionnelle au Maroc dès 3 000 DH. Paiement CMI, catalogue illimité, SEO inclus. Devis gratuit en 24h." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="site e-commerce maroc, boutique en ligne maroc, boutique en ligne casablanca, site e-commerce casablanca, création boutique en ligne maroc, comment créer une boutique en ligne maroc, prix site e-commerce maroc, woocommerce maroc, site e-commerce rabat, site e-commerce marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/ecommerce" />

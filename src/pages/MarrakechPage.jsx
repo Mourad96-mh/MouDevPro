@@ -142,12 +142,12 @@ const MarrakechPage = () => {
           content="Professional hotel and riad website design in Marrakech. Online booking, multilingual FR/EN/AR, tourism SEO. Free quote in 24h."
         />
         <meta property="og:url" content="https://www.moudevpro.com/marrakech" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Hotel Website Marrakech | Riad & Restaurant Web Design | MouDEV" />
         <meta name="twitter:description" content="Professional hotel and riad website design in Marrakech. Online booking, multilingual FR/EN/AR, tourism SEO. Free quote in 24h." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="site web hôtel marrakech, riad website marrakech, hotel website design morocco, création site web marrakech, développeur web marrakech, site réservation riad maroc, web developer marrakech" />
         <link rel="canonical" href="https://www.moudevpro.com/marrakech" />

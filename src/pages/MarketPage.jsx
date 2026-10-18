@@ -236,15 +236,13 @@ const MarketPage = ({ market }) => {
         <meta property="og:title" content={data.metaTitle} />
         <meta property="og:description" content={data.metaDescription} />
         <meta property="og:url" content={data.canonical} />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:image:alt" content={data.h1} />
         <meta property="og:locale" content={data.locale} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={data.metaTitle} />
         <meta name="twitter:description" content={data.metaDescription} />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <script type="application/ld+json">{JSON.stringify(serviceLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>

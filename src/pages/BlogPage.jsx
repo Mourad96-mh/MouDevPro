@@ -28,12 +28,12 @@ const BlogPage = () => {
         <meta property="og:title" content="Blog — Conseils Création Site Web au Maroc | MouDEV" />
         <meta property="og:description" content="Conseils, tarifs et guides pour créer un site web professionnel au Maroc." />
         <meta property="og:url" content="https://www.moudevpro.com/blog" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Blog — Conseils Création Site Web au Maroc | MouDEV" />
         <meta name="twitter:description" content="Conseils, tarifs et guides pour créer un site web professionnel au Maroc." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.moudevpro.com/blog" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/blog" />

@@ -126,12 +126,12 @@ const AboutPage = () => {
           content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison."
         />
         <meta property="og:url" content="https://www.moudevpro.com/about" />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV" />
         <meta name="twitter:description" content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison." />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="keywords" content="mourad développeur web, moudevpro, à propos moudev casablanca, web developer maroc mourad, mourad mhani développeur" />
         <meta name="robots" content="index, follow" />
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/about" />

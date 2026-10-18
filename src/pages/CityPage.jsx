@@ -131,15 +131,13 @@ const CityPage = ({ city, lang }) => {
         <meta property="og:title" content={data.metaTitle} />
         <meta property="og:description" content={data.metaDescription} />
         <meta property="og:url" content={data.canonical} />
-        <meta property="og:image" content="https://www.moudevpro.com/webdev-logo.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content={lang === "ar" ? "ar_MA" : lang === "en" ? "en_US" : "fr_MA"} />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={data.metaTitle} />
         <meta name="twitter:description" content={data.metaDescription} />
-        <meta name="twitter:image" content="https://www.moudevpro.com/webdev-logo.png" />
+        <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         {/* JSON-LD */}
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
