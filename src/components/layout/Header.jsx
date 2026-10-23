@@ -87,6 +87,15 @@ const Header = () => {
           </li>
           <li className="nav__item">
             <Link
+              to="/google-ads"
+              className={`nav__link${pathname === "/google-ads" ? " nav__link--active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.googleAds")}
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link
               to="/blog"
               className={`nav__link${blogActive ? " nav__link--active" : ""}`}
               onClick={() => setMenuOpen(false)}

@@ -182,7 +182,8 @@ const TarifsPage = () => {
           <Link to="/blog/prix-site-web-maroc-2026">
             combien coûte un site web au Maroc en 2026
           </Link>{" "}
-          — guide complet des prix.
+          — guide complet des prix. Besoin de clients rapidement ? Découvrez ma{" "}
+          <Link to="/google-ads">gestion Google Ads à Casablanca</Link>.
         </p>
       </section>
 

@@ -204,6 +204,7 @@ moudevpro.com/
 ├── /marrakech         City landing page — tourism angle
 ├── /services          All services overview
 ├── /ecommerce         E-commerce dedicated page
+├── /google-ads        Google Ads management service (standalone, 1 000 DH/mois) — Ads landing page
 ├── /tarifs            Pricing page — critical for price-intent searches
 ├── /contact           Quote request form
 ├── /france            International — FR, diaspora + businesses, € pricing

@@ -133,6 +133,7 @@ const routes = [
   { url: "/developpeur-web-freelance-maroc", changefreq: "monthly", priority: 0.9 },
   { url: "/tarifs", changefreq: "monthly", priority: 0.9 },
   { url: "/ecommerce", changefreq: "monthly", priority: 0.8 },
+  { url: "/google-ads", changefreq: "monthly", priority: 0.8 },
   { url: "/services", changefreq: "monthly", priority: 0.8 },
   { url: "/contact", changefreq: "monthly", priority: 0.7 },
   { url: "/about", changefreq: "monthly", priority: 0.5 },

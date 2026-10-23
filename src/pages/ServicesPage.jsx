@@ -104,9 +104,9 @@ const SERVICES = [
     icon: "📢",
     title: "Google Ads & publicité en ligne",
     desc: "Campagnes Google Ads pour générer des leads qualifiés rapidement. Je gère votre budget publicitaire avec précision : ciblage local (Casablanca, Rabat, Marrakech), optimisation du Quality Score et suivi des conversions.",
-    price: "Sur devis",
-    link: "/contact",
-    linkLabel: "Demander un devis Ads",
+    price: "dès 1 000 DH/mois",
+    link: "/google-ads",
+    linkLabel: "Gestion Google Ads à Casablanca",
     keywords: ["Google Ads Maroc", "Publicité en ligne Casablanca", "Campagnes Google"],
   },
 ];

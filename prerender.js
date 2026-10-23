@@ -36,6 +36,7 @@ const staticRoutes = [
   "/tarifs",
   "/casablanca",
   "/ecommerce",
+  "/google-ads",
   "/services",
   "/contact",
   "/about",
