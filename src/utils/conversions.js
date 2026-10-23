@@ -9,6 +9,19 @@
 
 export const AW_ID = "AW-18032730547";
 
+// GA4 property moudevpro.com — configured alongside Ads in index.html.
+export const GA4_ID = "G-P7F2509ZQF";
+
+/**
+ * GA4-only event for WhatsApp/phone clicks (method: "whatsapp" | "phone").
+ * Kept separate from generate_lead so form leads stay distinguishable.
+ */
+export function fireContactClick(method, source) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "contact_click", { send_to: GA4_ID, method, source });
+  }
+}
+
 // "Contact" action in Google Ads (Submit lead form) — devis-form submits only.
 export const FORM_CONVERSION_LABEL = "Hlo6CP2wzc4cELPD1pZD";
 

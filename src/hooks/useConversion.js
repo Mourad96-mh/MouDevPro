@@ -1,5 +1,6 @@
 import { trackLead } from "../utils/trackLead";
 import { getVisitorRef } from "../utils/attribution";
+import { fireContactClick } from "../utils/conversions";
 
 const WA_NUMBER = "212696964341";
 const PHONE_TEL = "tel:+212696964341";
@@ -28,6 +29,7 @@ const useConversion = () => {
   // source is optional — all existing track(WA_URL) calls work unchanged
   const track = (url = WA_URL, source = "wa-cta") => {
     trackLead({ source }, "whatsapp");
+    fireContactClick("whatsapp", source);
 
     if (typeof window.fbq === "function") window.fbq("track", "Lead");
     if (typeof window.gtag_report_conversion === "function") {
@@ -40,6 +42,7 @@ const useConversion = () => {
   // For tel: links — browser opens the dialer via href="tel:..."
   const trackPhone = (source = "phone-link") => {
     trackLead({ source }, "phone");
+    fireContactClick("phone", source);
 
     if (typeof window.fbq === "function") window.fbq("track", "Lead");
     if (typeof window.gtag_report_conversion === "function") {
