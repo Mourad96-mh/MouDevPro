@@ -10,6 +10,9 @@ RewriteRule ^(.*)$ https://www.moudevpro.com/$1 [R=301,L]
 RewriteRule ^agence-web-marrakech/?$ /marrakech [R=301,L]
 RewriteRule ^agence-web-rabat/?$ /rabat [R=301,L]
 RewriteRule ^agence-web-tanger/?$ / [R=301,L]
+# English-style guesses that showed up as landing pages in GA4 (2026-10-24)
+RewriteRule ^about-us/?$ /about [R=301,L]
+RewriteRule ^contact-us/?$ /contact [R=301,L]
 
 # Canonical URL form: no trailing slash.
 #

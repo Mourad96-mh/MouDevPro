@@ -15,10 +15,13 @@ export const GA4_ID = "G-P7F2509ZQF";
 /**
  * GA4-only event for WhatsApp/phone clicks (method: "whatsapp" | "phone").
  * Kept separate from generate_lead so form leads stay distinguishable.
+ * The CTA id goes in cta_source, never "source": GA4 reads source/medium/
+ * campaign event params as a traffic-source override and was re-attributing
+ * Paid Search sessions to "wa-cta / Unassigned".
  */
 export function fireContactClick(method, source) {
   if (typeof window.gtag === "function") {
-    window.gtag("event", "contact_click", { send_to: GA4_ID, method, source });
+    window.gtag("event", "contact_click", { send_to: GA4_ID, method, cta_source: source });
   }
 }
 
