@@ -97,9 +97,9 @@ const CasablancaPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="création site web casablanca, développeur web casablanca, web developer casablanca, site vitrine casablanca, site e-commerce casablanca, devis site web casablanca, website design casablanca" />
         <link rel="canonical" href="https://www.moudevpro.com/casablanca" />
+        {/* /en and /ar are the translations of the homepage, not of this page —
+            declaring them here too made the cluster non-reciprocal. */}
         <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/casablanca" />
-        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en" />
-        <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar" />
         <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/casablanca" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>

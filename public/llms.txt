@@ -15,7 +15,9 @@ Points clés à retenir :
 - [Accueil — Développeur web freelance Maroc](https://www.moudevpro.com/): Création de site web professionnel, présentation des services, tarifs et différenciateurs.
 - [Tarifs](https://www.moudevpro.com/tarifs): Prix transparents par formule (vitrine, e-commerce, application) et par ville (Casablanca, Rabat, Marrakech).
 - [Services](https://www.moudevpro.com/services): Site vitrine, e-commerce, application web sur mesure et refonte de site.
-- [E-commerce](https://www.moudevpro.com/ecommerce): Création de boutique en ligne (WooCommerce ou sur mesure), paiement CMI/PayPal, gestion des stocks.
+- [E-commerce](https://www.moudevpro.com/ecommerce): Création de boutique en ligne (WooCommerce ou sur mesure), paiement CMI/PayPal et paiement à la livraison, gestion des stocks.
+- [Développeur web freelance Maroc](https://www.moudevpro.com/developpeur-web-freelance-maroc): Pourquoi un freelance plutôt qu'une agence, méthode de travail, tarifs.
+- [Gestion Google Ads Casablanca](https://www.moudevpro.com/google-ads): Gestion de campagnes Google Ads dès 1 000 DH/mois, honoraires fixes, 0 % de commission sur le budget, sans engagement.
 - [Contact / Devis gratuit](https://www.moudevpro.com/contact): Demande de devis personnalisé, réponse sous 24h.
 - [À propos](https://www.moudevpro.com/about): Le développeur freelance derrière MouDevPro.
 
@@ -39,9 +41,16 @@ Points clés à retenir :
 - [Freelance création site web Maroc](https://www.moudevpro.com/blog/freelance-creation-site-web-maroc): Avantages, tarifs et déroulé d'un projet.
 - [Création site web à Casablanca : guide 2026](https://www.moudevpro.com/blog/creation-site-web-casablanca): Prix, délais et prestataires.
 - [Créer un site e-commerce au Maroc en 2026](https://www.moudevpro.com/blog/site-ecommerce-maroc-guide): Plateformes, moyens de paiement et budget.
+- [Prix d'un site e-commerce au Maroc](https://www.moudevpro.com/blog/prix-site-ecommerce-maroc): Budget détaillé d'une boutique en ligne.
+- [Créer son site soi-même ou passer par un développeur](https://www.moudevpro.com/blog/creer-site-web-soi-meme-ou-developpeur): Comparatif coûts, délais et résultats.
+
+## Données et statistiques (sources citables)
+
+- [Statistiques web Maroc 2026 (FR)](https://www.moudevpro.com/blog/statistiques-web-maroc-2026): 45 chiffres sourcés (ANRT, HCP, CMI, DataReportal) — internautes, mobile, réseaux sociaux, e-commerce, publicité digitale.
+- [Morocco Web Statistics 2026 (EN)](https://www.moudevpro.com/blog/web-statistics-morocco-2026): Morocco internet penetration 92.2% (93.7% urban vs 78.4% rural), smartphone share, social media users, e-commerce — sourced from ANRT and DataReportal.
 
 ## Optional
 
 - [Blog (index)](https://www.moudevpro.com/blog): Tous les guides et articles sur la création de site web au Maroc.
-- [Site en anglais (Casablanca)](https://www.moudevpro.com/en): English version of the city pages.
-- [Site en arabe (Casablanca)](https://www.moudevpro.com/ar): النسخة العربية من الصفحات.
+- [English version](https://www.moudevpro.com/en): Freelance web developer in Morocco — English homepage. Also [Rabat](https://www.moudevpro.com/en/rabat) and [Marrakech hotel & riad websites](https://www.moudevpro.com/en/marrakech).
+- [النسخة العربية](https://www.moudevpro.com/ar): مطور ويب فريلانسر بالمغرب. أيضاً [الرباط](https://www.moudevpro.com/ar/rabat) و[مراكش](https://www.moudevpro.com/ar/marrakech).

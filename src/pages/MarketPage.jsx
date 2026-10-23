@@ -71,7 +71,7 @@ const LABELS = {
     priceFrom: (p) => `from ${p}`,
     quote: "Free quote",
     faqTitle: "Frequently asked questions",
-    factsTitle: (c) => `Web developer for the ${c} — key facts`,
+    factsTitle: (c) => `Web developer for ${c} — key facts`,
     ctaTitle: "Ready to launch your website?",
     ctaSub: "Free, personalized quote within 24h — wherever you are.",
     ctaBtn: "Get your free quote",
@@ -338,7 +338,7 @@ const MarketPage = ({ market }) => {
       {/* GEO / AEO credibility facts — structured for AI citation */}
       <section className="geo-facts container" aria-label="MouDEV en résumé">
         <h2 className="secondary-heading center-text lg-mb">
-          {L.factsTitle(data.country)}
+          {L.factsTitle(data.linkLabel[data.lang])}
         </h2>
         <div className="geo-facts__grid">
           {data.facts.map(([stat, label], i) => (
@@ -366,7 +366,7 @@ const MarketPage = ({ market }) => {
       {/* Pricing */}
       <section id="tarifs" className="tarifs-section container">
         <h2 className="secondary-heading center-text lg-mb">
-          {L.pricingTitle(data.country)}
+          {L.pricingTitle(data.linkLabel[data.lang])}
         </h2>
         <p className="text center-text sl-mb">{L.pricingSub}</p>
         <div className="tarifs-grid">

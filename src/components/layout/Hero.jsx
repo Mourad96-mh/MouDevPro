@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useConversion from "../../hooks/useConversion";
 
-const Hero = ({ cityName }) => {
+// h1 overrides the generic translated heading when a city page targets a
+// more specific keyword (e.g. hotel/riad on /en/marrakech).
+const Hero = ({ cityName, h1 }) => {
   const { t } = useTranslation();
   const { track, WA_URL } = useConversion();
 
@@ -10,7 +12,7 @@ const Hero = ({ cityName }) => {
     <div className="hero container">
       <div className="hero__content">
         <h1 className="heading--primary">
-          {t("hero.h1", { city: cityName })}
+          {h1 || t("hero.h1", { city: cityName })}
         </h1>
         <p className="subheading sl-mb">{t("hero.subheading", { city: cityName })}</p>
 

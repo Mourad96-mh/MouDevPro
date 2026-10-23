@@ -65,6 +65,14 @@ const FAQ_ITEMS = [
     a: "C'est possible, mais rarement rentable : abonnement mensuel à vie (29–79 USD/mois sur Shopify), intégration CMI compliquée, SEO limité et des semaines de travail d'apprentissage. Une boutique professionnelle livrée clé en main dès 3 000 DH, sans abonnement, est presque toujours plus économique dès la première année. Je vous conseille gratuitement sur la meilleure option pour votre cas.",
   },
   {
+    q: "Comment vendre en ligne au Maroc avec le paiement à la livraison ?",
+    a: "Au Maroc, une grande partie des commandes en ligne se paie encore à la livraison. J'intègre donc le paiement à la livraison dans chaque boutique, à côté du paiement par carte (CMI) : le client commande, votre livreur ou votre société de livraison encaisse, et la commande est suivie dans l'administration. Vous pouvez aussi demander une confirmation par WhatsApp avant expédition pour limiter les commandes non honorées.",
+  },
+  {
+    q: "Shopify ou WooCommerce pour une boutique en ligne au Maroc ?",
+    a: "Shopify fonctionne au Maroc mais impose un abonnement mensuel en dollars et des applications payantes pour le paiement local et la livraison. WooCommerce n'a pas d'abonnement : vous ne payez que l'hébergement, et l'intégration CMI et du paiement à la livraison est plus simple. Pour la plupart des PME marocaines, je recommande WooCommerce ; Shopify reste pertinent si vous vendez surtout à l'international.",
+  },
+  {
     q: "Créez-vous des sites e-commerce à Casablanca, Rabat et Marrakech ?",
     a: "Oui — je crée des boutiques en ligne pour des clients à Casablanca, Rabat, Marrakech et partout au Maroc. Tout le projet se gère à distance via WhatsApp : brief, validation du design, formation et mise en ligne. Aucun déplacement, aucun frais supplémentaire, même prix dans toutes les villes.",
   },
@@ -121,7 +129,7 @@ const EcommercePage = () => {
     <>
       <Helmet>
         <title>
-          Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne | MouDEV
+          Création Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne
         </title>
         <meta
           name="description"
@@ -129,7 +137,7 @@ const EcommercePage = () => {
         />
         <meta
           property="og:title"
-          content="Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne | MouDEV"
+          content="Création Site E-commerce Maroc dès 3 000 DH | Boutique en Ligne"
         />
         <meta
           property="og:description"

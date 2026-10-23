@@ -4,6 +4,11 @@ const BASE = "https://www.moudevpro.com";
 // Audience: Moroccan diaspora (MRE) + local businesses wanting quality remote dev
 // at an optimized price. Pricing shown in local currency (€/$).
 export const marketConfig = {
+  // Positioning (rewritten 2026-10-23 from GSC data): these pages were ranking
+  // 50–100 for generic terms ("développement web sur mesure", "développeur site
+  // web") owned by local agencies. They now lead with what local agencies can't
+  // claim — a developer based in Morocco — to win the offshore / sous-traitance /
+  // MRE long tail instead.
   france: {
     lang: "fr",
     dir: "ltr",
@@ -18,34 +23,35 @@ export const marketConfig = {
     price: { vitrine: "199 €", ecommerce: "299 €" },
     priceNumeric: { vitrine: "199", ecommerce: "299" },
     keywords:
-      "externaliser création site web, développeur web hors de France, développeur web à l'étranger, développeur web freelance pas cher France, faire faire son site web à l'étranger, développeur web freelance Paris, développeur web freelance Lyon, développeur web freelance Marseille, prix site web France freelance, budget création site internet, tarif développeur web France, créer site web MRE France, développeur web marocain France",
-    metaTitle: "Développeur Web Freelance pour la France — dès 199 €",
+      "développeur web au Maroc pour la France, développeur web freelance Maroc France, sous-traitance développement web Maroc, externaliser création site web Maroc, développement web offshore Maroc, faire créer son site web au Maroc, développeur web marocain freelance, création site web MRE, site web pas cher freelance Maroc, prix site web freelance France",
+    metaTitle: "Développeur Web Freelance au Maroc pour la France — dès 199 €",
     metaDescription:
-      "Externalisez la création de votre site web : développeur freelance basé au Maroc, site dès 199 €, même fuseau horaire, paiement après livraison. Devis gratuit 24h.",
-    h1: "Externaliser la Création de Votre Site Web — Développeur Freelance pour la France",
+      "Faites créer votre site web au Maroc par un développeur freelance : dès 199 €, même fuseau que la France (±1h), paiement après livraison. Devis gratuit 24h.",
+    h1: "Faire Créer Votre Site Web au Maroc — Développeur Freelance pour la France et les MRE",
     heroSub:
-      "Je crée votre site web professionnel depuis le Maroc, pour vos clients en France. Même fuseau horaire, contact direct avec le développeur, et un budget 3 à 5 fois inférieur à une agence française. Devis gratuit sous 24h.",
+      "Entreprise française ou Marocain résidant en France : je crée votre site web depuis Casablanca, en français, à ±1h de Paris. Un budget 3 à 5 fois inférieur à une agence française, et vous ne payez qu'après la livraison. Devis gratuit sous 24h.",
     intro: [
-      "Faire créer son site web hors de France n'a plus rien à voir avec la sous-traitance low-cost d'il y a dix ans. Je suis développeur web freelance basé au Maroc, et je crée des sites sur mesure pour des entrepreneurs français et des Marocains résidant en France (MRE) — directement, sans agence et sans intermédiaire.",
-      "Externaliser, ici, veut simplement dire que vous ne payez pas les charges d'une agence parisienne. Même stack technique (React, WordPress, WooCommerce), même exigence de qualité, mais un devis 3 à 5 fois moins élevé — et vous ne réglez qu'après la livraison.",
-      "Le décalage horaire ne joue pas contre vous : le Maroc est à ±1h de la France. On échange en direct sur WhatsApp ou en visio, aux heures qui vous arrangent, en français, avec le développeur qui code réellement votre site. Livraison en 7 à 10 jours.",
+      "Je suis développeur web freelance au Maroc, basé à Casablanca. Je crée des sites vitrine, e-commerce et applications web pour deux types de clients en France : des entrepreneurs et PME françaises qui veulent externaliser leur site sans passer par une agence, et des Marocains résidant en France (MRE) qui préfèrent travailler avec un développeur qui parle leur langue — au sens propre comme au figuré.",
+      "Sous-traiter son développement web au Maroc n'est plus un pari : le français y est une langue de travail courante, les développeurs y utilisent les mêmes outils qu'en France (React, WordPress, WooCommerce) et le pays est sur le même fuseau horaire, à ±1h. La différence, c'est le coût : sans loyer parisien ni équipe commerciale à financer, mon devis est 3 à 5 fois moins élevé.",
+      "Et contrairement aux plateformes de sous-traitance offshore, vous ne passez par aucun intermédiaire : vous parlez directement avec le développeur qui code votre site, sur WhatsApp ou en visio, aux heures françaises. Livraison en 7 à 10 jours, paiement uniquement après validation.",
     ],
     offshore: {
-      title: "Pourquoi externaliser la création de votre site web ?",
-      lead: "Trois raisons reviennent chez mes clients français :",
+      title: "Pourquoi sous-traiter la création de votre site web au Maroc ?",
+      lead: "Ce que mes clients en France cherchent en venant me voir :",
       bullets: [
-        ["Le budget", "Une agence parisienne facture un site vitrine 3 000 à 8 000 €. Le même site, livré avec la même stack, démarre chez moi à 199 €. Vous payez le travail, pas les bureaux ni les commerciaux."],
-        ["La lenteur", "Un projet d'agence prend 2 à 4 mois entre les allers-retours et les validations internes. Je livre un site vitrine en 7 à 10 jours parce qu'il n'y a personne entre vous et moi."],
-        ["L'interlocuteur", "En agence, vous parlez à un chef de projet qui transmet. Ici, vous parlez au développeur. Les réponses sont techniques, immédiates et sans déformation."],
+        ["Un budget raisonnable", "Une agence parisienne facture un site vitrine 3 000 à 8 000 €. Le même site, avec la même stack, démarre chez moi à 199 €. Vous payez le travail, pas les bureaux ni les commerciaux."],
+        ["La même langue, le même fuseau", "Le Maroc est francophone et à ±1h de la France. Pas d'appels à 6h du matin ni de cahier des charges à traduire en anglais, comme avec une sous-traitance lointaine."],
+        ["Un seul interlocuteur", "Pas de plateforme, pas de chef de projet qui transmet. Vous parlez au développeur : les réponses sont techniques, immédiates et sans déformation."],
+        ["Un délai court", "Un projet d'agence prend 2 à 4 mois. Je livre un site vitrine en 7 à 10 jours, parce qu'il n'y a personne entre vous et moi."],
       ],
       closing:
-        "Et les objections légitimes, traitées franchement : je facture en euros, vous payez par virement (IBAN), Wise ou PayPal, après livraison — zéro acompte. Le site vous appartient entièrement, code et accès compris.",
+        "Les objections légitimes, traitées franchement : je facture en euros, vous payez par virement (IBAN), Wise ou PayPal, après livraison — zéro acompte. Le site vous appartient entièrement, code et accès compris, et il respecte les obligations françaises (mentions légales, bandeau cookies RGPD).",
     },
     cities:
-      "Je travaille avec des clients partout en France : Paris, Lyon, Marseille, Bordeaux, Toulouse, Lille ou Nantes. Comme tout se fait à distance et en français, votre ville ne change rien au délai ni au tarif — pas de frais de déplacement, pas de rendez-vous à caler trois semaines à l'avance.",
+      "Je travaille avec des clients partout en France — Paris, Lyon, Marseille, Bordeaux, Toulouse, Lille, Nantes — et avec la diaspora marocaine qui y vit. Tout se fait à distance et en français : votre ville ne change rien au délai ni au tarif.",
     budget: {
-      title: "Budget indicatif pour un site web en France",
-      headers: ["Type de site", "MouDevPro — Freelance", "Agence française"],
+      title: "Prix d'un site web : freelance au Maroc ou agence en France",
+      headers: ["Type de site", "MouDevPro — Freelance au Maroc", "Agence française"],
       rows: [
         ["Site vitrine (5–10 pages)", "dès 199 € — livré en 7 à 10 jours", "3 000 – 8 000 €"],
         ["Site e-commerce", "dès 299 € — livré en 2 à 3 semaines", "8 000 – 20 000 €"],
@@ -54,26 +60,26 @@ export const marketConfig = {
       note: "Devis fixe sous 24h : le prix annoncé est le prix final, aucun supplément en cours de projet.",
     },
     valueProps: [
-      ["💬", "Contact direct, en français", "Vous parlez directement avec le développeur qui code votre site. Pas de commercial, pas de chef de projet — réponses claires et rapides."],
+      ["💬", "Contact direct, en français", "Vous parlez directement avec le développeur qui code votre site. Pas de commercial, pas de plateforme — réponses claires et rapides."],
       ["💶", "Tarifs transparents en euros", "Site vitrine dès 199 €, e-commerce dès 299 €. 3 à 5 fois moins cher qu'une agence française, à qualité égale. Devis fixe avant de commencer."],
-      ["🕐", "Même fuseau horaire", "Basé au Maroc (±1h avec la France), je suis disponible aux heures françaises. Échanges fluides, suivi en temps réel, aucune attente."],
-      ["🚀", "Livraison 7 à 10 jours", "Pas de process bureaucratique. Votre site en ligne en une à deux semaines, et vous ne réglez qu'une fois satisfait du résultat."],
+      ["🕐", "Même fuseau horaire", "Basé à Casablanca (±1h avec la France), je suis disponible aux heures françaises. Échanges fluides, suivi en temps réel."],
+      ["🚀", "Livraison 7 à 10 jours", "Pas de process d'agence. Votre site en ligne en une à deux semaines, et vous ne réglez qu'une fois satisfait du résultat."],
     ],
     facts: [
-      ["±1h", "de décalage horaire avec la France — disponible à vos heures, échanges en direct sur WhatsApp et en visio."],
+      ["±1h", "de décalage horaire avec la France — disponible à vos heures, en direct sur WhatsApp et en visio."],
       ["3 à 5×", "moins cher qu'une agence française, à qualité technique égale (React, WordPress, WooCommerce)."],
       ["7-10 jours", "de délai pour un site vitrine professionnel complet — responsive et optimisé pour Google."],
       ["0 acompte", "vous ne payez qu'après livraison et validation du site. Virement, Wise ou PayPal."],
     ],
     faq: [
-      ["Comment se passe le travail à distance depuis le Maroc ?", "Exactement comme avec un freelance français, en mieux : nous échangeons par WhatsApp, e-mail et visio. Je suis sur le même fuseau horaire que la France (±1h), donc disponible à vos heures. Vous validez la maquette puis le site avant la mise en ligne."],
-      ["Pourquoi vos tarifs sont-ils moins chers qu'une agence française ?", "Je n'ai ni bureau parisien, ni équipe, ni commerciaux à financer. Vous bénéficiez de la même stack technique (React, WordPress, WooCommerce) qu'une agence, sans les coûts de structure répercutés sur la facture."],
-      ["Comment puis-je vous payer depuis la France ?", "Par virement bancaire international (IBAN), Wise ou PayPal. Et surtout : vous ne payez qu'après la livraison et la validation du site — zéro acompte imposé."],
-      ["Parlez-vous français et comprenez-vous le marché français ?", "Oui. Je travaille en français au quotidien et je conçois des sites adaptés aux attentes des clients français et de la diaspora marocaine en France — mentions légales, RGPD, moyens de paiement locaux inclus."],
-      ["Comment créer un site web pour mon entreprise en France ?", "C'est simple : on échange 30 min sur votre besoin, je vous envoie un devis fixe sous 24h, puis je crée votre site web (vitrine ou e-commerce) en 7 à 10 jours. Tout se fait à distance depuis le Maroc, en français, sur le même fuseau horaire que la France (±1h). Vous validez la maquette puis le site, et vous ne payez qu'après la livraison."],
+      ["Pourquoi faire créer son site web au Maroc plutôt qu'en France ?", "Pour le coût, sans sacrifier la communication : un développeur au Maroc travaille en français, sur le même fuseau horaire (±1h) et avec les mêmes outils qu'en France (React, WordPress, WooCommerce), mais sans les charges d'une agence française. Résultat : un site vitrine dès 199 €, contre 3 000 à 8 000 € en agence."],
+      ["Quelle différence avec une plateforme de sous-traitance offshore ?", "Il n'y a pas d'intermédiaire. Sur une plateforme, vous publiez une annonce et le travail peut changer de mains. Ici, vous parlez dès le premier message au développeur qui code votre site, et c'est lui qui le livre et le maintient."],
+      ["Comment se passe le travail à distance depuis le Maroc ?", "Nous échangeons par WhatsApp, e-mail et visio, aux heures françaises. Vous validez d'abord la maquette, puis le site complet avant la mise en ligne, et vous suivez l'avancement sur un lien de prévisualisation."],
+      ["Je suis MRE en France : pouvez-vous créer un site pour mon activité en France ou au Maroc ?", "Oui, les deux. Je crée des sites pour des Marocains résidant en France qui lancent une activité en France, mais aussi pour ceux qui ouvrent un commerce, un riad ou un projet immobilier au Maroc. Le site peut être en français, en arabe et en anglais."],
+      ["Comment puis-je vous payer depuis la France ?", "Par virement bancaire international (IBAN), Wise ou PayPal, en euros. Et vous ne payez qu'après la livraison et la validation du site — zéro acompte imposé."],
+      ["Le site respectera-t-il les obligations françaises (RGPD, mentions légales) ?", "Oui. J'intègre les mentions légales, la politique de confidentialité et un bandeau de consentement aux cookies conforme au RGPD. Vous restez propriétaire du nom de domaine, de l'hébergement et du code."],
       ["Est-ce risqué de faire créer son site web à l'étranger ?", "Le risque habituel, c'est de payer d'avance et de ne pas être livré. Je fonctionne à l'inverse : vous validez la maquette, puis le site, et vous ne payez qu'après la mise en ligne. Le code et les accès vous appartiennent dès la livraison."],
       ["Combien coûte un site web pour une entreprise française ?", "Un site vitrine professionnel démarre à 199 € et un e-commerce à 299 €, contre 3 000 à 8 000 € en agence française pour un résultat équivalent. Vous recevez un devis fixe sous 24h."],
-      ["Travaillez-vous avec des clients à Paris, Lyon ou Marseille ?", "Oui, partout en France. Tout se fait à distance : WhatsApp, e-mail et visio, aux heures françaises. Aucun frais de déplacement, aucun délai supplémentaire lié à votre ville."],
     ],
   },
 
@@ -91,37 +97,61 @@ export const marketConfig = {
     price: { vitrine: "290 $ CA", ecommerce: "430 $ CA" },
     priceNumeric: { vitrine: "290", ecommerce: "430" },
     keywords:
-      "développeur web freelance Canada, création site web Québec, développeur web Maroc pour le Canada, freelance site internet Québec, création site vitrine Canada, site e-commerce Canada, développeur React WordPress Québec, devis site web Canada, créer site web diaspora marocaine Canada, créer un site web Québec, faire un site web Canada, comment créer un site web",
-    metaTitle:
-      "Développeur Web Freelance Canada — Site dès 290 $ CA | MouDEV",
+      "développeur web freelance Québec à distance, création site web Québec pas cher, site web pas cher Québec, prix site web Québec, développeur web au Maroc pour le Canada, sous-traitance développement web Maroc Canada, développeur web marocain Canada, création site web diaspora marocaine Canada, site web bilingue français anglais Québec, développeur WordPress Québec freelance",
+    metaTitle: "Création Site Web Québec et Canada à Distance — dès 290 $ CA",
     metaDescription:
-      "Site web pro pour le Canada dès 290 $ CA, e-commerce dès 430 $ CA. Développeur freelance en français, 100% à distance, paiement après livraison. Devis gratuit 24h.",
-    h1: "Créer un Site Web pour le Canada — Développeur Web Freelance à Distance",
+      "Site web pour le Québec dès 290 $ CA par un développeur freelance francophone au Maroc. Site bilingue FR/EN, paiement après livraison. Devis gratuit 24h.",
+    h1: "Création de Site Web pour le Québec et le Canada — Développeur Freelance au Maroc",
     heroSub:
-      "Je crée votre site web professionnel depuis le Maroc, pour vos clients au Québec et partout au Canada. Contact direct en français, tarif optimisé, paiement après livraison.",
+      "Entrepreneur québécois, PME canadienne ou Marocain installé au Canada : je crée votre site web à distance depuis Casablanca, en français, bilingue français-anglais si besoin. Un budget bien inférieur à une agence de Montréal, et vous ne payez qu'après la livraison.",
     intro: [
-      "Entrepreneur québécois, PME canadienne ou Marocain installé au Canada : je crée votre site web sur mesure en travaillant directement avec vous, en français, sans agence ni intermédiaire.",
-      "Le travail à distance est mon quotidien. Nous échangeons par WhatsApp, e-mail et visio ; je prévois des plages de disponibilité adaptées au décalage horaire avec le Québec et le reste du Canada, pour un suivi fluide.",
-      "Vous obtenez la qualité technique d'une agence canadienne (React, WordPress, WooCommerce), une livraison en 7 à 10 jours et un budget nettement inférieur. Paiement uniquement après validation du site.",
+      "Je suis développeur web freelance au Maroc et je crée des sites vitrine, e-commerce et applications web pour des clients au Québec et dans le reste du Canada. Deux profils me contactent surtout : des entrepreneurs et PME québécoises qui veulent un site professionnel sans payer les tarifs d'une agence montréalaise, et des Marocains installés au Canada qui préfèrent travailler en français avec un développeur qui comprend leur projet.",
+      "Le Maroc est francophone : on échange en français, sans traduction ni intermédiaire, et je livre un site bilingue français / anglais quand votre clientèle l'exige. Côté technique, j'utilise les mêmes outils qu'une agence canadienne (React, WordPress, WooCommerce) — seule la facture change.",
+      "Le décalage horaire est réel, mais il se gère : Casablanca a 5 à 6 heures d'avance sur Montréal. Vos matinées correspondent à mes après-midis, ce qui laisse chaque jour plusieurs heures pour une visio ou des échanges sur WhatsApp. Le travail avance pendant votre nuit, et vous retrouvez les modifications le matin.",
     ],
+    offshore: {
+      title: "Pourquoi faire créer votre site web au Maroc depuis le Canada ?",
+      lead: "Ce que mes clients au Québec et au Canada y gagnent :",
+      bullets: [
+        ["Le budget", "Une agence québécoise facture couramment plusieurs milliers de dollars pour un site vitrine. Le même site démarre chez moi à 290 $ CA, parce que je n'ai ni bureau à Montréal ni équipe commerciale à financer."],
+        ["Le français, sans compromis", "Contrairement à la plupart des options de sous-traitance à l'étranger, tout se fait en français : brief, maquette, textes et support. Le site peut être livré en français et en anglais."],
+        ["Un travail qui avance la nuit", "Avec 5 à 6 heures d'avance, je travaille pendant votre nuit. Vous envoyez vos retours le soir, vous les retrouvez intégrés le lendemain matin."],
+        ["Un seul interlocuteur", "Pas de plateforme ni de chef de projet : vous parlez directement au développeur qui code, livre et maintient votre site."],
+      ],
+      closing:
+        "Côté paiement : je facture en dollars canadiens, vous réglez par virement international, Wise ou PayPal, uniquement après la livraison et votre validation — aucun acompte. Le code, le nom de domaine et les accès vous appartiennent.",
+    },
+    cities:
+      "Je travaille avec des clients à Montréal, Québec, Laval, Gatineau et Sherbrooke, mais aussi à Ottawa et Toronto pour les entreprises francophones. Tout se fait à distance : votre ville ne change rien au délai ni au tarif.",
+    budget: {
+      title: "Prix d'un site web : freelance au Maroc ou agence au Québec",
+      headers: ["Type de site", "MouDevPro — Freelance au Maroc", "Agence au Québec (ordre de grandeur)"],
+      rows: [
+        ["Site vitrine (5–10 pages)", "dès 290 $ CA — livré en 7 à 10 jours", "3 000 – 10 000 $ CA"],
+        ["Site e-commerce", "dès 430 $ CA — livré en 2 à 3 semaines", "10 000 $ CA et +"],
+        ["Application web sur mesure", "sur devis — selon le cahier des charges", "20 000 $ CA et +"],
+      ],
+      note: "Devis fixe sous 24h : le prix annoncé est le prix final. La version bilingue français / anglais est chiffrée dans le devis.",
+    },
     valueProps: [
       ["💬", "Contact direct, en français", "Vous parlez directement avec le développeur. Communication claire en français, du brief à la mise en ligne — idéal pour le Québec et la diaspora marocaine au Canada."],
-      ["💵", "Tarifs transparents en dollars", "Site vitrine dès 290 $ CA, e-commerce dès 430 $ CA. Bien moins cher qu'une agence locale, pour une qualité identique. Devis fixe et détaillé avant de démarrer."],
-      ["🌐", "100% à distance, suivi simple", "Tout le projet se gère en ligne. Plages horaires adaptées au décalage Canada–Maroc, et un interlocuteur unique joignable sur WhatsApp."],
+      ["💵", "Tarifs transparents en dollars", "Site vitrine dès 290 $ CA, e-commerce dès 430 $ CA. Bien moins cher qu'une agence locale, pour une qualité identique. Devis fixe avant de démarrer."],
+      ["🌐", "Site bilingue FR / EN", "Votre site en français et en anglais pour toucher toute votre clientèle canadienne, avec un référencement Google adapté à chaque langue."],
       ["🚀", "Livraison 7 à 10 jours", "Pas de lourdeur d'agence. Votre site livré en une à deux semaines, paiement seulement une fois le résultat validé."],
     ],
     facts: [
-      ["100% à distance", "tout le projet géré en ligne, avec des plages horaires adaptées au décalage Canada–Maroc."],
-      ["3 à 5×", "moins cher qu'une agence canadienne, pour une qualité technique identique (React, WordPress, WooCommerce)."],
+      ["5–6 h", "d'avance sur Montréal : vos matinées sont mes après-midis, et le travail avance pendant votre nuit."],
+      ["3 à 5×", "moins cher qu'une agence québécoise, pour une qualité technique identique (React, WordPress, WooCommerce)."],
       ["7-10 jours", "de délai pour un site vitrine professionnel — responsive, bilingue FR/EN possible, SEO inclus."],
       ["0 acompte", "paiement uniquement après livraison et validation. Virement international, Wise ou PayPal."],
     ],
     faq: [
-      ["Comment gérez-vous le décalage horaire avec le Canada ?", "Je réserve chaque jour des plages adaptées aux heures canadiennes (Québec et autres provinces) pour nos échanges en visio ou WhatsApp. Le reste du travail avance en continu, donc votre projet progresse même pendant votre nuit."],
-      ["Pourquoi est-ce moins cher qu'une agence canadienne ?", "Pas de bureau ni d'équipe à financer : vous payez le travail, pas la structure. La stack technique reste la même qu'une agence (React, WordPress, WooCommerce)."],
-      ["Comment se fait le paiement depuis le Canada ?", "Virement international, Wise ou PayPal — et toujours après la livraison et votre validation. Aucun acompte imposé."],
-      ["Travaillez-vous en français et en anglais ?", "Oui. Je travaille principalement en français (idéal pour le Québec et la diaspora marocaine) et je peux livrer un site bilingue français / anglais selon votre clientèle."],
-      ["Comment créer un site web pour mon entreprise au Québec ou au Canada ?", "On échange sur votre besoin (visio ou WhatsApp aux heures canadiennes), je vous envoie un devis fixe sous 24h, puis je crée votre site web (vitrine ou e-commerce) en 7 à 10 jours — en français, 100% à distance. Vous validez avant la mise en ligne et vous payez uniquement après livraison."],
+      ["Pourquoi faire créer son site web au Maroc quand on est au Québec ?", "Pour payer nettement moins cher sans renoncer au français. Le Maroc est francophone : vous travaillez en français avec le développeur, avec les mêmes outils qu'une agence québécoise (React, WordPress, WooCommerce), mais sans ses coûts de structure. Un site vitrine démarre à 290 $ CA."],
+      ["Comment gérez-vous le décalage horaire avec le Canada ?", "Casablanca a 5 à 6 heures d'avance sur Montréal. Je garde chaque jour des plages libres pendant vos matinées pour les visios et WhatsApp. Le reste du travail avance pendant votre nuit : vous envoyez vos retours le soir et vous les retrouvez intégrés le matin."],
+      ["Pouvez-vous livrer un site bilingue français et anglais ?", "Oui. Je livre des sites bilingues avec une version française et une version anglaise distinctes, chacune référencée sur Google dans sa langue. C'est souvent indispensable pour une entreprise qui vend hors du Québec."],
+      ["Je suis Marocain installé au Canada : pouvez-vous m'aider pour un projet ici ou au Maroc ?", "Oui. Je crée des sites pour des membres de la diaspora marocaine qui lancent une activité au Canada, mais aussi pour ceux qui ouvrent un commerce, un riad ou un projet immobilier au Maroc — en français, en arabe et en anglais."],
+      ["Comment se fait le paiement depuis le Canada ?", "En dollars canadiens, par virement international, Wise ou PayPal — et toujours après la livraison et votre validation. Aucun acompte imposé."],
+      ["Combien coûte un site web pour une entreprise au Québec ?", "Avec moi, un site vitrine démarre à 290 $ CA et un e-commerce à 430 $ CA, devis fixe sous 24h. En agence au Québec, un site vitrine se chiffre généralement en milliers de dollars."],
     ],
   },
 

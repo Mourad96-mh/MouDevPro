@@ -300,7 +300,11 @@ export const blogPosts = [
     content: [
       {
         type: "p",
-        text: "Marrakech accueille plus de 4 millions de touristes par an. Pourtant, la majorité des hôtels et riads de la ville dépendent encore exclusivement de Booking.com et Airbnb pour leurs réservations — et paient 15 à 25% de commission sur chaque nuit vendue. Un site web hôtel professionnel à Marrakech avec réservation directe change radicalement cette équation.",
+        parts: [
+          "Marrakech accueille plus de 4 millions de touristes par an. Pourtant, la majorité des hôtels et riads de la ville dépendent encore exclusivement de Booking.com et Airbnb pour leurs réservations — et paient 15 à 25% de commission sur chaque nuit vendue. Un ",
+          { text: "site web hôtel professionnel à Marrakech", to: "/marrakech" },
+          " avec réservation directe change radicalement cette équation.",
+        ],
       },
       {
         type: "h2",
@@ -372,7 +376,11 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "I build hotel and riad websites in Marrakech with custom design, online booking systems, multilingual content (French, English, Arabic) and full tourism SEO. Every website is mobile-first, fast-loading and optimised for international travellers searching for accommodation in Marrakech.",
+        parts: [
+          "I build ",
+          { text: "hotel and riad websites in Marrakech", to: "/en/marrakech" },
+          " with custom design, online booking systems, multilingual content (French, English, Arabic) and full tourism SEO. Every website is mobile-first, fast-loading and optimised for international travellers searching for accommodation in Marrakech.",
+        ],
       },
       {
         type: "h2",
@@ -1566,8 +1574,8 @@ export const blogPosts = [
     altLang: "fr",
     altSlug: "statistiques-web-maroc-2026",
     title: "Morocco Web Statistics 2026: 45 Key Figures",
-    metaTitle: "Morocco Web Statistics 2026: 45 Key Figures | MouDEV",
-    metaDescription: "45 verified statistics on Morocco's web in 2026: internet users, mobile, social media, e-commerce and digital ads. Sourced from ANRT, HCP, CMI, DataReportal.",
+    metaTitle: "Morocco Internet Penetration 2026: 92.2% Online, 45 Key Stats",
+    metaDescription: "Morocco internet penetration: 92.2% (93.7% urban vs 78.4% rural), 91.7% of mobile users on a smartphone, 22.8M on social media. 45 stats from ANRT & DataReportal.",
     datePublished: "2026-07-12",
     dateModified: "2026-07-12",
     author: "Mourad",

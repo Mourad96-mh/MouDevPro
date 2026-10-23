@@ -15,8 +15,8 @@ export const cityConfig = {
         "À Casablanca, capitale économique du Maroc et premier hub d'affaires du Maghreb, MouDev combine l'expertise d'une agence web et la flexibilité d'un freelance basé à Maarif. Je crée des sites vitrine, applications web sur mesure et landing pages pour les PME et startups des quartiers Maarif, Anfa, Ain Diab et du Triangle d'Or.",
       hreflang: {
         fr: `${BASE}/casablanca`,
-        en: `${BASE}/en/`,
-        ar: `${BASE}/ar/`,
+        en: `${BASE}/en`,
+        ar: `${BASE}/ar`,
         "x-default": `${BASE}/casablanca`,
       },
     },
@@ -32,10 +32,10 @@ export const cityConfig = {
       cityContext:
         "In Casablanca, Morocco's economic capital, I create professional websites for businesses in Maarif, Anfa, Ain Diab and the Triangle d'Or — fast delivery, no agency overhead, direct contact with the developer.",
       hreflang: {
-        fr: `${BASE}/casablanca`,
+        fr: `${BASE}/`,
         en: `${BASE}/en`,
         ar: `${BASE}/ar`,
-        "x-default": `${BASE}/casablanca`,
+        "x-default": `${BASE}/`,
       },
     },
     ar: {
@@ -50,10 +50,10 @@ export const cityConfig = {
       cityContext:
         "في الدار البيضاء، العاصمة الاقتصادية للمغرب ومركز الأعمال الرائد في المغرب العربي، أساعد الشركات في أحياء المعاريف وعين الذياب وأنفا على تعزيز حضورها الرقمي بمواقع ويب احترافية وتحسين محركات البحث المحلي. تواصل مباشر مع المطور، بدون وسيط.",
       hreflang: {
-        fr: `${BASE}/casablanca`,
+        fr: `${BASE}/`,
         en: `${BASE}/en`,
         ar: `${BASE}/ar`,
-        "x-default": `${BASE}/casablanca`,
+        "x-default": `${BASE}/`,
       },
     },
   },
@@ -141,6 +141,7 @@ export const cityConfig = {
       geo: { lat: 31.6295, lng: -7.9811 },
       canonical: `${BASE}/en/marrakech`,
       metaTitle: "Riad & Hotel Website Design Marrakech | Direct Booking | MouDEV",
+      h1: "Hotel & Riad Website Design in Marrakech — Freelance Web Developer",
       metaDescription:
         "Websites for hotels & riads in Marrakech — direct booking to cut Booking.com & Airbnb commissions. Multilingual FR/EN/AR, no agency fees. Free quote in 24h.",
       cityContext:

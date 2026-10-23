@@ -131,7 +131,7 @@ const MarrakechPage = () => {
         </title>
         <meta
           name="description"
-          content="Sites web pour hôtels, riads & restaurants à Marrakech. Réservation directe, moins de commissions OTA, multilingue FR/EN/AR, SEO tourisme. Devis gratuit 24h."
+          content="Création de site web à Marrakech pour restaurants, hôtels et riads : réservation directe, menu en ligne, multilingue FR/EN/AR, SEO tourisme. Devis gratuit 24h."
         />
         <meta
           property="og:title"

@@ -144,7 +144,7 @@ const CityPage = ({ city, lang }) => {
         <script type="application/ld+json">{JSON.stringify(websiteLd)}</script>
       </Helmet>
 
-      <Hero cityName={cityName} />
+      <Hero cityName={cityName} h1={data.h1} />
 
       {/* Intro */}
       <section className="home container">
