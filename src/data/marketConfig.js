@@ -97,15 +97,15 @@ export const marketConfig = {
     price: { vitrine: "290 $ CA", ecommerce: "430 $ CA" },
     priceNumeric: { vitrine: "290", ecommerce: "430" },
     keywords:
-      "développeur web freelance Québec à distance, création site web Québec pas cher, site web pas cher Québec, prix site web Québec, développeur web au Maroc pour le Canada, sous-traitance développement web Maroc Canada, développeur web marocain Canada, création site web diaspora marocaine Canada, site web bilingue français anglais Québec, développeur WordPress Québec freelance",
-    metaTitle: "Création Site Web Québec et Canada à Distance — dès 290 $ CA",
+      "développement web Canada, développement web professionnel, développeur de site web pour e-commerce, création site e-commerce Québec, boutique en ligne Canada, développeur web freelance Québec à distance, création site web Québec pas cher, site web pas cher Québec, prix site web Québec, développeur web au Maroc pour le Canada, sous-traitance développement web Maroc Canada, développeur web marocain Canada, création site web diaspora marocaine Canada, site web bilingue français anglais Québec, développeur WordPress Québec freelance",
+    metaTitle: "Création Site Web et E-commerce au Québec et au Canada — dès 290 $ CA",
     metaDescription:
-      "Site web pour le Québec dès 290 $ CA par un développeur freelance francophone au Maroc. Site bilingue FR/EN, paiement après livraison. Devis gratuit 24h.",
-    h1: "Création de Site Web pour le Québec et le Canada — Développeur Freelance au Maroc",
+      "Développement web professionnel pour le Québec et le Canada : site vitrine dès 290 $ CA, boutique e-commerce dès 430 $ CA. Freelance francophone, paiement après livraison.",
+    h1: "Création de Site Web et E-commerce pour le Québec et le Canada — Développeur Freelance",
     heroSub:
       "Entrepreneur québécois, PME canadienne ou Marocain installé au Canada : je crée votre site web à distance depuis Casablanca, en français, bilingue français-anglais si besoin. Un budget bien inférieur à une agence de Montréal, et vous ne payez qu'après la livraison.",
     intro: [
-      "Je suis développeur web freelance au Maroc et je crée des sites vitrine, e-commerce et applications web pour des clients au Québec et dans le reste du Canada. Deux profils me contactent surtout : des entrepreneurs et PME québécoises qui veulent un site professionnel sans payer les tarifs d'une agence montréalaise, et des Marocains installés au Canada qui préfèrent travailler en français avec un développeur qui comprend leur projet.",
+      "Je suis développeur web freelance au Maroc et je fais du développement web professionnel pour des clients au Québec et dans le reste du Canada : sites vitrine, applications web et sites e-commerce — je suis aussi développeur de site web pour e-commerce, avec des boutiques WooCommerce qui encaissent en dollars canadiens (PayPal ou carte bancaire). Deux profils me contactent surtout : des entrepreneurs et PME québécoises qui veulent un site professionnel sans payer les tarifs d'une agence montréalaise, et des Marocains installés au Canada qui préfèrent travailler en français avec un développeur qui comprend leur projet.",
       "Le Maroc est francophone : on échange en français, sans traduction ni intermédiaire, et je livre un site bilingue français / anglais quand votre clientèle l'exige. Côté technique, j'utilise les mêmes outils qu'une agence canadienne (React, WordPress, WooCommerce) — seule la facture change.",
       "Le décalage horaire est réel, mais il se gère : Casablanca a 5 à 6 heures d'avance sur Montréal. Vos matinées correspondent à mes après-midis, ce qui laisse chaque jour plusieurs heures pour une visio ou des échanges sur WhatsApp. Le travail avance pendant votre nuit, et vous retrouvez les modifications le matin.",
     ],
@@ -151,6 +151,7 @@ export const marketConfig = {
       ["Pouvez-vous livrer un site bilingue français et anglais ?", "Oui. Je livre des sites bilingues avec une version française et une version anglaise distinctes, chacune référencée sur Google dans sa langue. C'est souvent indispensable pour une entreprise qui vend hors du Québec."],
       ["Je suis Marocain installé au Canada : pouvez-vous m'aider pour un projet ici ou au Maroc ?", "Oui. Je crée des sites pour des membres de la diaspora marocaine qui lancent une activité au Canada, mais aussi pour ceux qui ouvrent un commerce, un riad ou un projet immobilier au Maroc — en français, en arabe et en anglais."],
       ["Comment se fait le paiement depuis le Canada ?", "En dollars canadiens, par virement international, Wise ou PayPal — et toujours après la livraison et votre validation. Aucun acompte imposé."],
+      ["Créez-vous des sites e-commerce pour des entreprises au Canada ?", "Oui. Je développe des boutiques en ligne WooCommerce pour des commerçants au Québec et au Canada : catalogue, paiement en ligne en dollars canadiens (PayPal ou carte bancaire), calcul des frais de livraison et taxes (TPS/TVQ) configurés, version française et anglaise. Une boutique démarre à 430 $ CA, livrée en 2 à 3 semaines."],
       ["Combien coûte un site web pour une entreprise au Québec ?", "Avec moi, un site vitrine démarre à 290 $ CA et un e-commerce à 430 $ CA, devis fixe sous 24h. En agence au Québec, un site vitrine se chiffre généralement en milliers de dollars."],
     ],
   },
@@ -204,4 +205,98 @@ export const marketConfig = {
   },
 };
 
-export const marketRoutes = ["france", "canada", "usa"];
+// English B2B page for European companies looking for a nearshore web / app
+// developer in Morocco (GSC 2026-08 → 10: "web app development agency morocco",
+// "software development agency casablanca"… ranking 13–23 from BE, CH, CA, UK
+// on /en by accident). Standalone: not part of the homepage hreflang cluster,
+// because hreflang has no "Europe" region.
+marketConfig.europe = {
+  lang: "en",
+  dir: "ltr",
+  country: "Europe",
+  linkLabel: { fr: "l'Europe", en: "Europe" },
+  locale: "en_GB",
+  hreflang: "en",
+  standalone: true,
+  areaServed: ["Belgium", "Switzerland", "United Kingdom", "Netherlands", "Luxembourg", "Germany", "Ireland", "Spain"],
+  slug: "europe",
+  canonical: `${BASE}/europe`,
+  currency: "€",
+  currencyCode: "EUR",
+  price: { vitrine: "€199", ecommerce: "€299" },
+  priceNumeric: { vitrine: "199", ecommerce: "299" },
+  keywords:
+    "web development morocco, web app development morocco, software development morocco, nearshore web development morocco, outsource web development to morocco, offshore web developer morocco, app development casablanca, custom software development morocco, react developer morocco, freelance web developer morocco, web development agency alternative, white label web development morocco",
+  metaTitle: "Web & App Development in Morocco — Nearshore for Europe | MouDEV",
+  metaDescription:
+    "Nearshore web & app development in Morocco for European companies: React, Node.js, WordPress. Same time zone, EUR pricing, pay after delivery. Free quote in 24h.",
+  h1: "Web & App Development in Morocco — Your Nearshore Developer for Europe",
+  heroSub:
+    "European companies, startups and agencies: I build your web applications, websites and online shops from Casablanca — in your time zone, in English or French, at a fraction of Western European rates. You work directly with the developer, and you pay after delivery.",
+  intro: [
+    "Most companies searching for a web or software development agency in Morocco want three things: reliable code, a partner who answers quickly, and a budget that makes outsourcing worth it. I'm a freelance full-stack developer based in Casablanca — not an agency — and that is exactly what working with me gives you, without account managers or agency overhead in between.",
+    "I build custom web applications (React, Node.js), business websites and e-commerce stores (WordPress, WooCommerce), and I take on projects from Belgium, Switzerland, the UK, the Netherlands and the rest of Europe. You talk to the person who writes your code, from the first call to delivery and maintenance.",
+    "Morocco is the closest offshore destination to Western Europe: zero to one hour of time difference with Brussels, Paris, Zurich or Amsterdam, and the same working hours as London most of the year. That means real-time calls, same-day answers and no overnight handovers.",
+  ],
+  offshore: {
+    title: "Why nearshore web development in Morocco?",
+    lead: "What European clients get compared with a local agency or a distant offshore team:",
+    bullets: [
+      ["Same time zone", "Casablanca is on GMT+1, 0–1 hour from Central European Time. We work the same hours, so meetings, reviews and fixes happen in your working day — not overnight."],
+      ["English and French", "Briefs, specs, calls and documentation in English or French — useful for bilingual markets like Belgium, Switzerland and Luxembourg. Arabic too, if your product targets the Middle East or North Africa."],
+      ["A fraction of Western European rates", "A business website starts at €199 and an online store at €299, where a European agency typically quotes several thousand euros. Custom web apps are quoted on scope, with a fixed price before any work starts."],
+      ["One developer, end to end", "No sales team, no project manager, no handover between teams. The same developer scopes, builds, deploys and maintains your project. Agencies can also hand me overflow work under their own brand (white label)."],
+    ],
+    closing:
+      "Payment in euros by SEPA bank transfer, Wise or PayPal — only after delivery and your approval, with no upfront deposit. Source code, domain and accounts belong to you, and I can host on European servers if your data needs to stay in the EU.",
+  },
+  cities:
+    "Whether your company is in Brussels, Antwerp, Geneva, Zurich, Lausanne, London, Amsterdam, Luxembourg or Paris, everything runs remotely over video calls, WhatsApp and email — your location changes nothing to the timeline or the price.",
+  budget: {
+    title: "Nearshore freelance in Morocco vs. a Western European agency",
+    headers: ["Project", "MouDevPro — freelance in Morocco", "Western European agency (typical range)"],
+    rows: [
+      ["Business website (5–10 pages)", "from €199 — delivered in 7–10 days", "€3,000 – €10,000"],
+      ["E-commerce store", "from €299 — delivered in 2–3 weeks", "€8,000 and up"],
+      ["Custom web application (React / Node.js)", "fixed quote based on scope", "€20,000 and up"],
+    ],
+    note: "Fixed quote within 24 hours: the quoted price is the final price. Ongoing maintenance and evolutions available monthly.",
+  },
+  valueProps: [
+    ["🕐", "Your time zone", "GMT+1 in Casablanca — 0 to 1 hour from Brussels, Zurich, Amsterdam or Paris. Real-time collaboration during your working day."],
+    ["💶", "Transparent pricing in euros", "Website from €199, e-commerce from €299, custom apps on a fixed quote. No hidden fees, no upfront deposit."],
+    ["🧑‍💻", "Full-stack, one point of contact", "React, Node.js, WordPress, WooCommerce. The developer who builds your product is the one you talk to."],
+    ["🔒", "You own everything", "Code, domain and accounts in your name. EU hosting on request for data that must stay in Europe."],
+  ],
+  facts: [
+    ["0–1 h", "time difference with Central European Time — same working hours as Brussels, Zurich or Amsterdam."],
+    ["EN · FR · AR", "working languages: English and French for European clients, Arabic for MENA-facing products."],
+    ["7-10 days", "to deliver a complete business website; custom web apps on a fixed, scoped quote."],
+    ["€0 upfront", "pay after delivery and approval — SEPA transfer, Wise or PayPal, invoiced in euros."],
+  ],
+  faq: [
+    ["Are you a web development agency in Morocco?", "No — I'm a freelance full-stack developer based in Casablanca. For most website, e-commerce and web app projects that is an advantage: you talk directly to the person writing the code, decisions are faster, and you don't pay for an agency's sales and management layers."],
+    ["Why outsource web development to Morocco rather than Eastern Europe or Asia?", "Time zone and language. Morocco is 0–1 hour from Central European Time and works in French and English, so collaboration feels local. Rates remain far below Western Europe, and the technical stack is the same (React, Node.js, WordPress, WooCommerce)."],
+    ["What kind of projects do you take on for European companies?", "Custom web applications and dashboards (React, Node.js), business websites, e-commerce stores (WooCommerce), redesigns and ongoing maintenance. I also work white label for agencies that need extra development capacity."],
+    ["How do contracts and payments work from Europe?", "You get a fixed written quote in euros before any work starts. Payment is by SEPA bank transfer, Wise or PayPal, after delivery and your approval — no upfront deposit."],
+    ["Can you work with our existing team and tools?", "Yes. I'm used to working in Git, sharing progress on a staging link and joining your calls during European office hours. We can communicate through WhatsApp, email, Slack or Teams."],
+    ["What about GDPR and data location?", "I can host your project on European servers and set up the basics your site needs — cookie consent, a privacy page, secure forms. Your legal compliance stays your responsibility, but the technical setup follows your requirements."],
+  ],
+};
+
+export const marketRoutes = ["france", "canada", "usa", "europe"];
+
+// One hreflang cluster for the homepage, its translations and the market
+// pages: same service, regional variant (currency, angle). Tells Google to
+// show /canada to French speakers in Canada, /france in France, /usa in the
+// US, instead of the Moroccan homepage. Must be identical (reciprocal) on
+// every page listed here — and in sitemap-generator.js.
+export const homeHreflangCluster = [
+  ["fr", `${BASE}/`],
+  ["en", `${BASE}/en`],
+  ["ar", `${BASE}/ar`],
+  ["fr-FR", `${BASE}/france`],
+  ["fr-CA", `${BASE}/canada`],
+  ["en-US", `${BASE}/usa`],
+  ["x-default", `${BASE}/`],
+];

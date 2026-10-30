@@ -22,6 +22,7 @@ import { cityConfig } from "../data/cityConfig";
 import { useCityContext } from "../context/CityContext";
 import useConversion from "../hooks/useConversion";
 import i18n from "../i18n";
+import { homeHreflangCluster } from "../data/marketConfig";
 
 const PACK_KEYS = ["presence", "vitrine", "pro", "ecommerce"];
 
@@ -122,8 +123,13 @@ const CityPage = ({ city, lang }) => {
         <meta name="author" content="MouDEV" />
         <meta name="keywords" content={`création site web ${cityName}, agence web ${cityName}, développeur web freelance ${cityName}, site vitrine ${cityName}, création de site internet ${cityName}, application web sur mesure, landing page, référencement SEO ${cityName}, MouDEV`} />
         <link rel="canonical" href={data.canonical} />
-        {Object.entries(data.hreflang).map(([hl, href]) => (
-          <link key={hl} rel="alternate" hreflang={hl} href={href} />
+        {/* /en and /ar belong to the homepage cluster (with the market pages);
+            the other city pages keep their own FR/EN/AR cluster. */}
+        {(homeHreflangCluster.some(([, href]) => href === data.canonical)
+          ? homeHreflangCluster
+          : Object.entries(data.hreflang)
+        ).map(([hl, href]) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={href} />
         ))}
         {/* Open Graph */}
         <meta property="og:type" content="website" />

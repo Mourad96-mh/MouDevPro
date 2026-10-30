@@ -32,6 +32,7 @@ const staticRoutes = [
   "/france",
   "/canada",
   "/usa",
+  "/europe",
   "/developpeur-web-freelance-maroc",
   "/tarifs",
   "/casablanca",

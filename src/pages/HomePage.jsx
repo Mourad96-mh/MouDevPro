@@ -16,6 +16,7 @@ import Footer from "../components/layout/Footer";
 import { useCityContext } from "../context/CityContext";
 import useConversion from "../hooks/useConversion";
 import i18n from "../i18n";
+import { homeHreflangCluster } from "../data/marketConfig";
 
 const CITIES = [
   {
@@ -216,10 +217,9 @@ const HomePage = () => {
         <meta name="keywords" content="développeur web freelance maroc, freelance creation site web maroc, création site web maroc, site web maroc, prix site web maroc, web developer morocco, website design morocco, freelance développeur web" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.moudevpro.com/" />
-        <link rel="alternate" hrefLang="fr" href="https://www.moudevpro.com/" />
-        <link rel="alternate" hrefLang="en" href="https://www.moudevpro.com/en" />
-        <link rel="alternate" hrefLang="ar" href="https://www.moudevpro.com/ar" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.moudevpro.com/" />
+        {homeHreflangCluster.map(([hl, href]) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={href} />
+        ))}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="MouDEV" />
         <meta

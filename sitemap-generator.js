@@ -6,50 +6,32 @@ import path from "path";
 const BASE = "https://www.moudevpro.com";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Homepage + translations + market pages = one hreflang cluster.
+const HOME_CLUSTER = [
+  { lang: "fr", url: `${BASE}/` },
+  { lang: "en", url: `${BASE}/en` },
+  { lang: "ar", url: `${BASE}/ar` },
+  { lang: "fr-FR", url: `${BASE}/france` },
+  { lang: "fr-CA", url: `${BASE}/canada` },
+  { lang: "en-US", url: `${BASE}/usa` },
+  { lang: "x-default", url: `${BASE}/` },
+];
+
 // All routes with their hreflang alternates
 const routes = [
-  // ── Homepage (FR only — national landing page) ───────────────────────────
-  {
-    url: "/",
-    changefreq: "weekly",
-    priority: 1.0,
-    links: [
-      { lang: "fr", url: `${BASE}/` },
-      { lang: "x-default", url: `${BASE}/` },
-    ],
-  },
+  // ── Homepage cluster: / (FR), /en, /ar + market pages (regional variants) ─
+  // Must match homeHreflangCluster in src/data/marketConfig.js exactly.
+  { url: "/", changefreq: "weekly", priority: 1.0, links: HOME_CLUSTER },
+  { url: "/en", changefreq: "weekly", priority: 0.8, links: HOME_CLUSTER },
+  { url: "/ar", changefreq: "weekly", priority: 0.8, links: HOME_CLUSTER },
 
-  // ── Casablanca (FR / EN / AR) ────────────────────────────────────────────
+  // ── Casablanca (FR only — /en and /ar translate the homepage, not this page) ─
   {
     url: "/casablanca",
     changefreq: "weekly",
     priority: 1.0,
     links: [
       { lang: "fr", url: `${BASE}/casablanca` },
-      { lang: "en", url: `${BASE}/en` },
-      { lang: "ar", url: `${BASE}/ar` },
-      { lang: "x-default", url: `${BASE}/casablanca` },
-    ],
-  },
-  {
-    url: "/en",
-    changefreq: "weekly",
-    priority: 0.8,
-    links: [
-      { lang: "fr", url: `${BASE}/casablanca` },
-      { lang: "en", url: `${BASE}/en` },
-      { lang: "ar", url: `${BASE}/ar` },
-      { lang: "x-default", url: `${BASE}/casablanca` },
-    ],
-  },
-  {
-    url: "/ar",
-    changefreq: "weekly",
-    priority: 0.8,
-    links: [
-      { lang: "fr", url: `${BASE}/casablanca` },
-      { lang: "en", url: `${BASE}/en` },
-      { lang: "ar", url: `${BASE}/ar` },
       { lang: "x-default", url: `${BASE}/casablanca` },
     ],
   },
@@ -125,9 +107,19 @@ const routes = [
   },
 
   // ── International market pages (organic SEO) ─────────────────────────────
-  { url: "/france", changefreq: "monthly", priority: 0.8 },
-  { url: "/canada", changefreq: "monthly", priority: 0.8 },
-  { url: "/usa", changefreq: "monthly", priority: 0.8 },
+  { url: "/france", changefreq: "monthly", priority: 0.8, links: HOME_CLUSTER },
+  { url: "/canada", changefreq: "monthly", priority: 0.8, links: HOME_CLUSTER },
+  { url: "/usa", changefreq: "monthly", priority: 0.8, links: HOME_CLUSTER },
+  // Europe (EN, B2B nearshore) — standalone, outside the homepage cluster
+  {
+    url: "/europe",
+    changefreq: "monthly",
+    priority: 0.8,
+    links: [
+      { lang: "en", url: `${BASE}/europe` },
+      { lang: "x-default", url: `${BASE}/europe` },
+    ],
+  },
 
   // ── Standalone pages ─────────────────────────────────────────────────────
   { url: "/developpeur-web-freelance-maroc", changefreq: "monthly", priority: 0.9 },

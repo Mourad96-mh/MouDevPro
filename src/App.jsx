@@ -47,6 +47,7 @@ function App() {
             <Route path="france" element={<MarketPage market="france" />} />
             <Route path="canada" element={<MarketPage market="canada" />} />
             <Route path="usa" element={<MarketPage market="usa" />} />
+            <Route path="europe" element={<MarketPage market="europe" />} />
 
             {/* Standalone pages */}
             <Route path="developpeur-web-freelance-maroc" element={<FreelancePage />} />

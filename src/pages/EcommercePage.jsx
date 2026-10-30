@@ -164,11 +164,12 @@ const EcommercePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Site E-commerce Maroc — Boutique en Ligne dès 3 000 DH
+            Création Site E-commerce Maroc — Boutique en Ligne dès 3 000 DH
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site e-commerce professionnel au Maroc — boutique en
-            ligne livrée en 7 à 10 jours, dès 3 000 DH. Vendez 24h/24, acceptez
+            Je crée votre site e-commerce professionnel au Maroc — à Casablanca,
+            Rabat, Marrakech ou ailleurs — boutique en ligne livrée en 7 à 10
+            jours, dès 3 000 DH. Vendez 24h/24, acceptez
             les paiements en ligne (CMI, PayPal), gérez vos stocks et développez
             votre chiffre d'affaires digital. Devis gratuit en 24h.
           </p>

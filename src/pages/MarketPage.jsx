@@ -7,7 +7,7 @@ import Portfolio from "../components/sections/Portfolio";
 import Temoignes from "../components/sections/Temoignes";
 import useConversion from "../hooks/useConversion";
 import { useCityContext } from "../context/CityContext";
-import { marketConfig, marketRoutes } from "../data/marketConfig";
+import { marketConfig, marketRoutes, homeHreflangCluster } from "../data/marketConfig";
 import i18n from "../i18n";
 
 const LABELS = {
@@ -154,7 +154,9 @@ const MarketPage = ({ market }) => {
       addressLocality: "Casablanca",
       addressCountry: "MA",
     },
-    areaServed: { "@type": "Country", name: data.country },
+    areaServed: data.areaServed
+      ? data.areaServed.map((name) => ({ "@type": "Country", name }))
+      : { "@type": "Country", name: data.country },
     knowsLanguage: ["fr", "en", "ar"],
     aggregateRating: {
       "@type": "AggregateRating",
@@ -229,8 +231,14 @@ const MarketPage = ({ market }) => {
         <meta name="author" content="MouDEV" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={data.canonical} />
-        <link rel="alternate" hrefLang={data.hreflang} href={data.canonical} />
-        <link rel="alternate" hrefLang="x-default" href={data.canonical} />
+        {/* France / Canada / USA are regional variants of the homepage;
+            a standalone market (Europe) only references itself. */}
+        {(data.standalone
+          ? [[data.hreflang, data.canonical], ["x-default", data.canonical]]
+          : homeHreflangCluster
+        ).map(([hl, href]) => (
+          <link key={hl} rel="alternate" hrefLang={hl} href={href} />
+        ))}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="MouDEV" />
         <meta property="og:title" content={data.metaTitle} />
@@ -427,11 +435,13 @@ const MarketPage = ({ market }) => {
               <Link to={`/${m}`} className="inline-link">
                 {marketConfig[m].linkLabel[data.lang]}
               </Link>
-              {i < otherMarkets.length - 1
-                ? data.lang === "fr"
-                  ? " et "
-                  : " and "
-                : "."}
+              {i < otherMarkets.length - 2
+                ? ", "
+                : i === otherMarkets.length - 2
+                  ? data.lang === "fr"
+                    ? " et "
+                    : " and "
+                  : "."}
             </span>
           ))}
         </p>
@@ -448,7 +458,14 @@ const MarketPage = ({ market }) => {
         </div>
       </section>
 
-      <Footer cityName={data.country} address={`Remote depuis le Maroc — disponible pour ${data.country}`} />
+      <Footer
+        cityName={data.country}
+        address={
+          data.lang === "en"
+            ? `Remote from Casablanca, Morocco — available for ${data.country}`
+            : `Remote depuis le Maroc — disponible pour ${data.country}`
+        }
+      />
     </>
   );
 };

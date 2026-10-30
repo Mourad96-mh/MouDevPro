@@ -111,7 +111,7 @@ const FreelancePage = () => {
     <>
       <Helmet>
         <title>
-          Développeur Web Freelance Maroc | Sites dès 2 000 DH | MouDEV
+          Développeur Web Freelance Maroc & Casablanca | Dès 2 000 DH
         </title>
         <meta
           name="description"
@@ -119,7 +119,7 @@ const FreelancePage = () => {
         />
         <meta
           property="og:title"
-          content="Développeur Web Freelance Maroc | Sites dès 2 000 DH | MouDEV"
+          content="Développeur Web Freelance Maroc & Casablanca | Dès 2 000 DH"
         />
         <meta
           property="og:description"
@@ -129,7 +129,7 @@ const FreelancePage = () => {
         <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Développeur Web Freelance Maroc | Sites dès 2 000 DH | MouDEV" />
+        <meta name="twitter:title" content="Développeur Web Freelance Maroc & Casablanca | Dès 2 000 DH" />
         <meta name="twitter:description" content="Développeur web freelance au Maroc — site vitrine dès 2 000 DH, e-commerce, application web. Livraison 7 à 10 jours. Devis gratuit 24h." />
         <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="robots" content="index, follow" />
@@ -146,7 +146,7 @@ const FreelancePage = () => {
       <section className="city-hero container">
         <div className="city-hero__content">
           <h1 className="heading--primary">
-            Développeur Web Freelance au Maroc — Sites dès 2 000 DH
+            Développeur Web Freelance au Maroc et à Casablanca — Sites dès 2 000 DH
           </h1>
           <p className="subheading sl-mb">
             Je suis Mourad, <strong>développeur web freelance au Maroc</strong>,

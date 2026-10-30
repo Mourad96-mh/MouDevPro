@@ -209,7 +209,8 @@ moudevpro.com/
 ├── /contact           Quote request form
 ├── /france            International — FR, diaspora + businesses, € pricing
 ├── /canada            International — FR, Québec/diaspora, $ CA pricing
-└── /usa               International — EN, diaspora + businesses, $ pricing
+├── /usa               International — EN, diaspora + businesses, $ pricing
+└── /europe            International — EN, B2B nearshore web/app development for European companies, € pricing
 ```
 
 ### Homepage requirements
@@ -420,13 +421,14 @@ These keywords are currently running. Their landing pages must match.
 
 Added 2026-06-03. The Morocco-first positioning (sections 1–11) remains primary. On top of it, three international landing pages target the diaspora **and** local businesses in higher-rate markets — delivered remotely, priced in local currency.
 
-**Channel:** organic SEO only. Do **not** open Google Ads geo-targeting to these countries without a separate decision — the Ads negative-keyword list (`data/ads/negative-keywords.md`) intentionally blocks `france`, `usa`, `canada` geo for the Morocco campaigns. Organic and paid are kept separate on purpose.
+**Channel:** organic SEO only. Do **not** open Google Ads geo-targeting to these countries without a separate decision — the Ads negative-keyword list (`ads/negative-keywords.md`) intentionally blocks `france`, `usa`, `canada` geo for the Morocco campaigns. Organic and paid are kept separate on purpose.
 
 | Page      | Lang | Audience                                  | Currency | Angle                                              |
 | --------- | ---- | ----------------------------------------- | -------- | -------------------------------------------------- |
 | /france   | FR   | French businesses + Moroccan diaspora (MRE) | €        | Same timezone (±1h), 3–5× cheaper than FR agencies |
 | /canada   | FR   | Québec + Canada, francophone diaspora     | $ CA     | French-first, remote, paiement après livraison     |
 | /usa      | EN   | US businesses + Moroccan diaspora         | $        | US-hours overlap, fraction of US agency rates      |
+| /europe   | EN   | European companies, startups, agencies (BE, CH, UK, NL, LU…) | € | Nearshore: same time zone (0–1 h CET), EN/FR, white label for agencies |
 
 **Content rules for these pages:**
 
@@ -435,5 +437,6 @@ Added 2026-06-03. The Morocco-first positioning (sections 1–11) remains primar
 - Show prices in the **local currency** (€ / $), never only MAD.
 - Reassure on the remote concerns: timezone overlap, payment method (virement/Wise/PayPal), language.
 - Keep the freelance differentiators from section 8 (direct contact, no agency, fast delivery).
+- **hreflang:** /france (fr-FR), /canada (fr-CA), /usa (en-US) are regional variants of the homepage and share one cluster with /, /en, /ar (`homeHreflangCluster` in `marketConfig.js`, mirrored in `sitemap-generator.js`). /europe is standalone (no "Europe" region in hreflang).
 - These are **not** LocalBusiness entries — use `ProfessionalService` schema with `areaServed` = the country and provider address in Casablanca, MA. Never fake a local address abroad.
 - Config-driven: copy lives in `src/data/marketConfig.js`, rendered by `src/pages/MarketPage.jsx`. Add a market by extending the config + `App.jsx` route + `sitemap-generator.js`.
