@@ -24,7 +24,6 @@
 2. **"Payment after delivery, 0 deposit" is now your strongest exclusive:** billiontech asks 50% upfront; nobody
    else mentions payment.
 3. Social proof is used by dotma ("+100 sites livrés", "depuis 2022"). Mourad confirmed 100+ sites delivered (2026-10-31; the site said 45+ until then, now updated). The ads don't use it yet.
-   delivered (About page); the ads don't use it.
 4. Everyone is "agence / notre équipe". "Freelance, you talk to the developer" stays unique.
 5. dotma uses image assets; your website campaigns already have 2 ad images.
 
