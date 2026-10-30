@@ -37,3 +37,6 @@ __pycache__/
 
 # Transient raw payloads; the CSVs they produce in data/ are the record
 tools/inbox/*.json
+
+# Live Apps Script copy — contains the OCI ADMIN_TOKEN, never commit
+integrations/apps-script/Code.live.gs

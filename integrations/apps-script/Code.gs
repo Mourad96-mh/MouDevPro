@@ -45,6 +45,8 @@ var CONFIG = {
   // WhatsApp with their answers pre-filled, so the lead messages you
   // directly — no bot, no API.
   //   NOTIFY_ON: "form" → devis-form submits only · "all" → every lead · "" → off
+  // Real address is set in the live script only (see Code.live.gs, git-ignored):
+  // this repo is public.
   NOTIFY_EMAIL: "",
   NOTIFY_ON: "form",
 };
@@ -121,7 +123,26 @@ function leadSummary_(data) {
     "Budget: " + (data.budget || "—") + "\n" +
     "Message: " + (data.message || "—") + "\n" +
     "Page: " + (data.page_url || "—") + "\n" +
-    "gclid: " + (data.gclid ? "oui" : "non");
+    "gclid: " + (data.gclid ? "oui" : "non") +
+    (waReplyLink_(data.phone) ? "\n\nRépondre sur WhatsApp : " + waReplyLink_(data.phone) : "");
+}
+
+// wa.me link to answer the lead directly — Moroccan 06/07 numbers → 2126/2127.
+function waReplyLink_(phone) {
+  var p = String(phone || "").replace(/[\s.\-+]/g, "");
+  if (/^00212/.test(p)) p = p.slice(2);
+  else if (/^0[5-7]\d{8}$/.test(p)) p = "212" + p.slice(1);
+  return /^212[5-7]\d{8}$/.test(p) ? "https://wa.me/" + p : "";
+}
+
+// Run once from the Apps Script editor: grants the "send email" permission
+// and sends a sample notification, so you can see what a lead email looks like.
+function testNotify() {
+  notifyNewLead_({
+    type: "form", ref: "MDP-TEST", city: "Casablanca", name: "Test",
+    phone: "0600000000", projectType: "vitrine", budget: "5000-15000",
+    message: "Email de test — à ignorer", page_url: "https://www.moudevpro.com/contact",
+  });
 }
 
 function notifyNewLead_(data) {

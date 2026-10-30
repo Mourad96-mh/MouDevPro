@@ -43,9 +43,12 @@ they tap "Envoyer" and the lead arrives in your WhatsApp **from the lead
 themselves**, so you reply in the same thread. If they don't tap send, the
 lead is still fully logged in the Sheet — nothing is lost.
 
-Optional email copy: set `CONFIG.NOTIFY_EMAIL` to an address (empty = off).
-`NOTIFY_ON`: `"form"` = form submits only · `"all"` = every lead · `""` = off.
-A notification failure never blocks the lead from being logged.
+Email copy (on since 2026-10-30, address set in the live script only — this repo is public): `CONFIG.NOTIFY_EMAIL`
+(empty = off). `NOTIFY_ON`: `"form"` = form submits only · `"all"` = every lead · `""` = off.
+The email includes a "Répondre sur WhatsApp" link to the lead's number. It is sent with
+`MailApp` from your own Google account (no third-party service). Run `testNotify` once from
+the editor to grant the email permission and receive a sample. A notification failure
+never blocks the lead from being logged.
 
 ## Status values
 
