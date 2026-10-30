@@ -254,7 +254,7 @@ export const blogPosts = [
       {
         type: "p",
         parts: [
-          "Avec 4 ans d'expérience et 45+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire. Vous trouverez mon profil complet, mes technologies et ma façon de travailler sur ma page ",
+          "Avec 4 ans d'expérience et 100+ projets livrés à des PME, startups, hôtels et associations partout au Maroc, je m'engage sur un résultat concret — site livré en 7 à 10 jours, paiement après livraison, zéro intermédiaire. Vous trouverez mon profil complet, mes technologies et ma façon de travailler sur ma page ",
           { text: "développeur web freelance au Maroc", to: "/developpeur-web-freelance-maroc" },
           ".",
         ],
@@ -542,7 +542,7 @@ export const blogPosts = [
       },
       {
         type: "callout",
-        text: "MouDevPro — 4 ans d'expérience, 45+ sites livrés à des clients à Casablanca, Rabat et Marrakech. Développeur web freelance basé à Maarif, disponible sur WhatsApp 7j/7.",
+        text: "MouDevPro — 4 ans d'expérience, 100+ sites livrés à des clients à Casablanca, Rabat et Marrakech. Développeur web freelance basé à Maarif, disponible sur WhatsApp 7j/7.",
       },
       {
         type: "p",

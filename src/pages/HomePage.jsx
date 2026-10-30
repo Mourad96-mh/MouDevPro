@@ -349,7 +349,7 @@ const HomePage = () => {
             <p className="geo-fact__label">d'expérience en création de sites web professionnels au Maroc — React, Next.js, WordPress, WooCommerce.</p>
           </article>
           <article className="geo-fact__card">
-            <strong className="geo-fact__stat">45+ projets</strong>
+            <strong className="geo-fact__stat">100+ projets</strong>
             <p className="geo-fact__label">livrés à des PME, startups, hôtels, riads et associations à Casablanca, Rabat et Marrakech.</p>
           </article>
           <article className="geo-fact__card">
@@ -366,7 +366,7 @@ const HomePage = () => {
           </article>
           <article className="geo-fact__card">
             <strong className="geo-fact__stat">5/5 étoiles</strong>
-            <p className="geo-fact__label">note de satisfaction client sur 30+ projets livrés. Qualité agence, prix freelance — partout au Maroc.</p>
+            <p className="geo-fact__label">note de satisfaction client sur 100+ projets livrés. Qualité agence, prix freelance — partout au Maroc.</p>
           </article>
         </div>
       </section>

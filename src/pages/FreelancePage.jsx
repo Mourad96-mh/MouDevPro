@@ -28,7 +28,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Comment être sûr du sérieux d'un freelance ?",
-    a: "Trois garanties concrètes : un devis écrit avec prix fixe et délai garanti, un portfolio de 45+ projets livrés consultable en ligne, et le paiement après livraison — vous voyez le site fini avant de payer. Zéro acompte imposé, zéro risque.",
+    a: "Trois garanties concrètes : un devis écrit avec prix fixe et délai garanti, un portfolio de 100+ projets livrés consultable en ligne, et le paiement après livraison — vous voyez le site fini avant de payer. Zéro acompte imposé, zéro risque.",
   },
   {
     q: "Le SEO est-il inclus dans vos prestations ?",
@@ -196,7 +196,7 @@ const FreelancePage = () => {
               message WhatsApp est celle qui code votre site.
             </p>
             <p className="text">
-              4 ans d'expérience, 45+ projets livrés à des PME, startups, hôtels,
+              4 ans d'expérience, 100+ projets livrés à des PME, startups, hôtels,
               riads et associations partout au Maroc.{" "}
               <strong>Devis gratuit et transparent sous 24h.</strong>
             </p>
@@ -211,7 +211,7 @@ const FreelancePage = () => {
               <span className="city-stat__label">Délai de livraison</span>
             </div>
             <div className="city-stat">
-              <span className="city-stat__num">45+</span>
+              <span className="city-stat__num">100+</span>
               <span className="city-stat__label">Projets livrés</span>
             </div>
             <div className="city-stat">

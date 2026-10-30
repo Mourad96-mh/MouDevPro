@@ -47,7 +47,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Mourad — MouDevPro",
   jobTitle: "Développeur web freelance",
-  description: "Développeur web freelance basé à Casablanca, Maroc. Plus de 4 ans d'expérience, 45+ projets livrés pour des PME, startups, hôtels et associations au Maroc. Spécialisé en React, Next.js, WordPress, WooCommerce et SEO.",
+  description: "Développeur web freelance basé à Casablanca, Maroc. Plus de 4 ans d'expérience, 100+ projets livrés pour des PME, startups, hôtels et associations au Maroc. Spécialisé en React, Next.js, WordPress, WooCommerce et SEO.",
   url: "https://www.moudevpro.com/about",
   telephone: "+212696964341",
   email: "creation-site@moudevpro.com",
@@ -118,19 +118,19 @@ const AboutPage = () => {
         <title>Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV</title>
         <meta
           name="description"
-          content="Je m'appelle Mourad, développeur web freelance basé à Casablanca. 45+ projets livrés pour des PME, startups et hôtels au Maroc. Paiement après livraison, devis gratuit en 24h."
+          content="Je m'appelle Mourad, développeur web freelance basé à Casablanca. 100+ projets livrés pour des PME, startups et hôtels au Maroc. Paiement après livraison, devis gratuit en 24h."
         />
         <meta property="og:title" content="Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV" />
         <meta
           property="og:description"
-          content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison."
+          content="100+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison."
         />
         <meta property="og:url" content="https://www.moudevpro.com/about" />
         <meta property="og:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta property="og:locale" content="fr_MA" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mourad — Développeur Web Freelance Casablanca | À Propos | MouDEV" />
-        <meta name="twitter:description" content="45+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison." />
+        <meta name="twitter:description" content="100+ projets livrés pour des PME, startups et hôtels au Maroc. Contact direct avec le développeur, paiement après livraison." />
         <meta name="twitter:image" content="https://www.moudevpro.com/og-default.jpg" />
         <meta name="keywords" content="mourad développeur web, moudevpro, à propos moudev casablanca, web developer maroc mourad, mourad mhani développeur" />
         <meta name="robots" content="index, follow" />
@@ -182,7 +182,7 @@ const AboutPage = () => {
               projet de A à Z — de la conception jusqu'à la mise en ligne et au suivi SEO.
             </p>
             <p className="text sl-mb">
-              J'ai livré plus de <strong>45 projets</strong> au Maroc — sites vitrine, e-commerces,
+              J'ai livré plus de <strong>100 projets</strong> au Maroc — sites vitrine, e-commerces,
               applications web sur mesure, landing pages. Chaque projet est construit pour
               être rapide, sécurisé, responsive et bien positionné sur Google.
             </p>

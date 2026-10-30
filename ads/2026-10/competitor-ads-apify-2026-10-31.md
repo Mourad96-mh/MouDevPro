@@ -23,7 +23,7 @@
    no longer your exclusive argument.
 2. **"Payment after delivery, 0 deposit" is now your strongest exclusive:** billiontech asks 50% upfront; nobody
    else mentions payment.
-3. Social proof is used by dotma ("+100 sites livrés", "depuis 2022"). Your site already claims 45+ projects
+3. Social proof is used by dotma ("+100 sites livrés", "depuis 2022"). Mourad confirmed 100+ sites delivered (2026-10-31; the site said 45+ until then, now updated). The ads don't use it yet.
    delivered (About page); the ads don't use it.
 4. Everyone is "agence / notre équipe". "Freelance, you talk to the developer" stays unique.
 5. dotma uses image assets; your website campaigns already have 2 ad images.
@@ -52,8 +52,8 @@
 4. Link the Business Profile (location asset). *(Mourad, in the interface)*
 
 **On 2026-11-13 (with 2 weeks of data on the new RSAs)**
-5. Swap the weakest headlines for **"0 Acompte — Payez à la Livraison"** and **"45+ Sites Livrés au Maroc"**
-   (if Mourad confirms the 45+ figure).
+5. Swap the weakest headlines for **"0 Acompte — Payez à la Livraison"** and **"100+ Sites Livrés au Maroc"** (confirmed by Mourad 2026-10-31).
+   
 6. Pin a payment/price headline in position 2.
 
 **Re-run** this study after 2026-11-01 with the actor's new "ad text" option to get every competitor ad's text

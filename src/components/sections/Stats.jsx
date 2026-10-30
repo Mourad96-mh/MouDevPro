@@ -31,7 +31,7 @@ const Stats = () => {
 
   const stats = [
     { value: 30, suffix: "+", label: t("stats.clients") },
-    { value: 45, suffix: "+", label: t("stats.projects") },
+    { value: 100, suffix: "+", label: t("stats.projects") },
     { value: 4, suffix: "+", label: t("stats.experience") },
     { value: 100, suffix: "%", label: t("stats.satisfaction") },
   ];

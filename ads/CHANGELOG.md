@@ -95,7 +95,7 @@ Next decisions: see "Upcoming" below.
 | Date | Change | Condition |
 | --- | --- | --- |
 | 2026-11-06 | Rabat target CPA 60 → 70 · google-ads-casa max CPC 6 → 8 · search-terms review | new ads stable |
-| 2026-11-13 | Casablanca target CPA 100 → 85 | CPA ≤ 100 over the 2 weeks |
+| 2026-11-13 | Casablanca target CPA 100 → 85 · RSA headlines "0 Acompte — Payez à la Livraison" + "100+ Sites Livrés au Maroc" | CPA ≤ 100 over the 2 weeks |
 | end of Nov | google-ads-casa → Maximize conversions, tCPA ~45 | ~15 conversions in 30 days |
 | open | Price assets, business name, link Business Profile, move negatives to shared lists | waiting on Mourad |
 
