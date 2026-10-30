@@ -10,7 +10,17 @@
     "menuClose": "Fermer le menu",
     "contactAria": "Contactez MouDev sur WhatsApp",
     "about": "À propos",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cities": "Villes",
+    "international": "International",
+    "tarifs": "Tarifs",
+    "blog": "Blog",
+    "devis": "Devis gratuit",
+    "vitrine": "Site vitrine",
+    "ecommerceLong": "Site e-commerce",
+    "googleAdsLong": "Gestion Google Ads",
+    "freelance": "Développeur freelance Maroc",
+    "languages": "Langue"
   },
   "hero": {
     "h1": "Création de site web professionnel à {{city}} — Développeur Web Freelance Maroc",
@@ -289,6 +299,8 @@
       "heading": "Contact",
       "hours": "Lun – Sam : 9h00 – 22h00"
     },
-    "copyright": "Tous droits réservés. Développeur web freelance à {{city}}, Maroc."
+    "copyright": "Tous droits réservés. Développeur web freelance à {{city}}, Maroc.",
+    "citiesHeading": "Villes",
+    "cityLink": "Création site web {{city}}"
   }
 }

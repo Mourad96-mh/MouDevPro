@@ -10,7 +10,17 @@
     "menuClose": "Close menu",
     "contactAria": "Contact MouDev on WhatsApp",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cities": "Cities",
+    "international": "International",
+    "tarifs": "Pricing",
+    "blog": "Blog",
+    "devis": "Free quote",
+    "vitrine": "Business website",
+    "ecommerceLong": "E-commerce website",
+    "googleAdsLong": "Google Ads management",
+    "freelance": "Freelance developer Morocco",
+    "languages": "Language"
   },
   "hero": {
     "h1": "Professional Website Creation in {{city}} — Freelance Web Developer Morocco",
@@ -257,6 +267,8 @@
       "heading": "Contact",
       "hours": "Mon – Sat: 9:00 – 22:00"
     },
-    "copyright": "All rights reserved. Freelance web developer in {{city}}, Morocco."
+    "copyright": "All rights reserved. Freelance web developer in {{city}}, Morocco.",
+    "citiesHeading": "Cities",
+    "cityLink": "Web developer {{city}}"
   }
 }

@@ -136,12 +136,17 @@ li {
   gap: 1.2rem;
 }
 
+/* Header CTA — opens WhatsApp (where the leads come from). WhatsApp green,
+   darkened so the white label keeps a readable contrast. */
 .header__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
-  background-color: var(--scarletRed-600);
-  padding: 0.7rem 1.6rem;
+  background-color: #15803d;
+  padding: 0.8rem 1.6rem;
   border-radius: 8px;
   text-decoration: none;
   white-space: nowrap;
@@ -149,7 +154,16 @@ li {
 }
 
 .header__cta:hover {
-  background-color: var(--scarletRed-500);
+  background-color: #166534;
+}
+
+.header__cta-icon {
+  font-size: 1.8rem;
+}
+
+/* Languages: in the header on desktop, inside the menu on mobile */
+.nav__langs {
+  display: none;
 }
 
 .nav__list {
@@ -239,6 +253,18 @@ li {
 .nav__dropdown-item.active {
   color: var(--gray-100);
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Group title inside a dropdown (e.g. "International") */
+.nav__dropdown-label {
+  margin: 0.6rem 0 0.2rem;
+  padding: 0.6rem 1.2rem 0.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray-500, #8a8a8a);
 }
 
 .nav__toggle {
@@ -592,7 +618,7 @@ li {
 
 .footer__container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 4rem;
   max-width: 140rem;
   margin: 0 auto;
@@ -757,8 +783,32 @@ li {
     z-index: 1000;
   }
 
+  /* Compact WhatsApp CTA stays visible in the mobile bar */
   .header__cta {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.1rem;
+  }
+
+  .header__cta-icon {
+    font-size: 1.6rem;
+  }
+
+  .header__langs {
     display: none;
+  }
+
+  .nav__langs {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    padding: 1.4rem 1.2rem 0.4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav__langs-label {
+    font-size: 1.3rem;
+    color: var(--gray-400);
   }
 
   .nav__toggle {
@@ -799,10 +849,17 @@ li {
     flex-direction: column;
   }
 
-  /* Dropdown opens inline (not as a floating panel) inside the mobile menu */
+  /* Dropdown opens inline (not as a floating panel) inside the mobile menu.
+     Toggle rows look like the plain links: full width, label left, caret after it. */
+  .nav__dropdown {
+    width: 100%;
+  }
+
   .nav__dropdown-toggle {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    text-align: left;
   }
 
   .nav__dropdown-menu {
@@ -1406,27 +1463,20 @@ li {
 }
 
 @media (max-width: 56.25em) {
+  /* Inside the mobile menu (no longer floating over the page content) */
   .lang-switcher {
-    position: fixed;
-    bottom: 2rem;
-    left: 1.6rem;
-    flex-direction: column;
-    gap: 0.6rem;
-    z-index: 10001;
+    gap: 0.8rem;
   }
 
   .lang-switcher__btn {
     font-size: 1.4rem;
     font-weight: 700;
-    padding: 1rem 1.6rem;
-    min-width: 5rem;
+    padding: 0.8rem 1.4rem;
+    min-width: 4.8rem;
     text-align: center;
-    background-color: #1e1e1e;
     border: 1px solid #3a3a3a;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #cccccc;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-    display: block;
   }
 
   .lang-switcher__btn:hover,
@@ -1434,7 +1484,6 @@ li {
     background-color: var(--scarletRed-500);
     border-color: var(--scarletRed-500);
     color: #ffffff;
-    box-shadow: 0 4px 14px rgba(228, 28, 62, 0.45);
   }
 }
 
@@ -1570,10 +1619,10 @@ li {
     align-items: flex-end;
   }
 
-  /* Lang switcher: bottom-right on mobile RTL */
-  [dir="rtl"] .lang-switcher {
-    left: auto;
-    right: 1.6rem;
+  /* Languages row in the mobile menu: right-aligned for RTL */
+  [dir="rtl"] .nav__langs {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
 

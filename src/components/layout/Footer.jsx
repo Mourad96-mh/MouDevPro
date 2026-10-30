@@ -4,16 +4,26 @@ import {
   HiOutlineMapPin,
   HiOutlineClock,
 } from "react-icons/hi2";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import useConversion from "../../hooks/useConversion";
+import { useCityContext } from "../../context/CityContext";
+import { cityConfig } from "../../data/cityConfig";
+
+const CITIES = ["casablanca", "rabat", "marrakech"];
 
 const Footer = ({ cityName, address }) => {
   const { t } = useTranslation();
   const { track, trackPhone, WA_URL } = useConversion();
+  const { cityData } = useCityContext();
   const serviceLinks = t("footer.services.links", { returnObjects: true });
+  const currentLang = cityData?.currentLang || "fr";
+  const cityLinks = CITIES.map((city) => {
+    const { name, canonical } = cityConfig[city][currentLang];
+    return { city, name, path: canonical.replace("https://www.moudevpro.com", "") || "/" };
+  });
 
   return (
     <footer className="footer">
@@ -22,15 +32,6 @@ const Footer = ({ cityName, address }) => {
           <Logo />
           <p className="footer__tagline">{t("footer.tagline", { city: cityName })}</p>
           <div className="footer__socials">
-            <a href="#" aria-label="Facebook MouDev" className="footer__social-link">
-              <FaFacebookF />
-            </a>
-            <a href="#" aria-label="Instagram MouDev" className="footer__social-link">
-              <FaInstagram />
-            </a>
-            <a href="#" aria-label="LinkedIn MouDev" className="footer__social-link">
-              <FaLinkedinIn />
-            </a>
             <a
               href={WA_URL}
               target="_blank"
@@ -57,6 +58,9 @@ const Footer = ({ cityName, address }) => {
               </li>
             ))}
             <li>
+              <Link to="/blog" className="footer__link">{t("nav.blog")}</Link>
+            </li>
+            <li>
               <Link to="/about" className="footer__link">{t("nav.about")}</Link>
             </li>
             <li>
@@ -66,8 +70,15 @@ const Footer = ({ cityName, address }) => {
         </div>
 
         <div className="footer__col">
-          <h3 className="footer__heading">International</h3>
+          <h3 className="footer__heading">{t("footer.citiesHeading")}</h3>
           <ul className="footer__list">
+            {cityLinks.map(({ city, name, path }) => (
+              <li key={city}>
+                <Link to={path} className="footer__link">
+                  {t("footer.cityLink", { city: name })}
+                </Link>
+              </li>
+            ))}
             <li>
               <Link to="/france" className="footer__link">Développeur web pour la France</Link>
             </li>
@@ -76,6 +87,9 @@ const Footer = ({ cityName, address }) => {
             </li>
             <li>
               <Link to="/usa" className="footer__link">Web developer for the USA</Link>
+            </li>
+            <li>
+              <Link to="/europe" className="footer__link">Web &amp; app development for Europe</Link>
             </li>
           </ul>
         </div>
