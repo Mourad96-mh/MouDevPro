@@ -64,6 +64,7 @@ const ServicesSection = ({ cityName = "Maroc", services }) => {
         {items.map((s) => (
           <div
             key={s.id}
+            id={s.id}
             className={`casablanca-service-card${s.highlight ? " casablanca-service-card--highlight" : ""}`}
           >
             {s.highlight && (

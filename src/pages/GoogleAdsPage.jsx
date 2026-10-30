@@ -260,9 +260,10 @@ const GoogleAdsPage = () => {
             Gestion Google Ads à Casablanca — Consultant Freelance
           </h1>
           <p className="subheading sl-mb">
-            Je gère vos campagnes Google Ads à Casablanca et partout au Maroc
-            pour transformer chaque dirham investi en appels, messages WhatsApp
-            et demandes de devis. Gestion dès {MONTHLY_FEE}/mois, sans
+            Je gère vos campagnes Google Ads à Casablanca et partout au Maroc —
+            le levier de <strong>marketing digital à Casablanca</strong> le plus
+            rapide pour transformer chaque dirham investi en appels, messages
+            WhatsApp et demandes de devis. Gestion dès {MONTHLY_FEE}/mois, sans
             commission sur votre budget et sans engagement. Audit gratuit sous
             24h.
           </p>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { HiMiniPhone } from "react-icons/hi2";
 import Footer from "../components/layout/Footer";
 import TarifsSection from "../components/sections/TarifsSection";
 import useConversion from "../hooks/useConversion";
@@ -72,7 +73,7 @@ const jsonLd = {
 };
 
 const TarifsPage = () => {
-  const { track, WA_URL } = useConversion();
+  const { track, trackPhone, WA_URL } = useConversion();
   const { setCityData } = useCityContext();
 
   useEffect(() => {
@@ -129,6 +130,27 @@ const TarifsPage = () => {
             Livraison en 7 à 10 jours. <strong>Devis gratuit et transparent en
             24h</strong> — choisissez votre formule ci-dessous.
           </p>
+          {/* Above-the-fold CTA — price keywords from Google Ads land here, and
+              the page had no contact button before the pricing cards. */}
+          <div className="city-hero__actions" style={{ justifyContent: "center" }}>
+            <Link
+              to={WA_URL}
+              rel="noopener noreferrer"
+              className="link"
+              onClick={() => track(WA_URL, "tarifs-hero")}
+            >
+              Devis gratuit — réponse en 24h
+            </Link>
+            <a
+              href="tel:+212696964341"
+              className="hero__phone"
+              style={{ color: "var(--gray-100)" }}
+              onClick={() => trackPhone("tarifs-hero")}
+            >
+              <HiMiniPhone />
+              <span>+212 696 964 341</span>
+            </a>
+          </div>
         </div>
       </section>
 
