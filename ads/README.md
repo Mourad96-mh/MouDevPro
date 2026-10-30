@@ -24,6 +24,7 @@ versus `data/gsc/` (exports).
 | `google-ads-campaign-plan-2026-10-30.pdf` | 10-30 | Same plan as a PDF |
 | `bidding-strategy-2026-10-30.md` | 10-30 | Bidding per campaign, from Google's tCPA/budget simulations |
 | `auction-insights-analysis-2026-10-30.md` | 10-30 | Competitors per campaign + how the ads should stand out |
+| `competitor-ads-apify-2026-10-31.md` | 10-31 | Competitors' actual ad texts (Ads Transparency Center) + Google Maps ranking, via Apify |
 | `editor-import-2026-10-30/` | 10-30 | Editor CSVs. **Record only — already applied via API, never import** |
 | `google-ads-casa-build-sheet-2026-10-18.md` | 10-18 | Original build sheet of the google-ads-casa campaign |
 

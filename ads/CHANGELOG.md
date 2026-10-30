@@ -9,6 +9,20 @@ specific change set, always after a `validate_only` dry run, then re-read to ver
 
 ---
 
+## 2026-10-31 — payment differentiator in assets (via API, approved)
+
+From the Apify competitor-ads study (`2026-10/competitor-ads-apify-2026-10-31.md`): billiontech now shows
+"dès 1 990 DH TTC" but asks 50% upfront; nobody else mentions payment.
+
+| Change | Campaigns |
+| --- | --- |
+| New callout **"0 Acompte"** (`assets/434835999469`) | Creation-site-web, creation-site-web-rabat (7 callouts each) |
+| Sitelink "Tarifs Transparents" replaced: line 2 "E-commerce dès 3 000 DH" → **"Payé seulement à la livraison"** (`assets/434835989482`); old link unlinked | Creation-site-web, creation-site-web-rabat |
+
+Ads, keywords and bids not touched.
+
+---
+
 ## 2026-10-30 — campaign plan applied (via API, each step approved)
 
 Plan: [`2026-10/campaign-enhancements-2026-10-30.md`](2026-10/campaign-enhancements-2026-10-30.md)
