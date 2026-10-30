@@ -1,7 +1,7 @@
 /**
  * Google Ads specifics: waste classification and change-history alerts.
  *
- * The waste list is read from data/ads/negative-keywords.md rather than
+ * The waste list is read from ads/negative-keywords.md rather than
  * hard-coded, so maintaining that one file keeps detection current. Its
  * "do NOT negate these" section is honoured — those terms convert.
  */

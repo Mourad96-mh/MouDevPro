@@ -86,6 +86,24 @@ MoDev/
 
 ---
 
+## Où trouver quoi (marketing, données, suivi)
+
+| Dossier / fichier | Contenu |
+| --- | --- |
+| `CLAUDE.md` | Contexte du projet : positionnement, mots-clés, structure, règles de contenu |
+| `ads/` | Google Ads : `CHANGELOG.md` (tout ce qui a été modifié dans le compte), cycle en cours `2026-10/` (audit, plan, enchères, concurrents), `archive/` |
+| `seo/` | SEO : `research/` (analyses, audits de pages, sources de trafic), `content/` (rédaction), `SEO-ROADMAP.md` |
+| `seo-audit/STATUS.md` | Suivi de l'audit technique (tenu par le skill seo-audit — ne pas déplacer) |
+| `data/` | Exports bruts uniquement, datés : `ads/`, `gsc/`, `ga4/`, `leads/` (agrégats anonymes), `cwv/`, `reports/` |
+| `LEAD-TRACKING.md` | Système de suivi des leads (Sheet, réf MDP-XXXX, export OCI) |
+| `integrations/apps-script/` | Script du Google Sheet (`Code.gs` = version du dépôt, `Code.live.gs` = copie live avec le token, ignorée par git) |
+| `tools/` | `npm run pull` (ingestion des données), MCP Business Profile |
+| `.claude/skills/backlinks/output/` | Sorties du skill backlinks (ne pas déplacer) |
+
+Règle : `data/` = preuves (exports), `ads/` et `seo/` = interprétation et décisions.
+
+---
+
 ## SEO
 
 ### Ce qui est en place

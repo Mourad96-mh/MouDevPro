@@ -265,7 +265,7 @@ function adsSection() {
 
   const st = groups.get("search-terms");
   if (st?.length) {
-    const terms = loadNegativeTerms(join(DATA, "ads", "negative-keywords.md"));
+    const terms = loadNegativeTerms(join(root, "ads", "negative-keywords.md"));
     const curr = read(st[0].path);
     const wasteful = curr
       .filter((r) => isWaste(r.search_term, terms) && num(r.cost_mad) > 0)
@@ -286,7 +286,7 @@ function adsSection() {
         say(`| ${r.search_term} | ${num(r.cost_mad).toFixed(2)} | ${r.clicks} | ${r.conversions} |`);
       }
       say("");
-      say("Add these to the shared negative list, then update `data/ads/negative-keywords.md`.");
+      say("Add these to the shared negative list, then update `ads/negative-keywords.md`.");
       say("");
     }
   }

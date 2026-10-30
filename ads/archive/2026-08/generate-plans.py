@@ -1,6 +1,6 @@
 """Generate the Google Ads action plans as .docx.
 
-Run:  python ads/generate-plans.py
+Run:  python ads/archive/2026-08/generate-plans.py
 Data: read-only GAQL pull of customer 5280469672, window 2026-07-15..2026-08-11
       (8-week trend 2026-06-15..08-11). Raw exports in data/ads/.
 
@@ -254,7 +254,7 @@ def account_doc():
     d.p([
         "There are ", ("no shared negative lists on the account at all", B),
         " — every negative is campaign-level. Against the documented list in ",
-        ("data/ads/negative-keywords.md", MONO),
+        ("ads/negative-keywords.md", MONO),
         ", all three campaigns are missing 18 of 23 hard negatives:",
     ])
     d.mono(

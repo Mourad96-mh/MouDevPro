@@ -17,7 +17,7 @@ The loop is: plan here → draft → publish → implement in the React app at `
 - `content/context/brand-voice.md` — how to write (freelance voice, first person, no "nous").
 - `content/context/style-guide.md` — on-page SEO mechanics (titles, meta, schema, links).
 - `../CLAUDE.md` — the master project context (positioning, keywords, site structure, Ads alignment).
-- `../SEO-ROADMAP.md` — the earlier competitor/SERP analysis this builds on.
+- `SEO-ROADMAP.md` — the earlier competitor/SERP analysis this builds on.
 
 ## Folder structure
 

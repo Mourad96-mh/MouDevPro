@@ -3,14 +3,16 @@
 Evidence, not interpretation. Every file here is a **raw pull from a source of truth**, kept as
 exported so a later reader can re-derive any conclusion drawn from it.
 
-Analysis belongs in `seo/research/` and reads from here. Nothing in this folder should contain
-opinions, recommendations, or prose conclusions — the one exception is `ads/negative-keywords.md`,
-which is a working action list that predates this split (noted below).
+Analysis belongs in `seo/research/` (SEO) and `ads/` (Google Ads) and reads from here. Nothing in
+this folder should contain opinions, recommendations, or prose conclusions. The negative-keyword
+working list moved to `../ads/negative-keywords.md` on 2026-10-30.
 
 ```
 data/
-├── ads/      Google Ads     — campaigns, keywords, search terms, negatives
+├── ads/      Google Ads     — campaigns, keywords, search terms, auction insights, snapshots
 ├── gsc/      Search Console — queries, pages, countries, devices
+├── ga4/      Google Analytics 4 — channels, landing pages, contact_click (data since 2026-10-18)
+├── leads/    Leads Sheet "OCT moudev" — anonymous aggregates only (never names/phones)
 ├── cwv/      Core Web Vitals — CrUX field data
 └── reports/  generated — what moved between the last two pulls
 ```
@@ -55,6 +57,7 @@ one such set (`ads/search-terms-*.csv`, see below). Don't add more.
 | --- | --- | --- |
 | `*-2026-06-19.csv` | ~90 days to 2026-06-19 | The evidence base for `seo/research/data-insights.md`. Was undated until the 2026-08-14 reorganisation; the date comes from that file's own header. |
 | `*-2026-08-13.csv` + `snapshot-2026-08-13.md` | 2026-07-15 → 2026-08-11 | 28 days, ending 2 days back — GSC is incomplete for the most recent ~48h. Basis for `seo/research/page-audits/`. |
+| `monthly-and-pages-2026-10-30.md` | 2026-07-13 → 2026-10-28 | Monthly clicks, Sep vs Oct by page, homepage queries, countries. Basis for `seo/research/traffic-sources-2026-10-30.md`. |
 
 Always end a window ~2 days before the export date. Query-dimension exports are filtered by Google
 for anonymity and will sum to **less** than page totals — that gap is expected, not data loss
@@ -70,7 +73,10 @@ resolving a child customer first.
 
 | File | Notes |
 | --- | --- |
-| `negative-keywords.md` | Working action list generated 2026-06-03 from the all-time search-terms report. Not a raw export — kept here because it is Ads-domain material. **Verified 2026-08-14 as not yet applied to the account.** |
+| `snapshot-2026-10-30.md` | 2026-09-30 → 10-29, taken **before** the 10-30 account changes: campaigns, settings, weekly, tCPA/budget simulations, landing pages, conversion check |
+| `auction-insights-*-2026-10-29.csv` | Manual exports (not in the API), 2026-09-29 → 10-28, one per campaign |
+| `overview-cards-2026-10-13-{a,b}.zip` | Manual "Overview" card exports from the Ads UI, 2026-10-13 |
+| `snapshot-2026-08-14.md` + `*-2026-08-14.csv` | August pull (campaigns, keywords + QS, change history) |
 | `search-terms-*.csv` | All-time exports, one per ad group, undated. They predate 2026-06-03 (the negatives list cites them) but no exact export date is recorded anywhere in the repo, so no date was invented. |
 
 ### Re-running a pull
@@ -110,6 +116,24 @@ Gotchas that have already bitten:
 - Filtering on a `segments.*` field requires selecting it too.
 - A keyword's Quality Score varies **per ad group**, so the same text can appear several times with
   different scores. Don't deduplicate on keyword text alone.
+
+## `ga4/` — Google Analytics 4
+
+**Property:** 559459207 (`G-P7F2509ZQF`) · **Source:** the `ga4` MCP server (`analytics-mcp`).
+Data exists only from **2026-10-18**. `contact_click` carries `method` and `cta_source` (custom dims).
+
+| File | Notes |
+| --- | --- |
+| `channels-2026-10-30.md` | 10-18 → 10-29: sessions by channel/source, non-paid landing pages, contact_click by source |
+
+## `leads/` — leads Sheet
+
+**Source:** Google Sheet "OCT moudev", tab `Leads` (public CSV export, see `../LEAD-TRACKING.md`).
+**Privacy rule:** only anonymous aggregates here, never names, phones or messages. The Sheet itself stays the source.
+
+| File | Notes |
+| --- | --- |
+| `leads-aggregate-2026-10-30.csv` | 2026-07-13 → 10-30, 350 WhatsApp/phone clicks counted by month × origin (Ads/untagged/utm) × type × page × city × status. Test rows excluded |
 
 ## `cwv/` — Core Web Vitals
 
