@@ -9,6 +9,23 @@ specific change set, always after a `validate_only` dry run, then re-read to ver
 
 ---
 
+## 2026-11-05 — 14 campaign negatives (via API, approved)
+
+From the 10-31 → 11-04 search terms (`../data/ads/snapshot-2026-11-05.md`). Only terms with **0 conversions
+over 90 days** (08-06 → 11-04). Same 7 on Creation-site-web and creation-site-web-rabat:
+`gratuite` (broad), `url` (broad), "sign in", "landing page build", "build a site", "web page design" (phrase),
+[siter] (exact). Totals after: Casablanca 409, Rabat 378. Covered about 110 MAD of waste over 90 days.
+
+Deliberately **not** blocked, because they converted in 90 days: "comment créer un site…" (Rabat, 10 conv
+/ ~42 clicks), "website builder" (5.25), "easy site" (2), "e commerce platform" (1), "salla" (1).
+
+Also seen in change history (Mourad's own edits): 10-31 Rabat target CPA 60 → **80** (Web), so the planned
+11-06 "60 → 70" is dropped · 11-02 6 age-range exclusions on google-ads-casa (Web) · 10-31 → 11-03 10 campaign
+negatives (jumia, youkan, webmaster maroc, ugc builder landing page, shop dukaan, wixsite com, offre,
+dashboard google ads, tribal ddb casablanca).
+
+---
+
 ## 2026-10-31 — payment differentiator in assets (via API, approved)
 
 From the Apify competitor-ads study (`2026-10/competitor-ads-apify-2026-10-31.md`): billiontech now shows
@@ -94,7 +111,7 @@ Next decisions: see "Upcoming" below.
 ## Upcoming (planned, not applied)
 | Date | Change | Condition |
 | --- | --- | --- |
-| 2026-11-06 | Rabat target CPA 60 → 70 · google-ads-casa max CPC 6 → 8 · search-terms review | new ads stable |
+| ~~2026-11-06~~ | ~~Rabat tCPA 60 → 70~~ (Mourad set 80 on 10-31) · search-terms review done 11-05 · google-ads-casa CPC 6 → 8 **moved to 11-13** (0 conv 10-31 → 11-04) | — |
 | 2026-11-13 | Casablanca target CPA 100 → 85 · RSA headlines "0 Acompte — Payez à la Livraison" + "100+ Sites Livrés au Maroc" | CPA ≤ 100 over the 2 weeks |
 | end of Nov | google-ads-casa → Maximize conversions, tCPA ~45 | ~15 conversions in 30 days |
 | open | Price assets, business name, link Business Profile, move negatives to shared lists | waiting on Mourad |
