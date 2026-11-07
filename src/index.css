@@ -136,31 +136,6 @@ li {
   gap: 1.2rem;
 }
 
-/* Header CTA — opens WhatsApp (where the leads come from). WhatsApp green,
-   darkened so the white label keeps a readable contrast. */
-.header__cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: #15803d;
-  padding: 0.8rem 1.6rem;
-  border-radius: 8px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.2s;
-}
-
-.header__cta:hover {
-  background-color: #166534;
-}
-
-.header__cta-icon {
-  font-size: 1.8rem;
-}
-
 /* Languages: in the header on desktop, inside the menu on mobile */
 .nav__langs {
   display: none;
@@ -781,16 +756,6 @@ li {
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-
-  /* Compact WhatsApp CTA stays visible in the mobile bar */
-  .header__cta {
-    font-size: 1.3rem;
-    padding: 0.7rem 1.1rem;
-  }
-
-  .header__cta-icon {
-    font-size: 1.6rem;
   }
 
   .header__langs {

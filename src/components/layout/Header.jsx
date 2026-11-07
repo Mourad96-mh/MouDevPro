@@ -1,13 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiBars3, HiXMark, HiChevronDown } from "react-icons/hi2";
-import { FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useCityContext } from "../../context/CityContext";
 import { cityConfig } from "../../data/cityConfig";
-import useConversion from "../../hooks/useConversion";
 
 const CITIES = ["casablanca", "rabat", "marrakech"];
 const COUNTRIES = [
@@ -31,7 +29,6 @@ const Header = () => {
   const { t } = useTranslation();
   const { cityData } = useCityContext();
   const { pathname } = useLocation();
-  const { track, WA_URL } = useConversion();
   const currentLang = cityData?.currentLang || "fr";
 
   // Close an open dropdown when clicking outside the nav
@@ -169,18 +166,6 @@ const Header = () => {
       </nav>
 
       <div className="header__actions">
-        <Link
-          to={WA_URL}
-          rel="noopener noreferrer"
-          className="header__cta"
-          onClick={() => {
-            closeMenus();
-            track(WA_URL, "header-cta");
-          }}
-        >
-          <FaWhatsapp className="header__cta-icon" aria-hidden="true" />
-          {t("nav.devis")}
-        </Link>
         <div className="header__langs">
           <LanguageSwitcher />
         </div>

@@ -81,11 +81,10 @@ Google Click ID,Conversion Name,Conversion Time,Conversion Value,Conversion Curr
 
 ## Google Ads manual steps (after deploy)
 
-1. Create conversion action **"Lead Formulaire Devis"** (Website → Submit lead
-   form, value 200 MAD, count One, 90-day click window) → copy its **label**
-   into `FORM_CONVERSION_LABEL` in `src/utils/conversions.js` → redeploy the
-   site. Until then the form falls back to the legacy shared label so nothing
-   is lost.
+1. Form conversion action **"Formulaire Devis"** (Website → Submit lead form,
+   200 MAD, count One, 90-day window) — created 2026-11-07, label in
+   `FORM_CONVERSION_LABEL` in `src/utils/conversions.js`. (The previous
+   "Submit lead form" action had been removed in Ads.)
 2. Create conversion action **"Lead Qualifié (OCI)"** (Import → Conversions
    from clicks, count One). The name must match `CONFIG.CONVERSION_NAME`
    exactly.

@@ -2,9 +2,14 @@
  * Google Ads conversion configuration — single source of truth.
  *
  * The base gtag snippet lives in index.html and must not be touched.
- * Two Google Ads actions, split by channel (both Primary):
- *   "Contact"              → devis-form submits (FORM_CONVERSION_LABEL)
- *   "Contact-from-moudev"  → WhatsApp/phone clicks (LEGACY_CLICK_LABEL)
+ * Two Google Ads web actions, split by channel:
+ *   "Contact-from-moudev" → WhatsApp/phone clicks, fired by the
+ *     gtag_report_conversion snippet in index.html (label abRzCJSdzKUcELPD1pZD).
+ *   "Formulaire Devis"    → devis-form submits (FORM_CONVERSION_LABEL, below).
+ *     Created 2026-11-07 (Submit lead form) to replace the removed
+ *     "Submit lead form" action. Do NOT paste Google's gtag_report_conversion
+ *     snippet for it into index.html: it would overwrite the WhatsApp one.
+ * Qualified leads go to Ads via OCI upload ("Lead Qualifié (OCI)").
  */
 
 export const AW_ID = "AW-18032730547";
@@ -25,23 +30,14 @@ export function fireContactClick(method, source) {
   }
 }
 
-// "Contact" action in Google Ads (Submit lead form) — devis-form submits only.
-export const FORM_CONVERSION_LABEL = "Hlo6CP2wzc4cELPD1pZD";
+// "Formulaire Devis" action (Submit lead form, created 2026-11-07).
+const FORM_CONVERSION_LABEL = "5UVPCJqKjLQdELPD1pZD";
 
-// "Contact-from-moudev" action — WhatsApp + phone clicks (fired via the
-// gtag_report_conversion snippet in index.html).
-const LEGACY_CLICK_LABEL = "abRzCJSdzKUcELPD1pZD";
-
-/**
- * Fired on successful devis-form submit. Uses the new form conversion when
- * its label is configured; until then it falls back to the legacy shared
- * label so no conversion is lost pre-configuration.
- */
+/** Fired on successful devis-form submit. */
 export function fireFormConversion() {
-  const label = FORM_CONVERSION_LABEL || LEGACY_CLICK_LABEL;
   if (typeof window.gtag === "function") {
     window.gtag("event", "conversion", {
-      send_to: `${AW_ID}/${label}`,
+      send_to: `${AW_ID}/${FORM_CONVERSION_LABEL}`,
       value: 200,
       currency: "MAD",
     });
