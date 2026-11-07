@@ -143,6 +143,8 @@ Competitor data Google's own APIs don't expose. Apify free plan ($5/month credit
 | File | Notes |
 | --- | --- |
 | `ads-transparency-2026-10-30.csv` | 13 domains, region MA: ad counts, formats, first/last shown (79 creatives, $0.14) |
+| `serp-google-ads-keywords-2026-11-05.csv` | `apify/google-search-scraper`: the 19 google-ads-casa keywords, google.com gl=ma hl=fr, Casablanca uule, mobile, page 1. Organic only: 0 ads were returned (scrapers rarely get served ads) |
+| `ads-transparency-google-ads-competitors-2026-11-05.csv` | 30 Google-Ads-service competitors from that SERP + auction insights, region MA, max 5 ads each |
 | `maps-casablanca-2026-10-30.csv` | "développeur web", "création site web", "agence web" in Casablanca: rank, rating, reviews (49 places, $0.20) |
 
 ## `cwv/` — Core Web Vitals

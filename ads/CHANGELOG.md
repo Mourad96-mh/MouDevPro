@@ -9,6 +9,58 @@ specific change set, always after a `validate_only` dry run, then re-read to ver
 
 ---
 
+## 2026-11-07 — Conversions: form action created, bidding = WhatsApp + phone + form (via API, approved)
+
+- **"Formulaire Devis" created** (by Mourad in the UI): `conversionActions/7893878042`, Submit lead form,
+  primary, One, 90-day, always 200 MAD, label `5UVPCJqKjLQdELPD1pZD`. Replaces the removed "Submit lead form"
+  action; `src/utils/conversions.js` now fires it on devis-form submits (needs site deploy).
+- **Goal "Submit lead form" made biddable** at account level (`customerConversionGoals/SUBMIT_LEAD_FORM~WEBSITE`)
+  and on the 3 campaigns (Creation-site-web, creation-site-web-rabat, google-ads-casa). The campaigns use
+  campaign-level goal config, so the account default alone would not apply.
+- **"Lead Qualifié (OCI)" → secondary** (`conversionActions/7883577328`, primary_for_goal false). Still
+  reported in "All conv."; no longer used for bidding (uploads too irregular, and it double-counted contacts).
+  The QUALIFIED_LEAD goal stays biddable but has no primary action, so it has no effect.
+
+Result: primary = Contact-from-moudev (WhatsApp/phone, 100 MAD) + Formulaire Devis (form, 200 MAD).
+Dry run (`validate_only`) OK, applied as one atomic batch, re-read: all 5 changes live.
+
+---
+
+## 2026-11-05 (3) — google-ads-casa: 2 negatives (via API, approved)
+
+From the per-keyword auction insights + search-term check (`../data/ads/auction-insights-keywords-2026-11-05.md`).
+Only the 2 DIY searches that still leaked **after** the 10-30 negatives; the rest (library, skillshop, comment,
+tutorial, ads center, [google ads], [ads google]) were already blocked.
+
+- `ad center` (phrase), `campaignCriteria/24364150218~1017260413`: "my google ad center" (10-30, 1 click, 0 conv)
+- `how` (broad), `campaignCriteria/24364150218~10544811`: "how google ads work for business" (11-02, 1 click, 0 conv)
+
+Dry run (`validate_only`) OK, applied, re-read: both live as negatives. Total 117 → 119.
+Kept on purpose (could be buyers): "campagne shopping google ads", "google ads for dental clinic",
+"annonce google", "publicite google".
+
+---
+
+## 2026-11-05 (2) — google-ads-casa: 11 negatives + 1 keyword paused (via API, approved)
+
+From the SERP + Ads Transparency study of the 19 google-ads-casa keywords
+(`../data/apify/serp-google-ads-keywords-2026-11-05.csv`, `ads-transparency-google-ads-competitors-2026-11-05.csv`).
+
+- **11 campaign negatives (broad)**, filling variant gaps in the job/training list (emploi, formation, stage…
+  already existed): emplois, formations, stagiaire, étudiant, diplôme, master, école, alternance, définition,
+  indeed, rekrute. None matched a paid search term in 90 days: insurance, not savings. Total 106 → 117.
+- **Paused "gestion google ads" (phrase)**, `adGroupCriteria/199046102337~485181220293`: 90 days 36 MAD /
+  6 clicks / 0 conv; the SERP is guides and Google's own pages. [gestion google ads casablanca] stays enabled.
+- Kept on purpose: "marketing digital casablanca" — 5 conv / 21 clicks over 90 days in Ad group 1; 0 / 4 in the
+  new group this week is too small to judge.
+
+Findings: no freelancer advertises on these keywords in MA. Paid competitors = google.com (26.7% IS),
+digitalisq.com, adverweb.ma ("Experts Google Ads Maroc"), technopek.com, mediazain.com. Organic freelancers
+= saadrachid.net / expertgoogleads.ma and hamhamrachid.com. moudevpro.com /google-ads: #2 "gestion google ads
+casablanca", #8 "consultant google ads maroc".
+
+---
+
 ## 2026-11-05 — 14 campaign negatives (via API, approved)
 
 From the 10-31 → 11-04 search terms (`../data/ads/snapshot-2026-11-05.md`). Only terms with **0 conversions
