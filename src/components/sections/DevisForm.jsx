@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { trackLead } from "../../utils/trackLead";
 import { fireFormConversion } from "../../utils/conversions";
-import { getVisitorRef } from "../../utils/attribution";
-import { buildWaLink } from "../../hooks/useConversion";
+import { getAttribution, getVisitorRef } from "../../utils/attribution";
 
 const PROJECT_TYPES = [
   { value: "vitrine", label: "Site vitrine" },
@@ -24,6 +23,8 @@ const PHONE_RE = /^(?:0[5-7]\d{8}|(?:\+|00)212[5-7]\d{8})$/;
  * Qualification-gated devis form — the primary Google Ads conversion.
  * Leads go to the Google Sheet via trackLead (type "form") with the visitor
  * ref + attribution; the conversion fires via fireFormConversion().
+ * Nothing is sent through WhatsApp: Mourad is notified by email through
+ * public/api/devis.php (Hostinger SMTP) and contacts the lead himself.
  *
  * `source` tags where the form was submitted from (contact page, homepage…).
  */
@@ -41,26 +42,6 @@ const DevisForm = ({ source = "devis-form" }) => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [ref, setRef] = useState("");
-  const [waLink, setWaLink] = useState("");
-
-  // The visitor's own WhatsApp carries the lead to Mourad — no bot, no API.
-  // Everything they typed is pre-filled; they only tap "send".
-  const buildLeadMessage = (visitorRef) => {
-    const projet =
-      PROJECT_TYPES.find((t) => t.value === form.typeProjet)?.label || "—";
-    const budget = BUDGETS.find((b) => b.value === form.budget)?.label || "—";
-    return [
-      `Bonjour, je souhaite un devis (Réf: ${visitorRef})`,
-      `Nom: ${form.nom.trim()}`,
-      `Tél: ${form.telephone.replace(/[\s.-]/g, "")}`,
-      form.ville.trim() ? `Ville: ${form.ville.trim()}` : "",
-      `Projet: ${projet}`,
-      `Budget: ${budget}`,
-      form.message.trim() ? `Message: ${form.message.trim()}` : "",
-    ]
-      .filter(Boolean)
-      .join("\n");
-  };
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -91,9 +72,7 @@ const DevisForm = ({ source = "devis-form" }) => {
 
     // Honeypot filled → bot. Pretend success, log nothing, fire nothing.
     if (form.website) {
-      const botRef = getVisitorRef();
-      setRef(botRef);
-      setWaLink(buildWaLink(`Bonjour, je souhaite un devis (Réf: ${botRef})`));
+      setRef(getVisitorRef());
       setSubmitted(true);
       return;
     }
@@ -105,30 +84,35 @@ const DevisForm = ({ source = "devis-form" }) => {
     }
 
     setLoading(true);
-    trackLead(
-      {
-        source,
-        name: form.nom.trim(),
-        phone: form.telephone.replace(/[\s.-]/g, ""),
-        city: form.ville.trim(),
-        projectType: form.typeProjet,
-        budget: form.budget,
-        message: form.message.trim(),
-      },
-      "form"
-    );
+    const lead = {
+      source,
+      name: form.nom.trim(),
+      phone: form.telephone.replace(/[\s.-]/g, ""),
+      city: form.ville.trim(),
+      projectType: form.typeProjet,
+      budget: form.budget,
+      message: form.message.trim(),
+    };
+    const visitorRef = getVisitorRef();
+    trackLead(lead, "form");
     fireFormConversion();
 
-    const visitorRef = getVisitorRef();
-    const link = buildWaLink(buildLeadMessage(visitorRef));
+    // Email notification (Hostinger). keepalive lets it finish even if the
+    // visitor leaves right away; the Sheet log above is the backup record.
+    fetch("/api/devis.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...lead,
+        ref: visitorRef,
+        page: window.location.href.split("?")[0],
+        gclid: getAttribution().gclid || "",
+        website: form.website,
+      }),
+      keepalive: true,
+    }).catch(() => {});
+
     setRef(visitorRef);
-    setWaLink(link);
-
-    // Open WhatsApp with the lead's details pre-filled — synchronously in
-    // the click gesture so popup blockers allow it. The success screen
-    // below keeps a button as fallback if the tab fails to open.
-    window.open(link, "_blank", "noopener");
-
     setSubmitted(true);
     setLoading(false);
   };
@@ -143,19 +127,6 @@ const DevisForm = ({ source = "devis-form" }) => {
           <strong>{ref}</strong>. Je vous recontacte avec un devis
           personnalisé sous 24h.
         </p>
-        <p className="text sl-mb">
-          <strong>Dernière étape :</strong> WhatsApp s'est ouvert avec votre
-          demande pré-remplie — appuyez sur « Envoyer » pour me la
-          transmettre. Il ne s'est pas ouvert ?
-        </p>
-        <a
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          Envoyer ma demande sur WhatsApp
-        </a>
       </div>
     );
   }
