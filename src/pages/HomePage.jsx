@@ -208,7 +208,7 @@ const HomePage = () => {
     <>
       <Helmet htmlAttributes={{ lang: "fr" }}>
         <title>
-          Création Site Web Casablanca dès 2 000 DH | Développeur Web Freelance Maroc
+          Création Site Web Casablanca & Maroc dès 2 000 DH | Développeur Freelance
         </title>
         <meta
           name="description"
@@ -224,7 +224,7 @@ const HomePage = () => {
         <meta property="og:site_name" content="MouDEV" />
         <meta
           property="og:title"
-          content="Création Site Web Casablanca dès 2 000 DH | Développeur Web Freelance Maroc"
+          content="Création Site Web Casablanca & Maroc dès 2 000 DH | Développeur Freelance"
         />
         <meta
           property="og:description"
@@ -244,9 +244,9 @@ const HomePage = () => {
             Création de Site Web Professionnel à Casablanca — Développeur Web Freelance Maroc
           </h1>
           <p className="subheading sl-mb">
-            Je crée votre site web professionnel à Casablanca et partout au Maroc —
-            Rabat, Marrakech. Création de site internet vitrine, e-commerce ou
-            application sur mesure. Vous parlez directement avec le développeur — pas
+            Création de site web au Maroc par un développeur freelance : je crée
+            votre site professionnel à Casablanca, Rabat, Marrakech et partout au
+            Maroc — vitrine, e-commerce ou application sur mesure. Vous parlez directement avec le développeur — pas
             d'agence, pas d'intermédiaire. Qualité agence, prix freelance.{" "}
             <strong>Devis gratuit en 24h.</strong>
           </p>

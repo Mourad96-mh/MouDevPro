@@ -154,7 +154,11 @@ export const blogPosts = [
     content: [
       {
         type: "p",
-        text: "Trouver un développeur web freelance au Maroc n'est pas difficile — en trouver un bon, en revanche, c'est une autre histoire. Le marché marocain compte des centaines de profils, du débutant autodidacte à l'expert confirmé, et tous ne se valent pas. Voici les critères concrets pour faire le bon choix et éviter les erreurs classiques.",
+        parts: [
+          "Trouver un ",
+          { text: "développeur web freelance au Maroc", to: "/developpeur-web-freelance-maroc" },
+          " n'est pas difficile — en trouver un bon, en revanche, c'est une autre histoire. Le marché marocain compte des centaines de profils, du débutant autodidacte à l'expert confirmé, et tous ne se valent pas. Voici les critères concrets pour faire le bon choix et éviter les erreurs classiques.",
+        ],
       },
       {
         type: "h2",
@@ -450,7 +454,11 @@ export const blogPosts = [
     content: [
       {
         type: "p",
-        text: "La création de site web au Maroc est un marché en pleine expansion — et de plus en plus d'entrepreneurs, PME et commerçants font le choix d'un freelance plutôt qu'une agence. Pas par hasard : un freelance développeur web au Maroc offre contact direct, délais courts et tarifs sans overhead d'agence. Voici ce que ça veut dire concrètement pour votre projet.",
+        parts: [
+          "La création de site web au Maroc est un marché en pleine expansion — et de plus en plus d'entrepreneurs, PME et commerçants font le choix d'un freelance plutôt qu'une agence. Pas par hasard : un ",
+          { text: "développeur web freelance au Maroc", to: "/developpeur-web-freelance-maroc" },
+          " offre contact direct, délais courts et tarifs sans overhead d'agence. Voici ce que ça veut dire concrètement pour votre projet.",
+        ],
       },
       {
         type: "h2",
