@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-labelledby="t">
+  <title id="t">Schéma d'un agent IA : emails, WhatsApp et formulaires traités automatiquement vers devis, CRM et réponses clients</title>
+  <rect width="600" height="450" rx="14" fill="#fff5f5"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#121212">
+    <!-- inputs -->
+    <g>
+      <rect x="28" y="70" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="103" y="104" text-anchor="middle">✉️ Emails</text>
+      <rect x="28" y="197" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="103" y="231" text-anchor="middle">💬 WhatsApp</text>
+      <rect x="28" y="324" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="103" y="358" text-anchor="middle">📝 Formulaires</text>
+    </g>
+    <!-- connectors in -->
+    <g stroke="#e83a5a" stroke-width="2.5" fill="none" stroke-dasharray="6 6">
+      <path d="M178 98 C 215 98, 215 225, 236 225"/>
+      <path d="M178 225 L 236 225"/>
+      <path d="M178 352 C 215 352, 215 225, 236 225"/>
+      <path d="M364 225 C 385 225, 385 98, 422 98"/>
+      <path d="M364 225 L 422 225"/>
+      <path d="M364 225 C 385 225, 385 352, 422 352"/>
+    </g>
+    <!-- agent -->
+    <rect x="236" y="160" width="128" height="130" rx="18" fill="#e41c3e"/>
+    <text x="300" y="214" text-anchor="middle" font-size="34">🤖</text>
+    <text x="300" y="248" text-anchor="middle" fill="#fff" font-size="17">Agent IA</text>
+    <text x="300" y="270" text-anchor="middle" fill="#ffccd6" font-size="12" font-weight="500">24h/24</text>
+    <!-- outputs -->
+    <g>
+      <rect x="422" y="70" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="497" y="104" text-anchor="middle">📄 Devis prêts</text>
+      <rect x="422" y="197" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="497" y="231" text-anchor="middle">📊 CRM / Sheets</text>
+      <rect x="422" y="324" width="150" height="56" rx="10" fill="#fff" stroke="#ffccd6" stroke-width="2"/>
+      <text x="497" y="358" text-anchor="middle">✅ Réponses clients</text>
+    </g>
+  </g>
+</svg>

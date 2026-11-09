@@ -10,6 +10,7 @@ import MarketPage from "./pages/MarketPage";
 import FreelancePage from "./pages/FreelancePage";
 import EcommercePage from "./pages/EcommercePage";
 import GoogleAdsPage from "./pages/GoogleAdsPage";
+import AgentsIaPage from "./pages/AgentsIaPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
@@ -55,6 +56,7 @@ function App() {
             <Route path="casablanca" element={<CasablancaPage />} />
             <Route path="ecommerce" element={<EcommercePage />} />
             <Route path="google-ads" element={<GoogleAdsPage />} />
+            <Route path="agents-ia" element={<AgentsIaPage />} />
             <Route path="services" element={<ServicesPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="about" element={<AboutPage />} />

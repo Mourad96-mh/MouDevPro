@@ -9,7 +9,7 @@ import { useCityContext } from "../context/CityContext";
 const FAQ_ITEMS = [
   {
     q: "Quels services de création de site web proposez-vous au Maroc ?",
-    a: "Je propose la création de sites vitrine professionnels, sites e-commerce, applications web sur mesure, refonte de sites existants et référencement SEO. Chaque projet est développé avec React, WordPress ou WooCommerce selon vos besoins — livraison en 7 à 10 jours.",
+    a: "Je propose la création de sites vitrine professionnels, sites e-commerce, applications web sur mesure, refonte de sites existants et référencement SEO, ainsi que des agents IA sur mesure pour automatiser devis, support client et traitement des emails. Chaque projet est développé avec React, WordPress ou WooCommerce selon vos besoins — livraison en 7 à 10 jours.",
   },
   {
     q: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
@@ -109,6 +109,16 @@ const SERVICES = [
     linkLabel: "Gestion Google Ads à Casablanca",
     keywords: ["Google Ads Maroc", "Publicité en ligne Casablanca", "Campagnes Google"],
   },
+  {
+    id: "agents-ia",
+    icon: "🤖",
+    title: "Agents IA pour entreprises",
+    desc: "Des agents IA sur mesure qui préparent vos devis, répondent à vos clients 24h/24 sur WhatsApp et votre site, traitent emails et commandes, et accélèrent votre prospection B2B — connectés à vos outils.",
+    price: "Sur devis",
+    link: "/agents-ia",
+    linkLabel: "Création d'agents IA au Maroc",
+    keywords: ["Agent IA entreprise Maroc", "Automatisation IA", "Chatbot WhatsApp IA"],
+  },
 ];
 
 const jsonLd = {
@@ -116,7 +126,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "MouDevPro — Développeur Web Freelance",
   description:
-    "Services de création de site web au Maroc : site vitrine, e-commerce, application sur mesure, refonte, SEO, Google Ads. Développeur freelance basé à Casablanca.",
+    "Services de création de site web au Maroc : site vitrine, e-commerce, application sur mesure, refonte, SEO, Google Ads, agents IA. Développeur freelance basé à Casablanca.",
   url: "https://www.moudevpro.com/services",
   telephone: "+212696964341",
   address: {
@@ -134,6 +144,7 @@ const jsonLd = {
     "Refonte site web",
     "SEO",
     "Google Ads",
+    "Agents IA",
   ],
 };
 

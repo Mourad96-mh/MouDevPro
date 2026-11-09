@@ -38,6 +38,7 @@ const staticRoutes = [
   "/casablanca",
   "/ecommerce",
   "/google-ads",
+  "/agents-ia",
   "/services",
   "/contact",
   "/about",

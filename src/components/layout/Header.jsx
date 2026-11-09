@@ -18,6 +18,7 @@ const SERVICES = [
   { path: "/services", key: "nav.vitrine" },
   { path: "/ecommerce", key: "nav.ecommerceLong" },
   { path: "/google-ads", key: "nav.googleAdsLong" },
+  { path: "/agents-ia", key: "nav.agentsIa" },
   { path: "/developpeur-web-freelance-maroc", key: "nav.freelance" },
 ];
 

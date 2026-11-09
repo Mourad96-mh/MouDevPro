@@ -121,8 +121,8 @@ const OTHER_SERVICES = [
     icon: "🤖",
     title: "Automatisation par l'IA",
     desc: "Réponses automatiques, qualification des demandes, saisie et relances : j'automatise les tâches répétitives pour que vous gagniez du temps.",
-    to: "/contact",
-    label: "Demander un devis automatisation IA",
+    to: "/agents-ia",
+    label: "Création d'agents IA pour entreprises",
   },
 ];
 
